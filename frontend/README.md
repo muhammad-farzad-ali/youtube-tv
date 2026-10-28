@@ -13,7 +13,7 @@ No accounts, backend, database service, proxy, or API keys.
 - **YouTube IFrame Player API** for playback
 - **Vitest** and **Playwright** for tests
 
-The visitor experience is deliberately stateless. There is no IndexedDB, localStorage profile, lineup editor, settings page, backup flow, feed refresh, or proxy. The active channel is kept in the URL as `?ch=…`.
+Visitors get a fixed dial plus local pins and favorites. There is no profile, IndexedDB store, video cache, lineup editor, settings page, backup flow, feed refresh, or proxy. Pins and favorites are the only persisted state, and the active channel is kept in the URL as `?ch=…`.
 
 ## Quick start
 
@@ -126,7 +126,15 @@ Commit both the source and generated catalog files. The deployed site is fully s
 - Playback reads `channel.videos` directly and sorts newest first.
 - Playback behavior is fixed: autoplay next, start muted, in-memory volume, skip failed videos, no loop.
 - Channel search and category filtering are local UI state only.
+- Pins and favorites persist in `localStorage` as channel IDs. They do not affect the admin dial order, channel numbers, or playback queue.
 - Refreshing the browser is the only way to pick up new videos after an admin deploy.
+
+### Pins and favorites
+
+- **Pin** keeps a channel in a separate group at the top of the sidebar. Pinned channels keep their original channel numbers and dial order.
+- **Favorite** marks a channel with a star and adds it to the **Favorites** filter in the category menu.
+- Both are per-browser preferences stored under `cable-tv:preferences:v1`. Only channel IDs are saved; no profile, video history, or playback state is stored.
+- Use the pin or star button again to remove the preference. Clearing site data resets everything.
 
 ## Shorts policy
 
@@ -172,6 +180,7 @@ BASE_PATH=/my-repo npm run build
 - Autoplay policies may require a click; the player starts muted and shows an unmute control.
 - Channel avatars are bundled at sync time.
 - There is no offline service worker; the static app and catalog must load from the host.
+- Pins and favorites live in this browser's `localStorage`; there is no account or cross-device sync. Clearing site data resets them.
 
 ## Project layout
 

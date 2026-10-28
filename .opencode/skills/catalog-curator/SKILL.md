@@ -5,7 +5,7 @@ description: Curate the fixed Cable TV Lite channel dial — research YouTube ch
 
 # Catalog Curator
 
-Cable TV Lite is a managed broadcast: the repository owner controls which channels exist and their order. Visitors tune channels but cannot edit, import, favorite, or reorder the lineup.
+Cable TV Lite is a managed broadcast: the repository owner controls which channels exist and their order. Visitors can tune, pin, and favorite channels, but cannot edit, import, or reorder the lineup.
 
 ## Use this skill when
 
@@ -37,7 +37,7 @@ Run commands from `frontend/`. Paths below are relative to the repository root u
 - Do not bypass a failed `catalog:sync` or `catalog:check` by weakening validation.
 - Do not increase sync concurrency or hammer YouTube. The script intentionally limits concurrency.
 - YouTube Shorts are excluded by policy. Never bypass the oEmbed check or hand-add a Short to `videos`.
-- Keep the app static and stateless. Do not add a backend, proxy, feed refresh, browser store, or server database.
+- Keep the app static. Do not add a backend, proxy, feed refresh, profile store, video cache, or server database. Local pins and favorites are the only permitted browser state.
 
 ## Workflow
 
@@ -189,16 +189,16 @@ Do not remove a stale channel automatically. Recommend action and wait for appro
 
 ## Failure handling
 
-| Symptom | Action |
-| --- | --- |
-| `Invalid channel ID` | Resolve the canonical URL or ID; do not guess |
-| `No long-form videos` | Verify the channel is active; drop it or ask the owner |
-| Feed HTTP 404 | The ID is wrong or the feed is unavailable; stop |
-| Name mismatch warning | Confirm the source display name is the intended brand; keep or correct it explicitly |
-| Logo unavailable | Sync falls back to a monogram; do not fabricate a logo |
-| oEmbed cannot classify a video | Strict policy excludes it; investigate or rerun later |
-| Rate limiting / timeouts | Rerun later; do not raise concurrency |
-| `catalog:check` failure | Fix the source; never edit generated output to silence it |
+| Symptom                        | Action                                                                               |
+| ------------------------------ | ------------------------------------------------------------------------------------ |
+| `Invalid channel ID`           | Resolve the canonical URL or ID; do not guess                                        |
+| `No long-form videos`          | Verify the channel is active; drop it or ask the owner                               |
+| Feed HTTP 404                  | The ID is wrong or the feed is unavailable; stop                                     |
+| Name mismatch warning          | Confirm the source display name is the intended brand; keep or correct it explicitly |
+| Logo unavailable               | Sync falls back to a monogram; do not fabricate a logo                               |
+| oEmbed cannot classify a video | Strict policy excludes it; investigate or rerun later                                |
+| Rate limiting / timeouts       | Rerun later; do not raise concurrency                                                |
+| `catalog:check` failure        | Fix the source; never edit generated output to silence it                            |
 
 ## Supporting files
 

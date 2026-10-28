@@ -5,10 +5,10 @@ This policy is the owner's default standard for the managed Cable TV Lite catalo
 ## Product boundary
 
 - The catalog is a fixed broadcast dial, not a user playlist.
-- Visitors tune channels and watch; they cannot edit, import, favorite, or reorder the lineup.
+- Visitors tune channels, pin them to the top of their own sidebar, and maintain a local favorite list; they cannot edit, import, or reorder the catalog lineup.
 - Visitors cannot add, edit, or delete channel definitions.
 - Never add a channel to the app at runtime or introduce a user-facing import path.
-- There is no visitor profile, backup, settings, feed refresh, or proxy in the lite app.
+- There is no visitor profile, backup, settings, feed refresh, or proxy in the lite app. Pins and favorites are local browser preferences only.
 
 ## Channel standards
 
