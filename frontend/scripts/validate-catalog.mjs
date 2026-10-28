@@ -107,8 +107,8 @@ async function main() {
 	const catalog = await readJson(catalogPath, 'static/catalog.json');
 	if (!source || !catalog) return report(0);
 
-	if (source.schemaVersion !== 1) error('Source schemaVersion must be 1');
-	if (catalog.schemaVersion !== 1) error('Catalog schemaVersion must be 1');
+	if (source.schemaVersion !== 2) error('Source schemaVersion must be 2');
+	if (catalog.schemaVersion !== 2) error('Catalog schemaVersion must be 2');
 	if (catalog.type !== 'cable-tv-catalog') error('Catalog type must be cable-tv-catalog');
 
 	const sourceChannels = Array.isArray(source.channels) ? source.channels : [];
@@ -145,51 +145,6 @@ async function main() {
 		}
 		if (sourceChannel.logoUrl && sourceChannel.logoUrl !== generated.logoUrl) {
 			error(`Channel ${sourceChannel.name}: logoUrl differs between source and catalog`);
-		}
-	}
-
-	if (
-		JSON.stringify(source.starterChannelIds ?? []) !==
-		JSON.stringify(catalog.starterChannelIds ?? [])
-	) {
-		error('Starter lineup differs between source and generated catalog. Run npm run catalog:sync.');
-	}
-
-	const sourcePacks = source.packs ?? [];
-	const catalogPacks = catalog.packs ?? [];
-	if (JSON.stringify(sourcePacks) !== JSON.stringify(catalogPacks)) {
-		error('Packs differ between source and generated catalog. Run npm run catalog:sync.');
-	}
-
-	const ids = new Set(catalogChannels.map((channel) => channel.id));
-	for (const channelId of catalog.starterChannelIds ?? []) {
-		if (!ids.has(channelId)) error(`Starter lineup references unknown channel: ${channelId}`);
-	}
-	if (!Array.isArray(catalog.starterChannelIds) || catalog.starterChannelIds.length === 0) {
-		error('Starter lineup is empty');
-	}
-
-	const starterSeen = new Set();
-	for (const channelId of catalog.starterChannelIds ?? []) {
-		if (starterSeen.has(channelId))
-			error(`Starter lineup contains duplicate channel: ${channelId}`);
-		starterSeen.add(channelId);
-	}
-
-	const packIds = new Set();
-	for (const [index, pack] of (catalog.packs ?? []).entries()) {
-		if (!pack.id) error(`packs[${index}].id is missing`);
-		if (packIds.has(pack.id)) error(`Duplicate pack ID: ${pack.id}`);
-		packIds.add(pack.id);
-		if (!Array.isArray(pack.channelIds) || pack.channelIds.length === 0) {
-			error(`Pack ${pack.id} has no channels`);
-		}
-		const packChannels = new Set();
-		for (const channelId of pack.channelIds ?? []) {
-			if (packChannels.has(channelId))
-				error(`Pack ${pack.id} contains duplicate channel: ${channelId}`);
-			packChannels.add(channelId);
-			if (!ids.has(channelId)) error(`Pack ${pack.id} references unknown channel: ${channelId}`);
 		}
 	}
 

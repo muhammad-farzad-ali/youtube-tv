@@ -163,7 +163,7 @@ async function buildChannel(channel, snapshotAt, cache) {
 
 async function main() {
 	const source = JSON.parse(await readFile(sourcePath, 'utf8'));
-	if (source.schemaVersion !== 1) fail('Unsupported source schema version');
+	if (source.schemaVersion !== 2) fail('Unsupported source schema version');
 
 	const channels = source.channels ?? [];
 	if (!Array.isArray(channels) || channels.length === 0) fail('Source has no channels');
@@ -172,14 +172,6 @@ async function main() {
 	for (const channel of channels) {
 		if (ids.has(channel.id)) fail(`Duplicate channel ID in source: ${channel.id}`);
 		ids.add(channel.id);
-	}
-	for (const channelId of source.starterChannelIds ?? []) {
-		if (!ids.has(channelId)) fail(`Starter lineup references unknown channel: ${channelId}`);
-	}
-	for (const pack of source.packs ?? []) {
-		for (const channelId of pack.channelIds ?? []) {
-			if (!ids.has(channelId)) fail(`Pack ${pack.id} references unknown channel: ${channelId}`);
-		}
 	}
 
 	let oldCatalog = null;
@@ -202,12 +194,10 @@ async function main() {
 	});
 
 	const generated = {
-		schemaVersion: 1,
+		schemaVersion: 2,
 		type: 'cable-tv-catalog',
 		name: source.name ?? 'Cable TV',
 		updatedAt: snapshotAt,
-		starterChannelIds: source.starterChannelIds ?? [],
-		packs: source.packs ?? [],
 		channels: built
 	};
 

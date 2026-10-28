@@ -39,15 +39,6 @@ function normalizeName(value) {
 try {
 	const catalog = JSON.parse(await readFile(catalogPath, 'utf8'));
 	const channels = catalog.channels ?? [];
-	const packs = catalog.packs ?? [];
-	const starter = new Set(catalog.starterChannelIds ?? []);
-	const packMembership = new Map();
-	for (const pack of packs) {
-		for (const channelId of pack.channelIds ?? []) {
-			if (!packMembership.has(channelId)) packMembership.set(channelId, []);
-			packMembership.get(channelId).push(pack.id);
-		}
-	}
 
 	const duplicates = new Map();
 	for (const channel of channels) {
@@ -68,9 +59,7 @@ try {
 			latestPublishedAt: latest,
 			latestDays,
 			stale: latestDays !== null && latestDays > staleDays,
-			snapshotDays: daysSince(channel.snapshotAt),
-			packs: packMembership.get(channel.id) ?? [],
-			inStarter: starter.has(channel.id)
+			snapshotDays: daysSince(channel.snapshotAt)
 		};
 	});
 
@@ -83,16 +72,12 @@ try {
 		catalogUpdatedAt: catalog.updatedAt,
 		staleDays,
 		channelCount: rows.length,
-		starterCount: starter.size,
-		packCount: packs.length,
 		categoryCounts,
 		stale: rows.filter((row) => row.stale),
 		lowLongForm: rows.filter((row) => row.videoCount < 3),
 		snapshotOlderThan60Days: rows.filter(
 			(row) => row.snapshotDays !== null && row.snapshotDays > 60
 		),
-		notInAnyPack: rows.filter((row) => row.packs.length === 0),
-		notInStarter: rows.filter((row) => !row.inStarter),
 		possibleDuplicateNames: [...duplicates.entries()]
 			.filter(([, ids]) => ids.length > 1)
 			.map(([name, ids]) => ({ name, ids })),
@@ -103,16 +88,13 @@ try {
 		console.log(JSON.stringify(report, null, 2));
 	} else {
 		console.log(
-			`\nCatalog: ${report.channelCount} channels · ${report.packCount} packs · ${report.starterCount} starter · ${rows.reduce((total, row) => total + row.shortCount, 0)} Shorts hidden`
+			`\nCatalog: ${report.channelCount} channels · ${rows.reduce((total, row) => total + row.shortCount, 0)} Shorts hidden`
 		);
 		console.log(`Updated: ${report.catalogUpdatedAt}\n`);
 		console.log('Channels:');
 		for (const row of rows) {
-			const flags = [row.stale ? 'STALE' : '', row.packs.length === 0 ? 'NO PACK' : '']
-				.filter(Boolean)
-				.join(' · ');
 			console.log(
-				`  ${row.stale ? '⚠' : '✓'} ${row.inStarter ? '★ ' : ''}${row.name} [${row.category}] — ${row.videoCount} long, ${row.shortCount} Shorts hidden · latest ${row.latestDays}d ago · ${row.packs.join(', ') || 'no pack'}${flags ? ` · ${flags}` : ''}`
+				`  ${row.stale ? '⚠' : '✓'} ${row.name} [${row.category}] — ${row.videoCount} long, ${row.shortCount} Shorts hidden · latest ${row.latestDays}d ago`
 			);
 		}
 
@@ -126,9 +108,6 @@ try {
 		}
 		if (report.snapshotOlderThan60Days.length) {
 			console.log(`⚠ ${report.snapshotOlderThan60Days.length} snapshot(s) are older than 60 days.`);
-		}
-		if (report.notInAnyPack.length) {
-			console.log(`⚠ ${report.notInAnyPack.length} channel(s) are not in any pack.`);
 		}
 		if (report.possibleDuplicateNames.length) {
 			console.log(`⚠ Possible duplicate channel names: ${report.possibleDuplicateNames.length}`);

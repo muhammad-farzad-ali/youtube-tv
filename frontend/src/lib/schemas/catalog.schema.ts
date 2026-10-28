@@ -37,21 +37,12 @@ export const catalogChannelSchema = z.object({
 	shortVideoIds: z.array(videoIdSchema).max(60).default([])
 });
 
-export const catalogPackSchema = z.object({
-	id: z.string().min(1).max(64),
-	name: z.string().min(1).max(120),
-	description: z.string().max(600).default(''),
-	channelIds: z.array(channelIdSchema).min(1)
-});
-
 export const catalogSchema = z
 	.object({
-		schemaVersion: z.literal(1),
+		schemaVersion: z.literal(2),
 		type: z.literal('cable-tv-catalog'),
 		name: z.string().min(1).max(120),
 		updatedAt: z.string().datetime({ offset: true }),
-		starterChannelIds: z.array(channelIdSchema).min(1),
-		packs: z.array(catalogPackSchema),
 		channels: z.array(catalogChannelSchema).min(1)
 	})
 	.superRefine((catalog, ctx) => {
@@ -86,41 +77,8 @@ export const catalogSchema = z
 				}
 			}
 		}
-
-		const packIds = new Set<string>();
-		for (const [index, pack] of catalog.packs.entries()) {
-			if (packIds.has(pack.id)) {
-				ctx.addIssue({
-					code: 'custom',
-					path: ['packs', index, 'id'],
-					message: `Duplicate pack ID: ${pack.id}`
-				});
-			}
-			packIds.add(pack.id);
-
-			for (const channelId of pack.channelIds) {
-				if (!channelIds.has(channelId)) {
-					ctx.addIssue({
-						code: 'custom',
-						path: ['packs', index, 'channelIds'],
-						message: `Pack references unknown channel: ${channelId}`
-					});
-				}
-			}
-		}
-
-		for (const channelId of catalog.starterChannelIds) {
-			if (!channelIds.has(channelId)) {
-				ctx.addIssue({
-					code: 'custom',
-					path: ['starterChannelIds'],
-					message: `Starter lineup references unknown channel: ${channelId}`
-				});
-			}
-		}
 	});
 
 export type Catalog = z.infer<typeof catalogSchema>;
 export type CatalogChannel = z.infer<typeof catalogChannelSchema>;
-export type CatalogPack = z.infer<typeof catalogPackSchema>;
 export type CatalogVideo = z.infer<typeof videoSchema>;
