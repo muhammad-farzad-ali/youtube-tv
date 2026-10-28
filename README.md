@@ -24,6 +24,18 @@ See [frontend/README.md](frontend/README.md) for:
 - testing, deployment, and GitHub Pages setup
 - known limitations
 
+## AI curation
+
+The repo ships an OpenCode skill at [`.opencode/skills/catalog-curator/`](.opencode/skills/catalog-curator/SKILL.md). Use `@catalog-curator` to research channels, add/remove them, update packs and the starter lineup, refresh snapshots, and validate a catalog change.
+
+Read-only helpers:
+
+```bash
+cd frontend
+npm run catalog:inspect -- "https://www.youtube.com/@Veritasium"
+npm run catalog:audit
+```
+
 ## Quick commands
 
 ```bash

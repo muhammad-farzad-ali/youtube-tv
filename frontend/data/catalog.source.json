@@ -100,6 +100,45 @@
 				"UCAuUUnT6oDeKwE6v1NGQxug",
 				"UCoxcjq-8xIDTYp3uz647V5A"
 			]
+		},
+		{
+			"id": "developer",
+			"name": "Developer TV",
+			"description": "Programming tutorials, system design, web development, and engineering culture.",
+			"channelIds": [
+				"UCsBjURrPoezykLs9EqgamOA",
+				"UC8ENHE5xdFSwx71u3fDH5Xw",
+				"UCFbNIlppjAuEX4znoulh0Cw",
+				"UCbRP3c757lWg9M-U7TyEkXA",
+				"UCZgt6AzoyjslHTC9dz0UoTw",
+				"UC29ju8bIPH5as8OGnQzwJyA"
+			]
+		},
+		{
+			"id": "comedy",
+			"name": "Comedy TV",
+			"description": "Stand-up, sketches, roasts, and satirical comedy.",
+			"channelIds": [
+				"UC6HQ4d3xq9EgSeJgMhc-4AQ",
+				"UC_c-RTowPbIlzMkIa_O7s6Q",
+				"UCvlVuntLjdURVD3b3Hx7kxw",
+				"UC7MgijK9WL_EqCo1juUERwg",
+				"UCwWhs_6x42TyRM4Wstoq8HA",
+				"UCo3nWXH_6vVJ5-xbF3bKb3Q"
+			]
+		},
+		{
+			"id": "adventure",
+			"name": "Adventure TV",
+			"description": "Travel documentaries, hiking, and outdoor journeys.",
+			"channelIds": [
+				"UCf1XIplYiqNv9baGsFHwPPQ",
+				"UCUuDUW0Y6IQZYDvH1QQBsgA",
+				"UCDTINI9skkeZNY2ZXnBqIkQ",
+				"UCvK4bOhULCpmLabd2pDMtnA",
+				"UC0Ize0RLIbGdH5x4wI45G-A",
+				"UCpnuadQ_w3r6f4Q_NRlqd-w"
+			]
 		}
 	],
 	"channels": [
@@ -312,6 +351,132 @@
 			"channelUrl": "https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A",
 			"category": "Learning",
 			"description": "Numbers, puzzles, and mathematical curiosities with experts."
+		},
+		{
+			"id": "UCsBjURrPoezykLs9EqgamOA",
+			"name": "Fireship",
+			"channelUrl": "https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA",
+			"category": "Software",
+			"description": "High-speed tutorials and news on web development, programming languages, and software trends."
+		},
+		{
+			"id": "UC8ENHE5xdFSwx71u3fDH5Xw",
+			"name": "ThePrimeagen",
+			"channelUrl": "https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw",
+			"category": "Software",
+			"description": "Developer commentary, engineering culture, and programming tooling."
+		},
+		{
+			"id": "UCFbNIlppjAuEX4znoulh0Cw",
+			"name": "Web Dev Simplified",
+			"channelUrl": "https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw",
+			"category": "Software",
+			"description": "Practical web development tutorials focused on JavaScript, React, and modern front-end patterns."
+		},
+		{
+			"id": "UCbRP3c757lWg9M-U7TyEkXA",
+			"name": "Theo - t3.gg",
+			"channelUrl": "https://www.youtube.com/channel/UCbRP3c757lWg9M-U7TyEkXA",
+			"category": "Software",
+			"description": "Web development commentary, TypeScript, and the business of building software."
+		},
+		{
+			"id": "UCZgt6AzoyjslHTC9dz0UoTw",
+			"name": "ByteByteGo",
+			"channelUrl": "https://www.youtube.com/channel/UCZgt6AzoyjslHTC9dz0UoTw",
+			"category": "Software",
+			"description": "System design, distributed systems, and software engineering interview concepts explained visually."
+		},
+		{
+			"id": "UC29ju8bIPH5as8OGnQzwJyA",
+			"name": "Traversy Media",
+			"channelUrl": "https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA",
+			"category": "Software",
+			"description": "Full-stack web development tutorials, project builds, and framework walkthroughs."
+		},
+		{
+			"id": "UC6HQ4d3xq9EgSeJgMhc-4AQ",
+			"name": "Hasna Mana Hai",
+			"channelUrl": "https://www.youtube.com/channel/UC6HQ4d3xq9EgSeJgMhc-4AQ",
+			"category": "Comedy",
+			"description": "Geo TV's comedy show with sketches, celebrity guests, and audience laughs."
+		},
+		{
+			"id": "UC_c-RTowPbIlzMkIa_O7s6Q",
+			"name": "Ducky Bhai",
+			"channelUrl": "https://www.youtube.com/channel/UC_c-RTowPbIlzMkIa_O7s6Q",
+			"category": "Comedy",
+			"description": "Roasts, comedy vlogs, and internet culture commentary."
+		},
+		{
+			"id": "UCvlVuntLjdURVD3b3Hx7kxw",
+			"name": "Dry Bar Comedy",
+			"channelUrl": "https://www.youtube.com/channel/UCvlVuntLjdURVD3b3Hx7kxw",
+			"category": "Comedy",
+			"description": "Clean stand-up comedy sets from a rotating lineup of comics."
+		},
+		{
+			"id": "UC7MgijK9WL_EqCo1juUERwg",
+			"name": "Don't Tell Comedy",
+			"channelUrl": "https://www.youtube.com/channel/UC7MgijK9WL_EqCo1juUERwg",
+			"category": "Comedy",
+			"description": "Secret-location stand-up sets from emerging and established comedians."
+		},
+		{
+			"id": "UCwWhs_6x42TyRM4Wstoq8HA",
+			"name": "The Daily Show",
+			"channelUrl": "https://www.youtube.com/channel/UCwWhs_6x42TyRM4Wstoq8HA",
+			"category": "Comedy",
+			"description": "Satirical news and comedy covering politics, media, and current events."
+		},
+		{
+			"id": "UCo3nWXH_6vVJ5-xbF3bKb3Q",
+			"name": "Conan O'Brien",
+			"channelUrl": "https://www.youtube.com/channel/UCo3nWXH_6vVJ5-xbF3bKb3Q",
+			"category": "Comedy",
+			"description": "Talk-show comedy, sketches, and interviews from Conan O'Brien."
+		},
+		{
+			"id": "UCf1XIplYiqNv9baGsFHwPPQ",
+			"name": "WildLens by Abrar",
+			"channelUrl": "https://www.youtube.com/channel/UCf1XIplYiqNv9baGsFHwPPQ",
+			"category": "Adventure",
+			"description": "Travel and adventure documentaries from Pakistan and beyond."
+		},
+		{
+			"id": "UCUuDUW0Y6IQZYDvH1QQBsgA",
+			"name": "Irfan Junejo",
+			"channelUrl": "https://www.youtube.com/channel/UCUuDUW0Y6IQZYDvH1QQBsgA",
+			"category": "Adventure",
+			"description": "Travel vlogs, outdoor adventures, and life on the road."
+		},
+		{
+			"id": "UCDTINI9skkeZNY2ZXnBqIkQ",
+			"name": "Eva zu Beck",
+			"channelUrl": "https://www.youtube.com/channel/UCDTINI9skkeZNY2ZXnBqIkQ",
+			"category": "Adventure",
+			"description": "Solo travel, remote places, and adventure storytelling."
+		},
+		{
+			"id": "UCvK4bOhULCpmLabd2pDMtnA",
+			"name": "Yes Theory",
+			"channelUrl": "https://www.youtube.com/channel/UCvK4bOhULCpmLabd2pDMtnA",
+			"category": "Adventure",
+			"description": "Adventure challenges and travel stories built around seeking discomfort."
+		},
+		{
+			"id": "UC0Ize0RLIbGdH5x4wI45G-A",
+			"name": "Drew Binsky",
+			"channelUrl": "https://www.youtube.com/channel/UC0Ize0RLIbGdH5x4wI45G-A",
+			"category": "Adventure",
+			"description": "Travel documentaries from every country and culture around the world."
+		},
+		{
+			"id": "UCpnuadQ_w3r6f4Q_NRlqd-w",
+			"name": "Kraig Adams",
+			"channelUrl": "https://www.youtube.com/channel/UCpnuadQ_w3r6f4Q_NRlqd-w",
+			"category": "Adventure",
+			"description": "Cinematic hiking, backpacking, and wilderness journeys."
 		}
 	]
 }

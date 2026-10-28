@@ -12,70 +12,19 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { XMLParser } from 'fast-xml-parser';
+import { fetchWithTimeout, isValidChannelId, parseYouTubeFeed } from './lib/youtube.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sourcePath = path.join(root, 'data/catalog.source.json');
 const outputPath = path.join(root, 'static/catalog.json');
 const logoDir = path.join(root, 'static/catalog/logos');
 
-const UA =
-	'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 const FEED_LIMIT = 15;
 const CONCURRENCY = 3;
-
-const parser = new XMLParser({
-	ignoreAttributes: false,
-	attributeNamePrefix: '@_',
-	trimValues: true,
-	parseTagValue: false
-});
 
 function fail(message) {
 	console.error(`\n✖ ${message}`);
 	process.exit(1);
-}
-
-function text(value) {
-	if (value == null) return '';
-	if (typeof value === 'string') return value.trim();
-	if (typeof value === 'number') return String(value);
-	if (Array.isArray(value)) return text(value[0]);
-	if (typeof value === 'object') {
-		if ('#text' in value) return text(value['#text']);
-	}
-	return '';
-}
-
-function asArray(value) {
-	if (value == null) return [];
-	return Array.isArray(value) ? value : [value];
-}
-
-function validChannelId(id) {
-	return typeof id === 'string' && /^UC[A-Za-z0-9_-]{22}$/.test(id);
-}
-
-function validVideoId(id) {
-	return typeof id === 'string' && /^[A-Za-z0-9_-]{11}$/.test(id);
-}
-
-async function fetchWithTimeout(url, options = {}, timeout = 20000) {
-	const controller = new AbortController();
-	const timer = setTimeout(() => controller.abort(), timeout);
-	try {
-		return await fetch(url, {
-			...options,
-			signal: controller.signal,
-			headers: {
-				'user-agent': UA,
-				'accept-language': 'en-US,en;q=0.9',
-				...options.headers
-			}
-		});
-	} finally {
-		clearTimeout(timer);
-	}
 }
 
 async function pool(items, limit, worker) {
@@ -92,51 +41,7 @@ async function pool(items, limit, worker) {
 	return results;
 }
 
-function parseFeed(xml, channelId) {
-	const parsed = parser.parse(xml);
-	const feed = parsed?.feed;
-	if (!feed) throw new Error('Feed response was not a YouTube Atom feed');
-
-	const feedTitle = text(feed.title);
-	const entries = asArray(feed.entry);
-	const videos = [];
-
-	for (const entry of entries) {
-		const videoId = text(entry?.['yt:videoId']);
-		const title = text(entry?.title);
-		const publishedAt = text(entry?.published);
-		const mediaGroup = entry?.['media:group'];
-		const thumbnails = asArray(mediaGroup?.['media:thumbnail']);
-		const thumbnailUrl = thumbnails[0]?.['@_url'];
-
-		if (!validVideoId(videoId) || !title || !publishedAt) continue;
-		if (Number.isNaN(Date.parse(publishedAt))) continue;
-
-		videos.push({
-			videoId,
-			title,
-			thumbnailUrl: thumbnailUrl || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
-			publishedAt: new Date(publishedAt).toISOString()
-		});
-	}
-
-	videos.sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
-	const deduped = [];
-	const seen = new Set();
-	for (const video of videos) {
-		if (seen.has(video.videoId)) continue;
-		seen.add(video.videoId);
-		deduped.push(video);
-	}
-
-	if (deduped.length === 0) {
-		throw new Error(`No usable videos found for ${channelId}`);
-	}
-
-	return { feedTitle, videos: deduped.slice(0, FEED_LIMIT) };
-}
-
-async function fetchLogo(channel, snapshotAt) {
+async function fetchLogo(channel) {
 	if (channel.logoUrl) return channel.logoUrl;
 
 	await mkdir(logoDir, { recursive: true });
@@ -171,7 +76,7 @@ async function fetchLogo(channel, snapshotAt) {
 }
 
 async function buildChannel(channel, snapshotAt) {
-	if (!validChannelId(channel.id)) {
+	if (!isValidChannelId(channel.id)) {
 		throw new Error(`Invalid channel ID: ${channel.id}`);
 	}
 
@@ -179,7 +84,7 @@ async function buildChannel(channel, snapshotAt) {
 	const response = await fetchWithTimeout(feedUrl);
 	if (!response.ok) throw new Error(`feed returned ${response.status}`);
 	const xml = await response.text();
-	const { feedTitle, videos } = parseFeed(xml, channel.id);
+	const { feedTitle, videos } = parseYouTubeFeed(xml, FEED_LIMIT);
 
 	const normalizedFeedTitle = feedTitle.replace(/\s+/g, ' ').trim();
 	if (
@@ -191,7 +96,7 @@ async function buildChannel(channel, snapshotAt) {
 		);
 	}
 
-	const logoUrl = await fetchLogo(channel, snapshotAt);
+	const logoUrl = await fetchLogo(channel);
 	const result = {
 		id: channel.id,
 		name: channel.name,

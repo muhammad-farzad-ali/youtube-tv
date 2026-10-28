@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"type": "cable-tv-catalog",
 	"name": "Cable TV",
-	"updatedAt": "2026-10-28T13:16:34.690Z",
+	"updatedAt": "2026-10-28T14:45:41.737Z",
 	"starterChannelIds": [
 		"UC_x5XG1OV2P6uZZ5FSM9Ttw",
 		"UCXuqSBlHAE6Xw-yeJA0Tunw",
@@ -101,6 +101,45 @@
 				"UCAuUUnT6oDeKwE6v1NGQxug",
 				"UCoxcjq-8xIDTYp3uz647V5A"
 			]
+		},
+		{
+			"id": "developer",
+			"name": "Developer TV",
+			"description": "Programming tutorials, system design, web development, and engineering culture.",
+			"channelIds": [
+				"UCsBjURrPoezykLs9EqgamOA",
+				"UC8ENHE5xdFSwx71u3fDH5Xw",
+				"UCFbNIlppjAuEX4znoulh0Cw",
+				"UCbRP3c757lWg9M-U7TyEkXA",
+				"UCZgt6AzoyjslHTC9dz0UoTw",
+				"UC29ju8bIPH5as8OGnQzwJyA"
+			]
+		},
+		{
+			"id": "comedy",
+			"name": "Comedy TV",
+			"description": "Stand-up, sketches, roasts, and satirical comedy.",
+			"channelIds": [
+				"UC6HQ4d3xq9EgSeJgMhc-4AQ",
+				"UC_c-RTowPbIlzMkIa_O7s6Q",
+				"UCvlVuntLjdURVD3b3Hx7kxw",
+				"UC7MgijK9WL_EqCo1juUERwg",
+				"UCwWhs_6x42TyRM4Wstoq8HA",
+				"UCo3nWXH_6vVJ5-xbF3bKb3Q"
+			]
+		},
+		{
+			"id": "adventure",
+			"name": "Adventure TV",
+			"description": "Travel documentaries, hiking, and outdoor journeys.",
+			"channelIds": [
+				"UCf1XIplYiqNv9baGsFHwPPQ",
+				"UCUuDUW0Y6IQZYDvH1QQBsgA",
+				"UCDTINI9skkeZNY2ZXnBqIkQ",
+				"UCvK4bOhULCpmLabd2pDMtnA",
+				"UC0Ize0RLIbGdH5x4wI45G-A",
+				"UCpnuadQ_w3r6f4Q_NRlqd-w"
+			]
 		}
 	],
 	"channels": [
@@ -111,7 +150,7 @@
 			"description": "Developer tools, platforms, and engineering talks from Google.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC_x5XG1OV2P6uZZ5FSM9Ttw.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "LOP8ul3KqQI",
@@ -212,7 +251,7 @@
 			"description": "Hardware reviews, builds, and technology news with a lot of energy.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCXuqSBlHAE6Xw-yeJA0Tunw.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "DZSYaQmxBLM",
@@ -313,7 +352,7 @@
 			"description": "Consumer technology, product reviews, and the future of gadgets.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCddiUEpeqJcYeBxX1IVBKvQ.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "ffs_wdJAZD4",
@@ -414,7 +453,7 @@
 			"description": "Sharp, considered reviews of phones, cameras, cars, and new tech.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCBJycsmduvYEL83R_U4JriQ.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "ai1gIWacf0I",
@@ -515,7 +554,7 @@
 			"description": "Computer science concepts, security, and the people behind computing.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC9-y-6csu5WGm29I7JiwpnA.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "h6j_ixGnpiY",
@@ -616,7 +655,7 @@
 			"description": "Short, practical explainers about the technology you use every day.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC0vBXGSyV14uvJ4hECDOl0Q.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "72pyU1ZRun0",
@@ -717,7 +756,7 @@
 			"description": "Science and engineering stories built around surprising questions.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCHnyfMqiRRG1u-2MsSQLbXA.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "Kap7mRzr13w",
@@ -818,7 +857,7 @@
 			"description": "Animated explainers about space, biology, society, and the future.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCsXVk37bltHxD1rDPwtNM8Q.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "5_Fayfx2NUM",
@@ -919,7 +958,7 @@
 			"description": "Official mission footage, launches, and updates from NASA.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCLA_DiR1FfKNvjuUpBHmylQ.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "pAKqJxuxDgk",
@@ -1020,7 +1059,7 @@
 			"description": "Deep dives into astrophysics, cosmology, and the laws of nature.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UC7_gcs09iThXybpVgjHZ_7g.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "M-S04VTdbGU",
@@ -1121,7 +1160,7 @@
 			"description": "Quick, visual physics lessons from Henry Reich.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCUHW94eEFW7hkUMVaZz4eDg.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "YBKuWCA5pug",
@@ -1222,7 +1261,7 @@
 			"description": "Short animated lessons across science, history, and culture.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCsooa4yRKGN_zEE8iknghZA.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "nXvKDYRvTno",
@@ -1323,7 +1362,7 @@
 			"description": "International news, reporting, and analysis from Al Jazeera.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCNye-wNBqNL5ZzHSJj3l8Bg.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "vqS0vldxmJM",
@@ -1424,8 +1463,38 @@
 			"description": "Breaking news, explainers, and reports from the BBC newsroom.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UC16niRr50-MSBwiO3YDb3RA.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
+				{
+					"videoId": "DRy6KnZp49Q",
+					"title": "'70,000 businesses' to pay no business rates in England, says UK chancellor. #BBCNews",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/DRy6KnZp49Q/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:40:24.000Z"
+				},
+				{
+					"videoId": "mvOj4669lhk",
+					"title": "Smaller rise in minimum wages for young UK workers confirmed. #UK #BBCNews",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/mvOj4669lhk/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:27:51.000Z"
+				},
+				{
+					"videoId": "4f8XcldfItI",
+					"title": "Bolsonaro arrives in US after confusion over whereabouts following Brazil election loss. #BBCNews",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/4f8XcldfItI/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:08:23.000Z"
+				},
+				{
+					"videoId": "scBcgdzjTo0",
+					"title": "Millions of households in England to get £100 energy payment this winter. #UKBudget #BBCNews",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/scBcgdzjTo0/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:57:46.000Z"
+				},
+				{
+					"videoId": "klM90m0tS38",
+					"title": "Why Israel's election result is messy. #Netanyahu #Eisenkot #Israel #BBCNews",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/klM90m0tS38/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:35:32.000Z"
+				},
 				{
 					"videoId": "n4BpITNxvRE",
 					"title": "Fleetwood Town goalkeeper reflects on momentous win against Arsenal. #BBCNews",
@@ -1485,36 +1554,6 @@
 					"title": "Could a Democrat flip deep-red Texas at the Midterms? | BBC News",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/jEvZtCWPPGU/hqdefault.jpg",
 					"publishedAt": "2026-10-28T01:30:23.000Z"
-				},
-				{
-					"videoId": "BuSMPaudHko",
-					"title": "Netanyahu loses majority in Israel election - what now? #BBCNews",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/BuSMPaudHko/hqdefault.jpg",
-					"publishedAt": "2026-10-28T00:34:15.000Z"
-				},
-				{
-					"videoId": "5Jis_GPPIkk",
-					"title": "US says it will issue visa to Flávio Bolsonaro after Brazil election defeat | BBC News",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/5Jis_GPPIkk/hqdefault.jpg",
-					"publishedAt": "2026-10-28T00:20:16.000Z"
-				},
-				{
-					"videoId": "qLXSvxal-m4",
-					"title": "Netanyahu loses majority in Israel - but no clear election winner. What now? | BBC News",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/qLXSvxal-m4/hqdefault.jpg",
-					"publishedAt": "2026-10-27T23:07:32.000Z"
-				},
-				{
-					"videoId": "6LOMt5LBfrQ",
-					"title": "Talks on Saudi-Houthi conflict cause optimism | BBC News",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/6LOMt5LBfrQ/hqdefault.jpg",
-					"publishedAt": "2026-10-27T22:45:16.000Z"
-				},
-				{
-					"videoId": "MaIFGhaKF_s",
-					"title": "Why is the UK telling people to stockpile? | BBC News",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/MaIFGhaKF_s/hqdefault.jpg",
-					"publishedAt": "2026-10-27T20:30:37.000Z"
 				}
 			]
 		},
@@ -1525,7 +1564,7 @@
 			"description": "Global news and current affairs from Deutsche Welle.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCknLrEdhRCp1aegoMqRaCZg.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "uye6KN1aZYE",
@@ -1626,8 +1665,32 @@
 			"description": "Rolling news, interviews, and live coverage from Sky News.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCoMdktPbSTixAyNGwb-UYkQ.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
+				{
+					"videoId": "xNFU8dj-VhE",
+					"title": "Who will get the chancellor's £100 energy payment?",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/xNFU8dj-VhE/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:35:58.000Z"
+				},
+				{
+					"videoId": "uPyRzsATJAw",
+					"title": "Spanish PM speaks after deadly train crash",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/uPyRzsATJAw/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:33.000Z"
+				},
+				{
+					"videoId": "jEStjlXENRM",
+					"title": "Flavio Bolsonaro lands in Florida after losing election in Brazil",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/jEStjlXENRM/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:08:51.000Z"
+				},
+				{
+					"videoId": "WL-Aub7HbEk",
+					"title": "The Budget | Chancellor John Healey announces economic plans",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/WL-Aub7HbEk/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:02:19.000Z"
+				},
 				{
 					"videoId": "MAUcdPS4Ae0",
 					"title": "PMQs | Badenoch warns Burnham against reopening Brexit debate",
@@ -1683,40 +1746,16 @@
 					"publishedAt": "2026-10-28T10:08:44.000Z"
 				},
 				{
-					"videoId": "NsnbJ1Zax3A",
-					"title": "At least 39 killed after train collision in Spain",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/NsnbJ1Zax3A/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:04:32.000Z"
-				},
-				{
-					"videoId": "W1sGTeP3dGQ",
-					"title": "BREAKING: Dozens die in high-speed train crash in Spain",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/W1sGTeP3dGQ/hqdefault.jpg",
-					"publishedAt": "2026-10-28T09:58:47.000Z"
-				},
-				{
-					"videoId": "ODYcoE-jidw",
-					"title": "Local authorities: At least 39 killed after two high-speed trains collide in Spain",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/ODYcoE-jidw/hqdefault.jpg",
-					"publishedAt": "2026-10-28T09:49:47.000Z"
-				},
-				{
-					"videoId": "-ybU_7z0X_E",
-					"title": "Mornings with Ridge and Frost | Thursday 29 October 2026",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/-ybU_7z0X_E/hqdefault.jpg",
-					"publishedAt": "2026-10-28T09:48:53.000Z"
-				},
-				{
 					"videoId": "F86h8QDh3aI",
 					"title": "Spain train crash | At least 64 dead after two high-speed trains collide",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/F86h8QDh3aI/hqdefault.jpg",
 					"publishedAt": "2026-10-28T09:44:09.000Z"
 				},
 				{
-					"videoId": "WL-Aub7HbEk",
-					"title": "The Budget | Chancellor John Healey announces economic plans",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/WL-Aub7HbEk/hqdefault.jpg",
-					"publishedAt": "2026-10-27T12:55:02.000Z"
+					"videoId": "ZSAokkNd4gM",
+					"title": "OBR holds briefing following Budget",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/ZSAokkNd4gM/hqdefault.jpg",
+					"publishedAt": "2026-10-28T08:27:16.000Z"
 				}
 			]
 		},
@@ -1727,8 +1766,20 @@
 			"description": "Wire news and video reports from Reuters around the world.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UChqUTb7kYRX8-EiaN3XFrSQ.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
+				{
+					"videoId": "Dqjcy76jJbI",
+					"title": "Why is Trump fixating on looks during midterm campaign stops?",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/Dqjcy76jJbI/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:19:12.000Z"
+				},
+				{
+					"videoId": "IABJFR6dRU4",
+					"title": "Mbappe apologizes to China for Mao 'dictator' comment",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/IABJFR6dRU4/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:00:12.000Z"
+				},
 				{
 					"videoId": "mlxHleS30H4",
 					"title": "Warning: Strong Language -🎩 Boots Riley and the cast of 'I Love Boosters' discuss politics in film",
@@ -1806,18 +1857,6 @@
 					"title": "Drone threats set the schedule for Ukraine's passenger trains",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/z1KNff95tu0/hqdefault.jpg",
 					"publishedAt": "2026-10-28T11:09:13.000Z"
-				},
-				{
-					"videoId": "c8xyXeum1uw",
-					"title": "Netanyahu pulls ahead in Israel, but lacks majority | Reuters World News",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/c8xyXeum1uw/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:57:37.000Z"
-				},
-				{
-					"videoId": "qPbMW8xxxYo",
-					"title": "LIVE: Cruise ship passengers stranded in Cambodia after rise in fuel costs",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/qPbMW8xxxYo/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:56:11.000Z"
 				}
 			]
 		},
@@ -1828,8 +1867,50 @@
 			"description": "Markets, business, and economic coverage from CNBC.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCrp_UI8XtuYfpiqluWLD7Lw.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
+				{
+					"videoId": "7qIQ7Ujlt0k",
+					"title": "Market Open: Stocks Higher, Investors Await Fed Rate Decision, Wendy’s in Play • 10/28/26",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/7qIQ7Ujlt0k/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:22:09.000Z"
+				},
+				{
+					"videoId": "HCV0UKsUx5Q",
+					"title": "Samsung offers 'better risk-reward profile' compared to SK Hynix: Susquehanna",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/HCV0UKsUx5Q/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:15:08.000Z"
+				},
+				{
+					"videoId": "a8nOvfCgPjM",
+					"title": "Who are the kingmakers for Israel's election?",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/a8nOvfCgPjM/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:00:11.000Z"
+				},
+				{
+					"videoId": "MRbr6RSOXMI",
+					"title": "Israel heads for coalition uncertainty as election outcome hangs in the balance",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/MRbr6RSOXMI/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:45:05.000Z"
+				},
+				{
+					"videoId": "Tr7wTRA-nIc",
+					"title": "Golden State or Golden Exit? Experts debate the California wealth tax",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/Tr7wTRA-nIc/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:38:09.000Z"
+				},
+				{
+					"videoId": "ueXNEo6-uJ0",
+					"title": "Anthropic's growth is 'incredibly explosive,' says Disruptive CEO Alex Davis",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/ueXNEo6-uJ0/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:37:32.000Z"
+				},
+				{
+					"videoId": "CfSXVlFGHDg",
+					"title": "What to watch as Microsoft and Alphabet report earnings",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/CfSXVlFGHDg/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:28:51.000Z"
+				},
 				{
 					"videoId": "RotRYMn-NP0",
 					"title": "Why China is desperate to ship cars overseas",
@@ -1877,48 +1958,6 @@
 					"title": "Boeing's free cash flow ramp will be happening slower than expected, says Jim Cramer",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/ezMAnbMlItY/hqdefault.jpg",
 					"publishedAt": "2026-10-28T00:20:29.000Z"
-				},
-				{
-					"videoId": "hlyf2p7-t2k",
-					"title": "Mad Money 10/27/26 | Audio Only",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/hlyf2p7-t2k/hqdefault.jpg",
-					"publishedAt": "2026-10-28T00:02:53.000Z"
-				},
-				{
-					"videoId": "_dCKQePDyyM",
-					"title": "Bank of America's Bhave: Fed should hike rates Wednesday",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/_dCKQePDyyM/hqdefault.jpg",
-					"publishedAt": "2026-10-27T22:00:03.000Z"
-				},
-				{
-					"videoId": "s5l3JjprpaM",
-					"title": "Market Close: Stocks Higher as Chipmakers Rally and Oil Pulls Back • 10/27/26",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/s5l3JjprpaM/hqdefault.jpg",
-					"publishedAt": "2026-10-27T21:07:47.000Z"
-				},
-				{
-					"videoId": "P_uayxSjfIY",
-					"title": "Avenue Capital’s Marc Lasry on Vegas NBA bid: We're in",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/P_uayxSjfIY/hqdefault.jpg",
-					"publishedAt": "2026-10-27T20:06:01.000Z"
-				},
-				{
-					"videoId": "gwAN9bsetcQ",
-					"title": "For first time in 25 years, now is a good time to buy bonds, says Charlie Bobrinskoy",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/gwAN9bsetcQ/hqdefault.jpg",
-					"publishedAt": "2026-10-27T20:03:50.000Z"
-				},
-				{
-					"videoId": "ltEph5TxOCo",
-					"title": "Constellation secures conditional loan commitment of up to $5 billion from Energy Department",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/ltEph5TxOCo/hqdefault.jpg",
-					"publishedAt": "2026-10-27T20:02:02.000Z"
-				},
-				{
-					"videoId": "xhTgUQItKbo",
-					"title": "Alphabet reports Q3 earnings on Wednesday: Here's what to watch for",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/xhTgUQItKbo/hqdefault.jpg",
-					"publishedAt": "2026-10-27T19:53:59.000Z"
 				}
 			]
 		},
@@ -1929,8 +1968,20 @@
 			"description": "Game news, reviews, trailers, and everything happening in gaming.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCKy1dAqELo0zrOtPkf0eTMw.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
+				{
+					"videoId": "IRhTx2skGcw",
+					"title": "No Man's Sky - Official Forsaken Trailer",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/IRhTx2skGcw/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:18:37.000Z"
+				},
+				{
+					"videoId": "bGYpVjsYvfo",
+					"title": "Jumanji: Open World - Official Trailer #2 (Dwayne Johnson, Jack Black, Kevin Hart, Karen Gillan)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/bGYpVjsYvfo/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:33:13.000Z"
+				},
 				{
 					"videoId": "VaV5PnUZ6hA",
 					"title": "Bill Bailey is your guide in World of Warcraft: Planet Azeroth! Check out Episode 1 #sponsored",
@@ -2008,18 +2059,6 @@
 					"title": "Minecraft - Official Nintendo Switch 2 Launch Trailer",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/nQb_mWA4JZU/hqdefault.jpg",
 					"publishedAt": "2026-10-27T19:00:28.000Z"
-				},
-				{
-					"videoId": "sFf6us3g2Pc",
-					"title": "Star Wars: Galactic Racer - Official Accolades Trailer",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/sFf6us3g2Pc/hqdefault.jpg",
-					"publishedAt": "2026-10-27T18:00:14.000Z"
-				},
-				{
-					"videoId": "brq2Zg5rgZ8",
-					"title": "Coal Duty - Official Early Access Launch Trailer",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/brq2Zg5rgZ8/hqdefault.jpg",
-					"publishedAt": "2026-10-27T16:30:38.000Z"
 				}
 			]
 		},
@@ -2030,8 +2069,14 @@
 			"description": "Reviews, previews, and deep coverage of games and the industry.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCbu2SsF-Or3Rsn3NxqODImw.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
+				{
+					"videoId": "_GF2AEoDmL0",
+					"title": "Mobile Suit Gundam: BATTLE OPERATION 3 - Official Announcement Trailer",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_GF2AEoDmL0/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:20:12.000Z"
+				},
 				{
 					"videoId": "9V3cRV4aJtc",
 					"title": "World of Warcraft: Forever - \"WARPATH\" AMV Launch Trailer",
@@ -2115,12 +2160,6 @@
 					"title": "Cyberpunk 2077 | Edgerunners 2 Update Features Overview Trailer",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/ErNF1wYKxaI/hqdefault.jpg",
 					"publishedAt": "2026-10-21T16:36:38.000Z"
-				},
-				{
-					"videoId": "7BiPt_kOrvA",
-					"title": "Stranger Than Heaven's Story Is Built On \"Fictional Realism\" | Preview",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/7BiPt_kOrvA/hqdefault.jpg",
-					"publishedAt": "2026-10-21T14:00:31.000Z"
 				}
 			]
 		},
@@ -2131,7 +2170,7 @@
 			"description": "Technical analysis of games, consoles, and graphics performance.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UC9PBzalIcEQCsiIkq36PyUA.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "6QPRMl0Scoc",
@@ -2232,8 +2271,44 @@
 			"description": "Official PlayStation trailers, announcements, and gameplay.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UC-2Y8dQb0S6DtpxNgAKoJKA.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
+				{
+					"videoId": "o43CZdhCKvk",
+					"title": "Session: Skate Sim - Barcelona DLC Trailer | PS5 & PS4 Games",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/o43CZdhCKvk/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:30:30.000Z"
+				},
+				{
+					"videoId": "-FzZ-6GOgfA",
+					"title": "Avatar Legends: The Fighting Game - Avatar State Patch Trailer | PS5 Games",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/-FzZ-6GOgfA/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:15:22.000Z"
+				},
+				{
+					"videoId": "bZDfdeA98lg",
+					"title": "Titan Quest II - Pre-Order Trailer | PS5 Games",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/bZDfdeA98lg/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:15:18.000Z"
+				},
+				{
+					"videoId": "CRxQ9HK6H1o",
+					"title": "No Man's Sky: Forsaken Trailer | PS5 & PS4 Games",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/CRxQ9HK6H1o/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:00:30.000Z"
+				},
+				{
+					"videoId": "nNMEbpv-_cM",
+					"title": "Gennady - Launch Trailer | PS5 & PS4 Games",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/nNMEbpv-_cM/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:00:26.000Z"
+				},
+				{
+					"videoId": "hJAhkg0Dus8",
+					"title": "Smalland 2: Lost Relams - Overview Trailer | PS5 Games",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/hJAhkg0Dus8/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:15:31.000Z"
+				},
 				{
 					"videoId": "QGG8OnznPe8",
 					"title": "Rayman Legends Retold - Astro Bot Outfit Trailer | PS5 Games",
@@ -2287,42 +2362,6 @@
 					"title": "Farming Simulator 25 - Beans & Alpacas Launch Trailer | PS5 Games",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/y7OuAQ5Pjac/hqdefault.jpg",
 					"publishedAt": "2026-10-27T13:15:01.000Z"
-				},
-				{
-					"videoId": "S65jNN0SPTg",
-					"title": "Village in the Shade - Launch Trailer | PS5 Games",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/S65jNN0SPTg/hqdefault.jpg",
-					"publishedAt": "2026-10-27T13:00:34.000Z"
-				},
-				{
-					"videoId": "iUFLFcLH4CU",
-					"title": "Horror has something to fear on PS5",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/iUFLFcLH4CU/hqdefault.jpg",
-					"publishedAt": "2026-10-27T13:00:23.000Z"
-				},
-				{
-					"videoId": "9VQFIs0Mm08",
-					"title": "Sunstone of Time - Release Date Trailer | PS VR2 Games",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/9VQFIs0Mm08/hqdefault.jpg",
-					"publishedAt": "2026-10-27T12:00:00.000Z"
-				},
-				{
-					"videoId": "eCLWuau_k8c",
-					"title": "Marvel Cosmic Invasion - DLC #2: New Game Mode Trailer | PS5 & PS4 Games",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/eCLWuau_k8c/hqdefault.jpg",
-					"publishedAt": "2026-10-26T16:00:06.000Z"
-				},
-				{
-					"videoId": "4TzZw08avBI",
-					"title": "Ayasa: Shadows of Silence - Launch Trailer | PS5 Games",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/4TzZw08avBI/hqdefault.jpg",
-					"publishedAt": "2026-10-26T12:00:28.000Z"
-				},
-				{
-					"videoId": "Bc-4EwHHkKs",
-					"title": "Ding dong, pookiee! Test your skills as the galaxy's finest, in Star Wars Galactic Racer. #PS5",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/Bc-4EwHHkKs/hqdefault.jpg",
-					"publishedAt": "2026-10-25T16:00:29.000Z"
 				}
 			]
 		},
@@ -2333,8 +2372,14 @@
 			"description": "Official Xbox news, game trailers, and feature updates.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCjBp_7RuDBUYbd1LegWEJ8g.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
+				{
+					"videoId": "kdOv3OEAhZg",
+					"title": "Titan Quest II | Pre-Order Trailer",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/kdOv3OEAhZg/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:00:35.000Z"
+				},
 				{
 					"videoId": "pkog7J_7P00",
 					"title": "Smalland 2: Lost Realms - Overview Trailer",
@@ -2418,12 +2463,6 @@
 					"title": "Halls of Torment - The Lost Archives DLC Release Trailer",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/3HII6hZo-L0/hqdefault.jpg",
 					"publishedAt": "2026-10-22T13:00:26.000Z"
-				},
-				{
-					"videoId": "BUifUYLWn6g",
-					"title": "Moadra - Launch Trailer",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/BUifUYLWn6g/hqdefault.jpg",
-					"publishedAt": "2026-10-22T07:00:11.000Z"
 				}
 			]
 		},
@@ -2434,97 +2473,97 @@
 			"description": "Nintendo trailers, Direct presentations, and game news.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCGIY_O-8vW4rfX98KlMkvRg.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
-					"videoId": "84fFeLsjLXs",
-					"title": "Disney Dreamlight Valley: The Keepsake Sea – Showcase Trailer – Nintendo Switch 2",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/84fFeLsjLXs/hqdefault.jpg",
-					"publishedAt": "2026-10-27T22:00:35.000Z"
+					"videoId": "O6SwwzG_ag0",
+					"title": "Indie Spotlight Sizzle Reel – Indie World Showcase 10.28.2026",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/O6SwwzG_ag0/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:21:07.000Z"
 				},
 				{
-					"videoId": "ODHH1nUaOIM",
-					"title": "Minecraft – Launch Trailer – Nintendo Switch 2",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/ODHH1nUaOIM/hqdefault.jpg",
-					"publishedAt": "2026-10-27T19:00:22.000Z"
+					"videoId": "i_X1If_eHuI",
+					"title": "RACCOIN: Chaos Max Edition – Pre-order Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/i_X1If_eHuI/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:21:04.000Z"
 				},
 				{
-					"videoId": "KhokmqG5utQ",
-					"title": "ONE PIECE: Grand Gourmet – Launch Trailer – Nintendo Switch 2",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/KhokmqG5utQ/hqdefault.jpg",
-					"publishedAt": "2026-10-26T21:00:11.000Z"
+					"videoId": "87voZD9tsao",
+					"title": "Petal Runner – Release Date Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/87voZD9tsao/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:21:02.000Z"
 				},
 				{
-					"videoId": "LQ8nlMb8wg0",
-					"title": "Cult of the Lamb – Nintendo Switch 2 Edition – Launch",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/LQ8nlMb8wg0/hqdefault.jpg",
-					"publishedAt": "2026-10-26T19:00:35.000Z"
+					"videoId": "VbOq8B5kCOU",
+					"title": "My Arms Are Longer Now – Release Date Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/VbOq8B5kCOU/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:59.000Z"
+				},
+				{
+					"videoId": "8PJE7G4oDgY",
+					"title": "Spirit Crossing – Release Date Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/8PJE7G4oDgY/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:56.000Z"
+				},
+				{
+					"videoId": "fjrksrEn7-Y",
+					"title": "Slime Rancher 2 – Announcement Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/fjrksrEn7-Y/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:53.000Z"
+				},
+				{
+					"videoId": "6rB_l6-GI4A",
+					"title": "Kitsune: The Journey of Adashino – Announcement Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6rB_l6-GI4A/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:51.000Z"
+				},
+				{
+					"videoId": "xr44hO6vdZY",
+					"title": "Haunted Paws – Demo Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/xr44hO6vdZY/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:48.000Z"
+				},
+				{
+					"videoId": "T29veBjKWas",
+					"title": "Dumpster Gang – Release Date Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/T29veBjKWas/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:46.000Z"
+				},
+				{
+					"videoId": "59oPNDPoDYA",
+					"title": "Super Battle Golf – Release Date Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/59oPNDPoDYA/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:43.000Z"
+				},
+				{
+					"videoId": "UM_zhmedAc4",
+					"title": "R.E.P.O – Indie World Showcase 10.28.2026",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/UM_zhmedAc4/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:39.000Z"
+				},
+				{
+					"videoId": "SCDfgY5c_rU",
+					"title": "Threads of Time – Reveal Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/SCDfgY5c_rU/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:37.000Z"
+				},
+				{
+					"videoId": "gGuPD4K-dR4",
+					"title": "Tenjutsu – Gameplay Reveal Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/gGuPD4K-dR4/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:34.000Z"
+				},
+				{
+					"videoId": "NSp6xDEK4FM",
+					"title": "Sword of the Sea – Release Date Trailer – Nintendo Switch 2",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/NSp6xDEK4FM/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:20:32.000Z"
 				},
 				{
 					"videoId": "9OPoiRcze0w",
 					"title": "Indie World Showcase 10.28.2026",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/9OPoiRcze0w/hqdefault.jpg",
 					"publishedAt": "2026-10-26T18:43:57.000Z"
-				},
-				{
-					"videoId": "D8KP5UQoA9g",
-					"title": "Tomodachi Life: Living the Dream — Spooky Season — Nintendo Switch",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/D8KP5UQoA9g/hqdefault.jpg",
-					"publishedAt": "2026-10-26T17:00:35.000Z"
-				},
-				{
-					"videoId": "8RpGdNReAB0",
-					"title": "Orbitals – Accolades Trailer – Nintendo Switch 2",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/8RpGdNReAB0/hqdefault.jpg",
-					"publishedAt": "2026-10-26T16:00:05.000Z"
-				},
-				{
-					"videoId": "znEcnzEtUkA",
-					"title": "Mario Tennis Fever Open October 2026 – 10.24.2026",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/znEcnzEtUkA/hqdefault.jpg",
-					"publishedAt": "2026-10-24T22:38:43.000Z"
-				},
-				{
-					"videoId": "QTIyWUKVQB8",
-					"title": "Mario Tennis Fever Open October 2026 – 10.24.2026",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/QTIyWUKVQB8/hqdefault.jpg",
-					"publishedAt": "2026-10-24T22:34:59.000Z"
-				},
-				{
-					"videoId": "t9a3JFF4F0M",
-					"title": "Shadow of the Tomb Raider: Definitive Edition – Launch Trailer – Nintendo Switch 2",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/t9a3JFF4F0M/hqdefault.jpg",
-					"publishedAt": "2026-10-23T23:00:28.000Z"
-				},
-				{
-					"videoId": "E01bQpeFTjc",
-					"title": "Monster Hunter Wilds – Demo Trailer – Nintendo Switch 2",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/E01bQpeFTjc/hqdefault.jpg",
-					"publishedAt": "2026-10-23T22:00:39.000Z"
-				},
-				{
-					"videoId": "tTNosQAZszY",
-					"title": "The Legend of Zelda: Ocarina of Time – The Battle for Hyrule Begins – Nintendo Switch 2",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/tTNosQAZszY/hqdefault.jpg",
-					"publishedAt": "2026-10-23T19:00:16.000Z"
-				},
-				{
-					"videoId": "BaCwCoEFzbk",
-					"title": "Game Boy Classics – October 2026 – Games Update",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/BaCwCoEFzbk/hqdefault.jpg",
-					"publishedAt": "2026-10-23T01:00:04.000Z"
-				},
-				{
-					"videoId": "Fc9aw5Fsw5s",
-					"title": "Metaphor: ReFantazio – Prologue Demo Trailer – Nintendo Switch 2",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/Fc9aw5Fsw5s/hqdefault.jpg",
-					"publishedAt": "2026-10-20T19:00:10.000Z"
-				},
-				{
-					"videoId": "ax7k1deGW_c",
-					"title": "NBA 2K27 – Season 2 Trailer – Nintendo Switch 2",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/ax7k1deGW_c/hqdefault.jpg",
-					"publishedAt": "2026-10-20T16:00:21.000Z"
 				}
 			]
 		},
@@ -2535,7 +2574,7 @@
 			"description": "Fast-paced courses across science, history, literature, and more.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCX6b17PVsYBQ0ip5gyeme-Q.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "2b-H-rxQ8m8",
@@ -2636,7 +2675,7 @@
 			"description": "Free lessons in math, science, economics, and the humanities.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UC4a-Gbdw7vOaccHmFo40b9g.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "cPxnWRp4oPo",
@@ -2737,7 +2776,7 @@
 			"description": "Full-length programming courses and coding tutorials.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UC8butISFwT-Wl7EV0hUK0BQ.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "aZglGvBPQGs",
@@ -2838,7 +2877,7 @@
 			"description": "Mathematics explained visually, from calculus to neural networks.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCYO_jab_esuFRV4b17AJtAw.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "V_uq3v6xK-4",
@@ -2939,7 +2978,7 @@
 			"description": "Talks and ideas from scientists, artists, and thinkers.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCAuUUnT6oDeKwE6v1NGQxug.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "Sj2OZXQHugQ",
@@ -3040,7 +3079,7 @@
 			"description": "Numbers, puzzles, and mathematical curiosities with experts.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCoxcjq-8xIDTYp3uz647V5A.jpg",
-			"snapshotAt": "2026-10-28T13:16:34.690Z",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
 			"videos": [
 				{
 					"videoId": "33_jJ4kIxfc",
@@ -3131,6 +3170,1824 @@
 					"title": "2.685 is (almost) everywhere - Numberphile",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/-mXaU3N9e8Y/hqdefault.jpg",
 					"publishedAt": "2026-08-22T14:09:57.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCsBjURrPoezykLs9EqgamOA",
+			"name": "Fireship",
+			"channelUrl": "https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA",
+			"description": "High-speed tutorials and news on web development, programming languages, and software trends.",
+			"category": "Software",
+			"logoUrl": "catalog/logos/UCsBjURrPoezykLs9EqgamOA.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "nEaJMdM1djM",
+					"title": "Did the AI bubble just pop?",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/nEaJMdM1djM/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:31:29.000Z"
+				},
+				{
+					"videoId": "G_em1hHPnXY",
+					"title": "China just dropped a new frontier model... and nobody can explain how",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/G_em1hHPnXY/hqdefault.jpg",
+					"publishedAt": "2026-10-26T18:55:29.000Z"
+				},
+				{
+					"videoId": "SMGg7iisHmc",
+					"title": "The most vulnerable week in internet history...",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/SMGg7iisHmc/hqdefault.jpg",
+					"publishedAt": "2026-10-23T18:19:58.000Z"
+				},
+				{
+					"videoId": "zv6B6PQOuHE",
+					"title": "The last real programmers are dying out...",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/zv6B6PQOuHE/hqdefault.jpg",
+					"publishedAt": "2026-10-22T15:09:31.000Z"
+				},
+				{
+					"videoId": "b2tjnxX8IHU",
+					"title": "Did Google just dethrone OpenAI and Anthropic?",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/b2tjnxX8IHU/hqdefault.jpg",
+					"publishedAt": "2026-10-20T16:21:03.000Z"
+				},
+				{
+					"videoId": "l3L_lETiSzc",
+					"title": "The runtime wars are over... and Node won",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/l3L_lETiSzc/hqdefault.jpg",
+					"publishedAt": "2026-10-15T17:35:15.000Z"
+				},
+				{
+					"videoId": "QZVzuq28eFw",
+					"title": "OpenAI’s lead engineer was secretly a spy...",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/QZVzuq28eFw/hqdefault.jpg",
+					"publishedAt": "2026-10-14T17:48:10.000Z"
+				},
+				{
+					"videoId": "wajoP_5Cpw8",
+					"title": "Every app on Earth is now open source... whether it likes it or not",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/wajoP_5Cpw8/hqdefault.jpg",
+					"publishedAt": "2026-10-12T19:15:23.000Z"
+				},
+				{
+					"videoId": "WrCjAAl9okA",
+					"title": "A $6.3 billion open-weight model just got embarrassed by the French...",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/WrCjAAl9okA/hqdefault.jpg",
+					"publishedAt": "2026-10-07T20:24:27.000Z"
+				},
+				{
+					"videoId": "_5p1_TNSWqQ",
+					"title": "PewDiePie is setting AI free... and OpenAI is furious",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_5p1_TNSWqQ/hqdefault.jpg",
+					"publishedAt": "2026-10-05T20:34:44.000Z"
+				},
+				{
+					"videoId": "No-JPdFvYWU",
+					"title": "The one OpenAI announcement that can actually make you money...",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/No-JPdFvYWU/hqdefault.jpg",
+					"publishedAt": "2026-10-01T19:34:14.000Z"
+				},
+				{
+					"videoId": "I_KVMFrUtPk",
+					"title": "Did a 50 year old military secret just solve agent prompt injection?",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/I_KVMFrUtPk/hqdefault.jpg",
+					"publishedAt": "2026-09-30T17:16:43.000Z"
+				},
+				{
+					"videoId": "OuNKBjuV7A4",
+					"title": "DHH has gone completely off the rails...",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/OuNKBjuV7A4/hqdefault.jpg",
+					"publishedAt": "2026-09-28T19:27:59.000Z"
+				},
+				{
+					"videoId": "c1rPlzxSZ8E",
+					"title": "Meta is pivoting again... everything you missed from Connect 2026",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/c1rPlzxSZ8E/hqdefault.jpg",
+					"publishedAt": "2026-09-25T19:22:32.000Z"
+				},
+				{
+					"videoId": "ylO0DQeVEBQ",
+					"title": "The most expensive 33 hours in WordPress history...",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/ylO0DQeVEBQ/hqdefault.jpg",
+					"publishedAt": "2026-09-23T17:17:22.000Z"
+				}
+			]
+		},
+		{
+			"id": "UC8ENHE5xdFSwx71u3fDH5Xw",
+			"name": "ThePrimeagen",
+			"channelUrl": "https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw",
+			"description": "Developer commentary, engineering culture, and programming tooling.",
+			"category": "Software",
+			"logoUrl": "catalog/logos/UC8ENHE5xdFSwx71u3fDH5Xw.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "tYQyh1tjSFc",
+					"title": "am I becoming a real Game Dev?",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/tYQyh1tjSFc/hqdefault.jpg",
+					"publishedAt": "2026-08-06T12:30:09.000Z"
+				},
+				{
+					"videoId": "G8vdu30EEfw",
+					"title": "I like Game Programming",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/G8vdu30EEfw/hqdefault.jpg",
+					"publishedAt": "2026-07-17T17:09:03.000Z"
+				},
+				{
+					"videoId": "js7_bCY6WEw",
+					"title": "Layout is harder than you think..",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/js7_bCY6WEw/hqdefault.jpg",
+					"publishedAt": "2026-06-24T15:55:24.000Z"
+				},
+				{
+					"videoId": "HwmqZTnb7Co",
+					"title": "I learned Odin",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/HwmqZTnb7Co/hqdefault.jpg",
+					"publishedAt": "2026-06-04T12:00:40.000Z"
+				},
+				{
+					"videoId": "GKpwO-DGKiI",
+					"title": "I Hate Google",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/GKpwO-DGKiI/hqdefault.jpg",
+					"publishedAt": "2025-09-02T18:42:55.000Z"
+				},
+				{
+					"videoId": "q5jcjAQXiIU",
+					"title": "WHY STARBUCKS, WHY?!?!",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/q5jcjAQXiIU/hqdefault.jpg",
+					"publishedAt": "2025-08-22T15:04:21.000Z"
+				},
+				{
+					"videoId": "tLLQoF2JjAg",
+					"title": "Prime picks one language (Challenge Level: Impossible)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/tLLQoF2JjAg/hqdefault.jpg",
+					"publishedAt": "2025-08-21T20:01:15.000Z"
+				},
+				{
+					"videoId": "_iGHYwPU2WE",
+					"title": "A Billion Dollar Idea Gone Wrong",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_iGHYwPU2WE/hqdefault.jpg",
+					"publishedAt": "2025-08-14T20:14:07.000Z"
+				},
+				{
+					"videoId": "4zJHs_L-GOc",
+					"title": "He did WHAT to the DB?",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/4zJHs_L-GOc/hqdefault.jpg",
+					"publishedAt": "2025-08-07T18:45:01.000Z"
+				},
+				{
+					"videoId": "taoAAcS5PSw",
+					"title": "Musician turned Programmer turned Musician",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/taoAAcS5PSw/hqdefault.jpg",
+					"publishedAt": "2025-07-20T11:01:32.000Z"
+				},
+				{
+					"videoId": "ZH3iKbEiks0",
+					"title": "I was wrong btw",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/ZH3iKbEiks0/hqdefault.jpg",
+					"publishedAt": "2025-07-03T12:30:46.000Z"
+				},
+				{
+					"videoId": "A_XGsAl-LqY",
+					"title": "the worst man in tech",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/A_XGsAl-LqY/hqdefault.jpg",
+					"publishedAt": "2024-10-23T12:00:12.000Z"
+				},
+				{
+					"videoId": "GwcFxTuMYmU",
+					"title": "I Went To DEFCON!",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/GwcFxTuMYmU/hqdefault.jpg",
+					"publishedAt": "2024-08-28T19:37:57.000Z"
+				},
+				{
+					"videoId": "dhuX9t2j5Hc",
+					"title": "This Keyboard",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/dhuX9t2j5Hc/hqdefault.jpg",
+					"publishedAt": "2024-07-07T18:01:39.000Z"
+				},
+				{
+					"videoId": "v2a6Nv7RSd0",
+					"title": "Find And Replace",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/v2a6Nv7RSd0/hqdefault.jpg",
+					"publishedAt": "2024-06-27T15:00:49.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCFbNIlppjAuEX4znoulh0Cw",
+			"name": "Web Dev Simplified",
+			"channelUrl": "https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw",
+			"description": "Practical web development tutorials focused on JavaScript, React, and modern front-end patterns.",
+			"category": "Software",
+			"logoUrl": "catalog/logos/UCFbNIlppjAuEX4znoulh0Cw.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "FbXPaIcpvww",
+					"title": "How To Design The Perfect Auth System In The Age of AI",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/FbXPaIcpvww/hqdefault.jpg",
+					"publishedAt": "2026-10-20T22:00:20.000Z"
+				},
+				{
+					"videoId": "J37YeB63LVI",
+					"title": "I Will Never Use Prettier or ESLint Again",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/J37YeB63LVI/hqdefault.jpg",
+					"publishedAt": "2026-10-14T22:32:33.000Z"
+				},
+				{
+					"videoId": "jojMVmRZABw",
+					"title": "Why Your AI Generates Crap Code - And How to Fix It",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/jojMVmRZABw/hqdefault.jpg",
+					"publishedAt": "2026-09-15T20:00:10.000Z"
+				},
+				{
+					"videoId": "-Z11mZaJU0w",
+					"title": "Please… I Need Your Help",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/-Z11mZaJU0w/hqdefault.jpg",
+					"publishedAt": "2026-09-08T19:22:32.000Z"
+				},
+				{
+					"videoId": "QMG5F64b454",
+					"title": "10 Hidden Browser Features Your AI Doesn’t Know About",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/QMG5F64b454/hqdefault.jpg",
+					"publishedAt": "2026-08-18T16:00:21.000Z"
+				},
+				{
+					"videoId": "BH9ZgUYjiic",
+					"title": "I Wish This Was Better",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/BH9ZgUYjiic/hqdefault.jpg",
+					"publishedAt": "2026-07-21T16:00:18.000Z"
+				},
+				{
+					"videoId": "1mvlBz6pj1I",
+					"title": "How To Build A Production Ready RAG AI - My Full AI Coding Workflow",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/1mvlBz6pj1I/hqdefault.jpg",
+					"publishedAt": "2026-07-14T16:00:36.000Z"
+				},
+				{
+					"videoId": "Kh8M_iiIhUY",
+					"title": "How To Use The Pi Agent Harness In 1 Minute",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/Kh8M_iiIhUY/hqdefault.jpg",
+					"publishedAt": "2026-07-09T16:00:20.000Z"
+				},
+				{
+					"videoId": "5HHiRBiNsyc",
+					"title": "How To Run AI In A Secure Sandbox",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/5HHiRBiNsyc/hqdefault.jpg",
+					"publishedAt": "2026-07-02T16:00:37.000Z"
+				},
+				{
+					"videoId": "7Z7ID5BbZU4",
+					"title": "Containers Don't Make Your AI Agent Safe",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/7Z7ID5BbZU4/hqdefault.jpg",
+					"publishedAt": "2026-06-30T16:00:22.000Z"
+				},
+				{
+					"videoId": "t4TwkwodMCU",
+					"title": "What Are AI Skills In 1 Minute",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/t4TwkwodMCU/hqdefault.jpg",
+					"publishedAt": "2026-06-25T16:00:26.000Z"
+				},
+				{
+					"videoId": "DogTO1jjFtI",
+					"title": "What I Use Instead",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/DogTO1jjFtI/hqdefault.jpg",
+					"publishedAt": "2026-06-23T16:00:10.000Z"
+				},
+				{
+					"videoId": "OkoK6IjndWU",
+					"title": "Hashing vs Encryption Explained In 1 Minute",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/OkoK6IjndWU/hqdefault.jpg",
+					"publishedAt": "2026-06-18T16:00:02.000Z"
+				},
+				{
+					"videoId": "cxQLKsktiBA",
+					"title": "How To Use AI Skills Like A Senior Developer",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/cxQLKsktiBA/hqdefault.jpg",
+					"publishedAt": "2026-06-16T16:00:34.000Z"
+				},
+				{
+					"videoId": "Qou3TeYdEw4",
+					"title": "Easily Fix AI Slop With This Amazing Tool",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/Qou3TeYdEw4/hqdefault.jpg",
+					"publishedAt": "2026-06-11T16:00:02.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCbRP3c757lWg9M-U7TyEkXA",
+			"name": "Theo - t3.gg",
+			"channelUrl": "https://www.youtube.com/channel/UCbRP3c757lWg9M-U7TyEkXA",
+			"description": "Web development commentary, TypeScript, and the business of building software.",
+			"category": "Software",
+			"logoUrl": "catalog/logos/UCbRP3c757lWg9M-U7TyEkXA.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "FHGfSjDGUIw",
+					"title": "the hard truth about token spend",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/FHGfSjDGUIw/hqdefault.jpg",
+					"publishedAt": "2026-10-27T04:02:18.000Z"
+				},
+				{
+					"videoId": "5Bmp9cz1JN8",
+					"title": "These 3 skills changed my life",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/5Bmp9cz1JN8/hqdefault.jpg",
+					"publishedAt": "2026-10-26T07:16:35.000Z"
+				},
+				{
+					"videoId": "nXpoU99pTho",
+					"title": "Even The NSA Got Involved",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/nXpoU99pTho/hqdefault.jpg",
+					"publishedAt": "2026-10-23T21:00:31.000Z"
+				},
+				{
+					"videoId": "USeyDcWyVCc",
+					"title": "Even The NSA Got Involved",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/USeyDcWyVCc/hqdefault.jpg",
+					"publishedAt": "2026-10-22T19:14:45.000Z"
+				},
+				{
+					"videoId": "3OshsLm3_OQ",
+					"title": "Opus 5.5 is proof that we do need smarter models",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/3OshsLm3_OQ/hqdefault.jpg",
+					"publishedAt": "2026-10-20T22:13:42.000Z"
+				},
+				{
+					"videoId": "m-B3jIMMmUE",
+					"title": "Your prompts kinda suck",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/m-B3jIMMmUE/hqdefault.jpg",
+					"publishedAt": "2026-10-18T23:57:04.000Z"
+				},
+				{
+					"videoId": "hiI0Vk4NgeY",
+					"title": "Anthropic Rebuilt Git (yes really)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/hiI0Vk4NgeY/hqdefault.jpg",
+					"publishedAt": "2026-10-16T04:38:27.000Z"
+				},
+				{
+					"videoId": "NE006pkiAnk",
+					"title": "So I've been testing Gemini 4...",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/NE006pkiAnk/hqdefault.jpg",
+					"publishedAt": "2026-10-14T15:45:44.000Z"
+				},
+				{
+					"videoId": "DbWL6Zs2j_g",
+					"title": "Meta just caught up with Anthropic",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/DbWL6Zs2j_g/hqdefault.jpg",
+					"publishedAt": "2026-10-13T11:01:13.000Z"
+				},
+				{
+					"videoId": "XkmZ1nOtuDc",
+					"title": "P.S. Don't Upgrade For Ultrafast (Yet)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/XkmZ1nOtuDc/hqdefault.jpg",
+					"publishedAt": "2026-10-12T18:00:14.000Z"
+				},
+				{
+					"videoId": "vRS2leJLAI0",
+					"title": "I thought AI was gonna get cheaper?",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/vRS2leJLAI0/hqdefault.jpg",
+					"publishedAt": "2026-10-12T02:39:38.000Z"
+				},
+				{
+					"videoId": "ND_kRgU_WlY",
+					"title": "You can rewrite typescript in rust for $420k",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/ND_kRgU_WlY/hqdefault.jpg",
+					"publishedAt": "2026-10-10T10:58:42.000Z"
+				},
+				{
+					"videoId": "38_6C0dkKmU",
+					"title": "finally a good small model",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/38_6C0dkKmU/hqdefault.jpg",
+					"publishedAt": "2026-10-09T02:20:47.000Z"
+				},
+				{
+					"videoId": "nYA0yASgaZI",
+					"title": "Does the $200 Codex plan suck now?",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/nYA0yASgaZI/hqdefault.jpg",
+					"publishedAt": "2026-10-07T20:40:02.000Z"
+				},
+				{
+					"videoId": "KqLXX0Wv6NU",
+					"title": "Ultrafast's ACTUAL Cost for Work",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/KqLXX0Wv6NU/hqdefault.jpg",
+					"publishedAt": "2026-10-07T18:00:29.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCZgt6AzoyjslHTC9dz0UoTw",
+			"name": "ByteByteGo",
+			"channelUrl": "https://www.youtube.com/channel/UCZgt6AzoyjslHTC9dz0UoTw",
+			"description": "System design, distributed systems, and software engineering interview concepts explained visually.",
+			"category": "Software",
+			"logoUrl": "catalog/logos/UCZgt6AzoyjslHTC9dz0UoTw.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "Dddv7P_k60o",
+					"title": "Top 5 AI Building Blocks Every Engineer Should Know",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/Dddv7P_k60o/hqdefault.jpg",
+					"publishedAt": "2026-10-22T15:30:15.000Z"
+				},
+				{
+					"videoId": "aVRjFZM23ak",
+					"title": "How to Test Your Code (Even When AI Writes It)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/aVRjFZM23ak/hqdefault.jpg",
+					"publishedAt": "2026-10-08T15:30:09.000Z"
+				},
+				{
+					"videoId": "E5Ef_Kne17U",
+					"title": "Ex-YouTube Engineer Rebuilds YouTube in 45 Mins",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/E5Ef_Kne17U/hqdefault.jpg",
+					"publishedAt": "2026-09-25T15:38:14.000Z"
+				},
+				{
+					"videoId": "bF28LFPjFsI",
+					"title": "How the JVM Actually Works",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/bF28LFPjFsI/hqdefault.jpg",
+					"publishedAt": "2026-09-01T15:30:21.000Z"
+				},
+				{
+					"videoId": "WvSVSbGo0wI",
+					"title": "HTTP vs HTTPS Explained",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/WvSVSbGo0wI/hqdefault.jpg",
+					"publishedAt": "2026-08-12T15:00:38.000Z"
+				},
+				{
+					"videoId": "5V8tP5jDZ8U",
+					"title": "How OpenAI Built Its Data Agent",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/5V8tP5jDZ8U/hqdefault.jpg",
+					"publishedAt": "2026-07-22T15:15:25.000Z"
+				},
+				{
+					"videoId": "b1SPKtN05y8",
+					"title": "What is Prompt Injection?",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/b1SPKtN05y8/hqdefault.jpg",
+					"publishedAt": "2026-06-24T15:30:32.000Z"
+				},
+				{
+					"videoId": "U8lGbSaCCYI",
+					"title": "How to Run LLMs Locally (Great For Learning and Privacy)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/U8lGbSaCCYI/hqdefault.jpg",
+					"publishedAt": "2026-06-10T15:00:00.000Z"
+				},
+				{
+					"videoId": "MUWAbpg1xLo",
+					"title": "CPU vs GPU vs TPU",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/MUWAbpg1xLo/hqdefault.jpg",
+					"publishedAt": "2026-06-01T15:30:22.000Z"
+				},
+				{
+					"videoId": "VMF4InsZm9I",
+					"title": "MCP in Claude Code",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/VMF4InsZm9I/hqdefault.jpg",
+					"publishedAt": "2026-05-07T17:00:48.000Z"
+				},
+				{
+					"videoId": "taSmwcqdkQk",
+					"title": "What is a Data Lakehouse?",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/taSmwcqdkQk/hqdefault.jpg",
+					"publishedAt": "2026-04-16T15:30:39.000Z"
+				},
+				{
+					"videoId": "z_NbVtbgBJw",
+					"title": "What Is Redis Really About? Why Is It So Popular?",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/z_NbVtbgBJw/hqdefault.jpg",
+					"publishedAt": "2026-02-18T16:30:32.000Z"
+				},
+				{
+					"videoId": "avjX3QrYkls",
+					"title": "Transformers Step-by-Step Explained (Attention Is All You Need)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/avjX3QrYkls/hqdefault.jpg",
+					"publishedAt": "2025-12-11T16:30:01.000Z"
+				},
+				{
+					"videoId": "7_wkWQ9rB5I",
+					"title": "System Design: Why is Kafka Popular?",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/7_wkWQ9rB5I/hqdefault.jpg",
+					"publishedAt": "2025-11-13T16:30:03.000Z"
+				},
+				{
+					"videoId": "6u25GckPhLU",
+					"title": "Design a Web Crawler: FAANG Interview Question",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6u25GckPhLU/hqdefault.jpg",
+					"publishedAt": "2025-11-06T16:30:05.000Z"
+				}
+			]
+		},
+		{
+			"id": "UC29ju8bIPH5as8OGnQzwJyA",
+			"name": "Traversy Media",
+			"channelUrl": "https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA",
+			"description": "Full-stack web development tutorials, project builds, and framework walkthroughs.",
+			"category": "Software",
+			"logoUrl": "catalog/logos/UC29ju8bIPH5as8OGnQzwJyA.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "-_-X8wI1ywo",
+					"title": "HTTP in 2 Minutes #coding #http #webdevelopment #backend #frontend #softwaredevelopment",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/-_-X8wI1ywo/hqdefault.jpg",
+					"publishedAt": "2026-10-24T16:22:38.000Z"
+				},
+				{
+					"videoId": "RE2c_eH0Sq4",
+					"title": "A Bad Week for the Web: What’s Confirmed and What to Do",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/RE2c_eH0Sq4/hqdefault.jpg",
+					"publishedAt": "2026-10-23T12:03:11.000Z"
+				},
+				{
+					"videoId": "uizaxuzgEAk",
+					"title": "Claude Code Mods Explained: Customize Your Setup",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/uizaxuzgEAk/hqdefault.jpg",
+					"publishedAt": "2026-10-22T14:30:29.000Z"
+				},
+				{
+					"videoId": "_OT4RKiHNW8",
+					"title": "AI Feels Like Addiction. I Would Know.",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_OT4RKiHNW8/hqdefault.jpg",
+					"publishedAt": "2026-10-12T14:31:51.000Z"
+				},
+				{
+					"videoId": "B7GM6F3BP6A",
+					"title": "CI/CD Made Simple: Build a Real Pipeline",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/B7GM6F3BP6A/hqdefault.jpg",
+					"publishedAt": "2026-10-05T16:12:09.000Z"
+				},
+				{
+					"videoId": "0isk_iLFCdk",
+					"title": "AI Hype Has Become Unbearable",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/0isk_iLFCdk/hqdefault.jpg",
+					"publishedAt": "2026-09-21T14:37:40.000Z"
+				},
+				{
+					"videoId": "aAFn0rRqeJ8",
+					"title": "I Used One React Hook In 10 Environments",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/aAFn0rRqeJ8/hqdefault.jpg",
+					"publishedAt": "2026-09-15T16:00:06.000Z"
+				},
+				{
+					"videoId": "aVvRELbjcNU",
+					"title": "Traditional Coding vs Agentic Coding: The Flow State Problem",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/aVvRELbjcNU/hqdefault.jpg",
+					"publishedAt": "2026-09-07T15:32:31.000Z"
+				},
+				{
+					"videoId": "SNYRibAVwqo",
+					"title": "Nobody is hiring vibe coders. Sorry",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/SNYRibAVwqo/hqdefault.jpg",
+					"publishedAt": "2026-08-24T16:21:55.000Z"
+				},
+				{
+					"videoId": "L4g6GGLzAyo",
+					"title": "Stop Vibe Coding: There's A Better Way To Use AI",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/L4g6GGLzAyo/hqdefault.jpg",
+					"publishedAt": "2026-08-10T15:30:13.000Z"
+				},
+				{
+					"videoId": "NAIC9sjBgZA",
+					"title": "Has TypeScript Become The Default Way To Write JavaScript?",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/NAIC9sjBgZA/hqdefault.jpg",
+					"publishedAt": "2026-08-07T16:51:18.000Z"
+				},
+				{
+					"videoId": "IJ-FAcYq_08",
+					"title": "12 Important Concepts In the Age of AI Software Development",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/IJ-FAcYq_08/hqdefault.jpg",
+					"publishedAt": "2026-07-06T14:00:28.000Z"
+				},
+				{
+					"videoId": "C2GpeepcmYs",
+					"title": "Claude Code Crash Course For Developers",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/C2GpeepcmYs/hqdefault.jpg",
+					"publishedAt": "2026-06-22T14:00:05.000Z"
+				},
+				{
+					"videoId": "mkTAnxlyU60",
+					"title": "Fable BANNED by US government!",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/mkTAnxlyU60/hqdefault.jpg",
+					"publishedAt": "2026-06-13T18:56:17.000Z"
+				},
+				{
+					"videoId": "RrNZOL79Upw",
+					"title": "They Killed an AI Model Overnight (Fable 5 & Mythos 5)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/RrNZOL79Upw/hqdefault.jpg",
+					"publishedAt": "2026-06-13T18:45:20.000Z"
+				}
+			]
+		},
+		{
+			"id": "UC6HQ4d3xq9EgSeJgMhc-4AQ",
+			"name": "Hasna Mana Hai",
+			"channelUrl": "https://www.youtube.com/channel/UC6HQ4d3xq9EgSeJgMhc-4AQ",
+			"description": "Geo TV's comedy show with sketches, celebrity guests, and audience laughs.",
+			"category": "Comedy",
+			"logoUrl": "catalog/logos/UC6HQ4d3xq9EgSeJgMhc-4AQ.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "gdyTopf2HkU",
+					"title": "Audience mein aaye shaks ne mazahiya shayari sunadi! - #hasnamanahai #tabishhashmi #shorts",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/gdyTopf2HkU/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:00:06.000Z"
+				},
+				{
+					"videoId": "UVB7rGvHUTg",
+					"title": "Tabish plays 2.5 seconds ka maamla with Faraz Sarwar - #hasnamanahai #shorts",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/UVB7rGvHUTg/hqdefault.jpg",
+					"publishedAt": "2026-10-28T12:30:31.000Z"
+				},
+				{
+					"videoId": "lBD_cLcsA1g",
+					"title": "🤔💔 Moashray Mein Adam-e-Bardasht Ki Wajuhat Kya Hain? 😡 Hasna Mana Hai 😂",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/lBD_cLcsA1g/hqdefault.jpg",
+					"publishedAt": "2026-10-28T12:00:26.000Z"
+				},
+				{
+					"videoId": "zI74o8dAjAM",
+					"title": "Why do most of Actors prefer Theatre? - #hasnamanahai #tabishhashmi #shorts",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/zI74o8dAjAM/hqdefault.jpg",
+					"publishedAt": "2026-10-28T11:00:02.000Z"
+				},
+				{
+					"videoId": "F33iV5IE0wc",
+					"title": "Tabish requests Mintoo to sing a song! - #hasnamanahai #shorts",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/F33iV5IE0wc/hqdefault.jpg",
+					"publishedAt": "2026-10-28T10:30:17.000Z"
+				},
+				{
+					"videoId": "6IGXWvMwZ7E",
+					"title": "\"Takabbur nahi karna chahiye kabhi bhi\" - #hasnamanahai #tabishhashmi #shorts",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6IGXWvMwZ7E/hqdefault.jpg",
+					"publishedAt": "2026-10-28T09:00:32.000Z"
+				},
+				{
+					"videoId": "SPQQZHvcR1Y",
+					"title": "Legendary actor Arjumand Rahim became the Guest of Hasna Mana Hai - #hasnamanahai #shorts",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/SPQQZHvcR1Y/hqdefault.jpg",
+					"publishedAt": "2026-10-27T16:30:38.000Z"
+				},
+				{
+					"videoId": "WqV5OvvHZZs",
+					"title": "👻Arjumand Ke Saath Kya Paranormal Activity Hui? 👀 Hasna Mana Hai 😂",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/WqV5OvvHZZs/hqdefault.jpg",
+					"publishedAt": "2026-10-27T16:15:17.000Z"
+				},
+				{
+					"videoId": "Xo80rvHy2Kc",
+					"title": "Why Did Qaisar Piya Quit Singing? 🎤🎶💔 No Laughing Allowed 😂",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/Xo80rvHy2Kc/hqdefault.jpg",
+					"publishedAt": "2026-10-27T14:30:20.000Z"
+				},
+				{
+					"videoId": "FMGVKKchObU",
+					"title": "Hasna Mana hai Mein Aay Singar ne Samaa Baandh Diya!",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/FMGVKKchObU/hqdefault.jpg",
+					"publishedAt": "2026-10-27T14:30:12.000Z"
+				},
+				{
+					"videoId": "LdAxMQ5CJdU",
+					"title": "Why Did Qaiser Piya Stop Singing? 🎶",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/LdAxMQ5CJdU/hqdefault.jpg",
+					"publishedAt": "2026-10-27T12:30:28.000Z"
+				},
+				{
+					"videoId": "v1QP_ItVkus",
+					"title": "Qaisar Piya Kon Man Mein 🕵️‍♂️ Insaan Ka Pesha Pehchan Paye? 🎭 Hasna Mana Hai 😂",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/v1QP_ItVkus/hqdefault.jpg",
+					"publishedAt": "2026-10-27T12:30:20.000Z"
+				},
+				{
+					"videoId": "LMqB3MkRw3g",
+					"title": "“Don't Judge” Mein Tabish Ne Qaisar Piya Ko Phansa Diya! 🎯 Hasna Mana Hai 🤣",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/LMqB3MkRw3g/hqdefault.jpg",
+					"publishedAt": "2026-10-27T10:30:31.000Z"
+				},
+				{
+					"videoId": "4QL7SsKK2IY",
+					"title": "Why Did Qaiser Piya Hit an Audience Member During a Stage Play?",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/4QL7SsKK2IY/hqdefault.jpg",
+					"publishedAt": "2026-10-27T10:30:08.000Z"
+				},
+				{
+					"videoId": "ONpbz3eTceg",
+					"title": "Why Did Qaisar Piya Hit the Audience During a Stage Play? 🥊 Laughter Prohibited 😂",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/ONpbz3eTceg/hqdefault.jpg",
+					"publishedAt": "2026-10-27T08:30:38.000Z"
+				}
+			]
+		},
+		{
+			"id": "UC_c-RTowPbIlzMkIa_O7s6Q",
+			"name": "Ducky Bhai",
+			"channelUrl": "https://www.youtube.com/channel/UC_c-RTowPbIlzMkIa_O7s6Q",
+			"description": "Roasts, comedy vlogs, and internet culture commentary.",
+			"category": "Comedy",
+			"logoUrl": "catalog/logos/UC_c-RTowPbIlzMkIa_O7s6Q.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "7qogNKRz9Nw",
+					"title": "INSANE CROWD at PUBG MOBILE Tournament Finals 🔥",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/7qogNKRz9Nw/hqdefault.jpg",
+					"publishedAt": "2026-10-25T18:13:44.000Z"
+				},
+				{
+					"videoId": "KEvQWRTcEn0",
+					"title": "Aroob Or Iqra Ki Larai Ho Gai 😭",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/KEvQWRTcEn0/hqdefault.jpg",
+					"publishedAt": "2026-10-24T14:13:09.000Z"
+				},
+				{
+					"videoId": "lQZmAlJRKXY",
+					"title": "Aroob Surprised Me With An Expensive Kitten 😍",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/lQZmAlJRKXY/hqdefault.jpg",
+					"publishedAt": "2026-10-03T12:20:42.000Z"
+				},
+				{
+					"videoId": "cIL6FX2cbrs",
+					"title": "Aroob Arranged a Surprise for Me 😱 | The Best Burger in the World Is Back 🔥",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/cIL6FX2cbrs/hqdefault.jpg",
+					"publishedAt": "2026-10-02T10:45:06.000Z"
+				},
+				{
+					"videoId": "52elBHW9fmg",
+					"title": "I Tried The World’s Largest Croissant & Giant Coffee 🔥",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/52elBHW9fmg/hqdefault.jpg",
+					"publishedAt": "2026-09-28T18:06:41.000Z"
+				},
+				{
+					"videoId": "nAsX03MxtSg",
+					"title": "Surprising My Family With My New Car ❤️",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/nAsX03MxtSg/hqdefault.jpg",
+					"publishedAt": "2026-09-28T13:02:11.000Z"
+				},
+				{
+					"videoId": "K4UcQN5TNG4",
+					"title": "My New Car Is Here | Alhamdulillah🔥",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/K4UcQN5TNG4/hqdefault.jpg",
+					"publishedAt": "2026-09-26T17:27:53.000Z"
+				},
+				{
+					"videoId": "xqD1f2LZOwM",
+					"title": "Meeting My Family After 2 Months ❤️",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/xqD1f2LZOwM/hqdefault.jpg",
+					"publishedAt": "2026-09-25T17:01:01.000Z"
+				},
+				{
+					"videoId": "nn7akBIvxAg",
+					"title": "Spending Rs 1 Crore In 24 Hours 🔥",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/nn7akBIvxAg/hqdefault.jpg",
+					"publishedAt": "2026-09-24T16:46:31.000Z"
+				},
+				{
+					"videoId": "6PbDFGYO5NI",
+					"title": "Driving 3 Hours For Jannat Mirza’s Grand Birthday Party",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6PbDFGYO5NI/hqdefault.jpg",
+					"publishedAt": "2026-09-15T17:44:02.000Z"
+				},
+				{
+					"videoId": "c5Kbv7b1ScA",
+					"title": "Sitting In An Attack Helicopter For The First Time 🔥",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/c5Kbv7b1ScA/hqdefault.jpg",
+					"publishedAt": "2026-09-06T15:49:38.000Z"
+				},
+				{
+					"videoId": "RYeQreL5Ef4",
+					"title": "Sold My Beloved Fortuner 😭 | A Surprise From YouTube Landed in Pakistan 😍",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/RYeQreL5Ef4/hqdefault.jpg",
+					"publishedAt": "2026-09-03T17:29:32.000Z"
+				},
+				{
+					"videoId": "oq6939AMddU",
+					"title": "Our First-Ever Bridal Shoot 😍 | Dubara Shadi Karni Pari 🤣",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/oq6939AMddU/hqdefault.jpg",
+					"publishedAt": "2026-09-02T14:10:05.000Z"
+				},
+				{
+					"videoId": "psBWW3059mI",
+					"title": "Mama Pakistan Wapis Nahi Aa Rahin 😭 | Our New Cooking Show 🔥",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/psBWW3059mI/hqdefault.jpg",
+					"publishedAt": "2026-09-01T16:15:04.000Z"
+				},
+				{
+					"videoId": "tvsOaGQ0b2U",
+					"title": "I Won YouTuber of the Year for the 3rd Time 🔥",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/tvsOaGQ0b2U/hqdefault.jpg",
+					"publishedAt": "2026-08-29T17:14:29.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCvlVuntLjdURVD3b3Hx7kxw",
+			"name": "Dry Bar Comedy",
+			"channelUrl": "https://www.youtube.com/channel/UCvlVuntLjdURVD3b3Hx7kxw",
+			"description": "Clean stand-up comedy sets from a rotating lineup of comics.",
+			"category": "Comedy",
+			"logoUrl": "catalog/logos/UCvlVuntLjdURVD3b3Hx7kxw.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "9GXFX9XkES0",
+					"title": "My Parents Think I Do Stand-Up Because I'm a Criminal | Shawn Felipe Stand-Up Comedy",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/9GXFX9XkES0/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:12:51.000Z"
+				},
+				{
+					"videoId": "ol8X-2gF3jM",
+					"title": "Times were different when we were kids | Dan McGowan Stand-Up Comedy",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/ol8X-2gF3jM/hqdefault.jpg",
+					"publishedAt": "2026-10-27T22:00:12.000Z"
+				},
+				{
+					"videoId": "CpP0yPHbe5A",
+					"title": "26 Years of Stand-Up Comedy and Still Nobody Knows Me | Bengt Washburn Triple Feature",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/CpP0yPHbe5A/hqdefault.jpg",
+					"publishedAt": "2026-10-27T15:00:03.000Z"
+				},
+				{
+					"videoId": "asDXOjHCGIY",
+					"title": "Dating a girl who's into horoscopes is hard | Kirk Smith Stand-Up Comedy",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/asDXOjHCGIY/hqdefault.jpg",
+					"publishedAt": "2026-10-26T22:00:03.000Z"
+				},
+				{
+					"videoId": "ITwLLa7vrCg",
+					"title": "Why You Should NEVER Mess With Your Wife | Brett Hollis FULL SPECIAL",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/ITwLLa7vrCg/hqdefault.jpg",
+					"publishedAt": "2026-10-26T16:26:21.000Z"
+				},
+				{
+					"videoId": "GW6flujEhlc",
+					"title": "Marriage makes every simple question complicated | Dan McGowan Stand-Up Comedy",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/GW6flujEhlc/hqdefault.jpg",
+					"publishedAt": "2026-10-25T22:00:17.000Z"
+				},
+				{
+					"videoId": "ObxNWdTPsV4",
+					"title": "If God Didn't Have a Sense of Humor Why Would It Create Church People | John Branyan Stand-Up Comedy",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/ObxNWdTPsV4/hqdefault.jpg",
+					"publishedAt": "2026-10-25T21:00:37.000Z"
+				},
+				{
+					"videoId": "lhfEabQ3qrE",
+					"title": "New York Is Like a GTA Lobby | Joe Devito Stand-Up Comedy",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/lhfEabQ3qrE/hqdefault.jpg",
+					"publishedAt": "2026-10-25T15:00:01.000Z"
+				},
+				{
+					"videoId": "cpPtxlMHHNI",
+					"title": "There's only one thing I want for my kids, and you'll never guess it | Jordan Makin Stand-Up Comedy",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/cpPtxlMHHNI/hqdefault.jpg",
+					"publishedAt": "2026-10-24T21:00:20.000Z"
+				},
+				{
+					"videoId": "rX08Xe2_EI0",
+					"title": "The Best Halloween Jokes You'll Hear This Season",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/rX08Xe2_EI0/hqdefault.jpg",
+					"publishedAt": "2026-10-24T14:00:13.000Z"
+				},
+				{
+					"videoId": "YEWXHZRIeOA",
+					"title": "When you get older, your body does not work the same anymore | Jaye Devan Stand-Up Comedy",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/YEWXHZRIeOA/hqdefault.jpg",
+					"publishedAt": "2026-10-23T21:00:30.000Z"
+				},
+				{
+					"videoId": "Y8lX7veeasM",
+					"title": "Why Would Anyone Have Their Mom as an Emergency Contact Instead of a Doctor | Rocky Laporte",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/Y8lX7veeasM/hqdefault.jpg",
+					"publishedAt": "2026-10-23T20:00:38.000Z"
+				},
+				{
+					"videoId": "PtPAIq5L67k",
+					"title": "People Make Fun of the Way I Sound | Chad Thornsberry Stand-Up Comedy",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/PtPAIq5L67k/hqdefault.jpg",
+					"publishedAt": "2026-10-23T14:00:05.000Z"
+				},
+				{
+					"videoId": "aorezgkuIs8",
+					"title": "This is when I knew I was old | Dan McGowan Stand-Up Comedy",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/aorezgkuIs8/hqdefault.jpg",
+					"publishedAt": "2026-10-22T21:00:23.000Z"
+				},
+				{
+					"videoId": "jRpvsoyGCVI",
+					"title": "That's When You Know You're Finally Old | Michele Balan FULL SPECIAL",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/jRpvsoyGCVI/hqdefault.jpg",
+					"publishedAt": "2026-10-22T14:00:02.000Z"
+				}
+			]
+		},
+		{
+			"id": "UC7MgijK9WL_EqCo1juUERwg",
+			"name": "Don't Tell Comedy",
+			"channelUrl": "https://www.youtube.com/channel/UC7MgijK9WL_EqCo1juUERwg",
+			"description": "Secret-location stand-up sets from emerging and established comedians.",
+			"category": "Comedy",
+			"logoUrl": "catalog/logos/UC7MgijK9WL_EqCo1juUERwg.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "DV-dS63R9AY",
+					"title": "\"Rosa Parks\" 🎤: Alex English | Full Video on our Channel!",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/DV-dS63R9AY/hqdefault.jpg",
+					"publishedAt": "2026-10-27T21:00:37.000Z"
+				},
+				{
+					"videoId": "hdlGsDRAUls",
+					"title": "“STD Test” 🎤: Bret Raybould | Full Video on our Channel!",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/hdlGsDRAUls/hqdefault.jpg",
+					"publishedAt": "2026-10-26T21:00:20.000Z"
+				},
+				{
+					"videoId": "OCaY4tobtxk",
+					"title": "Humiliated at the STD Clinic | Bret Raybould | Stand Up Comedy",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/OCaY4tobtxk/hqdefault.jpg",
+					"publishedAt": "2026-10-26T19:00:11.000Z"
+				},
+				{
+					"videoId": "IBUCtQucum0",
+					"title": "\"Smuggling Mayo into Mexico\" 🎤: Aidan McCluskey | @aidsman109  | Full Video on our Channel!",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/IBUCtQucum0/hqdefault.jpg",
+					"publishedAt": "2026-10-25T21:00:39.000Z"
+				},
+				{
+					"videoId": "COaSlWDDUHI",
+					"title": "“Straight vs. Gay Face” 🎤: Asha Ward | Full Video on our Channel!",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/COaSlWDDUHI/hqdefault.jpg",
+					"publishedAt": "2026-10-24T21:00:10.000Z"
+				},
+				{
+					"videoId": "RcdXImGdxwg",
+					"title": "\"Crazy Dominican Slang\" 🎤: Carolina Montesquieu | Full Video on our Channel!",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/RcdXImGdxwg/hqdefault.jpg",
+					"publishedAt": "2026-10-23T21:00:21.000Z"
+				},
+				{
+					"videoId": "SU4UIZgmluU",
+					"title": "“Hormones vs. Steroids” 🎤: @RobertKellyComedy  | Full Video on our Channel!",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/SU4UIZgmluU/hqdefault.jpg",
+					"publishedAt": "2026-10-22T21:00:29.000Z"
+				},
+				{
+					"videoId": "jll6XSOCVI0",
+					"title": "“White People Things” 🎤: Asha Ward | Full Video on our Channel!",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/jll6XSOCVI0/hqdefault.jpg",
+					"publishedAt": "2026-10-21T21:00:26.000Z"
+				},
+				{
+					"videoId": "kmz0-G2kw6A",
+					"title": "My Dad Came Out Before Me | Asha Ward | Stand Up Comedy",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/kmz0-G2kw6A/hqdefault.jpg",
+					"publishedAt": "2026-10-21T19:00:22.000Z"
+				},
+				{
+					"videoId": "kbAa4ZmqIE8",
+					"title": "\"New Therapist\" 🎤: Dan Docimo | @dandocimo8934 | Full Video on our Channel!",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/kbAa4ZmqIE8/hqdefault.jpg",
+					"publishedAt": "2026-10-20T21:00:31.000Z"
+				},
+				{
+					"videoId": "HjQo5S21bJA",
+					"title": "“Used to be Heavy” 🎤: @RobertKellyComedy  | Full Video on our Channel!",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/HjQo5S21bJA/hqdefault.jpg",
+					"publishedAt": "2026-10-19T21:00:16.000Z"
+				},
+				{
+					"videoId": "EHc9vHcmdAc",
+					"title": "Alpha Males Will Believe Anything | Robert Kelly | Stand Up Comedy",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/EHc9vHcmdAc/hqdefault.jpg",
+					"publishedAt": "2026-10-19T19:00:30.000Z"
+				},
+				{
+					"videoId": "YH_5xV9CQvQ",
+					"title": "\"Raw Dogging Marriage\" 🎤: Shivani Davé | @ShivaniDaveComedy | Full Video on our Channel!",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/YH_5xV9CQvQ/hqdefault.jpg",
+					"publishedAt": "2026-10-18T21:00:10.000Z"
+				},
+				{
+					"videoId": "TsJ5El89xLc",
+					"title": "”Cockapoo vs. White Women” 🎤: Anthony Moore | Full Video on our Channel!",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/TsJ5El89xLc/hqdefault.jpg",
+					"publishedAt": "2026-10-17T21:00:15.000Z"
+				},
+				{
+					"videoId": "bTUsicw0598",
+					"title": "7 Underground Comics To Watch | Stand Up Comedy Compilation",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/bTUsicw0598/hqdefault.jpg",
+					"publishedAt": "2026-10-17T19:00:38.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCwWhs_6x42TyRM4Wstoq8HA",
+			"name": "The Daily Show",
+			"channelUrl": "https://www.youtube.com/channel/UCwWhs_6x42TyRM4Wstoq8HA",
+			"description": "Satirical news and comedy covering politics, media, and current events.",
+			"category": "Comedy",
+			"logoUrl": "catalog/logos/UCwWhs_6x42TyRM4Wstoq8HA.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "uWqFBoeLCPk",
+					"title": "Are Paid Influencers Influencing Your Midterm Vote? Desi Lydic Says Beware | The Daily Show",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/uWqFBoeLCPk/hqdefault.jpg",
+					"publishedAt": "2026-10-28T12:04:34.000Z"
+				},
+				{
+					"videoId": "6z0SFYA5EH8",
+					"title": "Morgana Robinson on Spending 3 Years in Character for “Ali G: Who Iz I” | The Daily Show",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6z0SFYA5EH8/hqdefault.jpg",
+					"publishedAt": "2026-10-28T03:30:03.000Z"
+				},
+				{
+					"videoId": "pzyITrwlaL0",
+					"title": "Conservative Media Rallies Behind The Cheesecake Factory After Obama Serves Up Diss | The Daily Show",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/pzyITrwlaL0/hqdefault.jpg",
+					"publishedAt": "2026-10-28T02:00:28.000Z"
+				},
+				{
+					"videoId": "CAs2S6P90fM",
+					"title": "Trumpers are firmly against \"communist\" handouts, but Trump's $5K checks? That's free money, baby!",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/CAs2S6P90fM/hqdefault.jpg",
+					"publishedAt": "2026-10-27T21:33:42.000Z"
+				},
+				{
+					"videoId": "6MCptn0TKls",
+					"title": "Obama's jab at Trump's White House set off a right-wing s**tstorm, but not the one Jon was expecting",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6MCptn0TKls/hqdefault.jpg",
+					"publishedAt": "2026-10-27T18:02:20.000Z"
+				},
+				{
+					"videoId": "hjTReEJBmRk",
+					"title": "Jon reexamines Trump's 2024 campaign promise, \"Trump is for you,\" and who the \"YOU\" really is",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/hjTReEJBmRk/hqdefault.jpg",
+					"publishedAt": "2026-10-27T15:39:44.000Z"
+				},
+				{
+					"videoId": "FejC6Knd-yo",
+					"title": "Jordan Klepper Fingers the Pulse: Red Flags | The Daily Show",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/FejC6Knd-yo/hqdefault.jpg",
+					"publishedAt": "2026-10-27T04:01:00.000Z"
+				},
+				{
+					"videoId": "-ImRP3pNgbM",
+					"title": "Matthew Cole - “Princes and Thieves” | The Daily Show",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/-ImRP3pNgbM/hqdefault.jpg",
+					"publishedAt": "2026-10-27T03:38:48.000Z"
+				},
+				{
+					"videoId": "2nIS10ia0fs",
+					"title": "Trump Gets Roasted by Obama & Transfixed by Nicki Minaj's Ass | The Daily Show",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/2nIS10ia0fs/hqdefault.jpg",
+					"publishedAt": "2026-10-27T03:00:17.000Z"
+				},
+				{
+					"videoId": "Sk3aIuMSbG4",
+					"title": "An Inside Look at Jordan Klepper Fingers the Pulse: Red Flags | The Daily Show",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/Sk3aIuMSbG4/hqdefault.jpg",
+					"publishedAt": "2026-10-27T01:00:08.000Z"
+				},
+				{
+					"videoId": "MMA1rqTJvu4",
+					"title": "Jordan Klepper finds out Texans have more in common with James Talarico than they'd like to admit.",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/MMA1rqTJvu4/hqdefault.jpg",
+					"publishedAt": "2026-10-26T23:44:24.000Z"
+				},
+				{
+					"videoId": "geoq11GfEE0",
+					"title": "Islamophobia couldn't stop El-Sayed in the primary race, so now MAGA's going with MORE ISLAMOPHOBIA",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/geoq11GfEE0/hqdefault.jpg",
+					"publishedAt": "2026-10-26T18:02:20.000Z"
+				},
+				{
+					"videoId": "dbS7iwm6KJ8",
+					"title": "David Corn on how Trump's affection for Putin is driving him to side with Russia over Ukraine",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/dbS7iwm6KJ8/hqdefault.jpg",
+					"publishedAt": "2026-10-26T15:02:19.000Z"
+				},
+				{
+					"videoId": "BUfeXk1wCUw",
+					"title": "Taika Waititi on \"Klara and the Sun\" and its unexpected relevance to today's discussions about AI",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/BUfeXk1wCUw/hqdefault.jpg",
+					"publishedAt": "2026-10-25T18:00:03.000Z"
+				},
+				{
+					"videoId": "k9K271kUIYg",
+					"title": "Democrats have a chance at winning in MISSISSIPPI? Where the state bird is a rifle? #DailyShow #Dems",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/k9K271kUIYg/hqdefault.jpg",
+					"publishedAt": "2026-10-25T15:00:34.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCo3nWXH_6vVJ5-xbF3bKb3Q",
+			"name": "Conan O'Brien",
+			"channelUrl": "https://www.youtube.com/channel/UCo3nWXH_6vVJ5-xbF3bKb3Q",
+			"description": "Talk-show comedy, sketches, and interviews from Conan O'Brien.",
+			"category": "Comedy",
+			"logoUrl": "catalog/logos/UCo3nWXH_6vVJ5-xbF3bKb3Q.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "qHzMtDE1Q8M",
+					"title": "Ali G Introduces Borat | Late Night with Conan O’Brien",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/qHzMtDE1Q8M/hqdefault.jpg",
+					"publishedAt": "2026-10-23T14:00:01.000Z"
+				},
+				{
+					"videoId": "Sev8xhjTbkE",
+					"title": "Cold: I'll See You in Health with Dr. Arroyo",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/Sev8xhjTbkE/hqdefault.jpg",
+					"publishedAt": "2026-10-16T20:05:21.000Z"
+				},
+				{
+					"videoId": "rowxjJnscKw",
+					"title": "Izabel Goulart Flirts with Conan | Late Night with Conan O’Brien",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/rowxjJnscKw/hqdefault.jpg",
+					"publishedAt": "2026-10-16T14:00:37.000Z"
+				},
+				{
+					"videoId": "rJsBwD-zcYg",
+					"title": "Jordan Compliments Conan | The Conan and Jordan Show",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/rJsBwD-zcYg/hqdefault.jpg",
+					"publishedAt": "2026-10-12T21:00:14.000Z"
+				},
+				{
+					"videoId": "nqQM7EJqPFs",
+					"title": "The Jennifer Hudson Spirit Tunnel | The Conan and Jordan Show",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/nqQM7EJqPFs/hqdefault.jpg",
+					"publishedAt": "2026-10-09T20:00:35.000Z"
+				},
+				{
+					"videoId": "f-AO5sSsLGI",
+					"title": "Jordan Schlansky Admires Conan | The Conan and Jordan Show",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/f-AO5sSsLGI/hqdefault.jpg",
+					"publishedAt": "2026-10-09T13:00:17.000Z"
+				},
+				{
+					"videoId": "vEtR41sKMeE",
+					"title": "5 Ways to Beat the Heat!: I'll See You in Health with Dr. Arroyo",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/vEtR41sKMeE/hqdefault.jpg",
+					"publishedAt": "2026-10-08T14:00:33.000Z"
+				},
+				{
+					"videoId": "gCaatxmXIps",
+					"title": "Sleep Apnea: I'll See You in Health with Dr. Arroyo",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/gCaatxmXIps/hqdefault.jpg",
+					"publishedAt": "2026-10-02T14:00:25.000Z"
+				},
+				{
+					"videoId": "7cH2OfAuqgA",
+					"title": "Conan Takes His Staff on a Shopping Spree | Late Night with Conan O’Brien",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/7cH2OfAuqgA/hqdefault.jpg",
+					"publishedAt": "2026-09-30T14:00:10.000Z"
+				},
+				{
+					"videoId": "B8NnIZF0K9k",
+					"title": "Sperm: I'll See You in Health with Dr. Arroyo",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/B8NnIZF0K9k/hqdefault.jpg",
+					"publishedAt": "2026-09-25T14:00:21.000Z"
+				},
+				{
+					"videoId": "7p4E_vP4Hi0",
+					"title": "Jimmy Fallon Fills In for Conan on \"Late Night\" | Late Night with Conan O’Brien",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/7p4E_vP4Hi0/hqdefault.jpg",
+					"publishedAt": "2026-09-23T14:00:21.000Z"
+				},
+				{
+					"videoId": "vKvsemGmDn8",
+					"title": "Conan Decorates Writer Andy Blitz's Apartment | Late Night with Conan O’Brien",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/vKvsemGmDn8/hqdefault.jpg",
+					"publishedAt": "2026-09-18T14:00:06.000Z"
+				},
+				{
+					"videoId": "HyziwfQRvlM",
+					"title": "Tongue Depressor: I'll See You in Health with Dr. Arroyo",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/HyziwfQRvlM/hqdefault.jpg",
+					"publishedAt": "2026-09-16T14:00:20.000Z"
+				},
+				{
+					"videoId": "SRQljkQmKes",
+					"title": "Conan Attempts to Beat His Ring Spin Record with an MIT Physicist | Late Night with Conan O’Brien",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/SRQljkQmKes/hqdefault.jpg",
+					"publishedAt": "2026-09-11T14:00:01.000Z"
+				},
+				{
+					"videoId": "f91Lbc5kCO4",
+					"title": "Athlete's Foot: I'll See You in Health with Dr. Arroyo",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/f91Lbc5kCO4/hqdefault.jpg",
+					"publishedAt": "2026-09-09T14:00:08.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCf1XIplYiqNv9baGsFHwPPQ",
+			"name": "WildLens by Abrar",
+			"channelUrl": "https://www.youtube.com/channel/UCf1XIplYiqNv9baGsFHwPPQ",
+			"description": "Travel and adventure documentaries from Pakistan and beyond.",
+			"category": "Adventure",
+			"logoUrl": "catalog/logos/UCf1XIplYiqNv9baGsFHwPPQ.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "tNLuqTc5REU",
+					"title": "Finally Entering El Salvador 🇸🇻 Once the Murder Capital of the World S9 EP 101| Pakistan to Americas",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/tNLuqTc5REU/hqdefault.jpg",
+					"publishedAt": "2026-10-25T15:04:09.000Z"
+				},
+				{
+					"videoId": "4lNEGcIZC_U",
+					"title": "Life in a City Under the Shadow of Volcanoes Guatemala 🇬🇹 S9 EP 100 | Antigua | Pakistan to Americas",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/4lNEGcIZC_U/hqdefault.jpg",
+					"publishedAt": "2026-10-22T15:05:56.000Z"
+				},
+				{
+					"videoId": "AjdBNmuzMS8",
+					"title": "I Finally Saw This Unreal Place in Guatemala 🇬🇹 S9 EP 99 | Lago Atitlan | Pakistan to Americas",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/AjdBNmuzMS8/hqdefault.jpg",
+					"publishedAt": "2026-10-18T15:02:21.000Z"
+				},
+				{
+					"videoId": "1JFPYwUqK4I",
+					"title": "Never-Ending Ride Through Guatemala’s Mountains Was a Nightmare 🇬🇹 S9 EP 98 | Pakistan to Americas",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/1JFPYwUqK4I/hqdefault.jpg",
+					"publishedAt": "2026-10-16T16:01:02.000Z"
+				},
+				{
+					"videoId": "zc4RznMZLo4",
+					"title": "I Crashed My Motorcycle on a Dangerous Trail in Guatemala 🇬🇹 S9 EP 97 | Pakistan to Americas",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/zc4RznMZLo4/hqdefault.jpg",
+					"publishedAt": "2026-10-11T15:04:16.000Z"
+				},
+				{
+					"videoId": "AR39IpS_ucI",
+					"title": "Strangers Helped Me in the Middle of Nowhere 🇬🇹 S9 EP 96 | Pakistan to Americas Motorcycle Tour",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/AR39IpS_ucI/hqdefault.jpg",
+					"publishedAt": "2026-10-08T16:06:42.000Z"
+				},
+				{
+					"videoId": "q8lacLpxKCs",
+					"title": "I Got Stuck in Guatemala’s Worst Rainstorm 🇬🇹 S9 EP 95 | Pakistan to Americas Motorcycle Tour",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/q8lacLpxKCs/hqdefault.jpg",
+					"publishedAt": "2026-10-04T15:54:01.000Z"
+				},
+				{
+					"videoId": "lxwWH7YXGHc",
+					"title": "I Accidentally Found Paradise Deep in Guatemala’s Jungle 🇬🇹 S9 EP 94 | Pakistan to Americas",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/lxwWH7YXGHc/hqdefault.jpg",
+					"publishedAt": "2026-10-01T15:26:06.000Z"
+				},
+				{
+					"videoId": "wIjOqT6ZXig",
+					"title": "My First REAL Test in Guatemala 🇬🇹 S9 EP 93 | Pakistan to Americas Motorcycle Tour",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/wIjOqT6ZXig/hqdefault.jpg",
+					"publishedAt": "2026-09-27T15:38:52.000Z"
+				},
+				{
+					"videoId": "TIGojnLSp9c",
+					"title": "The Scariest Boat Ride of My Journey in Guatemala 🇬🇹 S9 EP 92 | Pakistan to Americas Motorcycle Tour",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/TIGojnLSp9c/hqdefault.jpg",
+					"publishedAt": "2026-09-24T15:23:27.000Z"
+				},
+				{
+					"videoId": "VdazNRvklRM",
+					"title": "Nervous Crossing into Guatemala 🇬🇹 From Belize 🇧🇿 S9 EP 91 | Pakistan to Americas Motorcycle Tour",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/VdazNRvklRM/hqdefault.jpg",
+					"publishedAt": "2026-09-20T16:14:20.000Z"
+				},
+				{
+					"videoId": "yujC_LdAAeQ",
+					"title": "LOST IN THE JUNGLES OF BELIZE 🇧🇿 S9 EP 90 | Pakistan to Americas Motorcycle Tour",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/yujC_LdAAeQ/hqdefault.jpg",
+					"publishedAt": "2026-09-17T15:38:07.000Z"
+				},
+				{
+					"videoId": "Msdn3JdHDbk",
+					"title": "Finally Crossing into Belize 🇧🇿 From Mexico 🇲🇽 S9 EP 89 | Pakistan to Americas Motorcycle Tour",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/Msdn3JdHDbk/hqdefault.jpg",
+					"publishedAt": "2026-09-13T16:20:27.000Z"
+				},
+				{
+					"videoId": "hcUnd1gTkNI",
+					"title": "I Found One of the Most Beautiful Places in Mexico 🇲🇽 S9 EP 88 | Pakistan to Americas Motorcycle",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/hcUnd1gTkNI/hqdefault.jpg",
+					"publishedAt": "2026-09-10T16:13:00.000Z"
+				},
+				{
+					"videoId": "a1hpoWWo16w",
+					"title": "FROM MYSTERIOUS PYRAMIDS TO PARADISE in Mexico 🇲🇽 S9 EP 87 | Pakistan to Americas Motorcycle Tour",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/a1hpoWWo16w/hqdefault.jpg",
+					"publishedAt": "2026-09-06T15:51:38.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCUuDUW0Y6IQZYDvH1QQBsgA",
+			"name": "Irfan Junejo",
+			"channelUrl": "https://www.youtube.com/channel/UCUuDUW0Y6IQZYDvH1QQBsgA",
+			"description": "Travel vlogs, outdoor adventures, and life on the road.",
+			"category": "Adventure",
+			"logoUrl": "catalog/logos/UCUuDUW0Y6IQZYDvH1QQBsgA.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "pluUoHBHf8Q",
+					"title": "2 TYPES OF EDITING 🤌",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/pluUoHBHf8Q/hqdefault.jpg",
+					"publishedAt": "2026-08-24T16:16:14.000Z"
+				},
+				{
+					"videoId": "yYZnrlRXj0g",
+					"title": "New York Coffee vs Claude in Karachi",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/yYZnrlRXj0g/hqdefault.jpg",
+					"publishedAt": "2026-07-31T17:13:40.000Z"
+				},
+				{
+					"videoId": "PBGgHwftwHQ",
+					"title": "How to Aura Farm - Complete Guide",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/PBGgHwftwHQ/hqdefault.jpg",
+					"publishedAt": "2026-06-06T16:14:09.000Z"
+				},
+				{
+					"videoId": "V4sQgeEzsEc",
+					"title": "120 Hours in China 🇨🇳",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/V4sQgeEzsEc/hqdefault.jpg",
+					"publishedAt": "2026-05-23T14:30:06.000Z"
+				},
+				{
+					"videoId": "eiE3vUNLOAM",
+					"title": "Stories of North Nazimabad feat. @GulAhmedOfficial #ramazanspecial",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/eiE3vUNLOAM/hqdefault.jpg",
+					"publishedAt": "2026-03-19T14:40:59.000Z"
+				},
+				{
+					"videoId": "tzGY-E8KNMw",
+					"title": "Stories of Federal B Area feat. @G@GulAhmedOfficial #ramazanspecial",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/tzGY-E8KNMw/hqdefault.jpg",
+					"publishedAt": "2026-03-15T12:42:49.000Z"
+				},
+				{
+					"videoId": "0aX6Enb0aj8",
+					"title": "Stories of Ranchore Line feat. @G@GulAhmedOfficial#ramazanspecial #food",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/0aX6Enb0aj8/hqdefault.jpg",
+					"publishedAt": "2026-03-12T15:11:28.000Z"
+				},
+				{
+					"videoId": "ilM8H7o19i4",
+					"title": "Stories of Lalu Khait feat @GulAhmedOfficial #ramazanspecial",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/ilM8H7o19i4/hqdefault.jpg",
+					"publishedAt": "2026-03-09T11:57:08.000Z"
+				},
+				{
+					"videoId": "PtqDc89pxzM",
+					"title": "Galaxy S26 Ultra Launch Event with @S@SamsungPakistan",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/PtqDc89pxzM/hqdefault.jpg",
+					"publishedAt": "2026-03-07T17:21:16.000Z"
+				},
+				{
+					"videoId": "A1_S2TiK88A",
+					"title": "Stories of Landhi feat. @GulAhmedOfficial #ramazanspecial #food",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/A1_S2TiK88A/hqdefault.jpg",
+					"publishedAt": "2026-03-06T13:26:46.000Z"
+				},
+				{
+					"videoId": "MDx8DaTwUHs",
+					"title": "Stories of Soldier Bazar Karachi feat. @GulAhmedOfficial #ramazanspecial #food",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/MDx8DaTwUHs/hqdefault.jpg",
+					"publishedAt": "2026-03-03T15:11:50.000Z"
+				},
+				{
+					"videoId": "IeXd0qZbI0Y",
+					"title": "Stories of Garden Karachi feat. @GulAhmedOfficial  #ramazanspecial #food",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/IeXd0qZbI0Y/hqdefault.jpg",
+					"publishedAt": "2026-02-28T12:08:31.000Z"
+				},
+				{
+					"videoId": "OMrCFe60M_I",
+					"title": "Galaxy S26 Ultra - Photo Assist @SamsungPakistan",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/OMrCFe60M_I/hqdefault.jpg",
+					"publishedAt": "2026-02-25T21:06:39.000Z"
+				},
+				{
+					"videoId": "_SXbtmi05mg",
+					"title": "Galaxy S26 Ultra - Nightography @SamsungPakistan",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_SXbtmi05mg/hqdefault.jpg",
+					"publishedAt": "2026-02-25T18:33:42.000Z"
+				},
+				{
+					"videoId": "KeQKkGP8H44",
+					"title": "Stories of Korangi feat @GulAhmedOfficial#ramazanspecial #food",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/KeQKkGP8H44/hqdefault.jpg",
+					"publishedAt": "2026-02-25T12:39:49.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCDTINI9skkeZNY2ZXnBqIkQ",
+			"name": "Eva zu Beck",
+			"channelUrl": "https://www.youtube.com/channel/UCDTINI9skkeZNY2ZXnBqIkQ",
+			"description": "Solo travel, remote places, and adventure storytelling.",
+			"category": "Adventure",
+			"logoUrl": "catalog/logos/UCDTINI9skkeZNY2ZXnBqIkQ.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "Rw2KYD6WuqI",
+					"title": "Proud to be a barefoot human with @vivobarefootTV ❤️ Use code 25EVAZUBECK for 25% off at checkout!",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/Rw2KYD6WuqI/hqdefault.jpg",
+					"publishedAt": "2026-10-26T16:29:00.000Z"
+				},
+				{
+					"videoId": "kYyxSvOcr4k",
+					"title": "Everyday life living in my tent alone (with horses & dogs)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/kYyxSvOcr4k/hqdefault.jpg",
+					"publishedAt": "2026-10-21T16:41:04.000Z"
+				},
+				{
+					"videoId": "HJ98D9wLmNY",
+					"title": "My book, THE WILDER WAY, is now available in GERMAN! Buy it anywhere you buy your books!",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/HJ98D9wLmNY/hqdefault.jpg",
+					"publishedAt": "2026-10-06T09:00:02.000Z"
+				},
+				{
+					"videoId": "vofF8V-40dU",
+					"title": "I'm moving into a tent... (and I rescued a dog)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/vofF8V-40dU/hqdefault.jpg",
+					"publishedAt": "2026-09-24T17:20:48.000Z"
+				},
+				{
+					"videoId": "uuJpJ6sAULE",
+					"title": "Life has taken a crazy turn (am I a farmer now?)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/uuJpJ6sAULE/hqdefault.jpg",
+					"publishedAt": "2026-09-11T12:52:59.000Z"
+				},
+				{
+					"videoId": "D8dAqVe6m0E",
+					"title": "They're making my life here VERY difficult",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/D8dAqVe6m0E/hqdefault.jpg",
+					"publishedAt": "2026-08-26T15:44:32.000Z"
+				},
+				{
+					"videoId": "faHir6gqwK8",
+					"title": "I'm back on my land, but everything has changed",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/faHir6gqwK8/hqdefault.jpg",
+					"publishedAt": "2026-08-07T16:35:09.000Z"
+				},
+				{
+					"videoId": "GMn3aQ2tBTU",
+					"title": "I Went to a Fake American Trailer Park in Poland",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/GMn3aQ2tBTU/hqdefault.jpg",
+					"publishedAt": "2026-07-21T17:03:47.000Z"
+				},
+				{
+					"videoId": "dZQ6rf7rAEo",
+					"title": "Running the R2R2R in the Grand Canyon in my Vivobarefoot minimalist shoes #vivobarefoot #ad",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/dZQ6rf7rAEo/hqdefault.jpg",
+					"publishedAt": "2026-07-04T09:59:58.000Z"
+				},
+				{
+					"videoId": "TXiq7a5uuyI",
+					"title": "I Ran Across the Grand Canyon... TWICE in One Day (R2R2R)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/TXiq7a5uuyI/hqdefault.jpg",
+					"publishedAt": "2026-06-26T15:00:04.000Z"
+				},
+				{
+					"videoId": "oSIrm4sPKms",
+					"title": "DJI Avata 360 = freedom of a 360 cam + powerful follow tech😍  #ad #DJIAvata360 #DJIpanoramicdrones",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/oSIrm4sPKms/hqdefault.jpg",
+					"publishedAt": "2026-06-23T16:25:08.000Z"
+				},
+				{
+					"videoId": "ZpHhWzsl8Hs",
+					"title": "3 Days Survival Running - No Shelter, Wild Foods",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/ZpHhWzsl8Hs/hqdefault.jpg",
+					"publishedAt": "2026-06-13T15:10:25.000Z"
+				},
+				{
+					"videoId": "8Ox57EeeznQ",
+					"title": "I Published a Book... Am I Quitting YouTube?",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/8Ox57EeeznQ/hqdefault.jpg",
+					"publishedAt": "2026-06-07T16:09:43.000Z"
+				},
+				{
+					"videoId": "OxMeSLbGISY",
+					"title": "My 1st Impressions of the USA After Years Abroad",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/OxMeSLbGISY/hqdefault.jpg",
+					"publishedAt": "2026-05-31T15:53:39.000Z"
+				},
+				{
+					"videoId": "cDGxYbTpDEI",
+					"title": "I Took My Dog on Scotland’s Most Dramatic Trail (75 Miles)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/cDGxYbTpDEI/hqdefault.jpg",
+					"publishedAt": "2026-05-17T13:55:31.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCvK4bOhULCpmLabd2pDMtnA",
+			"name": "Yes Theory",
+			"channelUrl": "https://www.youtube.com/channel/UCvK4bOhULCpmLabd2pDMtnA",
+			"description": "Adventure challenges and travel stories built around seeking discomfort.",
+			"category": "Adventure",
+			"logoUrl": "catalog/logos/UCvK4bOhULCpmLabd2pDMtnA.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "TMQ31DQjjWg",
+					"title": "50 hours in a Secret Russian town in America",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/TMQ31DQjjWg/hqdefault.jpg",
+					"publishedAt": "2026-10-18T16:00:01.000Z"
+				},
+				{
+					"videoId": "oKt2FWBFmik",
+					"title": "our secret project is finally out",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/oKt2FWBFmik/hqdefault.jpg",
+					"publishedAt": "2026-10-11T16:00:06.000Z"
+				},
+				{
+					"videoId": "Rtj5-iql5FE",
+					"title": "Inside America's poorest region everyone forgot",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/Rtj5-iql5FE/hqdefault.jpg",
+					"publishedAt": "2026-08-30T16:00:04.000Z"
+				},
+				{
+					"videoId": "W_s81Dn4uEI",
+					"title": "Why is this piece of America still owned by France?",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/W_s81Dn4uEI/hqdefault.jpg",
+					"publishedAt": "2026-08-16T16:00:27.000Z"
+				},
+				{
+					"videoId": "NbCf2La5SD8",
+					"title": "buying a 1 euro House in Italy - is it a scam?",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/NbCf2La5SD8/hqdefault.jpg",
+					"publishedAt": "2026-07-26T16:00:03.000Z"
+				},
+				{
+					"videoId": "O021eXJ7qfE",
+					"title": "Europe's Most Remote Island Village (400 people live here)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/O021eXJ7qfE/hqdefault.jpg",
+					"publishedAt": "2026-06-28T16:00:06.000Z"
+				},
+				{
+					"videoId": "dpHpKeXm-B0",
+					"title": "\"he's crazy\" - We Found a Man Living Alone in the Amazon (39 years isolated)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/dpHpKeXm-B0/hqdefault.jpg",
+					"publishedAt": "2026-06-21T16:00:07.000Z"
+				},
+				{
+					"videoId": "LWiNBT22gOI",
+					"title": "Why Does Nobody Travel to South America's Strangest Countries?",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/LWiNBT22gOI/hqdefault.jpg",
+					"publishedAt": "2026-05-31T16:00:23.000Z"
+				},
+				{
+					"videoId": "2PB1ti2hFTM",
+					"title": "Exploring Japan's Remote Border with Russia (no one comes here)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/2PB1ti2hFTM/hqdefault.jpg",
+					"publishedAt": "2026-05-24T16:00:02.000Z"
+				},
+				{
+					"videoId": "PApu9YFk1HI",
+					"title": "Why Does Japan Have 9,000,000 Abandoned Homes?",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/PApu9YFk1HI/hqdefault.jpg",
+					"publishedAt": "2026-05-03T16:00:42.000Z"
+				},
+				{
+					"videoId": "2Qrxj5N_eYE",
+					"title": "Abandoned in Germany with $0 for 24 Hours (Man vs. Woman)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/2Qrxj5N_eYE/hqdefault.jpg",
+					"publishedAt": "2026-04-26T16:00:07.000Z"
+				},
+				{
+					"videoId": "IEIBXM1YwO8",
+					"title": "50 Hours on Europe's Most Dangerous Island",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/IEIBXM1YwO8/hqdefault.jpg",
+					"publishedAt": "2026-04-05T16:00:25.000Z"
+				},
+				{
+					"videoId": "w9oxLSRy-zc",
+					"title": "We Took Our Food Delivery Man on His First Vacation",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/w9oxLSRy-zc/hqdefault.jpg",
+					"publishedAt": "2026-03-22T17:01:16.000Z"
+				},
+				{
+					"videoId": "8_wiuDd691s",
+					"title": "24 Hours in 2 Countries that Hate Each Other",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/8_wiuDd691s/hqdefault.jpg",
+					"publishedAt": "2026-03-01T17:00:09.000Z"
+				},
+				{
+					"videoId": "C_2cE21MM7s",
+					"title": "Inside Pakistan’s Most Dangerous City (surreal)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/C_2cE21MM7s/hqdefault.jpg",
+					"publishedAt": "2026-02-15T17:00:27.000Z"
+				}
+			]
+		},
+		{
+			"id": "UC0Ize0RLIbGdH5x4wI45G-A",
+			"name": "Drew Binsky",
+			"channelUrl": "https://www.youtube.com/channel/UC0Ize0RLIbGdH5x4wI45G-A",
+			"description": "Travel documentaries from every country and culture around the world.",
+			"category": "Adventure",
+			"logoUrl": "catalog/logos/UC0Ize0RLIbGdH5x4wI45G-A.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "sl-D2uHAhAc",
+					"title": "The Truth About Paris’ Tiniest Apartments",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/sl-D2uHAhAc/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:00:33.000Z"
+				},
+				{
+					"videoId": "pu0N9VhH8VQ",
+					"title": "Inside The Most Dangerous Hood In Mexico City",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/pu0N9VhH8VQ/hqdefault.jpg",
+					"publishedAt": "2026-10-23T14:00:10.000Z"
+				},
+				{
+					"videoId": "XYYrKZEUDag",
+					"title": "People Pay $700 a Month to Live Like This in Paris",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/XYYrKZEUDag/hqdefault.jpg",
+					"publishedAt": "2026-10-17T10:51:37.000Z"
+				},
+				{
+					"videoId": "qC6NKtvUemA",
+					"title": "3 Shocking Things About The World’s Narrowest Island",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/qC6NKtvUemA/hqdefault.jpg",
+					"publishedAt": "2026-10-16T14:00:21.000Z"
+				},
+				{
+					"videoId": "zm1rBWtRUvo",
+					"title": "He's Been Living Alone In Isolation For 17 Years",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/zm1rBWtRUvo/hqdefault.jpg",
+					"publishedAt": "2026-10-03T14:34:56.000Z"
+				},
+				{
+					"videoId": "QYYK95uBWIs",
+					"title": "Inside America’s Most Expensive Grocery Store",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/QYYK95uBWIs/hqdefault.jpg",
+					"publishedAt": "2026-09-23T14:00:28.000Z"
+				},
+				{
+					"videoId": "jeuTcG6Wu2E",
+					"title": "I Tried 3 Most Extreme Treatments In The World",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/jeuTcG6Wu2E/hqdefault.jpg",
+					"publishedAt": "2026-09-21T14:00:34.000Z"
+				},
+				{
+					"videoId": "FmykXVUsPdw",
+					"title": "Entering The World's Narrowest Island (Philippines)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/FmykXVUsPdw/hqdefault.jpg",
+					"publishedAt": "2026-09-19T14:00:12.000Z"
+				},
+				{
+					"videoId": "WMue7nn9VK0",
+					"title": "24 Hours in Mexico's Most Feared Neighborhood",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/WMue7nn9VK0/hqdefault.jpg",
+					"publishedAt": "2026-09-13T16:03:07.000Z"
+				},
+				{
+					"videoId": "LetVDgbDB-E",
+					"title": "He Speaks 5 Languages But Can't Afford Food",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/LetVDgbDB-E/hqdefault.jpg",
+					"publishedAt": "2026-09-11T14:00:04.000Z"
+				},
+				{
+					"videoId": "ufpZt8HrFhQ",
+					"title": "I Investigated America's 3 Strictest Religious Groups",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/ufpZt8HrFhQ/hqdefault.jpg",
+					"publishedAt": "2026-09-09T14:00:13.000Z"
+				},
+				{
+					"videoId": "NmkhsAIql0M",
+					"title": "I Have A Huge Announcement!",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/NmkhsAIql0M/hqdefault.jpg",
+					"publishedAt": "2026-09-02T16:21:07.000Z"
+				},
+				{
+					"videoId": "V0ZRVUdIf7s",
+					"title": "This American Town Is 36 Miles From Russia",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/V0ZRVUdIf7s/hqdefault.jpg",
+					"publishedAt": "2026-08-29T15:17:18.000Z"
+				},
+				{
+					"videoId": "xD2i5nVW23k",
+					"title": "World’s Largest Family Home (800 People Live Here!)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/xD2i5nVW23k/hqdefault.jpg",
+					"publishedAt": "2026-08-28T14:00:24.000Z"
+				},
+				{
+					"videoId": "rl5_3kIxZYM",
+					"title": "People's Names In This Village Are Songs",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/rl5_3kIxZYM/hqdefault.jpg",
+					"publishedAt": "2026-08-24T14:00:06.000Z"
+				}
+			]
+		},
+		{
+			"id": "UCpnuadQ_w3r6f4Q_NRlqd-w",
+			"name": "Kraig Adams",
+			"channelUrl": "https://www.youtube.com/channel/UCpnuadQ_w3r6f4Q_NRlqd-w",
+			"description": "Cinematic hiking, backpacking, and wilderness journeys.",
+			"category": "Adventure",
+			"logoUrl": "catalog/logos/UCpnuadQ_w3r6f4Q_NRlqd-w.jpg",
+			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"videos": [
+				{
+					"videoId": "TvbfXKSM1O0",
+					"title": "The story of Ghost, part 3",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/TvbfXKSM1O0/hqdefault.jpg",
+					"publishedAt": "2026-10-28T13:10:05.000Z"
+				},
+				{
+					"videoId": "Wr_uOfRAAjk",
+					"title": "Put this on the TV tonight",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/Wr_uOfRAAjk/hqdefault.jpg",
+					"publishedAt": "2026-10-27T20:00:35.000Z"
+				},
+				{
+					"videoId": "jgZzUU_zDS4",
+					"title": "12 of my hikes as a pixel game",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/jgZzUU_zDS4/hqdefault.jpg",
+					"publishedAt": "2026-10-27T15:00:18.000Z"
+				},
+				{
+					"videoId": "2upU96IeRlw",
+					"title": "7 Hours of Ambient Hiking Footage",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/2upU96IeRlw/hqdefault.jpg",
+					"publishedAt": "2026-10-27T14:49:45.000Z"
+				},
+				{
+					"videoId": "WUjIntB3VFk",
+					"title": "85 miles alone across the Lofoten Islands",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/WUjIntB3VFk/hqdefault.jpg",
+					"publishedAt": "2026-10-25T21:10:12.000Z"
+				},
+				{
+					"videoId": "KY5mzaSDsn8",
+					"title": "Lost my phone 10 minutes into Iceland",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/KY5mzaSDsn8/hqdefault.jpg",
+					"publishedAt": "2026-10-22T13:14:27.000Z"
+				},
+				{
+					"videoId": "Nqb8VYP_uIg",
+					"title": "4 days on foot to Machu Picchu: the Salkantay Trek #shorts",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/Nqb8VYP_uIg/hqdefault.jpg",
+					"publishedAt": "2026-10-20T20:59:49.000Z"
+				},
+				{
+					"videoId": "XIQ4Rl25XmE",
+					"title": "Ordering dinner in Spanish with Babbel",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/XIQ4Rl25XmE/hqdefault.jpg",
+					"publishedAt": "2026-10-20T18:31:40.000Z"
+				},
+				{
+					"videoId": "RoIFVjaOD8Q",
+					"title": "Hiking alone to the Mardi Himal viewpoint in Nepal #shorts",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/RoIFVjaOD8Q/hqdefault.jpg",
+					"publishedAt": "2026-10-18T21:02:33.000Z"
+				},
+				{
+					"videoId": "xerajp4u4os",
+					"title": "Get up to 25% off Antigravity A1 (save up to $430) for a limited time! #shorts",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/xerajp4u4os/hqdefault.jpg",
+					"publishedAt": "2026-10-18T02:15:01.000Z"
+				},
+				{
+					"videoId": "6CAUfQg1UFk",
+					"title": "Get up to 25% off Antigravity A1 (save up to $430) for a limited time! #shorts",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6CAUfQg1UFk/hqdefault.jpg",
+					"publishedAt": "2026-10-18T02:14:57.000Z"
+				},
+				{
+					"videoId": "6ZLfvrNjOko",
+					"title": "7 days hut to hut in the Dolomites: the Alta Via 1 #shorts",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6ZLfvrNjOko/hqdefault.jpg",
+					"publishedAt": "2026-10-17T21:02:30.000Z"
+				},
+				{
+					"videoId": "6iqFCSb91zU",
+					"title": "Chamonix to Zermatt on foot: 9 days on the Haute Route #shorts",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6iqFCSb91zU/hqdefault.jpg",
+					"publishedAt": "2026-10-16T20:54:49.000Z"
+				},
+				{
+					"videoId": "MFk4kK0laiE",
+					"title": "Kyrgyzstan is like the Swiss Alps with barely any people #shorts",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/MFk4kK0laiE/hqdefault.jpg",
+					"publishedAt": "2026-10-15T21:04:30.000Z"
+				},
+				{
+					"videoId": "OU1sVdQt2Xc",
+					"title": "A Week on Türkiye's Black Sea Coast with a 360 Drone",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/OU1sVdQt2Xc/hqdefault.jpg",
+					"publishedAt": "2026-10-15T01:05:10.000Z"
 				}
 			]
 		}

@@ -40,11 +40,19 @@ Channels are **not** editable in the app. The repository owner manages them thro
 | `static/catalog.json`      | Generated runtime catalog with verified videos, snapshot dates, and logo paths |
 | `static/catalog/logos/`    | Downloaded channel avatars used by the generated catalog                       |
 
+Current packs: **Starter Mix**, **Technology TV**, **Science & Discovery**, **News TV**, **Gaming TV**, **Learning TV**, **Developer TV**, **Comedy TV**, and **Adventure TV**.
+
 ### Add or change a channel
 
-1. Edit `data/catalog.source.json`.
-2. Add the channel to one or more packs and, if appropriate, `starterChannelIds`.
-3. Run:
+1. Resolve and inspect the candidate first:
+
+```bash
+npm run catalog:inspect -- "https://www.youtube.com/@Veritasium"
+```
+
+2. Edit `data/catalog.source.json`.
+3. Add the channel to one or more packs and, if appropriate, `starterChannelIds`.
+4. Run:
 
 ```bash
 npm run catalog:sync
@@ -52,6 +60,19 @@ npm run catalog:check
 ```
 
 `catalog:sync` fetches the channel's YouTube RSS feed, verifies that it has usable recent uploads, downloads its avatar, and writes `static/catalog.json`. It fails if a channel ID is invalid or a feed is empty.
+
+For a read-only health review:
+
+```bash
+npm run catalog:audit
+npm run catalog:audit -- --json
+```
+
+The audit reports stale channels, old snapshots, channels outside packs, and possible duplicate names.
+
+### AI-assisted curation
+
+The repository includes an OpenCode skill at `.opencode/skills/catalog-curator/`. Ask OpenCode to use `@catalog-curator` when adding channels, rebalancing packs, refreshing snapshots, or auditing the catalog. The skill enforces canonical ID resolution, the managed-service boundary, validation, and the editorial policy in its `references/editorial-policy.md`.
 
 `catalog:check` validates the source and generated files, including:
 
@@ -184,6 +205,7 @@ npm run test:run    # unit tests
 npx playwright install chromium
 npm run test:e2e    # Playwright, uses a fake YouTube player
 npm run catalog:check
+npm run catalog:audit
 npm run build
 ```
 

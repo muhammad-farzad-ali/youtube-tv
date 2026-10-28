@@ -12,6 +12,8 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"catalog:sync": "node scripts/sync-catalog.mjs",
 		"catalog:check": "node scripts/validate-catalog.mjs",
+		"catalog:inspect": "node scripts/inspect-channel.mjs",
+		"catalog:audit": "node scripts/audit-catalog.mjs",
 		"test": "vitest",
 		"test:run": "vitest run",
 		"test:e2e": "playwright test",

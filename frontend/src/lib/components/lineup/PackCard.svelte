@@ -18,7 +18,10 @@
 		science: 'from-cyan/25 via-green/10 to-transparent',
 		news: 'from-red/25 via-orange/10 to-transparent',
 		gaming: 'from-magenta/25 via-blue/10 to-transparent',
-		learning: 'from-green/25 via-yellow/10 to-transparent'
+		learning: 'from-green/25 via-yellow/10 to-transparent',
+		developer: 'from-blue/25 via-cyan/10 to-transparent',
+		comedy: 'from-orange/25 via-red/10 to-transparent',
+		adventure: 'from-green/25 via-cyan/10 to-transparent'
 	};
 	const gradient = $derived(gradients[pack.id] ?? 'from-blue/20 via-raised to-transparent');
 </script>

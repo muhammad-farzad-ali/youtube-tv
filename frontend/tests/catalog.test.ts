@@ -9,9 +9,22 @@ describe('managed catalog', () => {
 	it('has the expected packs and channels', () => {
 		expect(catalog.channels.length).toBeGreaterThanOrEqual(30);
 		expect(catalog.packs.map((pack) => pack.id)).toEqual(
-			expect.arrayContaining(['starter', 'technology', 'science', 'news', 'gaming', 'learning'])
+			expect.arrayContaining([
+				'starter',
+				'technology',
+				'science',
+				'news',
+				'gaming',
+				'learning',
+				'developer',
+				'comedy',
+				'adventure'
+			])
 		);
 		expect(catalog.starterChannelIds.length).toBeGreaterThanOrEqual(12);
+		for (const packId of ['developer', 'comedy', 'adventure']) {
+			expect(catalog.packs.find((pack) => pack.id === packId)?.channelIds.length).toBe(6);
+		}
 	});
 
 	it('only references known channels', () => {

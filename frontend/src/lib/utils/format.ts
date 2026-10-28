@@ -98,6 +98,11 @@ export function categoryTone(category: string): string {
 	if (normalized.includes('gam')) return 'text-magenta border-magenta/30 bg-magenta/10';
 	if (normalized.includes('learn') || normalized.includes('edu'))
 		return 'text-green border-green/30 bg-green/10';
+	if (normalized.includes('software') || normalized.includes('develop'))
+		return 'text-blue border-blue/30 bg-blue/10';
+	if (normalized.includes('comedy')) return 'text-orange border-orange/30 bg-orange/10';
+	if (normalized.includes('adventure') || normalized.includes('travel'))
+		return 'text-green border-green/30 bg-green/10';
 	return 'text-yellow border-yellow/30 bg-yellow/10';
 }
 

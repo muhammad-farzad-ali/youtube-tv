@@ -37,7 +37,7 @@ test('starter lineup, channel switching, number tuning and persistence', async (
 
 test('lineup add, remove, search and pack merge', async ({ page }) => {
 	await page.goto('/lineup/');
-	await expect(page.getByText('30 channels shown')).toBeVisible();
+	await expect(page.getByText('48 channels shown')).toBeVisible();
 
 	const verge = page.locator('article').filter({ hasText: 'The Verge' }).first();
 	await verge.getByRole('button', { name: 'Add', exact: true }).click();
@@ -55,6 +55,24 @@ test('lineup add, remove, search and pack merge', async ({ page }) => {
 	await expect(page.getByRole('dialog')).toBeVisible();
 	await page.getByRole('button', { name: 'Merge pack' }).click();
 	await expect(page.getByTestId('lineup-count')).toContainText('15 in lineup');
+});
+
+test('new developer, comedy and adventure packs merge into the lineup', async ({ page }) => {
+	await page.goto('/lineup/');
+	await expect(page.getByText('Developer TV')).toBeVisible();
+	await expect(page.getByText('Comedy TV')).toBeVisible();
+	await expect(page.getByText('Adventure TV')).toBeVisible();
+
+	await page.getByRole('button', { name: 'Comedy', exact: true }).click();
+	await expect(page.getByText('6 channels shown')).toBeVisible();
+	await expect(page.getByText('Hasna Mana Hai')).toBeVisible();
+	await expect(page.getByText('Ducky Bhai')).toBeVisible();
+
+	const comedy = page.locator('article').filter({ hasText: 'Comedy TV' }).first();
+	await comedy.getByRole('button', { name: 'Preview' }).click();
+	await expect(page.getByRole('dialog')).toBeVisible();
+	await page.getByRole('button', { name: 'Merge pack' }).click();
+	await expect(page.getByTestId('lineup-count')).toContainText('18 in lineup');
 });
 
 test('favorites and reorder persist', async ({ page }) => {
