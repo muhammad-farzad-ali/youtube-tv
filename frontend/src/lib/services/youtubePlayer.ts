@@ -7,8 +7,16 @@ export interface PlayerCallbacks {
 type YouTubeApi = typeof YT;
 
 interface PlayerLike {
-	loadVideoById(options: { videoId: string; startSeconds?: number }): void;
-	cueVideoById(options: { videoId: string; startSeconds?: number }): void;
+	loadVideoById(options: {
+		videoId: string;
+		startSeconds?: number;
+		suggestedQuality?: string;
+	}): void;
+	cueVideoById(options: {
+		videoId: string;
+		startSeconds?: number;
+		suggestedQuality?: string;
+	}): void;
 	playVideo(): void;
 	pauseVideo(): void;
 	mute(): void;
@@ -21,9 +29,11 @@ interface PlayerLike {
 	seekTo(seconds: number, allowSeekAhead: boolean): void;
 	stopVideo(): void;
 	destroy(): void;
+	setPlaybackQuality(quality: string): void;
 }
 
 const FAKE_PLAYER = import.meta.env.VITE_FAKE_PLAYER === '1';
+const DEFAULT_QUALITY = 'hd720';
 
 class FakePlayer implements PlayerLike {
 	private callbacks: PlayerCallbacks;
@@ -32,6 +42,7 @@ class FakePlayer implements PlayerLike {
 	private duration = 600;
 	private volume = 70;
 	private muted = true;
+	private quality = 'auto';
 	private timer: ReturnType<typeof setInterval> | null = null;
 	private readyTimer: ReturnType<typeof setTimeout>;
 
@@ -46,7 +57,8 @@ class FakePlayer implements PlayerLike {
 			end: () => this.emit(0),
 			error: (code = 150) => this.callbacks.onError(code),
 			getState: () => this.state,
-			getVideoId: () => this.videoId
+			getVideoId: () => this.videoId,
+			getQuality: () => this.quality
 		};
 	}
 
@@ -76,17 +88,19 @@ class FakePlayer implements PlayerLike {
 		this.timer = null;
 	}
 
-	loadVideoById(options: { videoId: string; startSeconds?: number }) {
+	loadVideoById(options: { videoId: string; startSeconds?: number; suggestedQuality?: string }) {
 		clearTimeout(this.readyTimer);
 		this.videoId = options.videoId;
 		this.currentTime = options.startSeconds ?? 0;
+		this.quality = options.suggestedQuality ?? this.quality;
 		this.emit(3);
 		setTimeout(() => this.emit(1), 80);
 	}
 
-	cueVideoById(options: { videoId: string; startSeconds?: number }) {
+	cueVideoById(options: { videoId: string; startSeconds?: number; suggestedQuality?: string }) {
 		this.videoId = options.videoId;
 		this.currentTime = options.startSeconds ?? 0;
+		this.quality = options.suggestedQuality ?? this.quality;
 		this.emit(5);
 	}
 
@@ -124,6 +138,10 @@ class FakePlayer implements PlayerLike {
 		this.stopTicker();
 		this.emit(5);
 	}
+	setPlaybackQuality(quality: string) {
+		this.quality = quality;
+	}
+
 	destroy() {
 		clearTimeout(this.readyTimer);
 		this.stopTicker();
@@ -207,6 +225,7 @@ export class YouTubePlayerService {
 						onReady: () => {
 							this.ready = true;
 							this.callbacks?.onReady();
+							this.applyQuality();
 							if (this.pendingVideo) {
 								const pending = this.pendingVideo;
 								this.pendingVideo = null;
@@ -214,7 +233,7 @@ export class YouTubePlayerService {
 							}
 							resolve();
 						},
-						onStateChange: (state) => this.callbacks?.onStateChange(state),
+						onStateChange: (state) => this.handleStateChange(state),
 						onError: (code) => this.callbacks?.onError(code)
 					});
 				});
@@ -244,6 +263,7 @@ export class YouTubePlayerService {
 						onReady: () => {
 							this.ready = true;
 							this.callbacks?.onReady();
+							this.applyQuality();
 							if (this.pendingVideo) {
 								const pending = this.pendingVideo;
 								this.pendingVideo = null;
@@ -252,7 +272,7 @@ export class YouTubePlayerService {
 							resolve();
 						},
 						onStateChange: (event) => {
-							this.callbacks?.onStateChange(event.data);
+							this.handleStateChange(event.data);
 						},
 						onError: (event) => {
 							this.callbacks?.onError(event.data);
@@ -275,9 +295,20 @@ export class YouTubePlayerService {
 			return;
 		}
 		if (autoplay) {
-			this.player.loadVideoById({ videoId, startSeconds });
+			this.player.loadVideoById({ videoId, startSeconds, suggestedQuality: DEFAULT_QUALITY });
 		} else {
-			this.player.cueVideoById({ videoId, startSeconds });
+			this.player.cueVideoById({ videoId, startSeconds, suggestedQuality: DEFAULT_QUALITY });
+		}
+	}
+
+	private handleStateChange(state: number): void {
+		if (state === 1) this.applyQuality();
+		this.callbacks?.onStateChange(state);
+	}
+
+	private applyQuality(): void {
+		if (typeof this.player?.setPlaybackQuality === 'function') {
+			this.player.setPlaybackQuality(DEFAULT_QUALITY);
 		}
 	}
 
