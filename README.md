@@ -19,6 +19,7 @@ See [frontend/README.md](frontend/README.md) for:
 - the managed catalog workflow (`data/catalog.source.json` → `static/catalog.json`)
 - dial ordering, Shorts filtering, and admin refresh
 - the fixed dial plus locally saved pins, favorites, and hidden channels
+- scheduled daily catalog refresh and cron setup
 - testing, deployment, and GitHub Pages setup
 - known limitations
 

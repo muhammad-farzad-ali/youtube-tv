@@ -173,6 +173,55 @@ BASE_PATH=/my-repo npm run build
 - **Netlify / Cloudflare Pages:** build command `npm run build`, publish directory `frontend/build`, root directory `frontend`. Leave `BASE_PATH` empty for a root domain.
 - **Any static host:** upload the contents of `frontend/build`.
 
+### Scheduled catalog refresh
+
+The repo includes `scripts/daily-catalog.sh` for a daily refresh-and-deploy job. It runs from a clean `main` checkout and:
+
+- fast-forwards `main` from `origin/main`
+- installs dependencies with `npm ci`
+- runs `catalog:sync`, `catalog:check`, and `catalog:audit`
+- runs type checks, unit tests, E2E tests, formatting checks, and the build
+- commits only `static/catalog.json` and `static/catalog/logos/`
+- pushes `main`, where GitHub Actions deploys after CI passes
+
+The script fails closed. It aborts if the checkout is dirty, not on `main`, or has local commits that are not on `origin/main`.
+
+#### One-time setup
+
+```bash
+cd frontend
+npm ci
+npx playwright install chromium
+chmod +x scripts/daily-catalog.sh
+ssh -T git@github.com   # cron must be able to push without a prompt
+```
+
+Use an SSH key that cron can use without a passphrase prompt.
+
+#### Cron
+
+Run `crontab -e` and add:
+
+```cron
+15 6 * * * /home/dev/Documents/Hobby/youtube-tv/frontend/scripts/daily-catalog.sh
+```
+
+Adjust the path to your checkout. Cron uses the machine's local timezone. Test the job manually first:
+
+```bash
+cd frontend
+./scripts/daily-catalog.sh
+tail -n 80 ~/.local/state/cable-tv/daily-catalog.log
+```
+
+#### Scheduling notes
+
+- `catalog:sync` sets new `updatedAt` and `snapshotAt` values, so a daily run normally creates a commit and deploy even when no videos changed. To skip no-op days, the sync script would need to preserve timestamps when content is unchanged.
+- YouTube RSS exposes only recent uploads; running daily reduces the chance of missing videos.
+- A failed sync stops before committing and leaves the changes in place for review.
+- Plain cron does not catch up after the machine is off. Use a systemd timer with `Persistent=true` or a scheduled GitHub Actions workflow if the machine is not always on.
+- If moving this to GitHub Actions, do not rely on a push made with the default `GITHUB_TOKEN` to trigger the existing deploy workflow. GitHub suppresses recursive workflow runs; use a PAT or combine sync, commit, build, and deploy in one workflow.
+
 ## Known limitations
 
 - YouTube RSS exposes only recent uploads (usually ~15), not full channel history. Shorts are filtered out of that window.
@@ -194,6 +243,7 @@ frontend/
 │   ├── validate-catalog.mjs
 │   ├── audit-catalog.mjs
 │   ├── inspect-channel.mjs
+│   ├── daily-catalog.sh
 │   └── lib/youtube.mjs
 ├── src/
 │   ├── lib/
