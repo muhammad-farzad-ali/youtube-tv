@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { resolve } from '$app/paths';
 	import {
 		Play,
 		Pause,
@@ -160,11 +159,9 @@
 				<Radio size={34} class="text-comment" />
 				<p class="mt-3 font-display text-lg font-semibold text-fg">No signal on this channel</p>
 				<p class="mt-1 max-w-sm text-sm text-dim">
-					No playable videos are available for {channel.name}. The channel may have no cached
-					uploads, or every cached video may be unavailable. Try refreshing the feed or ask the site
-					operator to update the catalog.
+					No videos are available for {channel.name}. Ask the site operator to update the channel
+					catalog.
 				</p>
-				<a href={resolve('/settings')} class="btn-secondary mt-4">Feed settings</a>
 			</div>
 		{:else if status === 'ended'}
 			<div class="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
@@ -285,15 +282,6 @@
 				aria-label="Seek"
 				onchange={seek}
 			/>
-			{#if playback.newVideosAvailable > 0}
-				<button
-					type="button"
-					class="chip border-cyan/40 text-cyan"
-					onclick={() => playback.restartChannel()}
-				>
-					{playback.newVideosAvailable} new — restart
-				</button>
-			{/if}
 		</div>
 
 		<div class="mt-1 flex items-center justify-between gap-3 font-mono text-[10px] text-comment">

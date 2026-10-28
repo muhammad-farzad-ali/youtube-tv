@@ -1,10 +1,5 @@
 import { asset } from '$app/paths';
-import {
-	catalogSchema,
-	type Catalog,
-	type CatalogChannel,
-	type CatalogPack
-} from '#lib/schemas/catalog.schema';
+import { catalogSchema, type Catalog, type CatalogChannel } from '#lib/schemas/catalog.schema';
 
 export type CatalogStatus = 'idle' | 'loading' | 'ready' | 'error';
 
@@ -12,22 +7,13 @@ class CatalogStore {
 	status = $state<CatalogStatus>('idle');
 	data = $state<Catalog | null>(null);
 	error = $state<string | null>(null);
-	lastLoadedAt = $state<number | null>(null);
 
 	channels = $derived<CatalogChannel[]>(this.data?.channels ?? []);
-	packs = $derived<CatalogPack[]>(this.data?.packs ?? []);
 	channelsById = $derived(new Map(this.channels.map((channel) => [channel.id, channel])));
 	categories = $derived(
 		[...new Set(this.channels.map((channel) => channel.category))].sort((a, b) =>
 			a.localeCompare(b)
 		)
-	);
-	starterChannelIds = $derived(this.data?.starterChannelIds ?? []);
-	longVideoIds = $derived(
-		new Set(this.channels.flatMap((channel) => channel.videos.map((video) => video.videoId)))
-	);
-	shortVideoIds = $derived(
-		new Set(this.channels.flatMap((channel) => channel.shortVideoIds ?? []))
 	);
 
 	private pending: Promise<void> | null = null;
@@ -55,7 +41,6 @@ class CatalogStore {
 					);
 				}
 				this.data = parsed.data;
-				this.lastLoadedAt = Date.now();
 				this.status = 'ready';
 			} catch (cause) {
 				this.error = cause instanceof Error ? cause.message : 'Could not load the channel catalog';
@@ -70,10 +55,6 @@ class CatalogStore {
 
 	getChannel(channelId: string): CatalogChannel | undefined {
 		return this.channelsById.get(channelId);
-	}
-
-	getPack(packId: string): CatalogPack | undefined {
-		return this.packs.find((pack) => pack.id === packId);
 	}
 }
 
