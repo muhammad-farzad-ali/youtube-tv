@@ -12,6 +12,13 @@ async function selectedVideoId(page: Page): Promise<string> {
 	});
 }
 
+async function selectedQuality(page: Page): Promise<string> {
+	return page.evaluate(() => {
+		const fake = (window as unknown as { __cableTvFake?: { getQuality(): string } }).__cableTvFake;
+		return fake?.getQuality() ?? '';
+	});
+}
+
 function channelRow(page: Page, name: string) {
 	return page
 		.locator('nav[aria-label="Channel lineup"]')
@@ -164,6 +171,11 @@ test('hides and unhides channels with local persistence', async ({ page }) => {
 
 	await categoryFilter.selectOption('All');
 	await expect(channelRow(page, 'Veritasium')).toHaveCount(1);
+});
+
+test('requests 720p playback quality', async ({ page }) => {
+	await openTv(page);
+	await expect.poll(() => selectedQuality(page)).toBe('hd720');
 });
 
 test('fullscreen hides player chrome and restores it on exit', async ({ page }) => {
