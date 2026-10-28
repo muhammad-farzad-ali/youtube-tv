@@ -8,17 +8,45 @@ const catalog = catalogSchema.parse(raw);
 describe('managed catalog', () => {
 	it('ships one ordered admin dial', () => {
 		expect(catalog.schemaVersion).toBe(2);
-		expect(catalog.channels).toHaveLength(48);
+		expect(catalog.channels).toHaveLength(66);
 		expect(catalog).not.toHaveProperty('packs');
 		expect(catalog).not.toHaveProperty('starterChannelIds');
-		expect(new Set(catalog.channels.map((channel) => channel.id)).size).toBe(48);
+		expect(new Set(catalog.channels.map((channel) => channel.id)).size).toBe(66);
 	});
 
 	it('keeps channel order stable and readable', () => {
 		expect(catalog.channels[0]?.name).toBe('Google for Developers');
+		expect(catalog.channels.at(-1)?.name).toBe('Kara and Nate');
 		for (const channel of catalog.channels) {
 			expect(channel.name.trim()).not.toBe('');
 			expect(channel.category.trim()).not.toBe('');
+		}
+	});
+
+	it('includes the requested and complementary channels', () => {
+		const byName = new Map(catalog.channels.map((channel) => [channel.name, channel.category]));
+		const expected: Record<string, string> = {
+			NetworkChuck: 'Technology',
+			'Andrew Huberman': 'Science',
+			'Mark Rober': 'Science',
+			'Practical Engineering': 'Science',
+			'DW Documentary': 'News',
+			'Syed Muzammil Official': 'News',
+			'Johnny Harris': 'News',
+			"Game Maker's Toolkit": 'Gaming',
+			'Better Ideas': 'Learning',
+			"Matt D'Avella": 'Learning',
+			'Easy German': 'Learning',
+			HealthyGamerGG: 'Learning',
+			'Ahsan Finance': 'Learning',
+			'Dekho Suno Jano': 'Learning',
+			'Ali Abdaal': 'Learning',
+			'The Coding Train': 'Software',
+			'The Big Bang Theory': 'Comedy',
+			'Kara and Nate': 'Adventure'
+		};
+		for (const [name, category] of Object.entries(expected)) {
+			expect(byName.get(name)).toBe(category);
 		}
 	});
 
