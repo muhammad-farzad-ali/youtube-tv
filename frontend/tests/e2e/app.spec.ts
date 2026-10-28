@@ -178,6 +178,19 @@ test('requests 720p playback quality', async ({ page }) => {
 	await expect.poll(() => selectedQuality(page)).toBe('hd720');
 });
 
+test('progress bar is hidden by default and toggles persistently', async ({ page }) => {
+	await openTv(page);
+	await expect(page.getByTestId('video-progress')).toHaveCount(0);
+	await page.getByRole('button', { name: 'Show progress bar' }).click();
+	await expect(page.getByTestId('video-progress')).toBeVisible();
+
+	await page.reload();
+	await expect(page).toHaveTitle(/· Cable TV/);
+	await expect(page.getByTestId('video-progress')).toBeVisible();
+	await page.getByRole('button', { name: 'Hide progress bar' }).click();
+	await expect(page.getByTestId('video-progress')).toHaveCount(0);
+});
+
 test('fullscreen hides player chrome and restores it on exit', async ({ page }) => {
 	await openTv(page);
 	await expect(page.getByTestId('player-topbar')).toBeVisible();
