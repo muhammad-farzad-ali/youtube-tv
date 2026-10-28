@@ -1,6 +1,6 @@
 # Cable TV Lite
 
-A static, Tokyo Night styled cable television for a fixed catalog of YouTube channels. The repository owner controls the channel list and dial order; visitors tune channels, pin favorites to the top, and keep a local favorite list. Each channel plays newest-to-oldest, and YouTube Shorts are filtered out.
+A static, Tokyo Night styled cable television for a fixed catalog of YouTube channels. The repository owner controls the channel list and dial order; visitors tune channels, pin favorites to the top, keep a local favorite list, and hide channels they do not want on their dial. Each channel plays newest-to-oldest, and YouTube Shorts are filtered out.
 
 Built with SvelteKit and `adapter-static`. No backend, accounts, database service, proxy, or API keys.
 
@@ -18,7 +18,7 @@ See [frontend/README.md](frontend/README.md) for:
 
 - the managed catalog workflow (`data/catalog.source.json` → `static/catalog.json`)
 - dial ordering, Shorts filtering, and admin refresh
-- the fixed dial plus locally saved pins and favorites
+- the fixed dial plus locally saved pins, favorites, and hidden channels
 - testing, deployment, and GitHub Pages setup
 - known limitations
 

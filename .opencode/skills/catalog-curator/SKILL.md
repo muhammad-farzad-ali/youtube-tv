@@ -5,7 +5,7 @@ description: Curate the fixed Cable TV Lite channel dial — research YouTube ch
 
 # Catalog Curator
 
-Cable TV Lite is a managed broadcast: the repository owner controls which channels exist and their order. Visitors can tune, pin, and favorite channels, but cannot edit, import, or reorder the lineup.
+Cable TV Lite is a managed broadcast: the repository owner controls which channels exist and their order. Visitors can tune, pin, favorite, and hide channels locally, but cannot edit, import, or reorder the lineup.
 
 ## Use this skill when
 
@@ -37,7 +37,7 @@ Run commands from `frontend/`. Paths below are relative to the repository root u
 - Do not bypass a failed `catalog:sync` or `catalog:check` by weakening validation.
 - Do not increase sync concurrency or hammer YouTube. The script intentionally limits concurrency.
 - YouTube Shorts are excluded by policy. Never bypass the oEmbed check or hand-add a Short to `videos`.
-- Keep the app static. Do not add a backend, proxy, feed refresh, profile store, video cache, or server database. Local pins and favorites are the only permitted browser state.
+- Keep the app static. Do not add a backend, proxy, feed refresh, profile store, video cache, or server database. Local pins, favorites, and hidden-channel choices are the only permitted browser state.
 
 ## Workflow
 
