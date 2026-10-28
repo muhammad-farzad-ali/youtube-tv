@@ -55,15 +55,6 @@
 		});
 	});
 
-	export function focusSearch() {
-		searchInput?.focus();
-	}
-
-	export function clearSearch() {
-		search = '';
-		searchInput?.blur();
-	}
-
 	function choose(channelId: string) {
 		onselect(channelId);
 		onclosemobile();

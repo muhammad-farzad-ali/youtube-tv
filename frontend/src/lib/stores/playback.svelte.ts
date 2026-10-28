@@ -42,18 +42,15 @@ class PlaybackStore {
 	current = $state<CatalogVideo | null>(null);
 	status = $state<PlaybackStatus>('idle');
 	error = $state<string | null>(null);
-	errorCode = $state<number | null>(null);
 	playerReady = $state(false);
 	autoplayBlocked = $state(false);
 	muted = $state(true);
 	volume = $state(70);
 	currentTime = $state(0);
 	duration = $state(0);
-	lastSkipped = $state<string | null>(null);
 	attached = $state(false);
 
 	progress = $derived(this.duration > 0 ? Math.min(1, this.currentTime / this.duration) : 0);
-	hasNext = $derived(this.index >= 0 && this.index < this.queue.length - 1);
 	queuePosition = $derived(this.index >= 0 ? this.index + 1 : 0);
 
 	private service = new YouTubePlayerService();
@@ -100,9 +97,7 @@ class PlaybackStore {
 	async tune(channel: CatalogChannel): Promise<void> {
 		const token = ++this.tuneToken;
 		this.channelId = channel.id;
-		this.lastSkipped = null;
 		this.error = null;
-		this.errorCode = null;
 		const queue = sortNewest(channel.videos);
 		if (token !== this.tuneToken || this.channelId !== channel.id) return;
 		this.queue = queue;
@@ -134,7 +129,6 @@ class PlaybackStore {
 		this.index = index;
 		this.current = video;
 		this.error = null;
-		this.errorCode = null;
 		this.autoplayBlocked = false;
 		this.autoplayRequested = autoplay;
 		this.retries = 0;
@@ -204,7 +198,6 @@ class PlaybackStore {
 	private handleError(code: number): void {
 		this.clearTimers();
 		this.error = errorMessage(code);
-		this.errorCode = code;
 		this.status = 'error';
 
 		const video = this.current;
@@ -219,7 +212,6 @@ class PlaybackStore {
 			return;
 		}
 
-		this.lastSkipped = video ? `${video.title} — ${this.error}` : this.error;
 		this.advanceTimer = setTimeout(() => {
 			this.advanceTimer = null;
 			this.next();
