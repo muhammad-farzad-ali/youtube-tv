@@ -6,32 +6,19 @@ const raw = JSON.parse(readFileSync('static/catalog.json', 'utf8'));
 const catalog = catalogSchema.parse(raw);
 
 describe('managed catalog', () => {
-	it('has the expected packs and channels', () => {
-		expect(catalog.channels.length).toBeGreaterThanOrEqual(30);
-		expect(catalog.packs.map((pack) => pack.id)).toEqual(
-			expect.arrayContaining([
-				'starter',
-				'technology',
-				'science',
-				'news',
-				'gaming',
-				'learning',
-				'developer',
-				'comedy',
-				'adventure'
-			])
-		);
-		expect(catalog.starterChannelIds.length).toBeGreaterThanOrEqual(12);
-		for (const packId of ['developer', 'comedy', 'adventure']) {
-			expect(catalog.packs.find((pack) => pack.id === packId)?.channelIds.length).toBe(6);
-		}
+	it('ships one ordered admin dial', () => {
+		expect(catalog.schemaVersion).toBe(2);
+		expect(catalog.channels).toHaveLength(48);
+		expect(catalog).not.toHaveProperty('packs');
+		expect(catalog).not.toHaveProperty('starterChannelIds');
+		expect(new Set(catalog.channels.map((channel) => channel.id)).size).toBe(48);
 	});
 
-	it('only references known channels', () => {
-		const ids = new Set(catalog.channels.map((channel) => channel.id));
-		for (const channelId of catalog.starterChannelIds) expect(ids.has(channelId)).toBe(true);
-		for (const pack of catalog.packs) {
-			for (const channelId of pack.channelIds) expect(ids.has(channelId)).toBe(true);
+	it('keeps channel order stable and readable', () => {
+		expect(catalog.channels[0]?.name).toBe('Google for Developers');
+		for (const channel of catalog.channels) {
+			expect(channel.name.trim()).not.toBe('');
+			expect(channel.category.trim()).not.toBe('');
 		}
 	});
 

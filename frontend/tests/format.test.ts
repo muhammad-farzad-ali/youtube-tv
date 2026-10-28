@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { formatBytes, formatTime, initials, safeFileName } from '#lib/utils/format';
+import { formatDuration, formatTime, initials, youtubeThumbnail } from '#lib/utils/format';
 
 describe('format helpers', () => {
 	it('formats durations', () => {
@@ -7,17 +7,21 @@ describe('format helpers', () => {
 		expect(formatTime(65)).toBe('1:05');
 		expect(formatTime(3661)).toBe('1:01:01');
 		expect(formatTime(null)).toBe('--:--');
+		expect(formatDuration(0)).toBeNull();
+		expect(formatDuration(65)).toBe('1:05');
 	});
 
-	it('formats bytes', () => {
-		expect(formatBytes(512)).toBe('512 B');
-		expect(formatBytes(2048)).toBe('2.0 KB');
-		expect(formatBytes(10 * 1024 * 1024)).toBe('10 MB');
-		expect(formatBytes(null)).toBe('—');
-	});
-
-	it('builds initials and safe filenames', () => {
+	it('builds channel initials', () => {
 		expect(initials('Google for Developers')).toBe('GF');
-		expect(safeFileName('Cable TV Backup 2026')).toBe('cable-tv-backup-2026');
+		expect(initials('NASA')).toBe('N');
+	});
+
+	it('builds YouTube thumbnails', () => {
+		expect(youtubeThumbnail('dQw4w9WgXcQ')).toBe(
+			'https://i.ytimg.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+		);
+		expect(youtubeThumbnail('dQw4w9WgXcQ', 'hq')).toBe(
+			'https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg'
+		);
 	});
 });

@@ -1,10 +1,8 @@
 import { expect, test, type Page } from '@playwright/test';
 
-const BBC = 'BBC News';
-
 async function openTv(page: Page) {
 	await page.goto('/');
-	await expect(page.getByText('on the dial')).toBeVisible();
+	await expect(page).toHaveTitle(/· Cable TV/);
 }
 
 async function selectedVideoId(page: Page): Promise<string> {
@@ -14,122 +12,50 @@ async function selectedVideoId(page: Page): Promise<string> {
 	});
 }
 
-test('starter lineup, channel switching, number tuning and persistence', async ({ page }) => {
+test('fixed dial, channel switching, number tuning and URL persistence', async ({ page }) => {
 	await openTv(page);
-	await expect(page.getByText('12 on the dial')).toBeVisible();
-	await expect(page.getByTestId('lineup-count')).toContainText('12 in lineup');
+	await expect(page.getByText('48 on the dial')).toBeVisible();
+	await expect(page).toHaveTitle(/Google for Developers/);
 
-	const linus = page
+	await page
 		.locator('nav[aria-label="Channel lineup"]')
-		.getByRole('button', { name: /Linus Tech Tips/ });
-	await linus.click();
+		.getByRole('button', { name: /Linus Tech Tips/ })
+		.click();
 	await expect(page).toHaveTitle(/Linus Tech Tips/);
 	await expect(page).toHaveURL(/ch=UCXuqSBlHAE6Xw-yeJA0Tunw/);
 
 	await page.keyboard.type('07');
 	await page.keyboard.press('Enter');
-	await expect(page).toHaveTitle(new RegExp(BBC));
+	await expect(page).toHaveTitle(/Veritasium/);
 
 	await page.reload();
-	await expect(page.getByText('on the dial')).toBeVisible();
-	await expect(page).toHaveTitle(new RegExp(BBC));
+	await expect(page.getByText('48 on the dial')).toBeVisible();
+	await expect(page).toHaveTitle(/Veritasium/);
 });
 
-test('lineup add, remove, search and pack merge', async ({ page }) => {
-	await page.goto('/lineup/');
-	await expect(page.getByText('48 channels shown')).toBeVisible();
-
-	const verge = page.locator('article').filter({ hasText: 'The Verge' }).first();
-	await verge.getByRole('button', { name: 'Add', exact: true }).click();
-	await expect(page.getByTestId('lineup-count')).toContainText('13 in lineup');
-	await verge.getByRole('button', { name: 'Selected', exact: true }).click();
-	await expect(page.getByTestId('lineup-count')).toContainText('12 in lineup');
-
+test('channel search and category filters narrow the fixed dial', async ({ page }) => {
+	await openTv(page);
 	const search = page.getByRole('searchbox', { name: 'Search channels' });
 	await search.fill('space');
-	await expect(page.getByText('2 channels shown')).toBeVisible();
+	await expect(
+		page.locator('nav[aria-label="Channel lineup"]').getByRole('button', { name: /PBS Space Time/ })
+	).toBeVisible();
+	await expect(
+		page
+			.locator('nav[aria-label="Channel lineup"]')
+			.getByRole('button', { name: /Linus Tech Tips/ })
+	).toHaveCount(0);
+
 	await search.fill('');
-
-	const science = page.locator('article').filter({ hasText: 'Science & Discovery' }).first();
-	await science.getByRole('button', { name: 'Preview' }).click();
-	await expect(page.getByRole('dialog')).toBeVisible();
-	await page.getByRole('button', { name: 'Merge pack' }).click();
-	await expect(page.getByTestId('lineup-count')).toContainText('15 in lineup');
-});
-
-test('new developer, comedy and adventure packs merge into the lineup', async ({ page }) => {
-	await page.goto('/lineup/');
-	await expect(page.getByText('Developer TV')).toBeVisible();
-	await expect(page.getByText('Comedy TV')).toBeVisible();
-	await expect(page.getByText('Adventure TV')).toBeVisible();
-
-	await page.getByRole('button', { name: 'Comedy', exact: true }).click();
-	await expect(page.getByText('6 channels shown')).toBeVisible();
-	await expect(page.getByText('Hasna Mana Hai')).toBeVisible();
-	await expect(page.getByText('Ducky Bhai')).toBeVisible();
-
-	const comedy = page.locator('article').filter({ hasText: 'Comedy TV' }).first();
-	await comedy.getByRole('button', { name: 'Preview' }).click();
-	await expect(page.getByRole('dialog')).toBeVisible();
-	await page.getByRole('button', { name: 'Merge pack' }).click();
-	await expect(page.getByTestId('lineup-count')).toContainText('18 in lineup');
-});
-
-test('favorites and reorder persist', async ({ page }) => {
-	await page.goto('/lineup/');
-	const firstRow = page.locator('aside ol li').first();
-	const firstName = await firstRow.locator('p').first().innerText();
-	await firstRow.getByRole('button', { name: 'Toggle favorite' }).click();
-	await expect(firstRow.getByRole('button', { name: 'Toggle favorite' })).toHaveClass(
-		/text-yellow/
-	);
-
-	const secondRow = page.locator('aside ol li').nth(1);
-	const secondName = await secondRow.locator('p').first().innerText();
-	await secondRow.getByRole('button', { name: 'Move up' }).click();
-
-	await page.reload();
-	await expect(page.getByRole('heading', { name: 'Build your lineup' })).toBeVisible();
-	const firstAfter = await page.locator('aside ol li').first().locator('p').first().innerText();
-	expect(firstAfter).toBe(secondName);
-	expect(firstAfter).not.toBe(firstName);
-});
-
-test('profile export, import and invalid catalog rejection', async ({ page }) => {
-	await page.goto('/import-export/');
-	const downloadPromise = page.waitForEvent('download');
-	await page.getByRole('button', { name: 'Export', exact: true }).first().click();
-	const download = await downloadPromise;
-	const path = await download.path();
-	expect(download.suggestedFilename()).toMatch(/^cable-tv-profile-\d{4}-\d{2}-\d{2}\.json$/);
-	expect(path).toBeTruthy();
-
-	if (!path) return;
-	await page.locator('input[type=file]').setInputFiles(path);
-	await expect(page.getByText('Apply import')).toBeVisible();
-	await page.getByRole('button', { name: /Apply import/ }).click();
-	await expect(page.getByText(/Import applied/)).toBeVisible();
-
-	await page.locator('input[type=file]').setInputFiles({
-		name: 'catalog.json',
-		mimeType: 'application/json',
-		buffer: Buffer.from('{"type":"cable-tv-catalog"}')
-	});
-	await expect(page.getByText(/This is a catalog file/)).toBeVisible();
-	await expect(page.getByTestId('lineup-count')).toContainText('12 in lineup');
-});
-
-test('settings persist to the local profile', async ({ page }) => {
-	await page.goto('/settings/');
-	const autoplay = page.getByRole('switch', { name: 'Autoplay next' });
-	await expect(autoplay).toHaveAttribute('aria-checked', 'true');
-	await autoplay.click();
-	await expect(autoplay).toHaveAttribute('aria-checked', 'false');
-	await page.reload();
-	await expect(page.getByRole('switch', { name: 'Autoplay next' })).toHaveAttribute(
-		'aria-checked',
-		'false'
-	);
+	await page.getByRole('combobox', { name: 'Filter by category' }).selectOption('Science');
+	await expect(
+		page.locator('nav[aria-label="Channel lineup"]').getByRole('button', { name: /NASA/ })
+	).toBeVisible();
+	await expect(
+		page
+			.locator('nav[aria-label="Channel lineup"]')
+			.getByRole('button', { name: /Linus Tech Tips/ })
+	).toHaveCount(0);
 });
 
 test('fake player advances to the next video and skips errors', async ({ page }) => {
@@ -173,109 +99,24 @@ test('mobile channel drawer and tuning', async ({ page }) => {
 	await expect(sidebar).toHaveAttribute('aria-hidden', 'true');
 });
 
-const PROXY_FEED = `<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
-  <yt:channelId>_x5XG1OV2P6uZZ5FSM9Ttw</yt:channelId>
-  <title>Google for Developers</title>
-  <entry>
-    <yt:videoId>ProxyShort1</yt:videoId>
-    <title>Proxy Short should be hidden</title>
-    <published>2026-10-28T11:00:00+00:00</published>
-    <media:group><media:thumbnail url="https://i.ytimg.com/vi/ProxyShort1/hqdefault.jpg" /></media:group>
-  </entry>
-  <entry>
-    <yt:videoId>ProxyLong01</yt:videoId>
-    <title>Proxy long-form video</title>
-    <published>2026-10-28T10:00:00+00:00</published>
-    <media:group><media:thumbnail url="https://i.ytimg.com/vi/ProxyLong01/hqdefault.jpg" /></media:group>
-  </entry>
-</feed>`;
-
-test('proxy feed refresh updates the live status', async ({ page }) => {
-	await page.route('https://proxy.test/**', async (route) => {
-		const target = new URL(route.request().url()).searchParams.get('url') ?? '';
-		if (target.includes('/oembed?')) {
-			const isShort = target.includes('ProxyShort1');
-			await route.fulfill({
-				status: 200,
-				contentType: 'application/json',
-				headers: { 'access-control-allow-origin': '*' },
-				body: JSON.stringify({
-					width: isShort ? 113 : 200,
-					height: isShort ? 200 : 113
-				})
-			});
-			return;
-		}
-		await route.fulfill({
-			status: 200,
-			contentType: 'application/xml',
-			headers: { 'access-control-allow-origin': '*' },
-			body: PROXY_FEED
-		});
+test('does not write profile or video caches', async ({ page }) => {
+	await openTv(page);
+	const state = await page.evaluate(async () => {
+		const databases =
+			typeof indexedDB.databases === 'function'
+				? (await indexedDB.databases()).map((database) => database.name)
+				: [];
+		return { databases, localStorageKeys: Object.keys(localStorage) };
 	});
-
-	await page.goto('/settings/');
-	await page
-		.getByPlaceholder('https://your-worker.example/?url={url}')
-		.fill('https://proxy.test/?url={url}');
-	await page.getByRole('button', { name: 'Save proxy' }).click();
-	await page.getByRole('button', { name: 'Test proxy' }).click();
-	await expect(page.getByText(/Connected to Google for Developers/)).toBeVisible();
-
-	await page.goto('/');
-	await expect(page.getByText('on the dial')).toBeVisible();
-	await page.getByRole('button', { name: 'Refresh', exact: true }).click();
-	await expect(page.getByText(/Refreshed 1 channel/)).toBeVisible();
-	await expect(page.getByText('Fresh', { exact: true })).toBeVisible();
-	await expect(page.getByText('1 new — restart')).toBeVisible();
-	await expect(page.getByText('Proxy Short should be hidden')).toHaveCount(0);
+	expect(state.databases).not.toContain('cable-tv');
+	expect(state.localStorageKeys).toEqual([]);
 });
 
-test('drops legacy cached videos when the no-Shorts database migration runs', async ({ page }) => {
-	await page.addInitScript(async () => {
-		await new Promise<void>((resolve, reject) => {
-			const request = indexedDB.open('cable-tv', 1);
-			request.onupgradeneeded = () => {
-				const db = request.result;
-				db.createObjectStore('videos', { keyPath: 'videoId' });
-				db.createObjectStore('sync', { keyPath: 'channelId' });
-				db.createObjectStore('meta', { keyPath: 'key' });
-			};
-			request.onerror = () => reject(request.error);
-			request.onsuccess = () => {
-				const db = request.result;
-				const tx = db.transaction('videos', 'readwrite');
-				tx.objectStore('videos').put({
-					videoId: 'OldShort01',
-					channelId: 'UC_x5XG1OV2P6uZZ5FSM9Ttw',
-					title: 'Legacy cached Short',
-					publishedAt: '2026-01-01T00:00:00.000Z',
-					availabilityStatus: 'unknown',
-					source: 'snapshot',
-					addedAt: '2026-01-01T00:00:00.000Z'
-				});
-				tx.oncomplete = () => {
-					db.close();
-					resolve();
-				};
-				tx.onerror = () => reject(tx.error);
-			};
-		});
-	});
-
-	await openTv(page);
-	const legacyStillCached = await page.evaluate(async () => {
-		return await new Promise<boolean>((resolve) => {
-			const request = indexedDB.open('cable-tv');
-			request.onsuccess = () => {
-				const db = request.result;
-				const get = db.transaction('videos', 'readonly').objectStore('videos').get('OldShort01');
-				get.onsuccess = () => resolve(Boolean(get.result));
-				get.onerror = () => resolve(true);
-			};
-			request.onerror = () => resolve(true);
-		});
-	});
-	expect(legacyStillCached).toBe(false);
+test('shows a signal error when the catalog cannot load', async ({ page }) => {
+	await page.route('**/catalog.json', (route) =>
+		route.fulfill({ status: 500, contentType: 'application/json', body: '{}' })
+	);
+	await page.goto('/');
+	await expect(page.getByRole('heading', { name: 'Signal lost' })).toBeVisible();
+	await expect(page.getByRole('button', { name: 'Try again' })).toBeVisible();
 });
