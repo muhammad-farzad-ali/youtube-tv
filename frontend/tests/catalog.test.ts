@@ -8,15 +8,15 @@ const catalog = catalogSchema.parse(raw);
 describe('managed catalog', () => {
 	it('ships one ordered admin dial', () => {
 		expect(catalog.schemaVersion).toBe(2);
-		expect(catalog.channels).toHaveLength(66);
+		expect(catalog.channels).toHaveLength(76);
 		expect(catalog).not.toHaveProperty('packs');
 		expect(catalog).not.toHaveProperty('starterChannelIds');
-		expect(new Set(catalog.channels.map((channel) => channel.id)).size).toBe(66);
+		expect(new Set(catalog.channels.map((channel) => channel.id)).size).toBe(76);
 	});
 
 	it('keeps channel order stable and readable', () => {
 		expect(catalog.channels[0]?.name).toBe('Google for Developers');
-		expect(catalog.channels.at(-1)?.name).toBe('Kara and Nate');
+		expect(catalog.channels.at(-1)?.name).toBe('Deep Look');
 		for (const channel of catalog.channels) {
 			expect(channel.name.trim()).not.toBe('');
 			expect(channel.category.trim()).not.toBe('');
@@ -43,7 +43,17 @@ describe('managed catalog', () => {
 			'Ali Abdaal': 'Learning',
 			'The Coding Train': 'Software',
 			'The Big Bang Theory': 'Comedy',
-			'Kara and Nate': 'Adventure'
+			'Kara and Nate': 'Adventure',
+			'BBC Earth': 'Nature',
+			'National Geographic': 'Nature',
+			'Nat Geo Animals': 'Nature',
+			'Love Nature': 'Nature',
+			'Nature on PBS': 'Nature',
+			'The Nature of Things': 'Nature',
+			Animalogic: 'Nature',
+			'BBC Earth Science': 'Science',
+			'PBS Eons': 'Science',
+			'Deep Look': 'Science'
 		};
 		for (const [name, category] of Object.entries(expected)) {
 			expect(byName.get(name)).toBe(category);

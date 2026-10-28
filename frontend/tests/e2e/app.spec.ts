@@ -25,7 +25,7 @@ function channelButton(page: Page, name: string) {
 
 test('fixed dial, channel switching, number tuning and URL persistence', async ({ page }) => {
 	await openTv(page);
-	await expect(page.getByText('66 on the dial')).toBeVisible();
+	await expect(page.getByText('76 on the dial')).toBeVisible();
 	await expect(page).toHaveTitle(/Google for Developers/);
 
 	await channelButton(page, 'Linus Tech Tips').click();
@@ -37,7 +37,7 @@ test('fixed dial, channel switching, number tuning and URL persistence', async (
 	await expect(page).toHaveTitle(/Veritasium/);
 
 	await page.reload();
-	await expect(page.getByText('66 on the dial')).toBeVisible();
+	await expect(page.getByText('76 on the dial')).toBeVisible();
 	await expect(page).toHaveTitle(/Veritasium/);
 });
 
