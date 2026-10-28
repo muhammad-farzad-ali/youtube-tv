@@ -112,7 +112,7 @@ Run `npm run format` if formatting checks fail, then `npm run format:check`.
 
 A healthy catalog currently has:
 
-- 48 channels as of the current baseline (the audit is the source of truth)
+- 66 channels as of the current baseline (the audit is the source of truth)
 - one ordered `channels` array; its order is the dial
 - up to 15 recent long-form videos per channel (at least one), unique video IDs
 - `shortVideoIds` for excluded Shorts, with no overlap against `videos`
