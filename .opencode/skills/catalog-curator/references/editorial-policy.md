@@ -43,6 +43,7 @@ Use the owner's established categories unless they approve a new one:
 - `Software`
 - `Comedy`
 - `Adventure`
+- `Nature`
 
 A channel belongs in the category that best describes its **regular programming**, not its most recent upload. When a channel spans several categories, choose the dominant one and mention the overlap in the change summary if it matters.
 

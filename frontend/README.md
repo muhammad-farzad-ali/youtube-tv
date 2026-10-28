@@ -40,7 +40,7 @@ Channels are not editable in the app. The repository owner manages them through:
 | `static/catalog.json`      | Generated runtime catalog with verified videos, snapshot dates, and logo paths |
 | `static/catalog/logos/`    | Downloaded channel avatars used by the generated catalog                       |
 
-The **order of `channels` in the source file is the channel order on the dial**. The current fixed dial contains 66 channels.
+The **order of `channels` in the source file is the channel order on the dial**. The current fixed dial contains 76 channels.
 
 ### Add, remove, or reorder channels
 

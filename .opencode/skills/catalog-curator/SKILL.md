@@ -87,7 +87,7 @@ Edit `frontend/data/catalog.source.json`:
 - changing a channel ID means removing the old entry and adding the new one
 - reordering the `channels` array changes the dial order and channel numbers
 
-Use the established category names `Technology`, `Science`, `News`, `Gaming`, `Learning`, `Software`, `Comedy`, and `Adventure` unless the owner approves a new category.
+Use the established category names `Technology`, `Science`, `News`, `Gaming`, `Learning`, `Software`, `Comedy`, `Adventure`, and `Nature` unless the owner approves a new category.
 
 ### 5. Refresh generated data
 
@@ -112,7 +112,7 @@ Run `npm run format` if formatting checks fail, then `npm run format:check`.
 
 A healthy catalog currently has:
 
-- 66 channels as of the current baseline (the audit is the source of truth)
+- 76 channels as of the current baseline (the audit is the source of truth)
 - one ordered `channels` array; its order is the dial
 - up to 15 recent long-form videos per channel (at least one), unique video IDs
 - `shortVideoIds` for excluded Shorts, with no overlap against `videos`
