@@ -13,9 +13,11 @@
 		RotateCcw,
 		Radio,
 		TriangleAlert,
-		LoaderCircle
+		LoaderCircle,
+		ChartNoAxesColumnIncreasing
 	} from '@lucide/svelte';
 	import { playback } from '#lib/stores/playback.svelte';
+	import { preferences } from '#lib/stores/preferences.svelte';
 	import type { CatalogChannel } from '#lib/schemas/catalog.schema';
 	import { formatDate, formatTime, youtubeThumbnail } from '#lib/utils/format';
 
@@ -277,6 +279,18 @@
 				{/if}
 				<button
 					type="button"
+					class="btn-icon !size-9 {preferences.progressVisible
+						? 'text-cyan'
+						: 'text-comment hover:text-fg'}"
+					aria-label={preferences.progressVisible ? 'Hide progress bar' : 'Show progress bar'}
+					aria-pressed={preferences.progressVisible}
+					title={preferences.progressVisible ? 'Hide progress bar' : 'Show progress bar'}
+					onclick={() => preferences.toggleProgressVisible()}
+				>
+					<ChartNoAxesColumnIncreasing size={16} />
+				</button>
+				<button
+					type="button"
 					class="btn-icon !size-9"
 					aria-label="Toggle fullscreen"
 					onclick={toggleFullscreen}
@@ -286,18 +300,20 @@
 			</div>
 		</div>
 
-		<div class="mt-2 flex items-center gap-2">
-			<input
-				class="h-1.5 flex-1 cursor-pointer rounded-full accent-blue"
-				type="range"
-				min="0"
-				max={Math.max(playback.duration, 1)}
-				step="0.1"
-				value={Math.min(playback.currentTime, playback.duration || 1)}
-				aria-label="Seek"
-				onchange={seek}
-			/>
-		</div>
+		{#if preferences.progressVisible}
+			<div data-testid="video-progress" class="mt-2 flex items-center gap-2">
+				<input
+					class="h-1.5 flex-1 cursor-pointer rounded-full accent-blue"
+					type="range"
+					min="0"
+					max={Math.max(playback.duration, 1)}
+					step="0.1"
+					value={Math.min(playback.currentTime, playback.duration || 1)}
+					aria-label="Seek"
+					onchange={seek}
+				/>
+			</div>
+		{/if}
 
 		<div class="mt-1 flex items-center justify-between gap-3 font-mono text-[10px] text-comment">
 			<span class="truncate">

@@ -6,6 +6,7 @@ type SavedPreferences = {
 	pinned: string[];
 	favorites: string[];
 	hidden: string[];
+	progressVisible: boolean;
 };
 
 function sanitizeIds(value: unknown): string[] {
@@ -17,6 +18,7 @@ class PreferencesStore {
 	pinnedIds = $state<string[]>([]);
 	favoriteIds = $state<string[]>([]);
 	hiddenIds = $state<string[]>([]);
+	progressVisible = $state(false);
 	loaded = $state(false);
 
 	load(): void {
@@ -30,6 +32,7 @@ class PreferencesStore {
 			this.pinnedIds = sanitizeIds(parsed.pinned);
 			this.favoriteIds = sanitizeIds(parsed.favorites);
 			this.hiddenIds = sanitizeIds(parsed.hidden);
+			this.progressVisible = parsed.progressVisible === true;
 		} catch {
 			// A corrupt or blocked preference store should not stop the dial.
 		}
@@ -68,13 +71,19 @@ class PreferencesStore {
 		this.save();
 	}
 
+	toggleProgressVisible(): void {
+		this.progressVisible = !this.progressVisible;
+		this.save();
+	}
+
 	private save(): void {
 		if (!browser) return;
 		try {
 			const saved: SavedPreferences = {
 				pinned: this.pinnedIds,
 				favorites: this.favoriteIds,
-				hidden: this.hiddenIds
+				hidden: this.hiddenIds,
+				progressVisible: this.progressVisible
 			};
 			localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
 		} catch {
