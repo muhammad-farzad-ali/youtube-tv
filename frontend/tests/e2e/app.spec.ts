@@ -12,15 +12,23 @@ async function selectedVideoId(page: Page): Promise<string> {
 	});
 }
 
+function channelRow(page: Page, name: string) {
+	return page
+		.locator('nav[aria-label="Channel lineup"]')
+		.getByTestId('channel-row')
+		.filter({ hasText: name });
+}
+
+function channelButton(page: Page, name: string) {
+	return channelRow(page, name).getByRole('button').first();
+}
+
 test('fixed dial, channel switching, number tuning and URL persistence', async ({ page }) => {
 	await openTv(page);
 	await expect(page.getByText('48 on the dial')).toBeVisible();
 	await expect(page).toHaveTitle(/Google for Developers/);
 
-	await page
-		.locator('nav[aria-label="Channel lineup"]')
-		.getByRole('button', { name: /Linus Tech Tips/ })
-		.click();
+	await channelButton(page, 'Linus Tech Tips').click();
 	await expect(page).toHaveTitle(/Linus Tech Tips/);
 	await expect(page).toHaveURL(/ch=UCXuqSBlHAE6Xw-yeJA0Tunw/);
 
@@ -37,25 +45,13 @@ test('channel search and category filters narrow the fixed dial', async ({ page 
 	await openTv(page);
 	const search = page.getByRole('searchbox', { name: 'Search channels' });
 	await search.fill('space');
-	await expect(
-		page.locator('nav[aria-label="Channel lineup"]').getByRole('button', { name: /PBS Space Time/ })
-	).toBeVisible();
-	await expect(
-		page
-			.locator('nav[aria-label="Channel lineup"]')
-			.getByRole('button', { name: /Linus Tech Tips/ })
-	).toHaveCount(0);
+	await expect(channelRow(page, 'PBS Space Time')).toBeVisible();
+	await expect(channelRow(page, 'Linus Tech Tips')).toHaveCount(0);
 
 	await search.fill('');
 	await page.getByRole('combobox', { name: 'Filter by category' }).selectOption('Science');
-	await expect(
-		page.locator('nav[aria-label="Channel lineup"]').getByRole('button', { name: /NASA/ })
-	).toBeVisible();
-	await expect(
-		page
-			.locator('nav[aria-label="Channel lineup"]')
-			.getByRole('button', { name: /Linus Tech Tips/ })
-	).toHaveCount(0);
+	await expect(channelRow(page, 'NASA')).toBeVisible();
+	await expect(channelRow(page, 'Linus Tech Tips')).toHaveCount(0);
 });
 
 test('fake player advances to the next video and skips errors', async ({ page }) => {
@@ -91,15 +87,50 @@ test('mobile channel drawer and tuning', async ({ page }) => {
 	await expect(sidebar).toHaveAttribute('aria-hidden', 'true');
 	await page.getByRole('button', { name: 'Channels', exact: true }).click();
 	await expect(sidebar).not.toHaveAttribute('aria-hidden', 'true');
-	await page
-		.locator('nav[aria-label="Channel lineup"]')
-		.getByRole('button', { name: /Veritasium/ })
-		.click();
+	await channelButton(page, 'Veritasium').click();
 	await expect(page).toHaveTitle(/Veritasium/);
 	await expect(sidebar).toHaveAttribute('aria-hidden', 'true');
 });
 
-test('does not write profile or video caches', async ({ page }) => {
+test('pins and favorites channels with local persistence', async ({ page }) => {
+	await openTv(page);
+	const nav = page.locator('nav[aria-label="Channel lineup"]');
+	const linusRow = nav.getByTestId('channel-row').filter({ hasText: 'Linus Tech Tips' });
+
+	await linusRow.getByRole('button', { name: 'Pin Linus Tech Tips' }).click();
+	await expect(nav.getByText('Pinned')).toBeVisible();
+	await expect(nav.getByTestId('channel-row').first()).toContainText('Linus Tech Tips');
+	await expect(page).toHaveTitle(/Google for Developers/);
+
+	await linusRow.getByRole('button', { name: 'Add Linus Tech Tips to favorites' }).click();
+	await expect(
+		nav.getByRole('button', { name: 'Remove Linus Tech Tips from favorites' })
+	).toBeVisible();
+	await expect(page.getByRole('combobox', { name: 'Filter by category' })).toContainText(
+		'Favorites (1)'
+	);
+
+	await page.getByRole('combobox', { name: 'Filter by category' }).selectOption('Favorites');
+	await expect(nav.getByTestId('channel-row')).toHaveCount(1);
+	await expect(nav.getByTestId('channel-row').first()).toContainText('Linus Tech Tips');
+
+	const saved = await page.evaluate(() => {
+		const raw = localStorage.getItem('cable-tv:preferences:v1');
+		return raw ? (JSON.parse(raw) as { pinned: string[]; favorites: string[] }) : null;
+	});
+	expect(saved?.pinned).toContain('UCXuqSBlHAE6Xw-yeJA0Tunw');
+	expect(saved?.favorites).toContain('UCXuqSBlHAE6Xw-yeJA0Tunw');
+
+	await page.reload();
+	await expect(page).toHaveTitle(/Google for Developers/);
+	await expect(nav.getByTestId('channel-row').first()).toContainText('Linus Tech Tips');
+	await expect(nav.getByRole('button', { name: 'Unpin Linus Tech Tips' })).toBeVisible();
+	await expect(
+		nav.getByRole('button', { name: 'Remove Linus Tech Tips from favorites' })
+	).toBeVisible();
+});
+
+test('starts without profile or video caches', async ({ page }) => {
 	await openTv(page);
 	const state = await page.evaluate(async () => {
 		const databases =
