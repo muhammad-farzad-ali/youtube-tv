@@ -13,7 +13,7 @@ No accounts, backend, database service, proxy, or API keys.
 - **YouTube IFrame Player API** for playback
 - **Vitest** and **Playwright** for tests
 
-Visitors get a fixed dial plus local pins, favorites, and hidden channels. There is no profile, IndexedDB store, video cache, lineup editor, settings page, backup flow, feed refresh, or proxy. Those three channel preferences are the only persisted state, and the active channel is kept in the URL as `?ch=…`.
+Visitors get a fixed dial plus local pins, favorites, hidden channels, and a progress-bar display preference. There is no profile, IndexedDB store, video cache, lineup editor, settings page, backup flow, feed refresh, or proxy. Those preferences are the only persisted state, and the active channel is kept in the URL as `?ch=…`.
 
 ## Quick start
 
@@ -126,15 +126,16 @@ Commit both the source and generated catalog files. The deployed site is fully s
 - Playback reads `channel.videos` directly and sorts newest first.
 - Playback behavior is fixed: autoplay next, start muted, in-memory volume, skip failed videos, no loop.
 - Channel search and category filtering are local UI state only.
-- Pins, favorites, and hidden channels persist in `localStorage` as channel IDs. They do not affect the admin dial order or channel numbers.
+- Pins, favorites, and hidden channels persist in `localStorage` as channel IDs. The progress-bar visibility flag is stored alongside them. They do not affect the admin dial order or channel numbers.
 - Refreshing the browser is the only way to pick up new videos after an admin deploy.
 
-### Pins, favorites, and hidden channels
+### Pins, favorites, hidden channels, and progress
 
 - **Pin** keeps a channel in a separate group at the top of the sidebar. Pinned channels keep their original channel numbers and dial order.
 - **Favorite** marks a channel with a star and adds it to the **Favorites** filter in the category menu.
 - **Hide** removes a channel from the normal list, from next/previous channel stepping, and from number tuning. Use the **Hidden** filter to see hidden channels and the eye button to restore them. Hidden channels keep their catalog numbers.
-- All three are per-browser preferences stored under `cable-tv:preferences:v1`. Only channel IDs are saved; no profile, video history, or playback state is stored.
+- **Progress bar** is hidden by default. Use the chart icon in the player controls to show or hide it.
+- These are per-browser preferences stored under `cable-tv:preferences:v1`. Only channel IDs and the progress-bar flag are saved; no profile, video history, or playback state is stored.
 - Use the pin, star, or eye button again to remove the preference. Clearing site data resets everything.
 
 ## Shorts policy
@@ -181,7 +182,7 @@ BASE_PATH=/my-repo npm run build
 - Autoplay policies may require a click; the player starts muted and shows an unmute control.
 - Channel avatars are bundled at sync time.
 - There is no offline service worker; the static app and catalog must load from the host.
-- Pins, favorites, and hidden-channel choices live in this browser's `localStorage`; there is no account or cross-device sync. Clearing site data resets them.
+- Pins, favorites, hidden-channel choices, and progress-bar visibility live in this browser's `localStorage`; there is no account or cross-device sync. Clearing site data resets them.
 
 ## Project layout
 

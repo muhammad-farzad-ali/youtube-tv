@@ -8,7 +8,7 @@ This policy is the owner's default standard for the managed Cable TV Lite catalo
 - Visitors tune channels, pin them to the top of their own sidebar, maintain a local favorite list, and hide channels from their own dial; they cannot edit, import, or reorder the catalog lineup.
 - Visitors cannot add, edit, or delete channel definitions.
 - Never add a channel to the app at runtime or introduce a user-facing import path.
-- There is no visitor profile, backup, settings, feed refresh, or proxy in the lite app. Pins, favorites, and hidden-channel choices are local browser preferences only.
+- There is no visitor profile, backup, settings, feed refresh, or proxy in the lite app. Pins, favorites, hidden-channel choices, and progress-bar visibility are local browser preferences only.
 
 ## Channel standards
 

@@ -37,7 +37,7 @@ Run commands from `frontend/`. Paths below are relative to the repository root u
 - Do not bypass a failed `catalog:sync` or `catalog:check` by weakening validation.
 - Do not increase sync concurrency or hammer YouTube. The script intentionally limits concurrency.
 - YouTube Shorts are excluded by policy. Never bypass the oEmbed check or hand-add a Short to `videos`.
-- Keep the app static. Do not add a backend, proxy, feed refresh, profile store, video cache, or server database. Local pins, favorites, and hidden-channel choices are the only permitted browser state.
+- Keep the app static. Do not add a backend, proxy, feed refresh, profile store, video cache, or server database. Local pins, favorites, hidden-channel choices, and the progress-bar display preference are the only permitted browser state.
 
 ## Workflow
 
