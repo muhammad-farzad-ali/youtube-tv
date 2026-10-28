@@ -463,6 +463,76 @@
 			"channelUrl": "https://www.youtube.com/channel/UC4ijq8Cg-8zQKx8OH12dUSw",
 			"category": "Adventure",
 			"description": "Travel adventures, long-term travel, and life on the road."
+		},
+		{
+			"id": "UCwmZiChSryoWQCZMIQezgTg",
+			"name": "BBC Earth",
+			"channelUrl": "https://www.youtube.com/channel/UCwmZiChSryoWQCZMIQezgTg",
+			"category": "Nature",
+			"description": "Wildlife films, natural history, and spectacular footage from the BBC archive."
+		},
+		{
+			"id": "UCpVm7bg6pXKo1Pr6k5kxG9A",
+			"name": "National Geographic",
+			"channelUrl": "https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A",
+			"category": "Nature",
+			"description": "Documentaries and stories about wildlife, science, exploration, and the planet."
+		},
+		{
+			"id": "UCDPk9MG2RexnOMGTD-YnSnA",
+			"name": "Nat Geo Animals",
+			"channelUrl": "https://www.youtube.com/channel/UCDPk9MG2RexnOMGTD-YnSnA",
+			"category": "Nature",
+			"description": "Animal documentaries, full episodes, and wildlife stories from National Geographic."
+		},
+		{
+			"id": "UCRZPkuHwaoKwTP3CYPdVldg",
+			"name": "Love Nature",
+			"channelUrl": "https://www.youtube.com/channel/UCRZPkuHwaoKwTP3CYPdVldg",
+			"category": "Nature",
+			"description": "Nature documentaries and wildlife series from around the world."
+		},
+		{
+			"id": "UCcBp_9YPyma4c3HTadmRJ3Q",
+			"name": "Nature on PBS",
+			"channelUrl": "https://www.youtube.com/channel/UCcBp_9YPyma4c3HTadmRJ3Q",
+			"category": "Nature",
+			"description": "Award-winning wildlife and natural history documentaries from PBS."
+		},
+		{
+			"id": "UCdEipOt83E-lRf5ORTfDJiA",
+			"name": "The Nature of Things",
+			"channelUrl": "https://www.youtube.com/channel/UCdEipOt83E-lRf5ORTfDJiA",
+			"category": "Nature",
+			"description": "Science and nature documentaries exploring wildlife, health, and the planet."
+		},
+		{
+			"id": "UCwg6_F2hDHYrqbNSGjmar4w",
+			"name": "Animalogic",
+			"channelUrl": "https://www.youtube.com/channel/UCwg6_F2hDHYrqbNSGjmar4w",
+			"category": "Nature",
+			"description": "Animated and live-action stories about strange and remarkable animals."
+		},
+		{
+			"id": "UCdsOTr6SmDrxuWE7sJFrkhQ",
+			"name": "BBC Earth Science",
+			"channelUrl": "https://www.youtube.com/channel/UCdsOTr6SmDrxuWE7sJFrkhQ",
+			"category": "Science",
+			"description": "Science explainers and documentaries on space, Earth, and the natural world."
+		},
+		{
+			"id": "UCzR-rom72PHN9Zg7RML9EbA",
+			"name": "PBS Eons",
+			"channelUrl": "https://www.youtube.com/channel/UCzR-rom72PHN9Zg7RML9EbA",
+			"category": "Science",
+			"description": "The history of life on Earth, from ancient fossils to evolutionary oddities."
+		},
+		{
+			"id": "UC-3SbfTPJsL8fJAPKiVqBLg",
+			"name": "Deep Look",
+			"channelUrl": "https://www.youtube.com/channel/UC-3SbfTPJsL8fJAPKiVqBLg",
+			"category": "Science",
+			"description": "Macro nature and science films revealing the tiny worlds around us."
 		}
 	]
 }

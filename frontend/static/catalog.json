@@ -2,7 +2,7 @@
 	"schemaVersion": 2,
 	"type": "cable-tv-catalog",
 	"name": "Cable TV",
-	"updatedAt": "2026-10-28T16:33:08.997Z",
+	"updatedAt": "2026-10-28T16:47:49.885Z",
 	"channels": [
 		{
 			"id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
@@ -11,7 +11,7 @@
 			"description": "Developer tools, platforms, and engineering talks from Google.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC_x5XG1OV2P6uZZ5FSM9Ttw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "pQ_Dnr9Q4k8",
@@ -84,7 +84,7 @@
 			"description": "Hardware reviews, builds, and technology news with a lot of energy.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCXuqSBlHAE6Xw-yeJA0Tunw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "DZSYaQmxBLM",
@@ -172,7 +172,7 @@
 			"description": "Consumer technology, product reviews, and the future of gadgets.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCddiUEpeqJcYeBxX1IVBKvQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "ZbmAv0O_Cmg",
@@ -210,7 +210,7 @@
 			"description": "Sharp, considered reviews of phones, cameras, cars, and new tech.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCBJycsmduvYEL83R_U4JriQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "ESABTN4VtrA",
@@ -298,7 +298,7 @@
 			"description": "Computer science concepts, security, and the people behind computing.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC9-y-6csu5WGm29I7JiwpnA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "cI8IquVEyVY",
@@ -399,7 +399,8 @@
 			"channelUrl": "https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q",
 			"description": "Short, practical explainers about the technology you use every day.",
 			"category": "Technology",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"logoUrl": "catalog/logos/UC0vBXGSyV14uvJ4hECDOl0Q.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "72pyU1ZRun0",
@@ -501,7 +502,7 @@
 			"description": "Science and engineering stories built around surprising questions.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCHnyfMqiRRG1u-2MsSQLbXA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "eyZEqSPeMwg",
@@ -549,7 +550,7 @@
 			"description": "Animated explainers about space, biology, society, and the future.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCsXVk37bltHxD1rDPwtNM8Q.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "5_Fayfx2NUM",
@@ -606,7 +607,8 @@
 			"channelUrl": "https://www.youtube.com/channel/UCLA_DiR1FfKNvjuUpBHmylQ",
 			"description": "Official mission footage, launches, and updates from NASA.",
 			"category": "Science",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"logoUrl": "catalog/logos/UCLA_DiR1FfKNvjuUpBHmylQ.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "pAKqJxuxDgk",
@@ -698,7 +700,7 @@
 			"description": "Deep dives into astrophysics, cosmology, and the laws of nature.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UC7_gcs09iThXybpVgjHZ_7g.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "eb8x2tz_pgc",
@@ -761,7 +763,7 @@
 			"description": "Quick, visual physics lessons from Henry Reich.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCUHW94eEFW7hkUMVaZz4eDg.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "4YvnVJRlQQs",
@@ -824,7 +826,7 @@
 			"description": "Short animated lessons across science, history, and culture.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCsooa4yRKGN_zEE8iknghZA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "nXvKDYRvTno",
@@ -926,7 +928,7 @@
 			"description": "International news, reporting, and analysis from Al Jazeera.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCNye-wNBqNL5ZzHSJj3l8Bg.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "E7mo6wFpwpc",
@@ -959,7 +961,7 @@
 			"description": "Breaking news, explainers, and reports from the BBC newsroom.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UC16niRr50-MSBwiO3YDb3RA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "ed92RpaNR8s",
@@ -972,15 +974,10 @@
 					"title": "Rail expert unpacks deadly train crash in Spain | BBC News",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/QHWfRnygyms/hqdefault.jpg",
 					"publishedAt": "2026-10-28T14:49:10.000Z"
-				},
-				{
-					"videoId": "H_JvCiFPiTw",
-					"title": "Watch LIVE: Dozens feared dead in Spain after two high-speed trains collide | BBC News",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/H_JvCiFPiTw/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:31:13.000Z"
 				}
 			],
 			"shortVideoIds": [
+				"NkLcnxiUDDg",
 				"pUqwhObY-gY",
 				"ZSe0CrmmOtY",
 				"6J5yTxOcPss",
@@ -1002,7 +999,7 @@
 			"description": "Global news and current affairs from Deutsche Welle.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCknLrEdhRCp1aegoMqRaCZg.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "4RBY98i23Jo",
@@ -1080,8 +1077,14 @@
 			"description": "Rolling news, interviews, and live coverage from Sky News.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCoMdktPbSTixAyNGwb-UYkQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
+				{
+					"videoId": "5P2etbeBJbs",
+					"title": "Could the US and Israel resume military action in Iran?",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/5P2etbeBJbs/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:44:37.000Z"
+				},
 				{
 					"videoId": "ZSAokkNd4gM",
 					"title": "OBR holds briefing following Budget",
@@ -1129,21 +1132,15 @@
 					"title": "Dozens dead after train crash in Spain",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/b46iTsvulwI/hqdefault.jpg",
 					"publishedAt": "2026-10-28T10:29:18.000Z"
-				},
-				{
-					"videoId": "F86h8QDh3aI",
-					"title": "Spain train crash | At least 68 dead after two high-speed trains collide",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/F86h8QDh3aI/hqdefault.jpg",
-					"publishedAt": "2026-10-28T09:44:09.000Z"
 				}
 			],
 			"shortVideoIds": [
+				"_aBxMut8q8Y",
 				"zTv9T6ZgLwM",
 				"xNFU8dj-VhE",
 				"3LOEoZUNoaI",
 				"dGCdxlex2Mw",
-				"RF3lG2bw180",
-				"GIirb3sECoM"
+				"RF3lG2bw180"
 			]
 		},
 		{
@@ -1153,19 +1150,19 @@
 			"description": "Wire news and video reports from Reuters around the world.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UChqUTb7kYRX8-EiaN3XFrSQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
+				{
+					"videoId": "8O1ADh_AJ_g",
+					"title": "LIVE: Zelenskiy holds briefing in The Hague",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/8O1ADh_AJ_g/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:29:18.000Z"
+				},
 				{
 					"videoId": "WJ0ehTDyBQs",
 					"title": "LIVE: Families of Spain train crash victims gather",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/WJ0ehTDyBQs/hqdefault.jpg",
 					"publishedAt": "2026-10-28T15:49:40.000Z"
-				},
-				{
-					"videoId": "8O1ADh_AJ_g",
-					"title": "LIVE: Zelenskiy holds briefing in The Hague",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/8O1ADh_AJ_g/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:53:20.000Z"
 				},
 				{
 					"videoId": "oMoanDUv2kg",
@@ -1226,7 +1223,7 @@
 			"description": "Markets, business, and economic coverage from CNBC.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCrp_UI8XtuYfpiqluWLD7Lw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "CNm1-2P1oTs",
@@ -1283,7 +1280,7 @@
 			"description": "Game news, reviews, trailers, and everything happening in gaming.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCKy1dAqELo0zrOtPkf0eTMw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "H_s0XoaUkUc",
@@ -1323,19 +1320,19 @@
 				},
 				{
 					"videoId": "euJEtEzqQyo",
-					"title": "Dumpster Gang - Official Console Announcement Trailer | Nintendo Indie World Fall 2026",
+					"title": "Dumpster Gang - Official Console Announcement Trailer",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/euJEtEzqQyo/hqdefault.jpg",
 					"publishedAt": "2026-10-28T15:26:40.000Z"
 				},
 				{
 					"videoId": "VvwPyMxuipM",
-					"title": "Sword of the Sea - Official Xbox and Nintendo Switch 2 Trailer | Nintendo Indie World Fall 2026",
+					"title": "Sword of the Sea - Official Xbox and Nintendo Switch 2 Trailer",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/VvwPyMxuipM/hqdefault.jpg",
 					"publishedAt": "2026-10-28T15:22:14.000Z"
 				},
 				{
 					"videoId": "-sIXAizyNj0",
-					"title": "Super Battle Golf - Official Console Release Date Trailer | Nintendo Indie World Fall 2026",
+					"title": "Super Battle Golf - Official Console Release Date Trailer",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/-sIXAizyNj0/hqdefault.jpg",
 					"publishedAt": "2026-10-28T15:12:43.000Z"
 				},
@@ -1347,19 +1344,19 @@
 				},
 				{
 					"videoId": "p-T0y_onZwk",
-					"title": "Threads of Time - Official Release Window Trailer | Nintendo Indie World Fall 2026",
+					"title": "Threads of Time - Official Release Window Trailer",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/p-T0y_onZwk/hqdefault.jpg",
 					"publishedAt": "2026-10-28T14:50:18.000Z"
 				},
 				{
 					"videoId": "PTyvKTPs-Ow",
-					"title": "Tenjutsu - Official Gameplay Trailer | Nintendo Indie World Fall 2026",
+					"title": "Tenjutsu - Official Gameplay Trailer",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/PTyvKTPs-Ow/hqdefault.jpg",
 					"publishedAt": "2026-10-28T14:42:10.000Z"
 				},
 				{
 					"videoId": "F-rERxGa8xU",
-					"title": "Winds of Viridia - Official Reveal Trailer | Nintendo Indie World Fall 2026",
+					"title": "Winds of Viridia - Official Reveal Trailer",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/F-rERxGa8xU/hqdefault.jpg",
 					"publishedAt": "2026-10-28T14:39:10.000Z"
 				},
@@ -1385,7 +1382,7 @@
 			"description": "Reviews, previews, and deep coverage of games and the industry.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCbu2SsF-Or3Rsn3NxqODImw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "_GF2AEoDmL0",
@@ -1468,7 +1465,7 @@
 			"description": "Technical analysis of games, consoles, and graphics performance.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UC9PBzalIcEQCsiIkq36PyUA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "6QPRMl0Scoc",
@@ -1570,7 +1567,7 @@
 			"description": "Official PlayStation trailers, announcements, and gameplay.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UC-2Y8dQb0S6DtpxNgAKoJKA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "j63m7ngHnAk",
@@ -1668,7 +1665,7 @@
 			"description": "Official Xbox news, game trailers, and feature updates.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCjBp_7RuDBUYbd1LegWEJ8g.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "FDxbAAY6MN4",
@@ -1770,7 +1767,7 @@
 			"description": "Nintendo trailers, Direct presentations, and game news.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCGIY_O-8vW4rfX98KlMkvRg.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "9OPoiRcze0w",
@@ -1872,7 +1869,7 @@
 			"description": "Fast-paced courses across science, history, literature, and more.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCX6b17PVsYBQ0ip5gyeme-Q.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "2b-H-rxQ8m8",
@@ -1970,7 +1967,7 @@
 			"description": "Free lessons in math, science, economics, and the humanities.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UC4a-Gbdw7vOaccHmFo40b9g.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "cPxnWRp4oPo",
@@ -2068,7 +2065,7 @@
 			"description": "Full-length programming courses and coding tutorials.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UC8butISFwT-Wl7EV0hUK0BQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "aZglGvBPQGs",
@@ -2170,7 +2167,7 @@
 			"description": "Mathematics explained visually, from calculus to neural networks.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCYO_jab_esuFRV4b17AJtAw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "LKrwhjOI8Nc",
@@ -2218,7 +2215,7 @@
 			"description": "Talks and ideas from scientists, artists, and thinkers.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCAuUUnT6oDeKwE6v1NGQxug.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "tu6tF-lVDJI",
@@ -2296,7 +2293,7 @@
 			"description": "Numbers, puzzles, and mathematical curiosities with experts.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCoxcjq-8xIDTYp3uz647V5A.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "EgnAN0ZUl08",
@@ -2379,7 +2376,7 @@
 			"description": "High-speed tutorials and news on web development, programming languages, and software trends.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCsBjURrPoezykLs9EqgamOA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "nEaJMdM1djM",
@@ -2481,7 +2478,7 @@
 			"description": "Developer commentary, engineering culture, and programming tooling.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UC8ENHE5xdFSwx71u3fDH5Xw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "tYQyh1tjSFc",
@@ -2549,7 +2546,7 @@
 			"description": "Practical web development tutorials focused on JavaScript, React, and modern front-end patterns.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCFbNIlppjAuEX4znoulh0Cw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "FbXPaIcpvww",
@@ -2627,7 +2624,7 @@
 			"description": "Web development commentary, TypeScript, and the business of building software.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCbRP3c757lWg9M-U7TyEkXA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "FHGfSjDGUIw",
@@ -2715,7 +2712,7 @@
 			"description": "System design, distributed systems, and software engineering interview concepts explained visually.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCZgt6AzoyjslHTC9dz0UoTw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "Dddv7P_k60o",
@@ -2808,7 +2805,7 @@
 			"description": "Full-stack web development tutorials, project builds, and framework walkthroughs.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UC29ju8bIPH5as8OGnQzwJyA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "RE2c_eH0Sq4",
@@ -2901,7 +2898,7 @@
 			"description": "Geo TV's comedy show with sketches, celebrity guests, and audience laughs.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC6HQ4d3xq9EgSeJgMhc-4AQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "hcY_cLsZPcQ",
@@ -2954,7 +2951,7 @@
 			"description": "Roasts, comedy vlogs, and internet culture commentary.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC_c-RTowPbIlzMkIa_O7s6Q.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "7qogNKRz9Nw",
@@ -3056,7 +3053,7 @@
 			"description": "Clean stand-up comedy sets from a rotating lineup of comics.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCvlVuntLjdURVD3b3Hx7kxw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "9GXFX9XkES0",
@@ -3129,7 +3126,7 @@
 			"description": "Secret-location stand-up sets from emerging and established comedians.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC7MgijK9WL_EqCo1juUERwg.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "OCaY4tobtxk",
@@ -3177,7 +3174,7 @@
 			"description": "Satirical news and comedy covering politics, media, and current events.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCwWhs_6x42TyRM4Wstoq8HA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "uWqFBoeLCPk",
@@ -3240,7 +3237,7 @@
 			"description": "Talk-show comedy, sketches, and interviews from Conan O'Brien.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCo3nWXH_6vVJ5-xbF3bKb3Q.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "qHzMtDE1Q8M",
@@ -3303,7 +3300,7 @@
 			"description": "Travel and adventure documentaries from Pakistan and beyond.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCf1XIplYiqNv9baGsFHwPPQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "tNLuqTc5REU",
@@ -3405,7 +3402,7 @@
 			"description": "Travel documentaries focused on difficult destinations and local stories.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCXulruMI7BHj3kGyosNa0jA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "BPHjquSgzMQ",
@@ -3507,7 +3504,7 @@
 			"description": "Solo travel, remote places, and adventure storytelling.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCDTINI9skkeZNY2ZXnBqIkQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "kYyxSvOcr4k",
@@ -3590,7 +3587,7 @@
 			"description": "Adventure challenges and travel stories built around seeking discomfort.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCvK4bOhULCpmLabd2pDMtnA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "TMQ31DQjjWg",
@@ -3692,7 +3689,7 @@
 			"description": "Travel documentaries from every country and culture around the world.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UC0Ize0RLIbGdH5x4wI45G-A.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "XYYrKZEUDag",
@@ -3745,7 +3742,7 @@
 			"description": "Cinematic hiking, backpacking, and wilderness journeys.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCpnuadQ_w3r6f4Q_NRlqd-w.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "2upU96IeRlw",
@@ -3783,7 +3780,7 @@
 			"description": "Hands-on networking, cybersecurity, homelab, and IT career tutorials.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC9x0AN7BWHpCDHSm9NiJFJQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "Ck7wB7pdebQ",
@@ -3845,7 +3842,7 @@
 			"description": "Science-based conversations on health, performance, motivation, and the brain.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UC2D2CMWXMOVWx7giW1n3LIg.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "NlVu0P1RdHs",
@@ -3918,7 +3915,7 @@
 			"description": "Science and engineering builds, experiments, and playful inventions.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCY1kMZp36IQSyNx_9h4mpCg.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "26P1KyvrmjI",
@@ -3956,7 +3953,7 @@
 			"description": "Civil engineering explained through infrastructure, failures, and everyday systems.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCMOqf8ab-42UUQIdVoKwjlQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "awV7FP9sAHE",
@@ -4058,7 +4055,7 @@
 			"description": "Documentary films on global politics, history, science, and everyday life.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCW39zufHfsuGgpLviKh297Q.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "n_rm51MDzog",
@@ -4136,7 +4133,7 @@
 			"description": "Urdu political commentary on Pakistan, current affairs, and society.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCAyd8kYxON-KM0UuRuK_sIg.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "snnoq-MRvx4",
@@ -4238,7 +4235,7 @@
 			"description": "Visual geopolitics and history explainers on the forces shaping the world.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCmGSJVG3mCRXVOP4yZrU1Dw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "axRhjqd-rus",
@@ -4301,7 +4298,7 @@
 			"description": "Video game design analysis, from level design to player psychology.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCqJ-Xo29CKyLTjn6z2XwYAw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "awegilW3DTc",
@@ -4403,7 +4400,7 @@
 			"description": "Practical self-improvement essays on focus, habits, and building a better life.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCtUId5WFnN82GdDy7DgaQ7w.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "3FqB_AkTwEw",
@@ -4499,7 +4496,7 @@
 			"description": "Minimalism, habits, and thoughtful experiments in living with less.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCJ24N4O0bP7LGLBDvye7oCA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "0y9CyrU2o3M",
@@ -4601,7 +4598,7 @@
 			"description": "German language lessons and street interviews for learners at every level.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCbxb2fqe9oNgglAoYqsYOtQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "-WbwNgcUT2o",
@@ -4649,7 +4646,7 @@
 			"description": "Mental health conversations on relationships, motivation, and modern life.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UClHVl2N3jPEbkNJVx-ItQIQ.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "4jv6ux_Zrzg",
@@ -4687,7 +4684,7 @@
 			"description": "Practical personal finance for living, saving, and investing in Germany.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UC8NOlkt22UCIAunNTZprE7g.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "SKQL94_dOwQ",
@@ -4780,7 +4777,7 @@
 			"description": "Urdu-language history, geopolitics, and long-form conversations with Faisal Warraich.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UChOzmkBxTHbZNZdiiYolWoA.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "_zWYU8odU6o",
@@ -4882,7 +4879,7 @@
 			"description": "Evidence-based productivity, habits, and sustainable ways to work better.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCoOae5nYA7VqaXzerajD0lg.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "C0jOKDJtK9s",
@@ -4920,7 +4917,7 @@
 			"description": "Creative coding, simulations, and beginner-friendly programming challenges.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCvjgXvBlbQiydffZU7m1_aw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "t_QuHSwB0HY",
@@ -5018,7 +5015,7 @@
 			"description": "Official clips and comedy moments from The Big Bang Theory.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCCxmzh3f-wwRZ-bEdLb80Og.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "Goj0znAQEEs",
@@ -5116,7 +5113,7 @@
 			"description": "Travel adventures, long-term travel, and life on the road.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UC4ijq8Cg-8zQKx8OH12dUSw.jpg",
-			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
 			"videos": [
 				{
 					"videoId": "il2-GI1w7I0",
@@ -5210,6 +5207,744 @@
 				}
 			],
 			"shortVideoIds": []
+		},
+		{
+			"id": "UCwmZiChSryoWQCZMIQezgTg",
+			"name": "BBC Earth",
+			"channelUrl": "https://www.youtube.com/channel/UCwmZiChSryoWQCZMIQezgTg",
+			"description": "Wildlife films, natural history, and spectacular footage from the BBC archive.",
+			"category": "Nature",
+			"logoUrl": "catalog/logos/UCwmZiChSryoWQCZMIQezgTg.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
+			"videos": [
+				{
+					"videoId": "SvLNzdrn3-o",
+					"title": "Asia's Natural Wonders | 4K UHD | BBC Earth",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/SvLNzdrn3-o/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:08:16.000Z"
+				},
+				{
+					"videoId": "ESfx8R5eOWs",
+					"title": "Singapore Engineers A Future For Nature | 20 Years of Planet Earth II | BBC Earth",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/ESfx8R5eOWs/hqdefault.jpg",
+					"publishedAt": "2026-10-25T15:00:00.000Z"
+				},
+				{
+					"videoId": "J7y7uhvha10",
+					"title": "An Incredible Journey Through Africa’s Wilderness | 4K UHD | BBC Earth",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/J7y7uhvha10/hqdefault.jpg",
+					"publishedAt": "2026-10-24T14:00:26.000Z"
+				},
+				{
+					"videoId": "jk4S1R8zp1M",
+					"title": "The Octopus that Walks on Land | Blue Planet III | BBC Earth",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/jk4S1R8zp1M/hqdefault.jpg",
+					"publishedAt": "2026-10-23T05:00:08.000Z"
+				},
+				{
+					"videoId": "Vn5xZSZc_Uw",
+					"title": "The Greatest Fights In The Animal Kingdom Part 8 | BBC Earth",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/Vn5xZSZc_Uw/hqdefault.jpg",
+					"publishedAt": "2026-10-22T15:00:12.000Z"
+				},
+				{
+					"videoId": "j1YmhOEyb4Y",
+					"title": "Can This Baby Caribou Outrun An Arctic Wolf? | 20 Years of Planet Earth II | BBC Earth",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/j1YmhOEyb4Y/hqdefault.jpg",
+					"publishedAt": "2026-10-16T14:00:23.000Z"
+				},
+				{
+					"videoId": "QYThPEf6V08",
+					"title": "Nature's Tiny Terrors | BBC Earth",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/QYThPEf6V08/hqdefault.jpg",
+					"publishedAt": "2026-10-15T15:00:17.000Z"
+				},
+				{
+					"videoId": "ydZfcgxe59s",
+					"title": "Extraordinary Big Cat Moments | BBC Earth",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/ydZfcgxe59s/hqdefault.jpg",
+					"publishedAt": "2026-10-14T18:06:23.000Z"
+				},
+				{
+					"videoId": "db3x7ys7a6o",
+					"title": "Deadly Animal Showdowns | BBC Earth",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/db3x7ys7a6o/hqdefault.jpg",
+					"publishedAt": "2026-10-10T14:00:29.000Z"
+				},
+				{
+					"videoId": "Yq4mbwknPVY",
+					"title": "How Does A Bobcat Hunt In Winter? | 20 Years of Planet Earth II | BBC Earth",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/Yq4mbwknPVY/hqdefault.jpg",
+					"publishedAt": "2026-10-09T14:00:13.000Z"
+				},
+				{
+					"videoId": "mlLnZhz71_g",
+					"title": "The Unexpected Benefits of Rewilding Your Garden | Speed & Scale | BBC Earth",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/mlLnZhz71_g/hqdefault.jpg",
+					"publishedAt": "2026-10-08T14:00:39.000Z"
+				},
+				{
+					"videoId": "OuYXPIt-6Bs",
+					"title": "2 Hours With Our Planet's Spectacular Wildlife | BBC Earth",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/OuYXPIt-6Bs/hqdefault.jpg",
+					"publishedAt": "2026-10-07T15:45:14.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"_luIFyVeko8",
+				"rl3SoRV9m2w",
+				"_epzliBP2sM"
+			]
+		},
+		{
+			"id": "UCpVm7bg6pXKo1Pr6k5kxG9A",
+			"name": "National Geographic",
+			"channelUrl": "https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A",
+			"description": "Documentaries and stories about wildlife, science, exploration, and the planet.",
+			"category": "Nature",
+			"logoUrl": "catalog/logos/UCpVm7bg6pXKo1Pr6k5kxG9A.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
+			"videos": [
+				{
+					"videoId": "X2BX0Q-tR0g",
+					"title": "Disney+ Special Look | Everest: The Other Side | National Geographic",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/X2BX0Q-tR0g/hqdefault.jpg",
+					"publishedAt": "2026-10-27T19:22:25.000Z"
+				},
+				{
+					"videoId": "e2Ny_5NTt_k",
+					"title": "Alexander the Great's Reign of Egypt (Full Episode) | Lost Treasures of Egypt | Nat Geo",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/e2Ny_5NTt_k/hqdefault.jpg",
+					"publishedAt": "2026-10-25T13:00:20.000Z"
+				},
+				{
+					"videoId": "obMHbCkFtxM",
+					"title": "Unraveling the Notorious Stanford Prison Experiment | MEGA Episode | National Geographic",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/obMHbCkFtxM/hqdefault.jpg",
+					"publishedAt": "2026-10-24T13:00:01.000Z"
+				},
+				{
+					"videoId": "paIlsaijH7I",
+					"title": "Inside the World of Hash Smugglers (Full Episode) | Trafficked with Mariana van Zeller | Nat Geo",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/paIlsaijH7I/hqdefault.jpg",
+					"publishedAt": "2026-10-23T13:00:31.000Z"
+				},
+				{
+					"videoId": "pYaYQJbkb2c",
+					"title": "Mummy Medicine, Maya Sweat Baths, and More (Full Episode) | Mysteries of Ancient Medicine | Nat Geo",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/pYaYQJbkb2c/hqdefault.jpg",
+					"publishedAt": "2026-10-22T13:00:00.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"PQPKERxmYzs",
+				"unv0pPzZA0M",
+				"XY48dq8MO98",
+				"iuUsXpwSArs",
+				"5L3R1K8aJgk",
+				"hfzSVUaufjA",
+				"gnJiW5m0gd0",
+				"QdUGDEkRMME",
+				"jk0t12N7fV0",
+				"3II9AFi5U0M"
+			]
+		},
+		{
+			"id": "UCDPk9MG2RexnOMGTD-YnSnA",
+			"name": "Nat Geo Animals",
+			"channelUrl": "https://www.youtube.com/channel/UCDPk9MG2RexnOMGTD-YnSnA",
+			"description": "Animal documentaries, full episodes, and wildlife stories from National Geographic.",
+			"category": "Nature",
+			"logoUrl": "catalog/logos/UCDPk9MG2RexnOMGTD-YnSnA.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
+			"videos": [
+				{
+					"videoId": "bqT6ES7u3fA",
+					"title": "American Cougar: Revealed (Full Episode) | DOCUMENTARY SPECIAL | Nat Geo Animals",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/bqT6ES7u3fA/hqdefault.jpg",
+					"publishedAt": "2026-10-28T11:00:31.000Z"
+				},
+				{
+					"videoId": "CFN_z41NjD4",
+					"title": "The Lakeshore Killers (Full Episode) | DOCUMENTARY SPECIAL | Nat Geo Animals",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/CFN_z41NjD4/hqdefault.jpg",
+					"publishedAt": "2026-10-25T11:00:23.000Z"
+				},
+				{
+					"videoId": "RpMLzWJDSmg",
+					"title": "Alligators, Bears, & Toxic Creatures: Monsters of Nature | MEGA Episode | Nat Geo Animals",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/RpMLzWJDSmg/hqdefault.jpg",
+					"publishedAt": "2026-10-24T11:00:30.000Z"
+				},
+				{
+					"videoId": "d73FGclipw0",
+					"title": "It Comes at Night (Full Episode) | Dead by Dawn Compilation | Nat Geo Animals",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/d73FGclipw0/hqdefault.jpg",
+					"publishedAt": "2026-10-23T11:00:15.000Z"
+				},
+				{
+					"videoId": "gUcOy4EG-Mc",
+					"title": "How Bull Sharks Adapt (Full Episode) | World's Most Iconic Animals | Nat Geo Animals",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/gUcOy4EG-Mc/hqdefault.jpg",
+					"publishedAt": "2026-10-21T11:00:17.000Z"
+				},
+				{
+					"videoId": "_HMbh02rYOk",
+					"title": "Journeys for Animal Survival (Full Episode) | Great Migrations | Nat Geo Animals",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_HMbh02rYOk/hqdefault.jpg",
+					"publishedAt": "2026-10-18T11:00:20.000Z"
+				},
+				{
+					"videoId": "L59nDlNZ_Aw",
+					"title": "Orcas vs Great White Sharks & Humpback Whales | Whale MEGA Episode Special | Nat Geo Animals",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/L59nDlNZ_Aw/hqdefault.jpg",
+					"publishedAt": "2026-10-17T11:00:22.000Z"
+				},
+				{
+					"videoId": "iigoENQAwQ8",
+					"title": "Young Blood (Full Episode) | Botswana | Nat Geo Animals",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/iigoENQAwQ8/hqdefault.jpg",
+					"publishedAt": "2026-10-16T11:00:35.000Z"
+				},
+				{
+					"videoId": "IhYS2vLTSbc",
+					"title": "Monsters of the Wild: Wonderfully Weird (Full Episode) | DOCUMENTARY SPECIAL | Nat Geo Animals",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/IhYS2vLTSbc/hqdefault.jpg",
+					"publishedAt": "2026-10-14T11:00:39.000Z"
+				},
+				{
+					"videoId": "76yuzQuhymE",
+					"title": "Surviving the Ancient Grasslands (Full Episode) | Hidden Kingdoms of China | Nat Geo Animals",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/76yuzQuhymE/hqdefault.jpg",
+					"publishedAt": "2026-10-11T11:00:26.000Z"
+				},
+				{
+					"videoId": "QLPSmDCITHg",
+					"title": "The World's Most Terrifying Killer Snakes | MEGA EPISODE Special | Nat Geo Animals",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/QLPSmDCITHg/hqdefault.jpg",
+					"publishedAt": "2026-10-10T11:00:18.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"6AMOobaSYVg",
+				"9_c74f8JDWo",
+				"8lrsIy9nZzI",
+				"GFIysEr0qNg"
+			]
+		},
+		{
+			"id": "UCRZPkuHwaoKwTP3CYPdVldg",
+			"name": "Love Nature",
+			"channelUrl": "https://www.youtube.com/channel/UCRZPkuHwaoKwTP3CYPdVldg",
+			"description": "Nature documentaries and wildlife series from around the world.",
+			"category": "Nature",
+			"logoUrl": "catalog/logos/UCRZPkuHwaoKwTP3CYPdVldg.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
+			"videos": [
+				{
+					"videoId": "Mh8DDwOljig",
+					"title": "Baby Giant Tortoises Raised By Scientists To Repopulate The Galapagos | Galapagos 101",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/Mh8DDwOljig/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:00:12.000Z"
+				},
+				{
+					"videoId": "A6XF6OvS_gA",
+					"title": "Lions, Leopards And Elephants: The Story Behind Africa's Big Five | Wildlife Icons",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/A6XF6OvS_gA/hqdefault.jpg",
+					"publishedAt": "2026-10-25T15:00:31.000Z"
+				},
+				{
+					"videoId": "3bUfRSex_rQ",
+					"title": "Ireland's Incredible Beauty And Rugged Coastlines - Part 2 | Ireland's Wild Islands",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/3bUfRSex_rQ/hqdefault.jpg",
+					"publishedAt": "2026-10-24T14:00:01.000Z"
+				},
+				{
+					"videoId": "yblzeJcd5Rk",
+					"title": "Baby Orangutan's Blood Test Reveals Life Threatening Diagnosis | Orangutan Jungle School",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/yblzeJcd5Rk/hqdefault.jpg",
+					"publishedAt": "2026-10-22T01:00:04.000Z"
+				},
+				{
+					"videoId": "kG9bkJhzous",
+					"title": "Four Lion Cubs Come Face To Face With Their Father For The First Time | Wildlife Icons",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/kG9bkJhzous/hqdefault.jpg",
+					"publishedAt": "2026-10-19T01:00:31.000Z"
+				},
+				{
+					"videoId": "ay5rBAAdA0c",
+					"title": "Ireland's Incredible Beauty And Rugged Coastlines - Part 1 | Ireland's Wild Islands",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/ay5rBAAdA0c/hqdefault.jpg",
+					"publishedAt": "2026-10-18T01:00:08.000Z"
+				},
+				{
+					"videoId": "nZWH6d_hmVQ",
+					"title": "Spoiled Baby Orangutan Learns To Adapt To Life In The Wild | Orangutan Jungle School",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/nZWH6d_hmVQ/hqdefault.jpg",
+					"publishedAt": "2026-10-15T01:00:36.000Z"
+				},
+				{
+					"videoId": "B0A99gUnDCA",
+					"title": "Rare Look At Sea Wolves That Swim Between Islands In The Open Ocean | Deep Dive North America",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/B0A99gUnDCA/hqdefault.jpg",
+					"publishedAt": "2026-10-12T01:00:37.000Z"
+				},
+				{
+					"videoId": "Qvxuvxi5ceI",
+					"title": "African Wild Dogs Raised In Captivity Must Learn To Hunt On Their Own | Wild Dog Island",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/Qvxuvxi5ceI/hqdefault.jpg",
+					"publishedAt": "2026-10-08T01:00:36.000Z"
+				},
+				{
+					"videoId": "_zqvP8DVSgk",
+					"title": "Largest Sea Lions On Earth Swim Alongside Diver | Deep Dive North America",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_zqvP8DVSgk/hqdefault.jpg",
+					"publishedAt": "2026-10-04T16:00:13.000Z"
+				},
+				{
+					"videoId": "sJgJq80TKk0",
+					"title": "Orangutan Orphans Learn to Survive Without Their Mother | Becoming Orangutan",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/sJgJq80TKk0/hqdefault.jpg",
+					"publishedAt": "2026-10-01T02:00:03.000Z"
+				},
+				{
+					"videoId": "MFM_GaIEaEs",
+					"title": "The King of Africa's Widlife | Wildlife Icons 204 + 205",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/MFM_GaIEaEs/hqdefault.jpg",
+					"publishedAt": "2026-09-26T14:30:12.000Z"
+				},
+				{
+					"videoId": "-aFzLnOTRZE",
+					"title": "Stronger Together or Better Off As Enemies? | Wolves And Lions Old Enemies 101",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/-aFzLnOTRZE/hqdefault.jpg",
+					"publishedAt": "2026-09-25T14:00:24.000Z"
+				},
+				{
+					"videoId": "fKrTj8ytIhQ",
+					"title": "Bear Cubs Go Wild Before Winter! | Cub Camp 105",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/fKrTj8ytIhQ/hqdefault.jpg",
+					"publishedAt": "2026-09-24T14:00:08.000Z"
+				},
+				{
+					"videoId": "PBRrYFnwyXk",
+					"title": "Land of the Fiercest Predators | Wildlife Icons 203 + 204",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/PBRrYFnwyXk/hqdefault.jpg",
+					"publishedAt": "2026-09-19T14:30:39.000Z"
+				}
+			],
+			"shortVideoIds": []
+		},
+		{
+			"id": "UCcBp_9YPyma4c3HTadmRJ3Q",
+			"name": "Nature on PBS",
+			"channelUrl": "https://www.youtube.com/channel/UCcBp_9YPyma4c3HTadmRJ3Q",
+			"description": "Award-winning wildlife and natural history documentaries from PBS.",
+			"category": "Nature",
+			"logoUrl": "catalog/logos/UCcBp_9YPyma4c3HTadmRJ3Q.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
+			"videos": [
+				{
+					"videoId": "yi6IvFecj1c",
+					"title": "Nature's Creepiest Crawliest Moments",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/yi6IvFecj1c/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:00:35.000Z"
+				},
+				{
+					"videoId": "xjg1OAr39eM",
+					"title": "The Hidden World Beneath the Everglades | Going Wild",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/xjg1OAr39eM/hqdefault.jpg",
+					"publishedAt": "2026-10-27T18:13:55.000Z"
+				},
+				{
+					"videoId": "qf4d6sbN-Tw",
+					"title": "We Thought Male Tigers Were Solitary — Until Now",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/qf4d6sbN-Tw/hqdefault.jpg",
+					"publishedAt": "2026-10-27T14:55:19.000Z"
+				},
+				{
+					"videoId": "t8yRvIA2QUc",
+					"title": "HumanLike: The Chimps of Fongoli | Official Trailer | PBS Nature",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/t8yRvIA2QUc/hqdefault.jpg",
+					"publishedAt": "2026-10-26T14:00:16.000Z"
+				},
+				{
+					"videoId": "hIMUX0eOPZU",
+					"title": "Rare Footage Reveals What Tigers Do at Night",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/hIMUX0eOPZU/hqdefault.jpg",
+					"publishedAt": "2026-10-23T14:00:23.000Z"
+				},
+				{
+					"videoId": "YN4uOKsON5M",
+					"title": "Tiger Island: Part One | PBS Nature | Full Documentary",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/YN4uOKsON5M/hqdefault.jpg",
+					"publishedAt": "2026-10-22T14:00:10.000Z"
+				},
+				{
+					"videoId": "76mP4UG_SS4",
+					"title": "Clumsy Tiger Cubs Learn to Hunt",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/76mP4UG_SS4/hqdefault.jpg",
+					"publishedAt": "2026-10-21T14:00:14.000Z"
+				},
+				{
+					"videoId": "XGirWkh5NUc",
+					"title": "Out of the Studio, Into the Wilderness | Going Wild",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/XGirWkh5NUc/hqdefault.jpg",
+					"publishedAt": "2026-10-20T14:21:04.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"ZCaLYpPoOGU",
+				"HcuA6-xpCEQ",
+				"rj4or-PNvOo",
+				"zLnEihybTQ4",
+				"6KTBqut_Ebw",
+				"3iknwzv9na0"
+			]
+		},
+		{
+			"id": "UCdEipOt83E-lRf5ORTfDJiA",
+			"name": "The Nature of Things",
+			"channelUrl": "https://www.youtube.com/channel/UCdEipOt83E-lRf5ORTfDJiA",
+			"description": "Science and nature documentaries exploring wildlife, health, and the planet.",
+			"category": "Nature",
+			"logoUrl": "catalog/logos/UCdEipOt83E-lRf5ORTfDJiA.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
+			"videos": [
+				{
+					"videoId": "Gy8HwaI1hrQ",
+					"title": "What spices do to your brain and body",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/Gy8HwaI1hrQ/hqdefault.jpg",
+					"publishedAt": "2026-10-22T16:00:13.000Z"
+				},
+				{
+					"videoId": "D8YOaCKdjtk",
+					"title": "Why sea slugs are nature's greatest THIEVES",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/D8YOaCKdjtk/hqdefault.jpg",
+					"publishedAt": "2026-10-15T16:00:14.000Z"
+				},
+				{
+					"videoId": "_vTNoc7frfQ",
+					"title": "Can a Pro Climber beat a Mountain Goat?",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_vTNoc7frfQ/hqdefault.jpg",
+					"publishedAt": "2026-10-08T16:00:01.000Z"
+				},
+				{
+					"videoId": "BpT5V6h42ck",
+					"title": "Everything About This Fish is Confusing",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/BpT5V6h42ck/hqdefault.jpg",
+					"publishedAt": "2026-10-01T16:00:21.000Z"
+				},
+				{
+					"videoId": "lS0XoSDJzsc",
+					"title": "Tomb security of the Great Pyramid of Giza",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/lS0XoSDJzsc/hqdefault.jpg",
+					"publishedAt": "2026-09-24T16:00:04.000Z"
+				},
+				{
+					"videoId": "kXucblbKmFA",
+					"title": "Behind the scenes: Incredible footage shows how owl uses sound to hunt under snow",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/kXucblbKmFA/hqdefault.jpg",
+					"publishedAt": "2026-09-21T18:28:55.000Z"
+				},
+				{
+					"videoId": "Ykcs1U0lNtE",
+					"title": "Incredible footage shows how owl uses sound to hunt under snow",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/Ykcs1U0lNtE/hqdefault.jpg",
+					"publishedAt": "2026-09-17T16:00:15.000Z"
+				},
+				{
+					"videoId": "OGWy2__DEuk",
+					"title": "Watch this - your anus will thank you!",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/OGWy2__DEuk/hqdefault.jpg",
+					"publishedAt": "2026-09-10T06:30:10.000Z"
+				},
+				{
+					"videoId": "dSbTzIYnZPc",
+					"title": "What lions and hyenas do at night",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/dSbTzIYnZPc/hqdefault.jpg",
+					"publishedAt": "2026-09-03T14:41:56.000Z"
+				},
+				{
+					"videoId": "gen2uUkhqco",
+					"title": "The tiger who divided a nation",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/gen2uUkhqco/hqdefault.jpg",
+					"publishedAt": "2026-08-27T15:27:17.000Z"
+				},
+				{
+					"videoId": "bl7cmrnUKZU",
+					"title": "This biologist feeds mosquitoes with his own blood",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/bl7cmrnUKZU/hqdefault.jpg",
+					"publishedAt": "2026-08-20T15:55:11.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"nyXT02h2Odw",
+				"CecY2dK01WM",
+				"ZZ8ytwH3Ox4",
+				"sICgV3fMNtI"
+			]
+		},
+		{
+			"id": "UCwg6_F2hDHYrqbNSGjmar4w",
+			"name": "Animalogic",
+			"channelUrl": "https://www.youtube.com/channel/UCwg6_F2hDHYrqbNSGjmar4w",
+			"description": "Animated and live-action stories about strange and remarkable animals.",
+			"category": "Nature",
+			"logoUrl": "catalog/logos/UCwg6_F2hDHYrqbNSGjmar4w.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
+			"videos": [
+				{
+					"videoId": "QXvS_mlfPfg",
+					"title": "What Animals Looked Like Right After the Dinosaurs Died",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/QXvS_mlfPfg/hqdefault.jpg",
+					"publishedAt": "2026-10-27T05:44:29.000Z"
+				},
+				{
+					"videoId": "2yb5H6KkEVE",
+					"title": "Meet the Caiman Bigger Than a Bus That Ruled South America",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/2yb5H6KkEVE/hqdefault.jpg",
+					"publishedAt": "2026-10-23T18:44:57.000Z"
+				},
+				{
+					"videoId": "RqDuSzSEVZk",
+					"title": "The Dogs That Break Every Rule of Being a Dog",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/RqDuSzSEVZk/hqdefault.jpg",
+					"publishedAt": "2026-10-20T06:35:00.000Z"
+				},
+				{
+					"videoId": "g8w43_QxKMk",
+					"title": "Someone Found A New Cat Species On The Side Of The Road",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/g8w43_QxKMk/hqdefault.jpg",
+					"publishedAt": "2026-10-16T21:23:55.000Z"
+				},
+				{
+					"videoId": "xopjnSVJXX4",
+					"title": "The Truth About the Biggest Predators After the Dinosaurs",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/xopjnSVJXX4/hqdefault.jpg",
+					"publishedAt": "2026-10-13T08:11:41.000Z"
+				},
+				{
+					"videoId": "n6ALs0AvNBU",
+					"title": "What the “American Cheetah” Actually Was",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/n6ALs0AvNBU/hqdefault.jpg",
+					"publishedAt": "2026-10-09T20:22:01.000Z"
+				},
+				{
+					"videoId": "DAPJLlYVfRo",
+					"title": "We Were Wrong About What's Killing Monarchs",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/DAPJLlYVfRo/hqdefault.jpg",
+					"publishedAt": "2026-10-02T19:03:47.000Z"
+				},
+				{
+					"videoId": "6hnGSaheuxw",
+					"title": "The Most Dangerous Creatures to Ever Hunt in the Ocean",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6hnGSaheuxw/hqdefault.jpg",
+					"publishedAt": "2026-09-29T07:00:51.000Z"
+				},
+				{
+					"videoId": "QVVVU5Ng0-U",
+					"title": "This \"Beaver\" Broke Every Rule of Being a Beaver",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/QVVVU5Ng0-U/hqdefault.jpg",
+					"publishedAt": "2026-09-25T19:08:07.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"jFwNMlwMnjU",
+				"rHswIuI6WJw",
+				"Py7bGP_aCR4",
+				"IdAFhJ0J3aI",
+				"fk9VNmihiMc",
+				"14mjNHSK-PI"
+			]
+		},
+		{
+			"id": "UCdsOTr6SmDrxuWE7sJFrkhQ",
+			"name": "BBC Earth Science",
+			"channelUrl": "https://www.youtube.com/channel/UCdsOTr6SmDrxuWE7sJFrkhQ",
+			"description": "Science explainers and documentaries on space, Earth, and the natural world.",
+			"category": "Science",
+			"logoUrl": "catalog/logos/UCdsOTr6SmDrxuWE7sJFrkhQ.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
+			"videos": [
+				{
+					"videoId": "-LYYglAwQa0",
+					"title": "Inside Japan’s Giant Neutrino Detector | BBC Earth Science",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/-LYYglAwQa0/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:00:17.000Z"
+				},
+				{
+					"videoId": "U76kKzzlxko",
+					"title": "What Secrets Are Hiding on Our Solar System's Moons? | BBC Earth Science",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/U76kKzzlxko/hqdefault.jpg",
+					"publishedAt": "2026-10-24T16:30:13.000Z"
+				},
+				{
+					"videoId": "PwhRYHw9SnI",
+					"title": "Giant Space Magnet Reveals a 'Startling Possibility'  | BBC Earth Science",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/PwhRYHw9SnI/hqdefault.jpg",
+					"publishedAt": "2026-10-23T16:30:31.000Z"
+				},
+				{
+					"videoId": "8qG7ETIhfkQ",
+					"title": "What If the Secret to Life Is Something Deadly? | BBC Earth Science",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/8qG7ETIhfkQ/hqdefault.jpg",
+					"publishedAt": "2026-10-20T16:30:24.000Z"
+				},
+				{
+					"videoId": "Bxxr2dmIErM",
+					"title": "The Meteorite Hidden in Tutankhamun’s Tomb | BBC Earth Science",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/Bxxr2dmIErM/hqdefault.jpg",
+					"publishedAt": "2026-10-17T16:30:33.000Z"
+				},
+				{
+					"videoId": "jdJn46u16EE",
+					"title": "Is this Unsettling Fact Science’s ‘Epic Fail’?  | BBC Earth Science",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/jdJn46u16EE/hqdefault.jpg",
+					"publishedAt": "2026-10-16T16:30:08.000Z"
+				},
+				{
+					"videoId": "1cPWIICepAA",
+					"title": "5 Incredible Explorations of our Mind-Blowing Universe | BBC Earth Science",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/1cPWIICepAA/hqdefault.jpg",
+					"publishedAt": "2026-10-10T16:30:16.000Z"
+				},
+				{
+					"videoId": "uSdXSpgctUA",
+					"title": "What Happens When Meteorites Come to Earth? | BBC Earth Science",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/uSdXSpgctUA/hqdefault.jpg",
+					"publishedAt": "2026-10-09T16:30:06.000Z"
+				},
+				{
+					"videoId": "FRLgvODVl44",
+					"title": "The Surprising Supernova Discovery that ‘Changes Everything’ | BBC Earth Science",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/FRLgvODVl44/hqdefault.jpg",
+					"publishedAt": "2026-10-07T16:30:14.000Z"
+				},
+				{
+					"videoId": "7JYJ-Jln8Wo",
+					"title": "The Solar Storms That Could Threaten Life on Earth | BBC Earth Science",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/7JYJ-Jln8Wo/hqdefault.jpg",
+					"publishedAt": "2026-10-02T16:30:05.000Z"
+				},
+				{
+					"videoId": "Og3kA-EUOpA",
+					"title": "Why Scientists Are Re-examining the Last Samples From the Moon | BBC Earth Science",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/Og3kA-EUOpA/hqdefault.jpg",
+					"publishedAt": "2026-10-01T17:00:39.000Z"
+				},
+				{
+					"videoId": "neeFta_gSRc",
+					"title": "5 Everyday Choices With A Surprising Impact On The Planet",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/neeFta_gSRc/hqdefault.jpg",
+					"publishedAt": "2026-09-28T16:31:42.000Z"
+				},
+				{
+					"videoId": "JZUw6TtuFZQ",
+					"title": "The Story of Jupiter: Our Solar System’s Giant | BBC Earth Science",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/JZUw6TtuFZQ/hqdefault.jpg",
+					"publishedAt": "2026-09-27T16:30:26.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"Wj3BvAGHcVQ",
+				"d-NOWssLkEg"
+			]
+		},
+		{
+			"id": "UCzR-rom72PHN9Zg7RML9EbA",
+			"name": "PBS Eons",
+			"channelUrl": "https://www.youtube.com/channel/UCzR-rom72PHN9Zg7RML9EbA",
+			"description": "The history of life on Earth, from ancient fossils to evolutionary oddities.",
+			"category": "Science",
+			"logoUrl": "catalog/logos/UCzR-rom72PHN9Zg7RML9EbA.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
+			"videos": [
+				{
+					"videoId": "O5H7g4RCRnw",
+					"title": "Pumpkins Shouldn't Exist",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/O5H7g4RCRnw/hqdefault.jpg",
+					"publishedAt": "2026-10-27T14:00:37.000Z"
+				},
+				{
+					"videoId": "E3yTiMXHb14",
+					"title": "National Fossil Day 2026",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/E3yTiMXHb14/hqdefault.jpg",
+					"publishedAt": "2026-10-14T21:32:47.000Z"
+				},
+				{
+					"videoId": "Ya99xCWXQdc",
+					"title": "The Biggest Extinction You’ve Never Heard Of",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/Ya99xCWXQdc/hqdefault.jpg",
+					"publishedAt": "2026-10-13T14:00:21.000Z"
+				},
+				{
+					"videoId": "sIupXhjet0s",
+					"title": "Did the Ozone Collapse 252 Million Years Ago?",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/sIupXhjet0s/hqdefault.jpg",
+					"publishedAt": "2026-09-15T14:00:15.000Z"
+				},
+				{
+					"videoId": "IXU43nvmDkE",
+					"title": "Why Were Sails So Popular 300 Million Years Ago",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/IXU43nvmDkE/hqdefault.jpg",
+					"publishedAt": "2026-09-01T14:00:15.000Z"
+				},
+				{
+					"videoId": "yN4Ck8CSdWU",
+					"title": "What Drove Life Into The Trees?",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/yN4Ck8CSdWU/hqdefault.jpg",
+					"publishedAt": "2026-08-18T14:00:01.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"cYoDQOB7tos",
+				"gtQPMMqwGFs",
+				"nenGFeocPvU",
+				"GhUuOxrCato",
+				"Jyl-ibCyG8U",
+				"LTmu2q9Azp0",
+				"Cmqn-LPxWGM",
+				"BeNJxfE5sio",
+				"fXMiQ-Sxt_8"
+			]
+		},
+		{
+			"id": "UC-3SbfTPJsL8fJAPKiVqBLg",
+			"name": "Deep Look",
+			"channelUrl": "https://www.youtube.com/channel/UC-3SbfTPJsL8fJAPKiVqBLg",
+			"description": "Macro nature and science films revealing the tiny worlds around us.",
+			"category": "Science",
+			"logoUrl": "catalog/logos/UC-3SbfTPJsL8fJAPKiVqBLg.jpg",
+			"snapshotAt": "2026-10-28T16:47:49.885Z",
+			"videos": [
+				{
+					"videoId": "Huii-MIcZU4",
+					"title": "Body Snatchers! Four of Nature’s Freakiest Parasites | Deep Look",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/Huii-MIcZU4/hqdefault.jpg",
+					"publishedAt": "2026-10-27T15:00:09.000Z"
+				},
+				{
+					"videoId": "OawSUyFDGGw",
+					"title": "This Fly's Face Does WHAT? | Deep Look",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/OawSUyFDGGw/hqdefault.jpg",
+					"publishedAt": "2026-09-29T15:00:09.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"vB09vdg3yHg",
+				"Lbfc76mZv0Q",
+				"qSBE1bl8nOQ",
+				"ib_-qHmin94",
+				"36a8nFRzvLg",
+				"5KeshWOFim4",
+				"KoUS7AZkQpY",
+				"lTUTeHU1rIc",
+				"-uPp_Uq_dsk",
+				"sdtBw4SR5fI",
+				"pwa0x6I7SNQ",
+				"xtKB9YAF0ME",
+				"u6tvqaX5JL0"
+			]
 		}
 	]
 }
