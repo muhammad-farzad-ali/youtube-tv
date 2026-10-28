@@ -2,7 +2,7 @@
 	"schemaVersion": 2,
 	"type": "cable-tv-catalog",
 	"name": "Cable TV",
-	"updatedAt": "2026-10-28T15:27:13.802Z",
+	"updatedAt": "2026-10-28T16:07:40.125Z",
 	"channels": [
 		{
 			"id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
@@ -11,7 +11,7 @@
 			"description": "Developer tools, platforms, and engineering talks from Google.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC_x5XG1OV2P6uZZ5FSM9Ttw.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "pQ_Dnr9Q4k8",
@@ -84,7 +84,7 @@
 			"description": "Hardware reviews, builds, and technology news with a lot of energy.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCXuqSBlHAE6Xw-yeJA0Tunw.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "DZSYaQmxBLM",
@@ -172,7 +172,7 @@
 			"description": "Consumer technology, product reviews, and the future of gadgets.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCddiUEpeqJcYeBxX1IVBKvQ.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "ZbmAv0O_Cmg",
@@ -210,7 +210,7 @@
 			"description": "Sharp, considered reviews of phones, cameras, cars, and new tech.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCBJycsmduvYEL83R_U4JriQ.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "ESABTN4VtrA",
@@ -298,7 +298,7 @@
 			"description": "Computer science concepts, security, and the people behind computing.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC9-y-6csu5WGm29I7JiwpnA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "h6j_ixGnpiY",
@@ -400,7 +400,7 @@
 			"description": "Short, practical explainers about the technology you use every day.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC0vBXGSyV14uvJ4hECDOl0Q.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "72pyU1ZRun0",
@@ -502,7 +502,7 @@
 			"description": "Science and engineering stories built around surprising questions.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCHnyfMqiRRG1u-2MsSQLbXA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "eyZEqSPeMwg",
@@ -550,7 +550,7 @@
 			"description": "Animated explainers about space, biology, society, and the future.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCsXVk37bltHxD1rDPwtNM8Q.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "5_Fayfx2NUM",
@@ -608,7 +608,7 @@
 			"description": "Official mission footage, launches, and updates from NASA.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCLA_DiR1FfKNvjuUpBHmylQ.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "pAKqJxuxDgk",
@@ -700,7 +700,7 @@
 			"description": "Deep dives into astrophysics, cosmology, and the laws of nature.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UC7_gcs09iThXybpVgjHZ_7g.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "eb8x2tz_pgc",
@@ -763,7 +763,7 @@
 			"description": "Quick, visual physics lessons from Henry Reich.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCUHW94eEFW7hkUMVaZz4eDg.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "4YvnVJRlQQs",
@@ -826,7 +826,7 @@
 			"description": "Short animated lessons across science, history, and culture.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCsooa4yRKGN_zEE8iknghZA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "nXvKDYRvTno",
@@ -928,7 +928,7 @@
 			"description": "International news, reporting, and analysis from Al Jazeera.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCNye-wNBqNL5ZzHSJj3l8Bg.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "E7mo6wFpwpc",
@@ -938,6 +938,8 @@
 				}
 			],
 			"shortVideoIds": [
+				"WM06WFmqInE",
+				"WVV7mYGdhXc",
 				"mmMEHWEeX7I",
 				"dt6w8A2XFQE",
 				"vqS0vldxmJM",
@@ -949,9 +951,7 @@
 				"f3ds93C6_Is",
 				"76ZN55yJ264",
 				"10Paz2AXcCs",
-				"vft0xQ1xkYQ",
-				"KlKM3je3uiM",
-				"NT0a5K_CkI8"
+				"vft0xQ1xkYQ"
 			]
 		},
 		{
@@ -961,7 +961,7 @@
 			"description": "Breaking news, explainers, and reports from the BBC newsroom.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UC16niRr50-MSBwiO3YDb3RA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "QHWfRnygyms",
@@ -983,6 +983,7 @@
 				}
 			],
 			"shortVideoIds": [
+				"pUqwhObY-gY",
 				"ZSe0CrmmOtY",
 				"6J5yTxOcPss",
 				"3oNW08Qf62M",
@@ -993,8 +994,7 @@
 				"klM90m0tS38",
 				"n4BpITNxvRE",
 				"WFyNiMtr0hA",
-				"fNIz9oIaTMs",
-				"3_8DR3SPZlo"
+				"fNIz9oIaTMs"
 			]
 		},
 		{
@@ -1004,7 +1004,7 @@
 			"description": "Global news and current affairs from Deutsche Welle.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCknLrEdhRCp1aegoMqRaCZg.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "04BqMycb-rY",
@@ -1082,8 +1082,14 @@
 			"description": "Rolling news, interviews, and live coverage from Sky News.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCoMdktPbSTixAyNGwb-UYkQ.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
+				{
+					"videoId": "ZSAokkNd4gM",
+					"title": "OBR holds briefing following Budget",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/ZSAokkNd4gM/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:36:13.000Z"
+				},
 				{
 					"videoId": "uPyRzsATJAw",
 					"title": "Spanish PM speaks at the scene of deadly train crash",
@@ -1131,12 +1137,6 @@
 					"title": "Spain train crash | At least 68 dead after two high-speed trains collide",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/F86h8QDh3aI/hqdefault.jpg",
 					"publishedAt": "2026-10-28T09:44:09.000Z"
-				},
-				{
-					"videoId": "ZSAokkNd4gM",
-					"title": "OBR holds briefing following Budget",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/ZSAokkNd4gM/hqdefault.jpg",
-					"publishedAt": "2026-10-28T08:27:16.000Z"
 				}
 			],
 			"shortVideoIds": [
@@ -1155,8 +1155,14 @@
 			"description": "Wire news and video reports from Reuters around the world.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UChqUTb7kYRX8-EiaN3XFrSQ.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
+				{
+					"videoId": "WJ0ehTDyBQs",
+					"title": "LIVE: Families of Spain train crash victims gather",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/WJ0ehTDyBQs/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:49:40.000Z"
+				},
 				{
 					"videoId": "8O1ADh_AJ_g",
 					"title": "LIVE: Zelenskiy holds briefing in The Hague",
@@ -1204,21 +1210,10 @@
 					"title": "AI boom creates jobs but threatens others, dividing Nevada unions",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/ghPeJve7TeU/hqdefault.jpg",
 					"publishedAt": "2026-10-28T12:24:42.000Z"
-				},
-				{
-					"videoId": "fQvr2dZlS9M",
-					"title": "LIVE: UK finance minister John Healey unveils budget",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/fQvr2dZlS9M/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:54:42.000Z"
-				},
-				{
-					"videoId": "W3jO9GBlDfA",
-					"title": "Mbappe seeks to defuse anger in China after Mao 'dictator' comment",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/W3jO9GBlDfA/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:37:15.000Z"
 				}
 			],
 			"shortVideoIds": [
+				"J1-NzFPLLv8",
 				"XJdzsDoa8mo",
 				"Dqjcy76jJbI",
 				"IABJFR6dRU4",
@@ -1233,8 +1228,26 @@
 			"description": "Markets, business, and economic coverage from CNBC.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCrp_UI8XtuYfpiqluWLD7Lw.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
+				{
+					"videoId": "CNm1-2P1oTs",
+					"title": "Julian Emanuel: The earnings power of the AI revolution has further to run",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/CNm1-2P1oTs/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:45:35.000Z"
+				},
+				{
+					"videoId": "6trZS0CylDE",
+					"title": "Robinhood CEO Vlad Tenev: Crypto is in a relative winter",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6trZS0CylDE/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:42:59.000Z"
+				},
+				{
+					"videoId": "_hA95aLcMmA",
+					"title": "OpenAI CEO Sam Altman comments on cyber risk: What you need to know",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_hA95aLcMmA/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:25:11.000Z"
+				},
 				{
 					"videoId": "C4bM7zZY3XI",
 					"title": "Market Open: Stocks Higher, Investors Await Fed Rate Decision, Wendy’s in Play • 10/28/26",
@@ -1252,35 +1265,17 @@
 					"title": "Anthropic's growth is 'incredibly explosive,' says Disruptive CEO Alex Davis",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/ueXNEo6-uJ0/hqdefault.jpg",
 					"publishedAt": "2026-10-28T13:37:32.000Z"
-				},
-				{
-					"videoId": "RotRYMn-NP0",
-					"title": "Why China is desperate to ship cars overseas",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/RotRYMn-NP0/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:35:55.000Z"
-				},
-				{
-					"videoId": "YYkZdvfi5rk",
-					"title": "Dan Senor on Israel election: The differences in this election came down to domestic issues",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/YYkZdvfi5rk/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:12:52.000Z"
-				},
-				{
-					"videoId": "7W_7XuFHCaQ",
-					"title": "ValueEdge's Nell Minow on Meta's new stock structure: The company shouldn't be used as a piggy bank",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/7W_7XuFHCaQ/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:32:40.000Z"
 				}
 			],
 			"shortVideoIds": [
+				"pugcqrgIjA0",
 				"Lw8SIHRCAuY",
 				"tQ0PVESAk9o",
 				"Ih5ts3eD5LE",
 				"hxyAihh-KtA",
 				"HCV0UKsUx5Q",
 				"a8nOvfCgPjM",
-				"MRbr6RSOXMI",
-				"CfSXVlFGHDg"
+				"MRbr6RSOXMI"
 			]
 		},
 		{
@@ -1290,8 +1285,38 @@
 			"description": "Game news, reviews, trailers, and everything happening in gaming.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCKy1dAqELo0zrOtPkf0eTMw.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
+				{
+					"videoId": "xsv2wXw61dM",
+					"title": "World of Warcraft: Forever | Planet Azeroth EP. 1 (ft. Bill Bailey)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/xsv2wXw61dM/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:00:26.000Z"
+				},
+				{
+					"videoId": "yFgsx2_8HpU",
+					"title": "PlayStation 5 - Official DualSense Prism Collection Trailer",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/yFgsx2_8HpU/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:59:25.000Z"
+				},
+				{
+					"videoId": "1E_NSW_4FWA",
+					"title": "Dead by Daylight - Official Terrifier Teaser Trailer",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/1E_NSW_4FWA/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:49:48.000Z"
+				},
+				{
+					"videoId": "euJEtEzqQyo",
+					"title": "Dumpster Gang - Official Console Announcement Trailer | Nintendo Indie World Fall 2026",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/euJEtEzqQyo/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:26:40.000Z"
+				},
+				{
+					"videoId": "VvwPyMxuipM",
+					"title": "Sword of the Sea - Official Xbox and Nintendo Switch 2 Trailer | Nintendo Indie World Fall 2026",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/VvwPyMxuipM/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:22:14.000Z"
+				},
 				{
 					"videoId": "-sIXAizyNj0",
 					"title": "Super Battle Golf - Official Console Release Date Trailer | Nintendo Indie World Fall 2026",
@@ -1333,22 +1358,12 @@
 					"title": "Jumanji: Open World - Official Trailer #2 (Dwayne Johnson, Jack Black, Kevin Hart, Karen Gillan)",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/bGYpVjsYvfo/hqdefault.jpg",
 					"publishedAt": "2026-10-28T13:33:13.000Z"
-				},
-				{
-					"videoId": "Tg20HSKna_A",
-					"title": "The Wolf Among Us Remastered Review",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/Tg20HSKna_A/hqdefault.jpg",
-					"publishedAt": "2026-10-28T00:08:58.000Z"
 				}
 			],
 			"shortVideoIds": [
 				"VaV5PnUZ6hA",
 				"x-GjZD75aAU",
-				"keoW-Y54ARg",
-				"kNrQsKhHtlk",
-				"O0tLvQC_n8M",
-				"Q-o3cI-_0Mo",
-				"vbXI7_uAvCA"
+				"keoW-Y54ARg"
 			]
 		},
 		{
@@ -1358,7 +1373,7 @@
 			"description": "Reviews, previews, and deep coverage of games and the industry.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCbu2SsF-Or3Rsn3NxqODImw.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "_GF2AEoDmL0",
@@ -1441,7 +1456,7 @@
 			"description": "Technical analysis of games, consoles, and graphics performance.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UC9PBzalIcEQCsiIkq36PyUA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "6QPRMl0Scoc",
@@ -1543,8 +1558,26 @@
 			"description": "Official PlayStation trailers, announcements, and gameplay.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UC-2Y8dQb0S6DtpxNgAKoJKA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
+				{
+					"videoId": "1zG6PuF6Fic",
+					"title": "Cronos: Lazarus - Story Trailer | PS5 Games",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/1zG6PuF6Fic/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:45:07.000Z"
+				},
+				{
+					"videoId": "vKn7u5xv4ts",
+					"title": "Jumanji: Open World - New Trailer | PlayStation",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/vKn7u5xv4ts/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:30:34.000Z"
+				},
+				{
+					"videoId": "Rst37nW__-A",
+					"title": "Anomalith - Launch Trailer | PS5 Games",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/Rst37nW__-A/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:30:23.000Z"
+				},
 				{
 					"videoId": "wE2VDIPrxOM",
 					"title": "Super Battle Golf - Release Date Trailer | PS5 Games",
@@ -1610,24 +1643,6 @@
 					"title": "Rayman Legends Retold - Astro Bot Outfit Trailer | PS5 Games",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/QGG8OnznPe8/hqdefault.jpg",
 					"publishedAt": "2026-10-28T13:00:14.000Z"
-				},
-				{
-					"videoId": "dlQjXkzuJoI",
-					"title": "Fallen City Brawl - Launch Trailer | PS5 & PS4 Games",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/dlQjXkzuJoI/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:00:11.000Z"
-				},
-				{
-					"videoId": "_VWvxFkuy9A",
-					"title": "Frog Sqwad - Out Now | PS5 Games",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/_VWvxFkuy9A/hqdefault.jpg",
-					"publishedAt": "2026-10-28T08:00:27.000Z"
-				},
-				{
-					"videoId": "bw_TKK96LgI",
-					"title": "Aloft - Announcement Trailer | PS5 Games",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/bw_TKK96LgI/hqdefault.jpg",
-					"publishedAt": "2026-10-27T16:00:23.000Z"
 				}
 			],
 			"shortVideoIds": [
@@ -1641,7 +1656,7 @@
 			"description": "Official Xbox news, game trailers, and feature updates.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCjBp_7RuDBUYbd1LegWEJ8g.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "sIBJarLwlX8",
@@ -1743,8 +1758,14 @@
 			"description": "Nintendo trailers, Direct presentations, and game news.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCGIY_O-8vW4rfX98KlMkvRg.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
+				{
+					"videoId": "9OPoiRcze0w",
+					"title": "Indie World Showcase 10.28.2026",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/9OPoiRcze0w/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:58:16.000Z"
+				},
 				{
 					"videoId": "O6SwwzG_ag0",
 					"title": "Indie Spotlight Sizzle Reel – Indie World Showcase 10.28.2026",
@@ -1828,12 +1849,6 @@
 					"title": "Sword of the Sea – Release Date Trailer – Nintendo Switch 2",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/NSp6xDEK4FM/hqdefault.jpg",
 					"publishedAt": "2026-10-28T14:20:32.000Z"
-				},
-				{
-					"videoId": "9OPoiRcze0w",
-					"title": "Indie World Showcase 10.28.2026",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/9OPoiRcze0w/hqdefault.jpg",
-					"publishedAt": "2026-10-26T18:43:57.000Z"
 				}
 			],
 			"shortVideoIds": []
@@ -1845,7 +1860,7 @@
 			"description": "Fast-paced courses across science, history, literature, and more.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCX6b17PVsYBQ0ip5gyeme-Q.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "2b-H-rxQ8m8",
@@ -1943,7 +1958,7 @@
 			"description": "Free lessons in math, science, economics, and the humanities.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UC4a-Gbdw7vOaccHmFo40b9g.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "cPxnWRp4oPo",
@@ -2041,7 +2056,7 @@
 			"description": "Full-length programming courses and coding tutorials.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UC8butISFwT-Wl7EV0hUK0BQ.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "aZglGvBPQGs",
@@ -2143,7 +2158,7 @@
 			"description": "Mathematics explained visually, from calculus to neural networks.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCYO_jab_esuFRV4b17AJtAw.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "LKrwhjOI8Nc",
@@ -2191,7 +2206,7 @@
 			"description": "Talks and ideas from scientists, artists, and thinkers.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCAuUUnT6oDeKwE6v1NGQxug.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "tu6tF-lVDJI",
@@ -2269,7 +2284,7 @@
 			"description": "Numbers, puzzles, and mathematical curiosities with experts.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCoxcjq-8xIDTYp3uz647V5A.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "EgnAN0ZUl08",
@@ -2352,7 +2367,7 @@
 			"description": "High-speed tutorials and news on web development, programming languages, and software trends.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCsBjURrPoezykLs9EqgamOA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "nEaJMdM1djM",
@@ -2454,7 +2469,7 @@
 			"description": "Developer commentary, engineering culture, and programming tooling.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UC8ENHE5xdFSwx71u3fDH5Xw.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "tYQyh1tjSFc",
@@ -2522,7 +2537,7 @@
 			"description": "Practical web development tutorials focused on JavaScript, React, and modern front-end patterns.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCFbNIlppjAuEX4znoulh0Cw.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "FbXPaIcpvww",
@@ -2600,7 +2615,7 @@
 			"description": "Web development commentary, TypeScript, and the business of building software.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCbRP3c757lWg9M-U7TyEkXA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "FHGfSjDGUIw",
@@ -2688,7 +2703,7 @@
 			"description": "System design, distributed systems, and software engineering interview concepts explained visually.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCZgt6AzoyjslHTC9dz0UoTw.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "Dddv7P_k60o",
@@ -2781,7 +2796,7 @@
 			"description": "Full-stack web development tutorials, project builds, and framework walkthroughs.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UC29ju8bIPH5as8OGnQzwJyA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "RE2c_eH0Sq4",
@@ -2874,7 +2889,7 @@
 			"description": "Geo TV's comedy show with sketches, celebrity guests, and audience laughs.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC6HQ4d3xq9EgSeJgMhc-4AQ.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "hcY_cLsZPcQ",
@@ -2927,7 +2942,7 @@
 			"description": "Roasts, comedy vlogs, and internet culture commentary.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC_c-RTowPbIlzMkIa_O7s6Q.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "7qogNKRz9Nw",
@@ -3029,7 +3044,7 @@
 			"description": "Clean stand-up comedy sets from a rotating lineup of comics.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCvlVuntLjdURVD3b3Hx7kxw.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "9GXFX9XkES0",
@@ -3102,7 +3117,7 @@
 			"description": "Secret-location stand-up sets from emerging and established comedians.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC7MgijK9WL_EqCo1juUERwg.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "OCaY4tobtxk",
@@ -3150,7 +3165,7 @@
 			"description": "Satirical news and comedy covering politics, media, and current events.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCwWhs_6x42TyRM4Wstoq8HA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "uWqFBoeLCPk",
@@ -3213,7 +3228,7 @@
 			"description": "Talk-show comedy, sketches, and interviews from Conan O'Brien.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCo3nWXH_6vVJ5-xbF3bKb3Q.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "qHzMtDE1Q8M",
@@ -3276,7 +3291,7 @@
 			"description": "Travel and adventure documentaries from Pakistan and beyond.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCf1XIplYiqNv9baGsFHwPPQ.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "tNLuqTc5REU",
@@ -3378,7 +3393,7 @@
 			"description": "Travel documentaries focused on difficult destinations and local stories.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCXulruMI7BHj3kGyosNa0jA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "BPHjquSgzMQ",
@@ -3480,7 +3495,7 @@
 			"description": "Solo travel, remote places, and adventure storytelling.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCDTINI9skkeZNY2ZXnBqIkQ.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "kYyxSvOcr4k",
@@ -3563,7 +3578,7 @@
 			"description": "Adventure challenges and travel stories built around seeking discomfort.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCvK4bOhULCpmLabd2pDMtnA.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "TMQ31DQjjWg",
@@ -3665,7 +3680,7 @@
 			"description": "Travel documentaries from every country and culture around the world.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UC0Ize0RLIbGdH5x4wI45G-A.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "XYYrKZEUDag",
@@ -3718,7 +3733,7 @@
 			"description": "Cinematic hiking, backpacking, and wilderness journeys.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCpnuadQ_w3r6f4Q_NRlqd-w.jpg",
-			"snapshotAt": "2026-10-28T15:27:13.802Z",
+			"snapshotAt": "2026-10-28T16:07:40.125Z",
 			"videos": [
 				{
 					"videoId": "2upU96IeRlw",
