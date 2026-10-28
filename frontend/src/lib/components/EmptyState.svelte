@@ -13,7 +13,9 @@
 </script>
 
 <div class="panel flex flex-col items-center justify-center px-6 py-12 text-center">
-	<div class="mb-4 flex size-14 items-center justify-center rounded-full border border-line bg-ink text-comment">
+	<div
+		class="mb-4 flex size-14 items-center justify-center rounded-full border border-line bg-ink text-comment"
+	>
 		{#if icon}
 			{@render icon()}
 		{:else}

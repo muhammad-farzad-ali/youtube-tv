@@ -1,16 +1,20 @@
-import { getVideosForChannel, setVideoAvailability, setVideoDuration, type VideoRecord } from '#lib/storage/database';
+import {
+	getVideosForChannel,
+	setVideoAvailability,
+	setVideoDuration,
+	type VideoRecord
+} from '#lib/storage/database';
 import { profile } from './profile.svelte';
 import { YouTubePlayerService } from '#lib/services/youtubePlayer';
+import {
+	firstEligibleIndex,
+	isEligible,
+	nextEligibleIndex,
+	sortQueue
+} from '#lib/features/playback/queue';
 
 export type PlaybackStatus =
-	| 'idle'
-	| 'loading'
-	| 'playing'
-	| 'paused'
-	| 'cued'
-	| 'ended'
-	| 'error'
-	| 'empty';
+	'idle' | 'loading' | 'playing' | 'paused' | 'cued' | 'ended' | 'error' | 'empty';
 
 const PLAYER_STATES = {
 	UNSTARTED: -1,
@@ -72,11 +76,12 @@ class PlaybackStore {
 	private retries = 0;
 	private savedDurationFor: string | null = null;
 	private initToken = 0;
+	private tuneToken = 0;
 
 	async attach(containerId: string): Promise<void> {
 		if (this.attached) return;
 		this.attached = true;
-		this.muted = profile.settings.muted;
+		this.muted = profile.settings.startMuted ? true : profile.settings.muted;
 		this.volume = profile.settings.volume;
 		const token = ++this.initToken;
 		await this.service.init(containerId, {
@@ -95,6 +100,7 @@ class PlaybackStore {
 	async detach(): Promise<void> {
 		this.clearTimers();
 		this.stopTicker();
+		this.tuneToken++;
 		this.attached = false;
 		this.playerReady = false;
 		this.initToken++;
@@ -106,13 +112,19 @@ class PlaybackStore {
 		await this.service.destroy();
 	}
 
-	async tune(channelId: string): Promise<void> {
+	async tune(
+		channelId: string,
+		options: { forceNewest?: boolean; forcePlay?: boolean } = {}
+	): Promise<void> {
+		const token = ++this.tuneToken;
 		this.channelId = channelId;
 		this.newVideosAvailable = 0;
 		this.lastSkipped = null;
 		this.error = null;
 		this.errorCode = null;
-		this.queue = await getVideosForChannel(channelId);
+		const queue = await getVideosForChannel(channelId);
+		if (token !== this.tuneToken || this.channelId !== channelId) return;
+		this.queue = queue;
 		if (this.queue.length === 0) {
 			this.status = 'empty';
 			this.index = -1;
@@ -122,14 +134,17 @@ class PlaybackStore {
 			return;
 		}
 
-		this.sortQueue();
+		this.queue = sortQueue(this.queue, this.settings.sortOrder);
 		let start = this.firstEligibleIndex();
-		if (this.settings.resumeLastVideo) {
+		if (this.settings.resumeLastVideo && !options.forceNewest) {
 			const lastPlayed = profile.settings.lastPlayed[channelId];
 			const resumeIndex = lastPlayed
 				? this.queue.findIndex((video) => video.videoId === lastPlayed)
 				: -1;
-			if (resumeIndex >= 0) start = resumeIndex;
+			const resumeVideo = resumeIndex >= 0 ? this.queue[resumeIndex] : undefined;
+			if (resumeVideo && isEligible(resumeVideo, this.settings.skipUnavailable)) {
+				start = resumeIndex;
+			}
 		}
 
 		if (start < 0) {
@@ -139,49 +154,26 @@ class PlaybackStore {
 			return;
 		}
 
-		this.loadIndex(start, this.settings.startOnSelect);
+		this.loadIndex(start, options.forcePlay ? true : this.settings.startOnSelect);
 	}
 
 	restartChannel(): void {
-		if (this.channelId) void this.tuneFresh(this.channelId);
-	}
-
-	private async tuneFresh(channelId: string): Promise<void> {
-		this.newVideosAvailable = 0;
-		await this.tune(channelId);
+		if (this.channelId) void this.tune(this.channelId, { forceNewest: true, forcePlay: true });
 	}
 
 	private get settings() {
 		return profile.settings;
 	}
 
-	private sortQueue(): void {
-		this.queue = [...this.queue].sort((a, b) => {
-			const diff = Date.parse(a.publishedAt) - Date.parse(b.publishedAt);
-			return this.settings.sortOrder === 'oldest' ? diff : -diff;
-		});
-	}
-
-	private isEligible(video: VideoRecord): boolean {
-		return !(this.settings.skipUnavailable && video.availabilityStatus === 'unavailable');
-	}
-
 	private firstEligibleIndex(): number {
-		return this.queue.findIndex((video) => this.isEligible(video));
+		return firstEligibleIndex(this.queue, this.settings.skipUnavailable);
 	}
 
 	private findNextIndex(from = this.index): number | null {
-		for (let i = from + 1; i < this.queue.length; i++) {
-			const video = this.queue[i];
-			if (video && this.isEligible(video)) return i;
-		}
-		if (this.settings.loopQueue) {
-			for (let i = 0; i <= from && i < this.queue.length; i++) {
-				const video = this.queue[i];
-				if (video && this.isEligible(video)) return i;
-			}
-		}
-		return null;
+		return nextEligibleIndex(this.queue, from, {
+			skipUnavailable: this.settings.skipUnavailable,
+			loop: this.settings.loopQueue
+		});
 	}
 
 	private loadIndex(index: number, autoplay: boolean): void {
@@ -276,6 +268,9 @@ class PlaybackStore {
 
 		const video = this.current;
 		if (video && isPermanentError(code)) {
+			this.queue = this.queue.map((item) =>
+				item.videoId === video.videoId ? { ...item, availabilityStatus: 'unavailable' } : item
+			);
 			void setVideoAvailability(video.videoId, 'unavailable');
 		}
 
@@ -379,6 +374,7 @@ class PlaybackStore {
 	async checkForNewVideos(channelId: string): Promise<void> {
 		if (this.channelId !== channelId) return;
 		const latest = await getVideosForChannel(channelId);
+		if (this.channelId !== channelId) return;
 		const known = new Set(this.queue.map((video) => video.videoId));
 		this.newVideosAvailable = latest.filter((video) => !known.has(video.videoId)).length;
 	}

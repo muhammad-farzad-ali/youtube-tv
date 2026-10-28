@@ -1,5 +1,10 @@
 import { asset } from '$app/paths';
-import { catalogSchema, type Catalog, type CatalogChannel, type CatalogPack } from '#lib/schemas/catalog.schema';
+import {
+	catalogSchema,
+	type Catalog,
+	type CatalogChannel,
+	type CatalogPack
+} from '#lib/schemas/catalog.schema';
 
 export type CatalogStatus = 'idle' | 'loading' | 'ready' | 'error';
 
@@ -13,7 +18,9 @@ class CatalogStore {
 	packs = $derived<CatalogPack[]>(this.data?.packs ?? []);
 	channelsById = $derived(new Map(this.channels.map((channel) => [channel.id, channel])));
 	categories = $derived(
-		[...new Set(this.channels.map((channel) => channel.category))].sort((a, b) => a.localeCompare(b))
+		[...new Set(this.channels.map((channel) => channel.category))].sort((a, b) =>
+			a.localeCompare(b)
+		)
 	);
 	starterChannelIds = $derived(this.data?.starterChannelIds ?? []);
 
@@ -29,7 +36,7 @@ class CatalogStore {
 		this.pending = (async () => {
 			try {
 				const response = await fetch(asset('catalog.json' as never), {
-					cache: force ? 'reload' : 'default'
+					cache: force ? 'reload' : 'no-cache'
 				});
 				if (!response.ok) {
 					throw new Error(`Catalog request failed with HTTP ${response.status}`);

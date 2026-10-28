@@ -48,9 +48,12 @@
 			playerError = cause instanceof Error ? cause.message : 'The YouTube player could not start.';
 		});
 		const onFullscreen = () => (fullscreen = document.fullscreenElement === shell);
+		const requestFullscreen = () => void toggleFullscreen();
 		document.addEventListener('fullscreenchange', onFullscreen);
+		window.addEventListener('cable-tv:fullscreen', requestFullscreen);
 		return () => {
 			document.removeEventListener('fullscreenchange', onFullscreen);
+			window.removeEventListener('cable-tv:fullscreen', requestFullscreen);
 			void playback.detach();
 		};
 	});
@@ -72,21 +75,34 @@
 	}
 </script>
 
-<section class="player-shell overflow-hidden rounded-lg border border-line bg-ink shadow-2xl" bind:this={shell}>
-	<div class="flex items-center justify-between gap-3 border-b border-line bg-surface/90 px-3 py-2 sm:px-4">
+<section
+	data-testid="tv-player"
+	class="player-shell overflow-hidden rounded-lg border border-line bg-ink shadow-2xl"
+	bind:this={shell}
+>
+	<div
+		class="flex items-center justify-between gap-3 border-b border-line bg-surface/90 px-3 py-2 sm:px-4"
+	>
 		<div class="flex min-w-0 items-center gap-2">
-			<span class="shrink-0 rounded border border-yellow/30 bg-yellow/10 px-1.5 py-0.5 font-mono text-[10px] text-yellow tabular">
+			<span
+				class="shrink-0 rounded border border-yellow/30 bg-yellow/10 px-1.5 py-0.5 font-mono text-[10px] text-yellow tabular"
+			>
 				CH {String(channelNumber).padStart(2, '0')}
 			</span>
 			<span class="truncate font-display text-xs font-semibold tracking-wide text-fg sm:text-sm">
 				{channel.name}
 			</span>
 			{#if current}
-				<span class="hidden min-w-0 truncate text-[11px] text-comment sm:inline">— {current.title}</span>
+				<span
+					data-testid="player-video-title"
+					class="hidden min-w-0 truncate text-[11px] text-comment sm:inline">— {current.title}</span
+				>
 			{/if}
 		</div>
 		{#if status === 'playing'}
-			<span class="flex shrink-0 items-center gap-1.5 rounded-full border border-red/40 bg-ink/70 px-2 py-1 font-mono text-[9px] tracking-[0.16em] text-red uppercase">
+			<span
+				class="flex shrink-0 items-center gap-1.5 rounded-full border border-red/40 bg-ink/70 px-2 py-1 font-mono text-[9px] tracking-[0.16em] text-red uppercase"
+			>
 				<span class="size-1.5 animate-pulse-dot rounded-full bg-red"></span>
 				Tuned
 			</span>
@@ -94,7 +110,10 @@
 	</div>
 
 	<div class="crt-overlay player-frame relative aspect-video w-full overflow-hidden bg-black">
-		<div id={PLAYER_ID} class="absolute inset-0 h-full w-full [&>iframe]:h-full [&>iframe]:w-full"></div>
+		<div
+			id={PLAYER_ID}
+			class="absolute inset-0 h-full w-full [&>iframe]:h-full [&>iframe]:w-full"
+		></div>
 
 		{#if poster && (status === 'loading' || status === 'cued' || status === 'error' || status === 'idle')}
 			<img src={poster} alt="" class="absolute inset-0 size-full object-cover opacity-30" />
@@ -141,8 +160,9 @@
 				<Radio size={34} class="text-comment" />
 				<p class="mt-3 font-display text-lg font-semibold text-fg">No signal on this channel</p>
 				<p class="mt-1 max-w-sm text-sm text-dim">
-					No cached videos are available for {channel.name}. The site operator can refresh the catalog
-					snapshot, or you can configure a feed proxy in Settings.
+					No playable videos are available for {channel.name}. The channel may have no cached
+					uploads, or every cached video may be unavailable. Try refreshing the feed or ask the site
+					operator to update the catalog.
 				</p>
 				<a href={resolve('/settings')} class="btn-secondary mt-4">Feed settings</a>
 			</div>
@@ -191,9 +211,17 @@
 				aria-label={status === 'playing' ? 'Pause' : 'Play'}
 				onclick={() => playback.togglePause()}
 			>
-				{#if status === 'playing'}<Pause size={18} fill="currentColor" />{:else}<Play size={18} fill="currentColor" />{/if}
+				{#if status === 'playing'}<Pause size={18} fill="currentColor" />{:else}<Play
+						size={18}
+						fill="currentColor"
+					/>{/if}
 			</button>
-			<button type="button" class="btn-icon !size-9" aria-label="Next video" onclick={() => playback.next()}>
+			<button
+				type="button"
+				class="btn-icon !size-9"
+				aria-label="Next video"
+				onclick={() => playback.next()}
+			>
 				<SkipForward size={17} />
 			</button>
 			<button
@@ -209,7 +237,7 @@
 				type="range"
 				min="0"
 				max="100"
-				value={playback.muted ? 0 : playback.volume}
+				value={playback.volume}
 				aria-label="Volume"
 				oninput={(event) => playback.setVolume(Number(event.currentTarget.value))}
 			/>
@@ -217,7 +245,11 @@
 				{formatTime(playback.currentTime)} / {formatTime(playback.duration)}
 			</span>
 			<div class="ml-auto flex items-center gap-1.5">
-				<button type="button" class="btn-ghost hidden !px-2.5 !py-1.5 text-[11px] xl:inline-flex" onclick={onshowguide}>
+				<button
+					type="button"
+					class="btn-ghost hidden !px-2.5 !py-1.5 text-[11px] xl:inline-flex"
+					onclick={onshowguide}
+				>
 					Guide
 				</button>
 				{#if current}
@@ -231,7 +263,12 @@
 						<ExternalLink size={16} />
 					</a>
 				{/if}
-				<button type="button" class="btn-icon !size-9" aria-label="Toggle fullscreen" onclick={toggleFullscreen}>
+				<button
+					type="button"
+					class="btn-icon !size-9"
+					aria-label="Toggle fullscreen"
+					onclick={toggleFullscreen}
+				>
 					{#if fullscreen}<Minimize size={17} />{:else}<Maximize size={17} />{/if}
 				</button>
 			</div>

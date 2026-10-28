@@ -81,10 +81,16 @@
 		const known = new Set(catalog.channels.map((channel) => channel.id));
 		const incoming = parsed.data.lineup;
 		const incomingIds = new Set(incoming.map((entry) => entry.channelId));
-		const unknown = incoming.filter((entry) => !known.has(entry.channelId)).map((entry) => entry.channelId);
-		const currentFavorites = new Map(profile.lineup.map((entry) => [entry.channelId, entry.favorite]));
+		const unknown = incoming
+			.filter((entry) => !known.has(entry.channelId))
+			.map((entry) => entry.channelId);
+		const currentFavorites = new Map(
+			profile.lineup.map((entry) => [entry.channelId, entry.favorite])
+		);
 		const favoriteChanges = incoming.filter(
-			(entry) => currentFavorites.has(entry.channelId) && currentFavorites.get(entry.channelId) !== entry.favorite
+			(entry) =>
+				currentFavorites.has(entry.channelId) &&
+				currentFavorites.get(entry.channelId) !== entry.favorite
 		).length;
 
 		preview = {
@@ -135,7 +141,9 @@
 				skipUnknown
 			});
 			if (result.unknown.length > 0 && !skipUnknown) {
-				toasts.error('This backup contains channels outside the managed catalog. Enable “skip unknown”.');
+				toasts.error(
+					'This backup contains channels outside the managed catalog. Enable “skip unknown”.'
+				);
 				return;
 			}
 			toasts.success(
@@ -147,7 +155,6 @@
 			importing = false;
 		}
 	}
-
 </script>
 
 <svelte:head>
@@ -179,11 +186,14 @@
 								Full profile
 							</p>
 							<p class="mt-1 text-xs leading-relaxed text-dim">
-								{profile.lineup.length} channels, favorites, queue order, playback and feed
-								settings.
+								{profile.lineup.length} channels, favorites, queue order, playback and feed settings.
 							</p>
 						</div>
-						<button type="button" class="btn-primary shrink-0" onclick={() => exportProfile('full')}>
+						<button
+							type="button"
+							class="btn-primary shrink-0"
+							onclick={() => exportProfile('full')}
+						>
 							Export
 						</button>
 					</div>
@@ -200,7 +210,11 @@
 								Selected channels and favorites without settings.
 							</p>
 						</div>
-						<button type="button" class="btn-secondary shrink-0" onclick={() => exportProfile('lineup')}>
+						<button
+							type="button"
+							class="btn-secondary shrink-0"
+							onclick={() => exportProfile('lineup')}
+						>
 							Export
 						</button>
 					</div>
@@ -217,7 +231,11 @@
 								Playback, feed proxy, appearance, numbering, and last-played history.
 							</p>
 						</div>
-						<button type="button" class="btn-secondary shrink-0" onclick={() => exportProfile('settings')}>
+						<button
+							type="button"
+							class="btn-secondary shrink-0"
+							onclick={() => exportProfile('settings')}
+						>
 							Export
 						</button>
 					</div>
@@ -225,8 +243,8 @@
 
 				<p class="flex items-start gap-2 text-xs leading-relaxed text-comment">
 					<ShieldCheck size={14} class="mt-0.5 shrink-0 text-green" />
-					Files are generated locally. Nothing is uploaded to a server. Store the JSON somewhere
-					safe — clearing browser data removes the live copy.
+					Files are generated locally. Nothing is uploaded to a server. Store the JSON somewhere safe
+					— clearing browser data removes the live copy.
 				</p>
 			</div>
 		</section>
@@ -258,9 +276,7 @@
 					ondrop={onDrop}
 				>
 					<FileJson size={26} class="mx-auto text-comment" />
-					<p class="mt-3 font-display text-sm font-semibold text-fg">
-						Drop a profile JSON here
-					</p>
+					<p class="mt-3 font-display text-sm font-semibold text-fg">Drop a profile JSON here</p>
 					<p class="mt-1 text-xs text-dim">or click to choose a file</p>
 					<p class="mt-2 font-mono text-[9px] tracking-wide text-comment uppercase">
 						cable-tv-profile · schema v1 · max 5 MB
@@ -275,7 +291,9 @@
 				</div>
 
 				{#if parseError}
-					<div class="flex items-start gap-2 rounded-md border border-red/30 bg-red/10 px-3 py-2 text-xs leading-relaxed text-red">
+					<div
+						class="flex items-start gap-2 rounded-md border border-red/30 bg-red/10 px-3 py-2 text-xs leading-relaxed text-red"
+					>
 						<TriangleAlert size={14} class="mt-0.5 shrink-0" />
 						{parseError}
 					</div>
@@ -291,7 +309,12 @@
 									channels
 								</p>
 							</div>
-							<button type="button" class="btn-icon !size-7" aria-label="Clear import" onclick={clearImport}>
+							<button
+								type="button"
+								class="btn-icon !size-7"
+								aria-label="Clear import"
+								onclick={clearImport}
+							>
 								<X size={14} />
 							</button>
 						</div>
@@ -312,8 +335,12 @@
 						</div>
 
 						{#if preview.unknown.length > 0}
-							<div class="mt-3 rounded-md border border-yellow/30 bg-yellow/10 p-2.5 text-xs text-yellow">
-								<p class="font-medium">{preview.unknown.length} channel(s) are not in the current catalog:</p>
+							<div
+								class="mt-3 rounded-md border border-yellow/30 bg-yellow/10 p-2.5 text-xs text-yellow"
+							>
+								<p class="font-medium">
+									{preview.unknown.length} channel(s) are not in the current catalog:
+								</p>
 								<ul class="mt-1 list-inside list-disc font-mono text-[10px]">
 									{#each preview.unknown.slice(0, 4) as id (id)}
 										<li>{id}</li>
@@ -331,6 +358,7 @@
 								class="rounded-md border p-2.5 text-left text-xs transition-colors {mode === 'merge'
 									? 'border-blue/60 bg-blue/10 text-fg'
 									: 'border-line bg-surface text-dim hover:bg-raised'}"
+								aria-pressed={mode === 'merge'}
 								onclick={() => (mode = 'merge')}
 							>
 								<span class="font-display font-semibold">Merge</span>
@@ -338,9 +366,11 @@
 							</button>
 							<button
 								type="button"
-								class="rounded-md border p-2.5 text-left text-xs transition-colors {mode === 'replace'
+								class="rounded-md border p-2.5 text-left text-xs transition-colors {mode ===
+								'replace'
 									? 'border-red/60 bg-red/10 text-fg'
 									: 'border-line bg-surface text-dim hover:bg-raised'}"
+								aria-pressed={mode === 'replace'}
 								onclick={() => (mode = 'replace')}
 							>
 								<span class="font-display font-semibold">Replace</span>
@@ -349,7 +379,9 @@
 						</div>
 
 						{#if mode === 'replace'}
-							<div class="mt-2 flex flex-wrap items-center justify-between gap-2 rounded-md border border-orange/30 bg-orange/10 px-2.5 py-2 text-xs text-orange">
+							<div
+								class="mt-2 flex flex-wrap items-center justify-between gap-2 rounded-md border border-orange/30 bg-orange/10 px-2.5 py-2 text-xs text-orange"
+							>
 								<span>This replaces your current lineup.</span>
 								<button
 									type="button"
@@ -400,7 +432,9 @@
 
 	<section class="panel mt-5 overflow-hidden">
 		<header class="border-b border-line px-4 py-3">
-			<h2 class="font-display text-sm font-semibold tracking-wide text-fg">What is in a profile?</h2>
+			<h2 class="font-display text-sm font-semibold tracking-wide text-fg">
+				What is in a profile?
+			</h2>
 		</header>
 		<div class="grid gap-4 p-4 text-xs leading-relaxed text-dim sm:grid-cols-3">
 			<div>
@@ -409,11 +443,15 @@
 			</div>
 			<div>
 				<p class="eyebrow text-magenta">Preferences</p>
-				<p class="mt-1">Playback behavior, feed proxy, numbering, CRT effects, volume, and resume history.</p>
+				<p class="mt-1">
+					Playback behavior, feed proxy, numbering, CRT effects, volume, and resume history.
+				</p>
 			</div>
 			<div>
 				<p class="eyebrow text-yellow">Not included</p>
-				<p class="mt-1">Channel definitions, logos, catalog snapshots, or arbitrary YouTube URLs.</p>
+				<p class="mt-1">
+					Channel definitions, logos, catalog snapshots, or arbitrary YouTube URLs.
+				</p>
 			</div>
 		</div>
 	</section>

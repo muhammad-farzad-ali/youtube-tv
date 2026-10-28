@@ -26,6 +26,7 @@
 	import { refreshChannels, summarizeRefresh } from '#lib/services/feedService';
 	import { testFeedProxy, validateProxyUrl } from '#lib/services/rssClient';
 	import {
+		clearSyncStatus,
 		clearVideos,
 		estimateStorage,
 		getTotalVideoCount,
@@ -109,6 +110,7 @@
 	async function resetVideoCache() {
 		if (!catalog.data) return;
 		await clearVideos();
+		await clearSyncStatus();
 		await seedCatalogVideos(
 			catalog.data,
 			profile.lineup.map((entry) => entry.channelId)
@@ -166,7 +168,7 @@
 				<Toggle
 					checked={profile.settings.loopQueue}
 					label="Loop queue"
-					description="Start over at the newest video after the last one finishes."
+					description="Start over at the first video in the queue after the last one finishes."
 					onchange={(value) => profile.setSetting('loopQueue', value)}
 				/>
 				<Toggle
@@ -195,7 +197,7 @@
 						onchange={(event) =>
 							profile.setSetting(
 								'sortOrder',
-								(event.currentTarget.value === 'oldest' ? 'oldest' : 'newest')
+								event.currentTarget.value === 'oldest' ? 'oldest' : 'newest'
 							)}
 					>
 						<option value="newest">Newest first (recommended)</option>
@@ -209,12 +211,18 @@
 			<header class="flex items-center gap-3 border-b border-line px-4 py-3">
 				<Rss size={17} class="text-green" />
 				<div>
-					<h2 class="font-display text-sm font-semibold tracking-wide text-fg">Feeds &amp; refresh</h2>
-					<p class="text-xs text-comment">The catalog snapshot always works. Live refresh needs a proxy.</p>
+					<h2 class="font-display text-sm font-semibold tracking-wide text-fg">
+						Feeds &amp; refresh
+					</h2>
+					<p class="text-xs text-comment">
+						The catalog snapshot always works. Live refresh needs a proxy.
+					</p>
 				</div>
 			</header>
 			<div class="space-y-4 p-4">
-				<div class="rounded-lg border border-orange/30 bg-orange/10 p-3 text-xs leading-relaxed text-orange">
+				<div
+					class="rounded-lg border border-orange/30 bg-orange/10 p-3 text-xs leading-relaxed text-orange"
+				>
 					YouTube does not send CORS headers on its RSS feeds, so browsers block direct requests.
 					The bundled snapshots are the reliable default. If you want live refresh, point the app at
 					your own CORS-enabled feed proxy.
@@ -244,7 +252,9 @@
 						Save proxy
 					</button>
 					<button type="button" class="btn-secondary" disabled={proxyBusy} onclick={testProxy}>
-						{#if proxyBusy}<LoaderCircle size={15} class="animate-spin" />{:else}<Rss size={15} />{/if}
+						{#if proxyBusy}<LoaderCircle size={15} class="animate-spin" />{:else}<Rss
+								size={15}
+							/>{/if}
 						Test proxy
 					</button>
 					<button type="button" class="btn-secondary" disabled={refreshing} onclick={refreshAll}>
@@ -259,7 +269,10 @@
 							? 'border-green/30 bg-green/10 text-green'
 							: 'border-red/30 bg-red/10 text-red'}"
 					>
-						{#if proxyTest.ok}<CheckCircle2 size={14} class="mt-0.5" />{:else}<CircleAlert size={14} class="mt-0.5" />{/if}
+						{#if proxyTest.ok}<CheckCircle2 size={14} class="mt-0.5" />{:else}<CircleAlert
+								size={14}
+								class="mt-0.5"
+							/>{/if}
 						{proxyTest.message}
 					</div>
 				{/if}
@@ -321,7 +334,9 @@
 			<header class="flex items-center gap-3 border-b border-line px-4 py-3">
 				<Hash size={17} class="text-yellow" />
 				<div>
-					<h2 class="font-display text-sm font-semibold tracking-wide text-fg">Channel numbering</h2>
+					<h2 class="font-display text-sm font-semibold tracking-wide text-fg">
+						Channel numbering
+					</h2>
 					<p class="text-xs text-comment">Numbers follow your lineup order.</p>
 				</div>
 			</header>
@@ -352,15 +367,21 @@
 			<header class="flex items-center gap-3 border-b border-line px-4 py-3">
 				<Database size={17} class="text-cyan" />
 				<div>
-					<h2 class="font-display text-sm font-semibold tracking-wide text-fg">Storage &amp; data</h2>
-					<p class="text-xs text-comment">Browser storage is local and can be cleared by the browser.</p>
+					<h2 class="font-display text-sm font-semibold tracking-wide text-fg">
+						Storage &amp; data
+					</h2>
+					<p class="text-xs text-comment">
+						Browser storage is local and can be cleared by the browser.
+					</p>
 				</div>
 			</header>
 			<div class="space-y-4 p-4">
 				<div class="grid gap-3 sm:grid-cols-3">
 					<div class="rounded-md border border-line bg-ink p-3">
 						<p class="eyebrow">Profile</p>
-						<p class="mt-1 font-display text-lg font-semibold text-fg">{profile.lineup.length} channels</p>
+						<p class="mt-1 font-display text-lg font-semibold text-fg">
+							{profile.lineup.length} channels
+						</p>
 					</div>
 					<div class="rounded-md border border-line bg-ink p-3">
 						<p class="eyebrow">Cached videos</p>
@@ -373,6 +394,12 @@
 						</p>
 					</div>
 				</div>
+
+				{#if profile.storageError}
+					<div class="rounded-md border border-red/30 bg-red/10 px-3 py-2 text-xs text-red">
+						Your browser could not save the profile: {profile.storageError}
+					</div>
+				{/if}
 
 				<div class="flex flex-wrap gap-2">
 					<button
@@ -409,8 +436,8 @@
 			<div class="space-y-3 p-4 text-xs leading-relaxed text-dim">
 				<p>
 					Catalog updated {formatDate(catalog.data?.updatedAt)} with
-					{catalog.channels.length} managed channels across {catalog.categories.length} categories.
-					Channels are curated by the site operator; your lineup and settings stay in this browser.
+					{catalog.channels.length} managed channels across {catalog.categories.length} categories. Channels
+					are curated by the site operator; your lineup and settings stay in this browser.
 				</p>
 				<p>
 					YouTube RSS only exposes recent uploads, usually around 15 per channel. Some videos cannot
@@ -423,8 +450,7 @@
 						class="inline-flex items-center gap-1 text-cyan hover:underline"
 						href="https://tokyonight.org/"
 						target="_blank"
-						rel="noopener noreferrer"
-					>tokyonight.org <ExternalLink size={11} /></a
+						rel="noopener noreferrer">tokyonight.org <ExternalLink size={11} /></a
 					>
 				</p>
 			</div>
@@ -453,6 +479,7 @@
 			class="btn-danger"
 			onclick={async () => {
 				await clearVideos();
+				await clearSyncStatus();
 				resetEverything();
 			}}
 		>

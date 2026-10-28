@@ -30,3 +30,7 @@ vite.config.ts.timestamp-*
 
 # Local smoke scripts
 /tmp-*.mjs
+
+# Editor swap files
+*.swp
+*.swo

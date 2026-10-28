@@ -1,0 +1,8 @@
+.svelte-kit
+build
+node_modules
+static/catalog.json
+static/catalog/logos
+package-lock.json
+test-results
+playwright-report

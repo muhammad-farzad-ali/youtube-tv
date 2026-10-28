@@ -13,12 +13,16 @@
 		{ href: '/settings', label: 'Settings', icon: Settings }
 	] as const;
 
-	const pathname = $derived(page.url.pathname.replace(/\/+$/, '') || '/');
+	const routeId = $derived(page.route.id ?? '/');
 </script>
 
 <header class="sticky top-0 z-30 border-b border-line/80 bg-bg/90 backdrop-blur-md">
 	<div class="flex h-16 items-center gap-3 px-3 sm:px-5">
-		<a href={resolve('/')} class="group flex min-w-0 items-center gap-2.5" aria-label="Cable TV home">
+		<a
+			href={resolve('/')}
+			class="group flex min-w-0 items-center gap-2.5"
+			aria-label="Cable TV home"
+		>
 			<span
 				class="flex size-9 items-center justify-center rounded-md border border-blue/40 bg-blue/10 text-blue transition-colors group-hover:border-cyan/60 group-hover:text-cyan"
 			>
@@ -36,7 +40,7 @@
 
 		<nav class="ml-2 hidden items-center gap-1 md:flex" aria-label="Main navigation">
 			{#each nav as item (item.href)}
-				{@const active = item.href === '/' ? pathname === '/' : pathname === item.href}
+				{@const active = item.href === '/' ? routeId === '/' : routeId === item.href}
 				<a
 					href={resolve(item.href)}
 					class="flex items-center gap-2 rounded-md px-3 py-2 font-display text-sm font-medium tracking-wide transition-colors {active
@@ -56,7 +60,7 @@
 					<span class="size-1.5 rounded-full bg-green"></span>
 					{catalog.channels.length} channels
 				</span>
-				<span class="chip">
+				<span class="chip" data-testid="lineup-count">
 					<span class="size-1.5 rounded-full bg-blue"></span>
 					{profile.lineup.length} in lineup
 				</span>
@@ -72,7 +76,7 @@
 	aria-label="Main navigation"
 >
 	{#each nav as item (item.href)}
-		{@const active = item.href === '/' ? pathname === '/' : pathname === item.href}
+		{@const active = item.href === '/' ? routeId === '/' : routeId === item.href}
 		<a
 			href={resolve(item.href)}
 			class="flex flex-col items-center gap-1 py-2.5 text-[10px] font-medium tracking-wide transition-colors {active

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { goto, replaceState } from '$app/navigation';
+	import { goto } from '$app/navigation';
 	import { Menu, ListVideo, Radio, ChevronUp, ChevronDown, Signal, Info } from '@lucide/svelte';
 	import ChannelSidebar from '#lib/components/tv/ChannelSidebar.svelte';
 	import VideoPlayer from '#lib/components/tv/VideoPlayer.svelte';
@@ -37,6 +37,9 @@
 			profile.selectChannel(query);
 		}
 		void loadSync();
+		return () => {
+			if (numberTimer) clearTimeout(numberTimer);
+		};
 	});
 
 	$effect(() => {
@@ -53,7 +56,7 @@
 		const proxy = profile.settings.feedProxyUrl;
 		if (minutes <= 0 || !proxy.trim()) return;
 		const interval = setInterval(() => {
-			if (document.visibilityState === 'visible') void refreshAll(true);
+			if (document.visibilityState === 'visible' && !refreshing) void refreshAll(true);
 		}, minutes * 60_000);
 		return () => clearInterval(interval);
 	});
@@ -78,7 +81,7 @@
 		profile.selectChannel(channelId);
 		const url = new URL(window.location.href);
 		url.searchParams.set('ch', channelId);
-		void replaceState(url, {});
+		void goto(url, { state: {}, shallow: true, replace: true });
 	}
 
 	function stepChannel(delta: number) {
@@ -119,10 +122,7 @@
 
 	function handleKeydown(event: KeyboardEvent) {
 		const target = event.target as HTMLElement | null;
-		if (
-			target &&
-			(target.matches('input, textarea, select') || target.isContentEditable)
-		) {
+		if (target && (target.matches('input, textarea, select') || target.isContentEditable)) {
 			return;
 		}
 		if (event.metaKey || event.ctrlKey || event.altKey) return;
@@ -173,6 +173,11 @@
 		if (event.key === 'm' || event.key === 'M') {
 			event.preventDefault();
 			playback.toggleMute();
+			return;
+		}
+		if (event.key === 'f' || event.key === 'F') {
+			event.preventDefault();
+			window.dispatchEvent(new CustomEvent('cable-tv:fullscreen'));
 		}
 	}
 
@@ -254,7 +259,11 @@
 
 		<div class="min-w-0 flex-1 p-3 sm:p-4">
 			<div class="mb-3 flex items-center gap-2 xl:hidden">
-				<button type="button" class="btn-secondary !px-2.5 !py-1.5 text-xs" onclick={() => (mobileOpen = true)}>
+				<button
+					type="button"
+					class="btn-secondary !px-2.5 !py-1.5 text-xs"
+					onclick={() => (mobileOpen = true)}
+				>
 					<Menu size={15} />
 					Channels
 				</button>
@@ -284,9 +293,13 @@
 								<div>
 									<p class="eyebrow">Source</p>
 									<p class="text-xs text-dim">
-										{sync?.status === 'ok' && sync.lastSyncedAt
-											? 'Live feed cached'
-											: 'Catalog snapshot'}
+										{#if sync?.status === 'error'}
+											<span class="text-red">Feed error · snapshot</span>
+										{:else if sync?.status === 'ok' && sync.lastSyncedAt}
+											Feed refreshed
+										{:else}
+											Catalog snapshot
+										{/if}
 									</p>
 								</div>
 							</div>
@@ -295,7 +308,9 @@
 								<div>
 									<p class="eyebrow">Queue</p>
 									<p class="text-xs text-dim">
-										{playback.queue.length} videos · newest first
+										{playback.queue.length} videos · {profile.settings.sortOrder === 'oldest'
+											? 'oldest first'
+											: 'newest first'}
 									</p>
 								</div>
 							</div>
@@ -303,17 +318,27 @@
 								<Info size={16} class="text-cyan" />
 								<div>
 									<p class="eyebrow">Keyboard</p>
-									<p class="text-xs text-dim">↑↓ channels · / search · Space pause</p>
+									<p class="text-xs text-dim">
+										↑↓ channels · / search · Space pause · F fullscreen
+									</p>
 								</div>
 							</div>
 						</div>
 
 						<div class="mt-3 flex items-center justify-between gap-2 xl:hidden">
-							<button type="button" class="btn-secondary !px-2.5 !py-1.5 text-xs" onclick={() => stepChannel(-1)}>
+							<button
+								type="button"
+								class="btn-secondary !px-2.5 !py-1.5 text-xs"
+								onclick={() => stepChannel(-1)}
+							>
 								<ChevronUp size={14} />
 								Previous
 							</button>
-							<button type="button" class="btn-secondary !px-2.5 !py-1.5 text-xs" onclick={() => stepChannel(1)}>
+							<button
+								type="button"
+								class="btn-secondary !px-2.5 !py-1.5 text-xs"
+								onclick={() => stepChannel(1)}
+							>
 								Next channel
 								<ChevronDown size={14} />
 							</button>
@@ -332,12 +357,7 @@
 
 				<div bind:this={guideEl} id="program-guide" class="min-w-0 scroll-mt-20">
 					{#if activeChannel}
-						<ProgramGuide
-							channel={activeChannel}
-							{sync}
-							{refreshing}
-							onrefresh={refreshCurrent}
-						/>
+						<ProgramGuide channel={activeChannel} {sync} {refreshing} onrefresh={refreshCurrent} />
 						{#if channels.length > 1}
 							<button
 								type="button"
@@ -361,7 +381,11 @@
 				: 'border-cyan/50 bg-ink/90'}"
 		>
 			<p class="font-mono text-[9px] tracking-[0.24em] text-comment uppercase">Channel</p>
-			<p class="font-display text-3xl font-bold tracking-[0.2em] {numberInvalid ? 'text-red' : 'text-cyan'}">
+			<p
+				class="font-display text-3xl font-bold tracking-[0.2em] {numberInvalid
+					? 'text-red'
+					: 'text-cyan'}"
+			>
 				{numberBuffer}
 			</p>
 			{#if numberInvalid}

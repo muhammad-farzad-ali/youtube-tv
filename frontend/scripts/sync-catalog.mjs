@@ -186,7 +186,9 @@ async function buildChannel(channel, snapshotAt) {
 		normalizedFeedTitle &&
 		normalizedFeedTitle.localeCompare(channel.name, undefined, { sensitivity: 'base' }) !== 0
 	) {
-		console.warn(`  ~ name mismatch for ${channel.id}: "${channel.name}" / "${normalizedFeedTitle}"`);
+		console.warn(
+			`  ~ name mismatch for ${channel.id}: "${channel.name}" / "${normalizedFeedTitle}"`
+		);
 	}
 
 	const logoUrl = await fetchLogo(channel, snapshotAt);

@@ -57,8 +57,7 @@ body {
 	min-height: 100dvh;
 	background:
 		radial-gradient(60rem 40rem at 12% -10%, rgb(122 162 247 / 0.09), transparent 60%),
-		radial-gradient(50rem 34rem at 96% 0%, rgb(187 154 247 / 0.06), transparent 55%),
-		var(--tn-bg);
+		radial-gradient(50rem 34rem at 96% 0%, rgb(187 154 247 / 0.06), transparent 55%), var(--tn-bg);
 	color: var(--tn-fg);
 	font-family: var(--font-sans);
 	-webkit-font-smoothing: antialiased;

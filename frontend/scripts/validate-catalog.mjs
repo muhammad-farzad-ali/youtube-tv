@@ -43,7 +43,8 @@ function checkChannel(channel, index, seenIds, seenVideoIds) {
 	if (seenIds.has(channel.id)) error(`${where}.id is duplicated: ${channel.id}`);
 	seenIds.add(channel.id);
 	if (!channel.name || typeof channel.name !== 'string') error(`${where}.name is missing`);
-	if (!channel.category || typeof channel.category !== 'string') error(`${where}.category is missing`);
+	if (!channel.category || typeof channel.category !== 'string')
+		error(`${where}.category is missing`);
 	if (channel.channelUrl !== `https://www.youtube.com/channel/${channel.id}`) {
 		warn(`${channel.name}: channelUrl is not canonical`);
 	}
@@ -54,7 +55,8 @@ function checkChannel(channel, index, seenIds, seenVideoIds) {
 		error(`${channel.name}: no videos in snapshot`);
 		return;
 	}
-	if (channel.videos.length > 60) error(`${channel.name}: too many videos (${channel.videos.length})`);
+	if (channel.videos.length > 60)
+		error(`${channel.name}: too many videos (${channel.videos.length})`);
 	if (!channel.snapshotAt || Number.isNaN(Date.parse(channel.snapshotAt))) {
 		error(`${channel.name}: invalid snapshotAt`);
 	}
@@ -92,7 +94,15 @@ async function main() {
 	const catalogChannels = Array.isArray(catalog.channels) ? catalog.channels : [];
 	if (sourceChannels.length === 0) error('Source contains no channels');
 	if (sourceChannels.length !== catalogChannels.length) {
-		error(`Channel count mismatch: source=${sourceChannels.length}, catalog=${catalogChannels.length}`);
+		error(
+			`Channel count mismatch: source=${sourceChannels.length}, catalog=${catalogChannels.length}`
+		);
+	}
+	if (
+		sourceChannels.map((channel) => channel.id).join(',') !==
+		catalogChannels.map((channel) => channel.id).join(',')
+	) {
+		error('Channel order differs between source and generated catalog. Run npm run catalog:sync.');
 	}
 
 	const seenIds = new Set();
@@ -117,12 +127,32 @@ async function main() {
 		}
 	}
 
+	if (
+		JSON.stringify(source.starterChannelIds ?? []) !==
+		JSON.stringify(catalog.starterChannelIds ?? [])
+	) {
+		error('Starter lineup differs between source and generated catalog. Run npm run catalog:sync.');
+	}
+
+	const sourcePacks = source.packs ?? [];
+	const catalogPacks = catalog.packs ?? [];
+	if (JSON.stringify(sourcePacks) !== JSON.stringify(catalogPacks)) {
+		error('Packs differ between source and generated catalog. Run npm run catalog:sync.');
+	}
+
 	const ids = new Set(catalogChannels.map((channel) => channel.id));
 	for (const channelId of catalog.starterChannelIds ?? []) {
 		if (!ids.has(channelId)) error(`Starter lineup references unknown channel: ${channelId}`);
 	}
 	if (!Array.isArray(catalog.starterChannelIds) || catalog.starterChannelIds.length === 0) {
 		error('Starter lineup is empty');
+	}
+
+	const starterSeen = new Set();
+	for (const channelId of catalog.starterChannelIds ?? []) {
+		if (starterSeen.has(channelId))
+			error(`Starter lineup contains duplicate channel: ${channelId}`);
+		starterSeen.add(channelId);
 	}
 
 	const packIds = new Set();
@@ -133,7 +163,11 @@ async function main() {
 		if (!Array.isArray(pack.channelIds) || pack.channelIds.length === 0) {
 			error(`Pack ${pack.id} has no channels`);
 		}
+		const packChannels = new Set();
 		for (const channelId of pack.channelIds ?? []) {
+			if (packChannels.has(channelId))
+				error(`Pack ${pack.id} contains duplicate channel: ${channelId}`);
+			packChannels.add(channelId);
 			if (!ids.has(channelId)) error(`Pack ${pack.id} references unknown channel: ${channelId}`);
 		}
 	}

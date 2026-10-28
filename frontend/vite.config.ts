@@ -3,10 +3,9 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 
-const rawBase = process.env.BASE_PATH ?? '';
+const rawBase = (process.env.BASE_PATH ?? '').replace(/\/+$/, '');
 const base = (rawBase === '' ? '' : rawBase.startsWith('/') ? rawBase : `/${rawBase}`) as
-	| ''
-	| `/${string}`;
+	'' | `/${string}`;
 
 export default defineConfig({
 	plugins: [

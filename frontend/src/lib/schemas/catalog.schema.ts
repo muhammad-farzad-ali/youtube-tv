@@ -11,7 +11,11 @@ export const videoIdSchema = z
 export const videoSchema = z.object({
 	videoId: videoIdSchema,
 	title: z.string().min(1).max(500),
-	thumbnailUrl: z.string().url().optional(),
+	thumbnailUrl: z
+		.string()
+		.url()
+		.regex(/^https:\/\//)
+		.optional(),
 	publishedAt: z.string().datetime({ offset: true }),
 	durationSeconds: z.number().int().nonnegative().nullable().optional()
 });
@@ -21,7 +25,10 @@ export const categorySchema = z.string().min(1).max(48);
 export const catalogChannelSchema = z.object({
 	id: channelIdSchema,
 	name: z.string().min(1).max(120),
-	channelUrl: z.string().url().regex(/^https:\/\/(www\.)?youtube\.com\//),
+	channelUrl: z
+		.string()
+		.url()
+		.regex(/^https:\/\/(www\.)?youtube\.com\//),
 	description: z.string().max(600).default(''),
 	category: categorySchema,
 	logoUrl: z.string().min(1).optional(),

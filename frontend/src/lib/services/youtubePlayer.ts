@@ -6,6 +6,130 @@ export interface PlayerCallbacks {
 
 type YouTubeApi = typeof YT;
 
+interface PlayerLike {
+	loadVideoById(options: { videoId: string; startSeconds?: number }): void;
+	cueVideoById(options: { videoId: string; startSeconds?: number }): void;
+	playVideo(): void;
+	pauseVideo(): void;
+	mute(): void;
+	unMute(): void;
+	setVolume(volume: number): void;
+	getVolume(): number;
+	isMuted(): boolean;
+	getCurrentTime(): number;
+	getDuration(): number;
+	seekTo(seconds: number, allowSeekAhead: boolean): void;
+	stopVideo(): void;
+	destroy(): void;
+}
+
+const FAKE_PLAYER = import.meta.env.VITE_FAKE_PLAYER === '1';
+
+class FakePlayer implements PlayerLike {
+	private callbacks: PlayerCallbacks;
+	private state = -1;
+	private currentTime = 0;
+	private duration = 600;
+	private volume = 70;
+	private muted = true;
+	private timer: ReturnType<typeof setInterval> | null = null;
+	private readyTimer: ReturnType<typeof setTimeout>;
+
+	constructor(callbacks: PlayerCallbacks) {
+		this.callbacks = callbacks;
+		this.readyTimer = setTimeout(() => {
+			this.callbacks.onReady();
+			this.emit(5);
+		}, 30);
+
+		(window as unknown as { __cableTvFake?: unknown }).__cableTvFake = {
+			end: () => this.emit(0),
+			error: (code = 150) => this.callbacks.onError(code),
+			getState: () => this.state,
+			getVideoId: () => this.videoId
+		};
+	}
+
+	private videoId = '';
+
+	private emit(state: number) {
+		this.state = state;
+		this.callbacks.onStateChange(state);
+		if (state === 1) this.startTicker();
+		if (state === 0 || state === 2) this.stopTicker();
+	}
+
+	private startTicker() {
+		this.stopTicker();
+		this.timer = setInterval(() => {
+			if (this.state !== 1) return;
+			this.currentTime += 0.25;
+			if (this.currentTime >= this.duration) {
+				this.currentTime = this.duration;
+				this.emit(0);
+			}
+		}, 250);
+	}
+
+	private stopTicker() {
+		if (this.timer) clearInterval(this.timer);
+		this.timer = null;
+	}
+
+	loadVideoById(options: { videoId: string; startSeconds?: number }) {
+		clearTimeout(this.readyTimer);
+		this.videoId = options.videoId;
+		this.currentTime = options.startSeconds ?? 0;
+		this.emit(3);
+		setTimeout(() => this.emit(1), 80);
+	}
+
+	cueVideoById(options: { videoId: string; startSeconds?: number }) {
+		this.videoId = options.videoId;
+		this.currentTime = options.startSeconds ?? 0;
+		this.emit(5);
+	}
+
+	playVideo() {
+		this.emit(1);
+	}
+	pauseVideo() {
+		this.emit(2);
+	}
+	mute() {
+		this.muted = true;
+	}
+	unMute() {
+		this.muted = false;
+	}
+	setVolume(volume: number) {
+		this.volume = volume;
+	}
+	getVolume() {
+		return this.volume;
+	}
+	isMuted() {
+		return this.muted;
+	}
+	getCurrentTime() {
+		return this.currentTime;
+	}
+	getDuration() {
+		return this.duration;
+	}
+	seekTo(seconds: number) {
+		this.currentTime = seconds;
+	}
+	stopVideo() {
+		this.stopTicker();
+		this.emit(5);
+	}
+	destroy() {
+		clearTimeout(this.readyTimer);
+		this.stopTicker();
+	}
+}
+
 let apiPromise: Promise<YouTubeApi> | null = null;
 
 function loadYouTubeApi(): Promise<YouTubeApi> {
@@ -20,18 +144,23 @@ function loadYouTubeApi(): Promise<YouTubeApi> {
 	apiPromise = new Promise((resolve, reject) => {
 		const timeout = setTimeout(() => {
 			apiPromise = null;
-			reject(new Error('The YouTube player API did not load. It may be blocked by a browser extension or network.'));
+			reject(
+				new Error(
+					'The YouTube player API did not load. It may be blocked by a browser extension or network.'
+				)
+			);
 		}, 20_000);
 
 		const previous = (window as unknown as { onYouTubeIframeAPIReady?: () => void })
 			.onYouTubeIframeAPIReady;
-		(window as unknown as { onYouTubeIframeAPIReady?: () => void }).onYouTubeIframeAPIReady = () => {
-			previous?.();
-			clearTimeout(timeout);
-			const api = (window as unknown as { YT?: YouTubeApi }).YT;
-			if (api) resolve(api);
-			else reject(new Error('The YouTube player API loaded without a YT namespace.'));
-		};
+		(window as unknown as { onYouTubeIframeAPIReady?: () => void }).onYouTubeIframeAPIReady =
+			() => {
+				previous?.();
+				clearTimeout(timeout);
+				const api = (window as unknown as { YT?: YouTubeApi }).YT;
+				if (api) resolve(api);
+				else reject(new Error('The YouTube player API loaded without a YT namespace.'));
+			};
 
 		const existing = document.querySelector<HTMLScriptElement>('script[data-cable-tv-youtube]');
 		if (existing) return;
@@ -51,7 +180,7 @@ function loadYouTubeApi(): Promise<YouTubeApi> {
 }
 
 export class YouTubePlayerService {
-	private player: YT.Player | null = null;
+	private player: PlayerLike | null = null;
 	private containerId: string | null = null;
 	private callbacks: PlayerCallbacks | null = null;
 	private ready = false;
@@ -72,6 +201,26 @@ export class YouTubePlayerService {
 		this.destroyed = false;
 
 		this.initPromise = (async () => {
+			if (FAKE_PLAYER) {
+				await new Promise<void>((resolve) => {
+					this.player = new FakePlayer({
+						onReady: () => {
+							this.ready = true;
+							this.callbacks?.onReady();
+							if (this.pendingVideo) {
+								const pending = this.pendingVideo;
+								this.pendingVideo = null;
+								this.load(pending.videoId, pending.startSeconds, pending.autoplay);
+							}
+							resolve();
+						},
+						onStateChange: (state) => this.callbacks?.onStateChange(state),
+						onError: (code) => this.callbacks?.onError(code)
+					});
+				});
+				return;
+			}
+
 			const YT = await loadYouTubeApi();
 			if (this.destroyed) return;
 

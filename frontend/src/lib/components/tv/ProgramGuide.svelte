@@ -2,6 +2,7 @@
 	import { Play, RefreshCw, Radio, Clock3, CalendarDays, VideoOff } from '@lucide/svelte';
 	import ChannelLogo from '#lib/components/ChannelLogo.svelte';
 	import { playback } from '#lib/stores/playback.svelte';
+	import { profile } from '#lib/stores/profile.svelte';
 	import type { CatalogChannel } from '#lib/schemas/catalog.schema';
 	import type { SyncRecord } from '#lib/storage/database';
 	import { formatDate, formatDuration, formatRelative, youtubeThumbnail } from '#lib/utils/format';
@@ -26,15 +27,21 @@
 	);
 	const current = $derived(active ? playback.current : null);
 	const progress = $derived(active ? playback.progress : 0);
+	const orderLabel = $derived(
+		profile.settings.sortOrder === 'oldest' ? 'Oldest → newest' : 'Newest → oldest'
+	);
 	const snapshotLabel = $derived(
 		sync?.status === 'ok' && sync.lastSyncedAt
-			? `Live · ${formatRelative(sync.lastSyncedAt)}`
+			? `Feed · ${formatRelative(sync.lastSyncedAt)}`
 			: `Snapshot · ${formatRelative(channel.snapshotAt)}`
 	);
 	const live = $derived(sync?.status === 'ok');
+	const feedError = $derived(
+		sync?.status === 'error' ? (sync.error ?? 'Feed refresh failed.') : null
+	);
 </script>
 
-<aside class="panel flex max-h-[calc(100dvh-5.5rem)] flex-col overflow-hidden">
+<aside class="panel flex flex-col overflow-hidden xl:max-h-[calc(100dvh-5.5rem)]">
 	<header class="flex items-center justify-between gap-3 border-b border-line px-4 py-3">
 		<div class="flex min-w-0 items-center gap-2.5">
 			<ChannelLogo {channel} size="md" />
@@ -44,13 +51,24 @@
 			</div>
 		</div>
 		<span
-			class="chip shrink-0 {live ? 'border-green/30 text-green' : 'border-yellow/30 text-yellow'}"
-			title={snapshotLabel}
+			class="chip shrink-0 {feedError
+				? 'border-red/30 text-red'
+				: live
+					? 'border-green/30 text-green'
+					: 'border-yellow/30 text-yellow'}"
+			title={feedError ?? snapshotLabel}
 		>
-			<span class="size-1.5 rounded-full {live ? 'bg-green' : 'bg-yellow'}"></span>
-			{live ? 'Live' : 'Snapshot'}
+			<span class="size-1.5 rounded-full {feedError ? 'bg-red' : live ? 'bg-green' : 'bg-yellow'}"
+			></span>
+			{feedError ? 'Feed error' : live ? 'Fresh' : 'Snapshot'}
 		</span>
 	</header>
+
+	{#if feedError}
+		<div class="border-b border-red/20 bg-red/10 px-3 py-2 text-[10px] leading-relaxed text-red">
+			{feedError}
+		</div>
+	{/if}
 
 	<div class="scroll-thin min-h-0 flex-1 overflow-y-auto">
 		{#if current}
@@ -87,7 +105,10 @@
 						</div>
 					</div>
 					<div class="h-1 bg-line">
-						<div class="h-full bg-red transition-[width] duration-500" style="width: {progress * 100}%"></div>
+						<div
+							class="h-full bg-red transition-[width] duration-500"
+							style="width: {progress * 100}%"
+						></div>
 					</div>
 				</div>
 			</section>
@@ -95,7 +116,8 @@
 			<section class="border-b border-line p-3">
 				<div class="flex items-center justify-between gap-2">
 					<p class="eyebrow">Up next</p>
-					<span class="font-mono text-[9px] tracking-wide text-comment uppercase">Newest → oldest</span>
+					<span class="font-mono text-[9px] tracking-wide text-comment uppercase">{orderLabel}</span
+					>
 				</div>
 				{#if nextVideos.length === 0}
 					<p class="mt-3 text-xs text-comment">End of the queue.</p>
@@ -108,7 +130,9 @@
 									class="flex w-full items-center gap-2 rounded-md px-1.5 py-1.5 text-left transition-colors hover:bg-raised"
 									onclick={() => playback.playIndex(row.index)}
 								>
-									<span class="relative w-20 shrink-0 overflow-hidden rounded border border-line/70">
+									<span
+										class="relative w-20 shrink-0 overflow-hidden rounded border border-line/70"
+									>
 										<img
 											src={youtubeThumbnail(row.video.videoId)}
 											alt=""
@@ -117,7 +141,9 @@
 										/>
 									</span>
 									<span class="min-w-0 flex-1">
-										<span class="line-clamp-2 text-[11px] leading-snug text-fg">{row.video.title}</span>
+										<span class="line-clamp-2 text-[11px] leading-snug text-fg"
+											>{row.video.title}</span
+										>
 										<span class="mt-0.5 block font-mono text-[9px] text-comment">
 											{formatRelative(row.video.publishedAt)}
 										</span>
@@ -159,7 +185,9 @@
 								onclick={() => playback.playIndex(index)}
 								aria-current={isCurrent ? 'true' : undefined}
 							>
-								<span class="mt-0.5 w-5 shrink-0 text-right font-mono text-[9px] text-comment tabular">
+								<span
+									class="mt-0.5 w-5 shrink-0 text-right font-mono text-[9px] text-comment tabular"
+								>
 									{index + 1}
 								</span>
 								<span class="min-w-0 flex-1">
@@ -172,7 +200,9 @@
 									</span>
 								</span>
 								{#if isCurrent}
-									<span class="mt-1 flex size-4 shrink-0 items-center justify-center rounded-full bg-red/20 text-red">
+									<span
+										class="mt-1 flex size-4 shrink-0 items-center justify-center rounded-full bg-red/20 text-red"
+									>
 										<Radio size={9} />
 									</span>
 								{/if}

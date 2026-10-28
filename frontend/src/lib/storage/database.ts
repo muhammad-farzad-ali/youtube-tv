@@ -88,10 +88,7 @@ export async function getTotalVideoCount(): Promise<number> {
 	return getDb().videos.count();
 }
 
-export async function seedCatalogVideos(
-	catalog: Catalog,
-	channelIds?: string[]
-): Promise<number> {
+export async function seedCatalogVideos(catalog: Catalog, channelIds?: string[]): Promise<number> {
 	const wanted = new Set(channelIds ?? catalog.channels.map((channel) => channel.id));
 	const channels = catalog.channels.filter((channel) => wanted.has(channel.id));
 	const allVideos = channels.flatMap((channel) =>
@@ -206,6 +203,10 @@ export async function clearVideos(): Promise<void> {
 	await getDb().videos.clear();
 }
 
+export async function clearSyncStatus(): Promise<void> {
+	await getDb().sync.clear();
+}
+
 export async function deleteChannelVideos(channelId: string): Promise<void> {
 	await getDb().videos.where('channelId').equals(channelId).delete();
 	await getDb().sync.delete(channelId);
@@ -225,4 +226,3 @@ export async function estimateStorage(): Promise<{ usage: number; quota: number 
 	const estimate = await navigator.storage.estimate();
 	return { usage: estimate.usage ?? 0, quota: estimate.quota ?? 0 };
 }
-

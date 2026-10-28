@@ -28,9 +28,11 @@
 				{channel.name}
 			</h3>
 			<div class="mt-1.5 flex flex-wrap items-center gap-1.5">
-				<span class="rounded-full border px-2 py-0.5 font-mono text-[10px] tracking-wide {categoryTone(
-					channel.category
-				)}">{channel.category}</span>
+				<span
+					class="rounded-full border px-2 py-0.5 font-mono text-[10px] tracking-wide {categoryTone(
+						channel.category
+					)}">{channel.category}</span
+				>
 				{#if selected}
 					<span class="chip border-green/30 text-green">
 						<span class="size-1.5 rounded-full bg-green"></span>

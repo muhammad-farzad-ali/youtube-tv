@@ -10,10 +10,7 @@ export interface RefreshResult {
 	error?: string;
 }
 
-export async function refreshChannel(
-	channelId: string,
-	proxyUrl: string
-): Promise<RefreshResult> {
+export async function refreshChannel(channelId: string, proxyUrl: string): Promise<RefreshResult> {
 	try {
 		const feed = await fetchChannelFeed(channelId, proxyUrl);
 		const { added, updated } = await saveFeedVideos(channelId, feed.videos, feed.via);

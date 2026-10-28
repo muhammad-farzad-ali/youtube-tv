@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { channelLogo, hashCode, initials } from '#lib/utils/format';
+	import { channelLogo } from '#lib/utils/assets';
+	import { hashCode, initials } from '#lib/utils/format';
 
 	interface Props {
 		channel: { id: string; name: string; logoUrl?: string };

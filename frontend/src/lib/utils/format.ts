@@ -1,5 +1,3 @@
-import { asset } from '$app/paths';
-
 export function formatDate(iso: string | null | undefined): string {
 	if (!iso) return 'Unknown date';
 	const date = new Date(iso);
@@ -82,18 +80,6 @@ export function formatClock(date = new Date()): string {
 		minute: '2-digit',
 		hour12: false
 	}).format(date);
-}
-
-export function resolveAsset(path: string | null | undefined): string | undefined {
-	if (!path) return undefined;
-	if (/^(https?:|data:|blob:)/.test(path)) return path;
-	const clean = path.replace(/^\/+/, '');
-	// SvelteKit types asset paths from the static directory, but catalog files are data-driven.
-	return asset(clean as never);
-}
-
-export function channelLogo(channel: { logoUrl?: string }): string | undefined {
-	return resolveAsset(channel.logoUrl);
 }
 
 export function youtubeThumbnail(videoId: string, quality: 'hq' | 'mq' = 'mq'): string {

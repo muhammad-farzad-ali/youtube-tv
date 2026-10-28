@@ -15,7 +15,10 @@ export function downloadJson(data: unknown, filename: string): void {
 	setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
-export function downloadProfile(profile: ProfileFile, kind: 'full' | 'lineup' | 'settings'): string {
+export function downloadProfile(
+	profile: ProfileFile,
+	kind: 'full' | 'lineup' | 'settings'
+): string {
 	const date = new Date().toISOString().slice(0, 10);
 	const suffix = kind === 'full' ? 'profile' : kind;
 	const filename = `cable-tv-${safeFileName(suffix)}-${date}.json`;

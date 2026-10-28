@@ -10,7 +10,9 @@
 	};
 </script>
 
-<div class="pointer-events-none fixed right-3 bottom-3 z-50 flex w-[min(24rem,calc(100%-1.5rem))] flex-col gap-2">
+<div
+	class="pointer-events-none fixed right-3 bottom-3 z-50 flex w-[min(24rem,calc(100%-1.5rem))] flex-col gap-2"
+>
 	{#each toasts.items as toast (toast.id)}
 		{@const tone = tones[toast.tone]}
 		<div

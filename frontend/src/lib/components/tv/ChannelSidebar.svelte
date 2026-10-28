@@ -62,10 +62,7 @@
 		return () => media.removeEventListener('change', update);
 	});
 
-	const categories = $derived([
-		'All',
-		...new Set(channels.map((channel) => channel.category))
-	]);
+	const categories = $derived(['All', ...new Set(channels.map((channel) => channel.category))]);
 	const filtered = $derived.by(() => {
 		const query = search.trim().toLowerCase();
 		return channels.filter((channel) => {
@@ -73,8 +70,7 @@
 			if (category !== 'All' && channel.category !== category) return false;
 			if (!query) return true;
 			return (
-				channel.name.toLowerCase().includes(query) ||
-				channel.category.toLowerCase().includes(query)
+				channel.name.toLowerCase().includes(query) || channel.category.toLowerCase().includes(query)
 			);
 		});
 	});
@@ -136,7 +132,12 @@
 		>
 			{#if collapsed}<ChevronRight size={16} />{:else}<ChevronLeft size={16} />{/if}
 		</button>
-		<button type="button" class="btn-icon lg:hidden" aria-label="Close channel list" onclick={onclosemobile}>
+		<button
+			type="button"
+			class="btn-icon lg:hidden"
+			aria-label="Close channel list"
+			onclick={onclosemobile}
+		>
 			<X size={17} />
 		</button>
 	</div>
@@ -156,7 +157,11 @@
 			</div>
 			<div class="flex items-center gap-1.5">
 				<SlidersHorizontal size={12} class="text-comment" />
-				<select class="select !py-1 text-[11px]" bind:value={category} aria-label="Filter by category">
+				<select
+					class="select !py-1 text-[11px]"
+					bind:value={category}
+					aria-label="Filter by category"
+				>
 					{#each categories as item (item)}
 						<option value={item}>{item}</option>
 					{/each}
@@ -190,7 +195,7 @@
 				{@const active = selectedChannelId === channel.id}
 				<button
 					type="button"
-					class="mb-0.5 flex w-full items-center gap-2.5 rounded-md border border-transparent px-2 py-2 text-left transition-colors {active
+					class="relative mb-0.5 flex w-full items-center gap-2.5 rounded-md border border-transparent px-2 py-2 text-left transition-colors {active
 						? 'tuned-glow border-line bg-raised text-fg'
 						: 'text-dim hover:border-line/60 hover:bg-raised/60 hover:text-fg'} {collapsed
 						? 'lg:justify-center lg:px-1'
@@ -199,7 +204,11 @@
 					title={collapsed ? channel.name : undefined}
 					onclick={() => choose(channel.id)}
 				>
-					<span class="w-7 shrink-0 text-right font-mono text-[10px] text-yellow tabular {collapsed ? 'lg:hidden' : ''}">
+					<span
+						class="w-7 shrink-0 text-right font-mono text-[10px] text-yellow tabular {collapsed
+							? 'lg:hidden'
+							: ''}"
+					>
 						{String(numbers.get(channel.id) ?? 0).padStart(2, '0')}
 					</span>
 					<ChannelLogo {channel} size={collapsed ? 'md' : 'sm'} />
@@ -211,13 +220,22 @@
 									{channel.category}
 								</span>
 								{#if isPlaying(channel.id)}
-									<span class="flex items-center gap-1 font-mono text-[8px] tracking-[0.16em] text-red uppercase">
+									<span
+										class="flex items-center gap-1 font-mono text-[8px] tracking-[0.16em] uppercase {playingStatus ===
+										'paused'
+											? 'text-yellow'
+											: 'text-red'}"
+									>
 										<span
-											class="size-1 rounded-full bg-red {playingStatus === 'playing'
-												? 'animate-pulse-dot'
-												: ''}"
+											class="size-1 rounded-full {playingStatus === 'paused'
+												? 'bg-yellow'
+												: 'bg-red'} {playingStatus === 'playing' ? 'animate-pulse-dot' : ''}"
 										></span>
-										{playingStatus === 'loading' ? 'Tuning' : 'Playing'}
+										{playingStatus === 'loading'
+											? 'Tuning'
+											: playingStatus === 'paused'
+												? 'Paused'
+												: 'Playing'}
 									</span>
 								{/if}
 							</span>
@@ -226,7 +244,7 @@
 							<Star size={11} class="shrink-0 text-yellow" fill="currentColor" />
 						{/if}
 					{:else if isPlaying(channel.id)}
-						<span class="absolute mt-6 ml-6 size-2 rounded-full bg-red"></span>
+						<span class="absolute right-1.5 bottom-1.5 size-2 rounded-full bg-red"></span>
 					{/if}
 				</button>
 			{/each}
@@ -236,13 +254,22 @@
 	{#if !collapsed}
 		<div class="shrink-0 border-t border-line p-2">
 			<div class="flex items-center gap-1">
-				<button type="button" class="btn-icon !size-8" aria-label="Previous channel" onclick={onprevious}>
+				<button
+					type="button"
+					class="btn-icon !size-8"
+					aria-label="Previous channel"
+					onclick={onprevious}
+				>
 					<ChevronUp size={15} />
 				</button>
 				<button type="button" class="btn-icon !size-8" aria-label="Next channel" onclick={onnext}>
 					<ChevronDown size={15} />
 				</button>
-				<button type="button" class="btn-ghost ml-auto !px-2 !py-1.5 text-[11px]" onclick={onopenlineup}>
+				<button
+					type="button"
+					class="btn-ghost ml-auto !px-2 !py-1.5 text-[11px]"
+					onclick={onopenlineup}
+				>
 					Edit lineup
 				</button>
 			</div>

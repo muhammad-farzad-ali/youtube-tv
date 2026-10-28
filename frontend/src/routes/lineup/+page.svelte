@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Search, Star, RotateCcw, Check, Layers3, Tv, Sparkles } from '@lucide/svelte';
+	import { Search, Star, RotateCcw, Check, Layers3, Tv, Sparkles, Download } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import PageHeader from '#lib/components/PageHeader.svelte';
 	import Modal from '#lib/components/Modal.svelte';
@@ -11,6 +11,7 @@
 	import { profile } from '#lib/stores/profile.svelte';
 	import { toasts } from '#lib/stores/toast.svelte';
 	import { seedCatalogVideos } from '#lib/storage/database';
+	import { downloadProfile } from '#lib/features/profile/download';
 	import { formatDate } from '#lib/utils/format';
 	import type { CatalogChannel, CatalogPack } from '#lib/schemas/catalog.schema';
 
@@ -39,9 +40,9 @@
 
 	const packChannels = $derived(
 		packOpen
-			? (packOpen.channelIds
+			? packOpen.channelIds
 					.map((id) => catalog.channelsById.get(id))
-					.filter((channel): channel is CatalogChannel => channel !== undefined))
+					.filter((channel): channel is CatalogChannel => channel !== undefined)
 			: []
 	);
 	const selectedCount = $derived(profile.lineup.length);
@@ -90,7 +91,10 @@
 	async function restoreStarter() {
 		if (!catalog.data) return;
 		profile.restoreStarter();
-		await seedCatalogVideos(catalog.data, profile.lineup.map((entry) => entry.channelId));
+		await seedCatalogVideos(
+			catalog.data,
+			profile.lineup.map((entry) => entry.channelId)
+		);
 		starterOpen = false;
 		toasts.success('Starter lineup restored.');
 	}
@@ -192,6 +196,7 @@
 						item
 							? 'border-blue/60 bg-blue/15 text-cyan'
 							: 'border-line bg-surface text-dim hover:border-line hover:bg-raised hover:text-fg'}"
+						aria-pressed={category === item}
 						onclick={() => (category = item)}
 					>
 						{item}
@@ -210,7 +215,9 @@
 				</button>
 			</div>
 
-			<div class="mt-3 flex items-center justify-between font-mono text-[10px] tracking-wide text-comment uppercase">
+			<div
+				class="mt-3 flex items-center justify-between font-mono text-[10px] tracking-wide text-comment uppercase"
+			>
 				<span>{filtered.length} channels shown</span>
 				<span>{selectedCount} selected</span>
 			</div>
@@ -247,7 +254,7 @@
 			{/if}
 		</section>
 
-		<LineupPanel />
+		<LineupPanel class="order-first lg:order-none" />
 	</div>
 </div>
 
@@ -266,34 +273,51 @@
 					class="rounded-lg border p-3 text-left transition-colors {packMode === 'merge'
 						? 'border-blue/60 bg-blue/10'
 						: 'border-line bg-surface hover:bg-raised'}"
+					aria-pressed={packMode === 'merge'}
 					onclick={() => (packMode = 'merge')}
 				>
 					<span class="flex items-center gap-2 font-display text-sm font-semibold text-fg">
 						{#if packMode === 'merge'}<Check size={14} class="text-cyan" />{/if}
 						Merge
 					</span>
-					<span class="mt-1 block text-xs text-dim">Add these channels after your current lineup.</span>
+					<span class="mt-1 block text-xs text-dim"
+						>Add these channels after your current lineup.</span
+					>
 				</button>
 				<button
 					type="button"
 					class="rounded-lg border p-3 text-left transition-colors {packMode === 'replace'
 						? 'border-red/60 bg-red/10'
 						: 'border-line bg-surface hover:bg-raised'}"
+					aria-pressed={packMode === 'replace'}
 					onclick={() => (packMode = 'replace')}
 				>
 					<span class="flex items-center gap-2 font-display text-sm font-semibold text-fg">
 						{#if packMode === 'replace'}<Check size={14} class="text-red" />{/if}
 						Replace
 					</span>
-					<span class="mt-1 block text-xs text-dim">Replace your entire lineup with this pack.</span>
+					<span class="mt-1 block text-xs text-dim">Replace your entire lineup with this pack.</span
+					>
 				</button>
 			</div>
 
 			{#if packMode === 'replace'}
-				<p class="rounded-md border border-orange/30 bg-orange/10 px-3 py-2 text-xs text-orange">
-					Your current channel order will be replaced. You can export a profile backup from the Backup
-					page.
-				</p>
+				<div
+					class="flex flex-wrap items-center justify-between gap-2 rounded-md border border-orange/30 bg-orange/10 px-3 py-2 text-xs text-orange"
+				>
+					<span>Your current channel order will be replaced.</span>
+					<button
+						type="button"
+						class="btn-ghost !px-2 !py-1 text-[10px]"
+						onclick={() => {
+							const filename = downloadProfile(profile.exportFile('full'), 'full');
+							toasts.success(`Backup downloaded: ${filename}`);
+						}}
+					>
+						<Download size={12} />
+						Backup first
+					</button>
+				</div>
 			{/if}
 
 			<div class="space-y-1.5">
@@ -328,15 +352,25 @@
 <Modal
 	open={starterOpen}
 	title="Restore starter lineup?"
-	description="This replaces your current lineup with the site operator's twelve-channel starter mix. Your favorites will be reset for channels that are not in the starter."
+	description={`This replaces your current lineup with the site operator's ${catalog.starterChannelIds.length}-channel starter mix. Your favorites will be reset for channels that are not in the starter.`}
 	onclose={() => (starterOpen = false)}
 >
 	<p class="text-sm leading-relaxed text-dim">
-		You can back up your current lineup on the Backup page before continuing. Cached video metadata is
-		not deleted.
+		You can back up your current lineup before continuing. Cached video metadata is not deleted.
 	</p>
 	{#snippet footer()}
 		<button type="button" class="btn-ghost" onclick={() => (starterOpen = false)}>Cancel</button>
+		<button
+			type="button"
+			class="btn-secondary"
+			onclick={() => {
+				const filename = downloadProfile(profile.exportFile('full'), 'full');
+				toasts.success(`Backup downloaded: ${filename}`);
+			}}
+		>
+			<Download size={15} />
+			Backup first
+		</button>
 		<button type="button" class="btn-primary" onclick={restoreStarter}>Restore starter</button>
 	{/snippet}
 </Modal>

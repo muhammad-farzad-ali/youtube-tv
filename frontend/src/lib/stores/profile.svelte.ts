@@ -13,8 +13,9 @@ import {
 } from '#lib/schemas/settings.schema';
 import type { CatalogPack } from '#lib/schemas/catalog.schema';
 import { catalog } from './catalog.svelte';
+import { PROFILE_STORAGE_KEY } from '#lib/constants';
 
-const STORAGE_KEY = 'cable-tv:profile:v1';
+const STORAGE_KEY = PROFILE_STORAGE_KEY;
 
 type ImportMode = 'merge' | 'replace';
 
@@ -31,9 +32,13 @@ class ProfileStore {
 			.filter((channel) => channel !== undefined)
 	);
 	channelNumbers = $derived(
-		new Map(this.selectedChannels.map((channel, index) => [channel.id, this.settings.numberStart + index]))
+		new Map(
+			this.selectedChannels.map((channel, index) => [channel.id, this.settings.numberStart + index])
+		)
 	);
-	favorites = $derived(new Set(this.lineup.filter((entry) => entry.favorite).map((entry) => entry.channelId)));
+	favorites = $derived(
+		new Set(this.lineup.filter((entry) => entry.favorite).map((entry) => entry.channelId))
+	);
 	selectedChannelId = $derived.by(() => {
 		const selected = this.settings.selectedChannelId;
 		if (selected && this.lineup.some((entry) => entry.channelId === selected)) return selected;
@@ -163,7 +168,13 @@ class ProfileStore {
 	}
 
 	reorder(from: number, to: number): void {
-		if (from === to || from < 0 || to < 0 || from >= this.lineup.length || to >= this.lineup.length) {
+		if (
+			from === to ||
+			from < 0 ||
+			to < 0 ||
+			from >= this.lineup.length ||
+			to >= this.lineup.length
+		) {
 			return;
 		}
 		const next = [...this.lineup];
@@ -294,7 +305,10 @@ class ProfileStore {
 		}
 
 		if (options.applySettings && profile.settings) {
-			this.settings = mergeSettings({ ...profile.settings, selectedChannelId: this.settings.selectedChannelId });
+			this.settings = mergeSettings({
+				...profile.settings,
+				selectedChannelId: this.settings.selectedChannelId
+			});
 		}
 
 		this.normalizeSelection();
@@ -302,7 +316,8 @@ class ProfileStore {
 
 		return {
 			added: [...next].filter((channelId) => !previous.has(channelId)).length,
-			removed: mode === 'replace' ? [...previous].filter((channelId) => !next.has(channelId)).length : 0,
+			removed:
+				mode === 'replace' ? [...previous].filter((channelId) => !next.has(channelId)).length : 0,
 			unknown
 		};
 	}

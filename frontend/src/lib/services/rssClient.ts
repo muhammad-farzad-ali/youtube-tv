@@ -22,11 +22,15 @@ function textOf(element: Element | null | undefined): string {
 function firstTag(parent: Element, tag: string, namespace?: string): Element | null {
 	const direct = parent.getElementsByTagName(tag)[0];
 	if (direct) return direct;
-	if (namespace) return parent.getElementsByTagNameNS(namespace, tag.split(':').pop() ?? tag)[0] ?? null;
+	if (namespace)
+		return parent.getElementsByTagNameNS(namespace, tag.split(':').pop() ?? tag)[0] ?? null;
 	return null;
 }
 
-export function parseYouTubeFeed(xml: string, expectedChannelId?: string): {
+export function parseYouTubeFeed(
+	xml: string,
+	expectedChannelId?: string
+): {
 	channelTitle: string;
 	videos: CatalogVideo[];
 } {
@@ -44,8 +48,12 @@ export function parseYouTubeFeed(xml: string, expectedChannelId?: string): {
 
 	const feedChannelId =
 		textOf(firstTag(feed, 'yt:channelId', 'http://www.youtube.com/xml/schemas/2015')) || '';
-	if (expectedChannelId && feedChannelId && feedChannelId !== expectedChannelId) {
-		throw new FeedError('parse', 'The feed belongs to a different channel.');
+	if (expectedChannelId && feedChannelId) {
+		// YouTube's feed-level channelId omits the leading "UC" while entry-level IDs include it.
+		const normalize = (id: string) => id.replace(/^UC/, '');
+		if (normalize(feedChannelId) !== normalize(expectedChannelId)) {
+			throw new FeedError('parse', 'The feed belongs to a different channel.');
+		}
 	}
 
 	const entries = Array.from(feed.getElementsByTagName('entry'));
@@ -53,7 +61,9 @@ export function parseYouTubeFeed(xml: string, expectedChannelId?: string): {
 	const videos: CatalogVideo[] = [];
 
 	for (const entry of entries) {
-		const videoId = textOf(firstTag(entry, 'yt:videoId', 'http://www.youtube.com/xml/schemas/2015'));
+		const videoId = textOf(
+			firstTag(entry, 'yt:videoId', 'http://www.youtube.com/xml/schemas/2015')
+		);
 		const title = textOf(firstTag(entry, 'title'));
 		const publishedAt = textOf(firstTag(entry, 'published'));
 		const thumbnail =
@@ -128,21 +138,27 @@ export async function fetchChannelFeed(
 	proxyUrl = ''
 ): Promise<{ channelTitle: string; videos: CatalogVideo[]; via: 'direct' | 'proxy' }> {
 	const feedUrl = buildFeedUrl(channelId);
-	let directError: FeedError | null = null;
 
+	if (proxyUrl.trim()) {
+		const proxied = applyProxy(proxyUrl, feedUrl);
+		try {
+			const xml = await fetchText(proxied);
+			const parsed = parseYouTubeFeed(xml, channelId);
+			return { ...parsed, via: 'proxy' };
+		} catch (cause) {
+			const detail = cause instanceof Error ? cause.message : 'The request failed.';
+			throw new FeedError('proxy', `Proxy request failed. ${detail}`);
+		}
+	}
+
+	let directError: FeedError | null = null;
 	try {
 		const xml = await fetchText(feedUrl);
 		const parsed = parseYouTubeFeed(xml, channelId);
 		return { ...parsed, via: 'direct' };
 	} catch (cause) {
-		directError = cause instanceof FeedError ? cause : new FeedError('network', 'Feed request failed.');
-	}
-
-	if (proxyUrl.trim()) {
-		const proxied = applyProxy(proxyUrl, feedUrl);
-		const xml = await fetchText(proxied);
-		const parsed = parseYouTubeFeed(xml, channelId);
-		return { ...parsed, via: 'proxy' };
+		directError =
+			cause instanceof FeedError ? cause : new FeedError('network', 'Feed request failed.');
 	}
 
 	if (directError.code === 'cors') {
@@ -171,7 +187,11 @@ export function validateProxyUrl(value: string): string | null {
 		return 'Add a {url} placeholder to the proxy URL.';
 	}
 	try {
-		const url = new URL(trimmed.replaceAll('{url}', 'https://example.com').replaceAll('{rawurl}', 'https://example.com'));
+		const url = new URL(
+			trimmed
+				.replaceAll('{url}', 'https://example.com')
+				.replaceAll('{rawurl}', 'https://example.com')
+		);
 		if (url.protocol !== 'https:' && url.hostname !== 'localhost' && url.hostname !== '127.0.0.1') {
 			return 'Use an https:// proxy URL.';
 		}

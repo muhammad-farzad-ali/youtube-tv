@@ -5,6 +5,8 @@
 	import { profile } from '#lib/stores/profile.svelte';
 	import { catalog } from '#lib/stores/catalog.svelte';
 
+	let { class: className = '' }: { class?: string } = $props();
+
 	const entries = $derived(
 		profile.lineup
 			.map((entry, index) => ({
@@ -17,7 +19,9 @@
 	);
 </script>
 
-<aside class="panel flex max-h-[calc(100dvh-7rem)] flex-col overflow-hidden lg:sticky lg:top-20">
+<aside
+	class="panel flex max-h-[calc(100dvh-7rem)] flex-col overflow-hidden lg:sticky lg:top-20 {className}"
+>
 	<header class="flex items-center justify-between gap-3 border-b border-line px-4 py-3">
 		<div>
 			<p class="eyebrow">My lineup</p>
@@ -52,7 +56,9 @@
 							</p>
 						</div>
 					{/if}
-					<div class="flex items-center gap-0.5 opacity-50 transition-opacity group-hover:opacity-100">
+					<div
+						class="flex items-center gap-0.5 opacity-50 transition-opacity group-hover:opacity-100"
+					>
 						<button
 							type="button"
 							class="btn-icon !size-7 {row.entry.favorite ? 'text-yellow' : ''}"
