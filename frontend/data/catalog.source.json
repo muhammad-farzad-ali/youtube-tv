@@ -337,6 +337,132 @@
 			"channelUrl": "https://www.youtube.com/channel/UCpnuadQ_w3r6f4Q_NRlqd-w",
 			"category": "Adventure",
 			"description": "Cinematic hiking, backpacking, and wilderness journeys."
+		},
+		{
+			"id": "UC9x0AN7BWHpCDHSm9NiJFJQ",
+			"name": "NetworkChuck",
+			"channelUrl": "https://www.youtube.com/channel/UC9x0AN7BWHpCDHSm9NiJFJQ",
+			"category": "Technology",
+			"description": "Hands-on networking, cybersecurity, homelab, and IT career tutorials."
+		},
+		{
+			"id": "UC2D2CMWXMOVWx7giW1n3LIg",
+			"name": "Andrew Huberman",
+			"channelUrl": "https://www.youtube.com/channel/UC2D2CMWXMOVWx7giW1n3LIg",
+			"category": "Science",
+			"description": "Science-based conversations on health, performance, motivation, and the brain."
+		},
+		{
+			"id": "UCY1kMZp36IQSyNx_9h4mpCg",
+			"name": "Mark Rober",
+			"channelUrl": "https://www.youtube.com/channel/UCY1kMZp36IQSyNx_9h4mpCg",
+			"category": "Science",
+			"description": "Science and engineering builds, experiments, and playful inventions."
+		},
+		{
+			"id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+			"name": "Practical Engineering",
+			"channelUrl": "https://www.youtube.com/channel/UCMOqf8ab-42UUQIdVoKwjlQ",
+			"category": "Science",
+			"description": "Civil engineering explained through infrastructure, failures, and everyday systems."
+		},
+		{
+			"id": "UCW39zufHfsuGgpLviKh297Q",
+			"name": "DW Documentary",
+			"channelUrl": "https://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q",
+			"category": "News",
+			"description": "Documentary films on global politics, history, science, and everyday life."
+		},
+		{
+			"id": "UCAyd8kYxON-KM0UuRuK_sIg",
+			"name": "Syed Muzammil Official",
+			"channelUrl": "https://www.youtube.com/channel/UCAyd8kYxON-KM0UuRuK_sIg",
+			"category": "News",
+			"description": "Urdu political commentary on Pakistan, current affairs, and society."
+		},
+		{
+			"id": "UCmGSJVG3mCRXVOP4yZrU1Dw",
+			"name": "Johnny Harris",
+			"channelUrl": "https://www.youtube.com/channel/UCmGSJVG3mCRXVOP4yZrU1Dw",
+			"category": "News",
+			"description": "Visual geopolitics and history explainers on the forces shaping the world."
+		},
+		{
+			"id": "UCqJ-Xo29CKyLTjn6z2XwYAw",
+			"name": "Game Maker's Toolkit",
+			"channelUrl": "https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw",
+			"category": "Gaming",
+			"description": "Video game design analysis, from level design to player psychology."
+		},
+		{
+			"id": "UCtUId5WFnN82GdDy7DgaQ7w",
+			"name": "Better Ideas",
+			"channelUrl": "https://www.youtube.com/channel/UCtUId5WFnN82GdDy7DgaQ7w",
+			"category": "Learning",
+			"description": "Practical self-improvement essays on focus, habits, and building a better life."
+		},
+		{
+			"id": "UCJ24N4O0bP7LGLBDvye7oCA",
+			"name": "Matt D'Avella",
+			"channelUrl": "https://www.youtube.com/channel/UCJ24N4O0bP7LGLBDvye7oCA",
+			"category": "Learning",
+			"description": "Minimalism, habits, and thoughtful experiments in living with less."
+		},
+		{
+			"id": "UCbxb2fqe9oNgglAoYqsYOtQ",
+			"name": "Easy German",
+			"channelUrl": "https://www.youtube.com/channel/UCbxb2fqe9oNgglAoYqsYOtQ",
+			"category": "Learning",
+			"description": "German language lessons and street interviews for learners at every level."
+		},
+		{
+			"id": "UClHVl2N3jPEbkNJVx-ItQIQ",
+			"name": "HealthyGamerGG",
+			"channelUrl": "https://www.youtube.com/channel/UClHVl2N3jPEbkNJVx-ItQIQ",
+			"category": "Learning",
+			"description": "Mental health conversations on relationships, motivation, and modern life."
+		},
+		{
+			"id": "UC8NOlkt22UCIAunNTZprE7g",
+			"name": "Ahsan Finance",
+			"channelUrl": "https://www.youtube.com/channel/UC8NOlkt22UCIAunNTZprE7g",
+			"category": "Learning",
+			"description": "Practical personal finance for living, saving, and investing in Germany."
+		},
+		{
+			"id": "UChOzmkBxTHbZNZdiiYolWoA",
+			"name": "Dekho Suno Jano",
+			"channelUrl": "https://www.youtube.com/channel/UChOzmkBxTHbZNZdiiYolWoA",
+			"category": "Learning",
+			"description": "Urdu-language history, geopolitics, and long-form conversations with Faisal Warraich."
+		},
+		{
+			"id": "UCoOae5nYA7VqaXzerajD0lg",
+			"name": "Ali Abdaal",
+			"channelUrl": "https://www.youtube.com/channel/UCoOae5nYA7VqaXzerajD0lg",
+			"category": "Learning",
+			"description": "Evidence-based productivity, habits, and sustainable ways to work better."
+		},
+		{
+			"id": "UCvjgXvBlbQiydffZU7m1_aw",
+			"name": "The Coding Train",
+			"channelUrl": "https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw",
+			"category": "Software",
+			"description": "Creative coding, simulations, and beginner-friendly programming challenges."
+		},
+		{
+			"id": "UCCxmzh3f-wwRZ-bEdLb80Og",
+			"name": "The Big Bang Theory",
+			"channelUrl": "https://www.youtube.com/channel/UCCxmzh3f-wwRZ-bEdLb80Og",
+			"category": "Comedy",
+			"description": "Official clips and comedy moments from The Big Bang Theory."
+		},
+		{
+			"id": "UC4ijq8Cg-8zQKx8OH12dUSw",
+			"name": "Kara and Nate",
+			"channelUrl": "https://www.youtube.com/channel/UC4ijq8Cg-8zQKx8OH12dUSw",
+			"category": "Adventure",
+			"description": "Travel adventures, long-term travel, and life on the road."
 		}
 	]
 }

@@ -2,7 +2,7 @@
 	"schemaVersion": 2,
 	"type": "cable-tv-catalog",
 	"name": "Cable TV",
-	"updatedAt": "2026-10-28T16:07:40.125Z",
+	"updatedAt": "2026-10-28T16:33:08.997Z",
 	"channels": [
 		{
 			"id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
@@ -11,7 +11,7 @@
 			"description": "Developer tools, platforms, and engineering talks from Google.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC_x5XG1OV2P6uZZ5FSM9Ttw.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "pQ_Dnr9Q4k8",
@@ -84,7 +84,7 @@
 			"description": "Hardware reviews, builds, and technology news with a lot of energy.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCXuqSBlHAE6Xw-yeJA0Tunw.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "DZSYaQmxBLM",
@@ -172,7 +172,7 @@
 			"description": "Consumer technology, product reviews, and the future of gadgets.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCddiUEpeqJcYeBxX1IVBKvQ.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "ZbmAv0O_Cmg",
@@ -210,7 +210,7 @@
 			"description": "Sharp, considered reviews of phones, cameras, cars, and new tech.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCBJycsmduvYEL83R_U4JriQ.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "ESABTN4VtrA",
@@ -298,8 +298,14 @@
 			"description": "Computer science concepts, security, and the people behind computing.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC9-y-6csu5WGm29I7JiwpnA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
+				{
+					"videoId": "cI8IquVEyVY",
+					"title": "?PHP Problem? - Computerphile",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/cI8IquVEyVY/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:23:55.000Z"
+				},
 				{
 					"videoId": "h6j_ixGnpiY",
 					"title": "How Image Watermarking Works - Computerphile",
@@ -383,12 +389,6 @@
 					"title": "Quantum Machine Learning - Computerphile",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/CnSYsUhlx14/hqdefault.jpg",
 					"publishedAt": "2026-07-23T13:00:32.000Z"
-				},
-				{
-					"videoId": "2Q6OvYjOJi0",
-					"title": "GPS Hidden Messages - Computerphile",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/2Q6OvYjOJi0/hqdefault.jpg",
-					"publishedAt": "2026-07-16T14:32:23.000Z"
 				}
 			],
 			"shortVideoIds": []
@@ -399,8 +399,7 @@
 			"channelUrl": "https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q",
 			"description": "Short, practical explainers about the technology you use every day.",
 			"category": "Technology",
-			"logoUrl": "catalog/logos/UC0vBXGSyV14uvJ4hECDOl0Q.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "72pyU1ZRun0",
@@ -502,7 +501,7 @@
 			"description": "Science and engineering stories built around surprising questions.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCHnyfMqiRRG1u-2MsSQLbXA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "eyZEqSPeMwg",
@@ -550,7 +549,7 @@
 			"description": "Animated explainers about space, biology, society, and the future.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCsXVk37bltHxD1rDPwtNM8Q.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "5_Fayfx2NUM",
@@ -607,8 +606,7 @@
 			"channelUrl": "https://www.youtube.com/channel/UCLA_DiR1FfKNvjuUpBHmylQ",
 			"description": "Official mission footage, launches, and updates from NASA.",
 			"category": "Science",
-			"logoUrl": "catalog/logos/UCLA_DiR1FfKNvjuUpBHmylQ.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "pAKqJxuxDgk",
@@ -700,7 +698,7 @@
 			"description": "Deep dives into astrophysics, cosmology, and the laws of nature.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UC7_gcs09iThXybpVgjHZ_7g.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "eb8x2tz_pgc",
@@ -763,7 +761,7 @@
 			"description": "Quick, visual physics lessons from Henry Reich.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCUHW94eEFW7hkUMVaZz4eDg.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "4YvnVJRlQQs",
@@ -826,7 +824,7 @@
 			"description": "Short animated lessons across science, history, and culture.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCsooa4yRKGN_zEE8iknghZA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "nXvKDYRvTno",
@@ -928,7 +926,7 @@
 			"description": "International news, reporting, and analysis from Al Jazeera.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCNye-wNBqNL5ZzHSJj3l8Bg.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "E7mo6wFpwpc",
@@ -961,8 +959,14 @@
 			"description": "Breaking news, explainers, and reports from the BBC newsroom.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UC16niRr50-MSBwiO3YDb3RA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
+				{
+					"videoId": "ed92RpaNR8s",
+					"title": "All the key takeaways from the Budget – explained | BBC News",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/ed92RpaNR8s/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:08:34.000Z"
+				},
 				{
 					"videoId": "QHWfRnygyms",
 					"title": "Rail expert unpacks deadly train crash in Spain | BBC News",
@@ -974,12 +978,6 @@
 					"title": "Watch LIVE: Dozens feared dead in Spain after two high-speed trains collide | BBC News",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/H_JvCiFPiTw/hqdefault.jpg",
 					"publishedAt": "2026-10-28T10:31:13.000Z"
-				},
-				{
-					"videoId": "V3grv7YVujE",
-					"title": "Details emerge of deadly Spain train crash south of Madrid | BBC News",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/V3grv7YVujE/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:26:54.000Z"
 				}
 			],
 			"shortVideoIds": [
@@ -1004,8 +1002,14 @@
 			"description": "Global news and current affairs from Deutsche Welle.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCknLrEdhRCp1aegoMqRaCZg.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
+				{
+					"videoId": "4RBY98i23Jo",
+					"title": "Bonus Episode: Russian recruitment and sabotage | Call Sign Condor",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/4RBY98i23Jo/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:00:48.000Z"
+				},
 				{
 					"videoId": "04BqMycb-rY",
 					"title": "Live: Dozens dead as two trains collide in Spain | DW News",
@@ -1059,12 +1063,6 @@
 					"title": "Live: Netanyahu vs Eisenkot: What do the exit polls tell us? | DW News",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/IPYX01axbD0/hqdefault.jpg",
 					"publishedAt": "2026-10-27T20:49:51.000Z"
-				},
-				{
-					"videoId": "MlKgTXDamPE",
-					"title": "Finland and Norway open direct talks with Putin despite criticism | DW News",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/MlKgTXDamPE/hqdefault.jpg",
-					"publishedAt": "2026-10-27T18:35:52.000Z"
 				}
 			],
 			"shortVideoIds": [
@@ -1082,7 +1080,7 @@
 			"description": "Rolling news, interviews, and live coverage from Sky News.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCoMdktPbSTixAyNGwb-UYkQ.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "ZSAokkNd4gM",
@@ -1140,12 +1138,12 @@
 				}
 			],
 			"shortVideoIds": [
+				"zTv9T6ZgLwM",
 				"xNFU8dj-VhE",
 				"3LOEoZUNoaI",
 				"dGCdxlex2Mw",
 				"RF3lG2bw180",
-				"GIirb3sECoM",
-				"0dVX-Vo1cFs"
+				"GIirb3sECoM"
 			]
 		},
 		{
@@ -1155,7 +1153,7 @@
 			"description": "Wire news and video reports from Reuters around the world.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UChqUTb7kYRX8-EiaN3XFrSQ.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "WJ0ehTDyBQs",
@@ -1228,7 +1226,7 @@
 			"description": "Markets, business, and economic coverage from CNBC.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCrp_UI8XtuYfpiqluWLD7Lw.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "CNm1-2P1oTs",
@@ -1285,8 +1283,26 @@
 			"description": "Game news, reviews, trailers, and everything happening in gaming.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCKy1dAqELo0zrOtPkf0eTMw.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
+				{
+					"videoId": "H_s0XoaUkUc",
+					"title": "Cronos: Lazarus - Official Story & Release Date Trailer",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/H_s0XoaUkUc/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:31:47.000Z"
+				},
+				{
+					"videoId": "CxOjIiWPNBw",
+					"title": "Call of Duty: Modern Warfare 4 - Official Season 1 Launch Trailer",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/CxOjIiWPNBw/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:23:02.000Z"
+				},
+				{
+					"videoId": "uBmgojgtJkw",
+					"title": "WWE 2K26 x Street Fighter Elite Pack Trailer",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/uBmgojgtJkw/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:14:07.000Z"
+				},
 				{
 					"videoId": "xsv2wXw61dM",
 					"title": "World of Warcraft: Forever | Planet Azeroth EP. 1 (ft. Bill Bailey)",
@@ -1360,11 +1376,7 @@
 					"publishedAt": "2026-10-28T13:33:13.000Z"
 				}
 			],
-			"shortVideoIds": [
-				"VaV5PnUZ6hA",
-				"x-GjZD75aAU",
-				"keoW-Y54ARg"
-			]
+			"shortVideoIds": []
 		},
 		{
 			"id": "UCbu2SsF-Or3Rsn3NxqODImw",
@@ -1373,7 +1385,7 @@
 			"description": "Reviews, previews, and deep coverage of games and the industry.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCbu2SsF-Or3Rsn3NxqODImw.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "_GF2AEoDmL0",
@@ -1456,7 +1468,7 @@
 			"description": "Technical analysis of games, consoles, and graphics performance.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UC9PBzalIcEQCsiIkq36PyUA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "6QPRMl0Scoc",
@@ -1558,8 +1570,14 @@
 			"description": "Official PlayStation trailers, announcements, and gameplay.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UC-2Y8dQb0S6DtpxNgAKoJKA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
+				{
+					"videoId": "j63m7ngHnAk",
+					"title": "Call of Duty: Modern Warfare 4 - Season 1 Launch Trailer | PS5 Games",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/j63m7ngHnAk/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:15:07.000Z"
+				},
 				{
 					"videoId": "1zG6PuF6Fic",
 					"title": "Cronos: Lazarus - Story Trailer | PS5 Games",
@@ -1637,12 +1655,6 @@
 					"title": "Smalland 2: Lost Relams - Overview Trailer | PS5 Games",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/hJAhkg0Dus8/hqdefault.jpg",
 					"publishedAt": "2026-10-28T13:15:31.000Z"
-				},
-				{
-					"videoId": "QGG8OnznPe8",
-					"title": "Rayman Legends Retold - Astro Bot Outfit Trailer | PS5 Games",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/QGG8OnznPe8/hqdefault.jpg",
-					"publishedAt": "2026-10-28T13:00:14.000Z"
 				}
 			],
 			"shortVideoIds": [
@@ -1656,8 +1668,20 @@
 			"description": "Official Xbox news, game trailers, and feature updates.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCjBp_7RuDBUYbd1LegWEJ8g.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
+				{
+					"videoId": "FDxbAAY6MN4",
+					"title": "Sword of the Sea - XBOX Series X|S Trailer",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/FDxbAAY6MN4/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:20:00.000Z"
+				},
+				{
+					"videoId": "0xDElsGrtYg",
+					"title": "Call of Duty: Modern Warfare 4 | Season 1 Launch Trailer",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/0xDElsGrtYg/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:15:32.000Z"
+				},
 				{
 					"videoId": "sIBJarLwlX8",
 					"title": "Dumpster Gang - Console Announce Trailer",
@@ -1735,18 +1759,6 @@
 					"title": "Deploy into Call of Duty®: Modern Warfare® 4 | This Week on XBOX",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/xSQvcP6SwJ4/hqdefault.jpg",
 					"publishedAt": "2026-10-23T16:00:22.000Z"
-				},
-				{
-					"videoId": "otcpY5Wowu4",
-					"title": "The Blood of Dawnwalker – Update 1.1",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/otcpY5Wowu4/hqdefault.jpg",
-					"publishedAt": "2026-10-22T16:35:36.000Z"
-				},
-				{
-					"videoId": "ryd_iONL_GA",
-					"title": "PEAK | XBOX Release Trailer",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/ryd_iONL_GA/hqdefault.jpg",
-					"publishedAt": "2026-10-22T15:00:38.000Z"
 				}
 			],
 			"shortVideoIds": []
@@ -1758,7 +1770,7 @@
 			"description": "Nintendo trailers, Direct presentations, and game news.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCGIY_O-8vW4rfX98KlMkvRg.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "9OPoiRcze0w",
@@ -1860,7 +1872,7 @@
 			"description": "Fast-paced courses across science, history, literature, and more.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCX6b17PVsYBQ0ip5gyeme-Q.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "2b-H-rxQ8m8",
@@ -1958,7 +1970,7 @@
 			"description": "Free lessons in math, science, economics, and the humanities.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UC4a-Gbdw7vOaccHmFo40b9g.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "cPxnWRp4oPo",
@@ -2056,7 +2068,7 @@
 			"description": "Full-length programming courses and coding tutorials.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UC8butISFwT-Wl7EV0hUK0BQ.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "aZglGvBPQGs",
@@ -2158,7 +2170,7 @@
 			"description": "Mathematics explained visually, from calculus to neural networks.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCYO_jab_esuFRV4b17AJtAw.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "LKrwhjOI8Nc",
@@ -2206,7 +2218,7 @@
 			"description": "Talks and ideas from scientists, artists, and thinkers.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCAuUUnT6oDeKwE6v1NGQxug.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "tu6tF-lVDJI",
@@ -2284,7 +2296,7 @@
 			"description": "Numbers, puzzles, and mathematical curiosities with experts.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCoxcjq-8xIDTYp3uz647V5A.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "EgnAN0ZUl08",
@@ -2367,7 +2379,7 @@
 			"description": "High-speed tutorials and news on web development, programming languages, and software trends.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCsBjURrPoezykLs9EqgamOA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "nEaJMdM1djM",
@@ -2469,7 +2481,7 @@
 			"description": "Developer commentary, engineering culture, and programming tooling.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UC8ENHE5xdFSwx71u3fDH5Xw.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "tYQyh1tjSFc",
@@ -2537,7 +2549,7 @@
 			"description": "Practical web development tutorials focused on JavaScript, React, and modern front-end patterns.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCFbNIlppjAuEX4znoulh0Cw.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "FbXPaIcpvww",
@@ -2615,7 +2627,7 @@
 			"description": "Web development commentary, TypeScript, and the business of building software.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCbRP3c757lWg9M-U7TyEkXA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "FHGfSjDGUIw",
@@ -2703,7 +2715,7 @@
 			"description": "System design, distributed systems, and software engineering interview concepts explained visually.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCZgt6AzoyjslHTC9dz0UoTw.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "Dddv7P_k60o",
@@ -2796,7 +2808,7 @@
 			"description": "Full-stack web development tutorials, project builds, and framework walkthroughs.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UC29ju8bIPH5as8OGnQzwJyA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "RE2c_eH0Sq4",
@@ -2889,7 +2901,7 @@
 			"description": "Geo TV's comedy show with sketches, celebrity guests, and audience laughs.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC6HQ4d3xq9EgSeJgMhc-4AQ.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "hcY_cLsZPcQ",
@@ -2942,7 +2954,7 @@
 			"description": "Roasts, comedy vlogs, and internet culture commentary.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC_c-RTowPbIlzMkIa_O7s6Q.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "7qogNKRz9Nw",
@@ -3044,7 +3056,7 @@
 			"description": "Clean stand-up comedy sets from a rotating lineup of comics.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCvlVuntLjdURVD3b3Hx7kxw.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "9GXFX9XkES0",
@@ -3117,7 +3129,7 @@
 			"description": "Secret-location stand-up sets from emerging and established comedians.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC7MgijK9WL_EqCo1juUERwg.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "OCaY4tobtxk",
@@ -3165,7 +3177,7 @@
 			"description": "Satirical news and comedy covering politics, media, and current events.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCwWhs_6x42TyRM4Wstoq8HA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "uWqFBoeLCPk",
@@ -3228,7 +3240,7 @@
 			"description": "Talk-show comedy, sketches, and interviews from Conan O'Brien.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCo3nWXH_6vVJ5-xbF3bKb3Q.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "qHzMtDE1Q8M",
@@ -3291,7 +3303,7 @@
 			"description": "Travel and adventure documentaries from Pakistan and beyond.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCf1XIplYiqNv9baGsFHwPPQ.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "tNLuqTc5REU",
@@ -3393,7 +3405,7 @@
 			"description": "Travel documentaries focused on difficult destinations and local stories.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCXulruMI7BHj3kGyosNa0jA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "BPHjquSgzMQ",
@@ -3495,7 +3507,7 @@
 			"description": "Solo travel, remote places, and adventure storytelling.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCDTINI9skkeZNY2ZXnBqIkQ.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "kYyxSvOcr4k",
@@ -3578,7 +3590,7 @@
 			"description": "Adventure challenges and travel stories built around seeking discomfort.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCvK4bOhULCpmLabd2pDMtnA.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "TMQ31DQjjWg",
@@ -3680,7 +3692,7 @@
 			"description": "Travel documentaries from every country and culture around the world.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UC0Ize0RLIbGdH5x4wI45G-A.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "XYYrKZEUDag",
@@ -3733,7 +3745,7 @@
 			"description": "Cinematic hiking, backpacking, and wilderness journeys.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCpnuadQ_w3r6f4Q_NRlqd-w.jpg",
-			"snapshotAt": "2026-10-28T16:07:40.125Z",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
 			"videos": [
 				{
 					"videoId": "2upU96IeRlw",
@@ -3763,6 +3775,1441 @@
 				"6iqFCSb91zU",
 				"MFk4kK0laiE"
 			]
+		},
+		{
+			"id": "UC9x0AN7BWHpCDHSm9NiJFJQ",
+			"name": "NetworkChuck",
+			"channelUrl": "https://www.youtube.com/channel/UC9x0AN7BWHpCDHSm9NiJFJQ",
+			"description": "Hands-on networking, cybersecurity, homelab, and IT career tutorials.",
+			"category": "Technology",
+			"logoUrl": "catalog/logos/UC9x0AN7BWHpCDHSm9NiJFJQ.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "Ck7wB7pdebQ",
+					"title": "why EVERYONE is copying this",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/Ck7wB7pdebQ/hqdefault.jpg",
+					"publishedAt": "2026-10-27T16:37:54.000Z"
+				},
+				{
+					"videoId": "5wZUwZWxMLQ",
+					"title": "0day Hacks NetworkChuck (OSINT)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/5wZUwZWxMLQ/hqdefault.jpg",
+					"publishedAt": "2026-10-20T15:42:09.000Z"
+				},
+				{
+					"videoId": "Bjifz55TTPI",
+					"title": "You can monitor EVERYTHING in your homelab with this",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/Bjifz55TTPI/hqdefault.jpg",
+					"publishedAt": "2026-10-12T14:19:35.000Z"
+				},
+				{
+					"videoId": "nuhh_KfCz9M",
+					"title": "your house needs TWO networks (here's why)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/nuhh_KfCz9M/hqdefault.jpg",
+					"publishedAt": "2026-10-05T19:10:52.000Z"
+				},
+				{
+					"videoId": "5pXMOUB_y0c",
+					"title": "openAI is coming for grok and Jev",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/5pXMOUB_y0c/hqdefault.jpg",
+					"publishedAt": "2026-09-29T20:25:13.000Z"
+				},
+				{
+					"videoId": "7RVf25Rg0Mc",
+					"title": "you need to try Paperclip RIGHT NOW!",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/7RVf25Rg0Mc/hqdefault.jpg",
+					"publishedAt": "2026-09-24T13:00:30.000Z"
+				},
+				{
+					"videoId": "CbWySQdAM60",
+					"title": "i got one....and it's FAST!!!",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/CbWySQdAM60/hqdefault.jpg",
+					"publishedAt": "2026-09-23T14:05:28.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"ijxeoYzLfRk",
+				"jdoaBSOTiK4",
+				"CgG3dtH5IMM",
+				"d1i1V4StMVI",
+				"JP9_clebjDE",
+				"BzfsGEr8lFg",
+				"6HPG3WGd1wQ"
+			]
+		},
+		{
+			"id": "UC2D2CMWXMOVWx7giW1n3LIg",
+			"name": "Andrew Huberman",
+			"channelUrl": "https://www.youtube.com/channel/UC2D2CMWXMOVWx7giW1n3LIg",
+			"description": "Science-based conversations on health, performance, motivation, and the brain.",
+			"category": "Science",
+			"logoUrl": "catalog/logos/UC2D2CMWXMOVWx7giW1n3LIg.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "NlVu0P1RdHs",
+					"title": "Unlocking Persistent Motivation & Extreme Resilience | Ross Edgley",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/NlVu0P1RdHs/hqdefault.jpg",
+					"publishedAt": "2026-10-26T12:00:00.000Z"
+				},
+				{
+					"videoId": "eYSOabR3YP0",
+					"title": "Essentials: Developing a Rational Approach to Supplementation for Health & Performance",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/eYSOabR3YP0/hqdefault.jpg",
+					"publishedAt": "2026-10-22T12:00:33.000Z"
+				},
+				{
+					"videoId": "2oqBvTRYcv0",
+					"title": "What Makes Great Leaders & How to Live an Extraordinary Life | Dr. Jared Diamond",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/2oqBvTRYcv0/hqdefault.jpg",
+					"publishedAt": "2026-10-19T12:00:21.000Z"
+				},
+				{
+					"videoId": "YdIJW8RTptU",
+					"title": "Essentials: Neuralink & Technologies to Enhance Human Brains | Dr. Matt MacDougall",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/YdIJW8RTptU/hqdefault.jpg",
+					"publishedAt": "2026-10-15T12:00:25.000Z"
+				},
+				{
+					"videoId": "PXHRYbr3mp4",
+					"title": "How Food Choices Shape Memory, Cognition & Cravings | Dr. Scott Kanoski",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/PXHRYbr3mp4/hqdefault.jpg",
+					"publishedAt": "2026-10-12T12:00:30.000Z"
+				},
+				{
+					"videoId": "RqMWvhvt0DQ",
+					"title": "Essentials: Manage Stress & Build Resilience | Dr. Elissa Epel",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/RqMWvhvt0DQ/hqdefault.jpg",
+					"publishedAt": "2026-10-08T12:00:29.000Z"
+				},
+				{
+					"videoId": "SFX8FIHFLE4",
+					"title": "Bringing Extinct Species Back to Life | Dr. Beth Shapiro",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/SFX8FIHFLE4/hqdefault.jpg",
+					"publishedAt": "2026-10-05T12:00:01.000Z"
+				},
+				{
+					"videoId": "8e3RC1L5V_Y",
+					"title": "Tools to Improve Your Focus & Concentration | Huberman Lab Essentials",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/8e3RC1L5V_Y/hqdefault.jpg",
+					"publishedAt": "2026-10-01T12:00:35.000Z"
+				},
+				{
+					"videoId": "nk15CT41MFc",
+					"title": "What Humans, Animals and Plants Tell Us About Consciousness | Michael Pollan",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/nk15CT41MFc/hqdefault.jpg",
+					"publishedAt": "2026-09-28T12:00:07.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"EM0PDXPC4dc",
+				"gWtB3pmEkag",
+				"DS6W1Ok6TsU",
+				"xZAsG5MShnk",
+				"WnuKwoF8Viw",
+				"xmEnK-WWlUY"
+			]
+		},
+		{
+			"id": "UCY1kMZp36IQSyNx_9h4mpCg",
+			"name": "Mark Rober",
+			"channelUrl": "https://www.youtube.com/channel/UCY1kMZp36IQSyNx_9h4mpCg",
+			"description": "Science and engineering builds, experiments, and playful inventions.",
+			"category": "Science",
+			"logoUrl": "catalog/logos/UCY1kMZp36IQSyNx_9h4mpCg.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "26P1KyvrmjI",
+					"title": "I Solved Every Board Game",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/26P1KyvrmjI/hqdefault.jpg",
+					"publishedAt": "2026-10-24T13:00:22.000Z"
+				},
+				{
+					"videoId": "_L1Rim7-IPo",
+					"title": "Last Cheater Standing Wins $10,000",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_L1Rim7-IPo/hqdefault.jpg",
+					"publishedAt": "2026-09-19T13:00:35.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"Q4nEdB1cfUk",
+				"eXv6fWonvUM",
+				"5N17EbYJBwQ",
+				"tbWTiZlwJ3M",
+				"NUVkpWAD548",
+				"67LFeTgFv3Y",
+				"KLJxCWeYGoE",
+				"KwqeKTM9M_8",
+				"0BAkKJ_3Tic",
+				"GRbokvmv-2M",
+				"q3nD5qD758o",
+				"eMG3FWEwJnk",
+				"--LXDh44cBQ"
+			]
+		},
+		{
+			"id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+			"name": "Practical Engineering",
+			"channelUrl": "https://www.youtube.com/channel/UCMOqf8ab-42UUQIdVoKwjlQ",
+			"description": "Civil engineering explained through infrastructure, failures, and everyday systems.",
+			"category": "Science",
+			"logoUrl": "catalog/logos/UCMOqf8ab-42UUQIdVoKwjlQ.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "awV7FP9sAHE",
+					"title": "Whatever Happened to Fire Escapes?",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/awV7FP9sAHE/hqdefault.jpg",
+					"publishedAt": "2026-10-20T13:00:19.000Z"
+				},
+				{
+					"videoId": "5_B1Mq02wcI",
+					"title": "The Hidden Engineering of Pressure Regulators",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/5_B1Mq02wcI/hqdefault.jpg",
+					"publishedAt": "2026-10-06T13:00:17.000Z"
+				},
+				{
+					"videoId": "n_1wzYQwnts",
+					"title": "Every US Electrical Outlet Explained",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/n_1wzYQwnts/hqdefault.jpg",
+					"publishedAt": "2026-09-15T13:00:35.000Z"
+				},
+				{
+					"videoId": "-17mPnFxi30",
+					"title": "Stopping the Unstoppable",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/-17mPnFxi30/hqdefault.jpg",
+					"publishedAt": "2026-09-01T13:00:00.000Z"
+				},
+				{
+					"videoId": "r1wwtGgnzg4",
+					"title": "Are Beavers Actually Good at Dams?",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/r1wwtGgnzg4/hqdefault.jpg",
+					"publishedAt": "2026-08-18T13:00:21.000Z"
+				},
+				{
+					"videoId": "stQfGfUSLQg",
+					"title": "The Grid That Doubles the Strength of the Ground",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/stQfGfUSLQg/hqdefault.jpg",
+					"publishedAt": "2026-08-04T13:00:39.000Z"
+				},
+				{
+					"videoId": "Iclf_JnPkKw",
+					"title": "What's Under Your Feet in New York City?",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/Iclf_JnPkKw/hqdefault.jpg",
+					"publishedAt": "2026-07-21T13:02:12.000Z"
+				},
+				{
+					"videoId": "Ku_ockR2t44",
+					"title": "The Mind-Blowing Flaw That Flooded New Orleans",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/Ku_ockR2t44/hqdefault.jpg",
+					"publishedAt": "2026-07-07T13:00:05.000Z"
+				},
+				{
+					"videoId": "7oi4yMr8Rjk",
+					"title": "Bridge Demolition is Complicated",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/7oi4yMr8Rjk/hqdefault.jpg",
+					"publishedAt": "2026-06-16T11:37:54.000Z"
+				},
+				{
+					"videoId": "3YvwqMDDb3k",
+					"title": "Why Roads Get Washboards",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/3YvwqMDDb3k/hqdefault.jpg",
+					"publishedAt": "2026-06-02T13:00:23.000Z"
+				},
+				{
+					"videoId": "DWLcmq_DiaA",
+					"title": "Fixing the Most Dangerous Dam in the World",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/DWLcmq_DiaA/hqdefault.jpg",
+					"publishedAt": "2026-05-19T13:00:31.000Z"
+				},
+				{
+					"videoId": "fKuIJ_z2Y6A",
+					"title": "The Physics Behind the Thumb Trick",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/fKuIJ_z2Y6A/hqdefault.jpg",
+					"publishedAt": "2026-05-05T13:01:16.000Z"
+				},
+				{
+					"videoId": "J7ieKmP96Hc",
+					"title": "The Wild Story of the Teton Dam Failure",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/J7ieKmP96Hc/hqdefault.jpg",
+					"publishedAt": "2026-04-21T13:00:28.000Z"
+				},
+				{
+					"videoId": "UF63eFJmbrQ",
+					"title": "This Spillway Failed On Purpose",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/UF63eFJmbrQ/hqdefault.jpg",
+					"publishedAt": "2026-04-07T13:01:01.000Z"
+				},
+				{
+					"videoId": "PhW2BjFQCZM",
+					"title": "The Los Angeles Aqueduct is Wild",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/PhW2BjFQCZM/hqdefault.jpg",
+					"publishedAt": "2026-03-17T13:00:44.000Z"
+				}
+			],
+			"shortVideoIds": []
+		},
+		{
+			"id": "UCW39zufHfsuGgpLviKh297Q",
+			"name": "DW Documentary",
+			"channelUrl": "https://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q",
+			"description": "Documentary films on global politics, history, science, and everyday life.",
+			"category": "News",
+			"logoUrl": "catalog/logos/UCW39zufHfsuGgpLviKh297Q.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "n_rm51MDzog",
+					"title": "Inside ICE: The fight against Trump's deportations | DW Documentary",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/n_rm51MDzog/hqdefault.jpg",
+					"publishedAt": "2026-10-27T17:00:28.000Z"
+				},
+				{
+					"videoId": "6OIhk5QBAS8",
+					"title": "Greece's mobile hospital: Providing medical care to remote islands | DW Documentary",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6OIhk5QBAS8/hqdefault.jpg",
+					"publishedAt": "2026-10-25T17:00:07.000Z"
+				},
+				{
+					"videoId": "EDusb1gev90",
+					"title": "Afghanistan's raw materials - The race is on | DW Documentary",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/EDusb1gev90/hqdefault.jpg",
+					"publishedAt": "2026-10-24T16:00:40.000Z"
+				},
+				{
+					"videoId": "mEDXhHCwO6U",
+					"title": "Between the czar and Hitler - The forgotten story of the White Army | DW Documentary",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/mEDXhHCwO6U/hqdefault.jpg",
+					"publishedAt": "2026-10-23T16:00:09.000Z"
+				},
+				{
+					"videoId": "IMAJdNZnWi0",
+					"title": "The high-priced world of beauty | DW Documentary",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/IMAJdNZnWi0/hqdefault.jpg",
+					"publishedAt": "2026-10-22T16:00:22.000Z"
+				},
+				{
+					"videoId": "YKG6GQ3fiWs",
+					"title": "Killing time - The science of boredom | DW Documentary",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/YKG6GQ3fiWs/hqdefault.jpg",
+					"publishedAt": "2026-10-21T16:00:04.000Z"
+				},
+				{
+					"videoId": "lb4MYxaBHoI",
+					"title": "In the shadow of copper - The price of mining in Serbia | DW Documentary",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/lb4MYxaBHoI/hqdefault.jpg",
+					"publishedAt": "2026-10-20T16:00:18.000Z"
+				},
+				{
+					"videoId": "61ODlrzb7Pk",
+					"title": "One electric truck's road trip to Norway | DW Documentary",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/61ODlrzb7Pk/hqdefault.jpg",
+					"publishedAt": "2026-10-18T16:00:31.000Z"
+				},
+				{
+					"videoId": "cyWdTB3CT4o",
+					"title": "Mao Zedong and China's Cultural Revolution (3/3) | DW Documentary",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/cyWdTB3CT4o/hqdefault.jpg",
+					"publishedAt": "2026-10-17T16:00:09.000Z"
+				},
+				{
+					"videoId": "T4SfWJvHAKY",
+					"title": "The housing crisis in Los Angeles - Between homelessness and luxury real estate | DW Documentary",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/T4SfWJvHAKY/hqdefault.jpg",
+					"publishedAt": "2026-10-16T16:00:34.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"Pmf5jxl7yHw",
+				"Akqi1RJTr0A",
+				"lYitjOZ0zhs",
+				"_JE3uVgnp8Y",
+				"uUrkyMfYpJM"
+			]
+		},
+		{
+			"id": "UCAyd8kYxON-KM0UuRuK_sIg",
+			"name": "Syed Muzammil Official",
+			"channelUrl": "https://www.youtube.com/channel/UCAyd8kYxON-KM0UuRuK_sIg",
+			"description": "Urdu political commentary on Pakistan, current affairs, and society.",
+			"category": "News",
+			"logoUrl": "catalog/logos/UCAyd8kYxON-KM0UuRuK_sIg.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "snnoq-MRvx4",
+					"title": "Multan Tragedy: Justice or Revenge? | Pak’s Psychology of Revenge | Syed Muzammil Official",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/snnoq-MRvx4/hqdefault.jpg",
+					"publishedAt": "2026-10-26T18:12:04.000Z"
+				},
+				{
+					"videoId": "hb3u7yCNv00",
+					"title": "“Most Poor People of Region in Pakistan” | Poor Nation VS Rich Elite | Syed Muzammil Official",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/hb3u7yCNv00/hqdefault.jpg",
+					"publishedAt": "2026-10-19T16:02:41.000Z"
+				},
+				{
+					"videoId": "HPVcTBytfDM",
+					"title": "Houthis VS Saudis: Will Pakistan Join Yemen War? | Syed Muzammil Official",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/HPVcTBytfDM/hqdefault.jpg",
+					"publishedAt": "2026-10-14T15:52:36.000Z"
+				},
+				{
+					"videoId": "7uXfpFQCY2k",
+					"title": "KP’s Political Takeover? | Governor Rule & Emergency | Syed Muzammil Official",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/7uXfpFQCY2k/hqdefault.jpg",
+					"publishedAt": "2026-10-11T16:50:34.000Z"
+				},
+				{
+					"videoId": "aWbKY0lr6pg",
+					"title": "Hunza Hotel Sealed on Dance Party | Pakistani Extremism | Syed Muzammil Official",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/aWbKY0lr6pg/hqdefault.jpg",
+					"publishedAt": "2026-10-07T17:07:53.000Z"
+				},
+				{
+					"videoId": "L17egQo-kgQ",
+					"title": "Massive Unrest in KPK | PTI’s Long March VS Governor Rule | Syed Muzammil Official",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/L17egQo-kgQ/hqdefault.jpg",
+					"publishedAt": "2026-09-30T15:55:46.000Z"
+				},
+				{
+					"videoId": "cHNLha3gN0w",
+					"title": "Who Destroyed Pakistan Cricket? | PCB VS Loser Eleven| Syed Muzammil Official",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/cHNLha3gN0w/hqdefault.jpg",
+					"publishedAt": "2026-09-12T16:44:08.000Z"
+				},
+				{
+					"videoId": "VFaP4LZdPV0",
+					"title": "Iran America Escalation Threat | Pakistan on SCO’s Driving Seat | Syed Muzammil Official",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/VFaP4LZdPV0/hqdefault.jpg",
+					"publishedAt": "2026-09-03T16:16:48.000Z"
+				},
+				{
+					"videoId": "YT7FIFN4_3Y",
+					"title": "Pakistan Still Under British Rule? | Why Pakistan Failed to Legislate? | Syed Muzammil Official",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/YT7FIFN4_3Y/hqdefault.jpg",
+					"publishedAt": "2026-08-31T15:45:24.000Z"
+				},
+				{
+					"videoId": "HNqHKlZ1Qkw",
+					"title": "PIMS Hospital & Sarhad University Incident Exposed | Syed Muzammil Official",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/HNqHKlZ1Qkw/hqdefault.jpg",
+					"publishedAt": "2026-08-27T17:48:36.000Z"
+				},
+				{
+					"videoId": "za_w7Kh-bPI",
+					"title": "New Provinces, Solution for Pakistan? | Sindh & Punjab’s Division | Syed Muzammil Official",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/za_w7Kh-bPI/hqdefault.jpg",
+					"publishedAt": "2026-08-24T15:46:29.000Z"
+				},
+				{
+					"videoId": "I4cZZze1GWM",
+					"title": "Imran Khan’s Exit Plan? | Deal with Establishment? | Syed Muzammil Official",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/I4cZZze1GWM/hqdefault.jpg",
+					"publishedAt": "2026-08-19T17:02:50.000Z"
+				},
+				{
+					"videoId": "y1DUtcl_F9g",
+					"title": "Forgotten Stories of India’s Partition | Indo-Pak Independence? | Syed Muzammil Official",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/y1DUtcl_F9g/hqdefault.jpg",
+					"publishedAt": "2026-08-14T16:36:23.000Z"
+				},
+				{
+					"videoId": "6GHMOhxVTHY",
+					"title": "Mecca Defense Agreement Revealed | Pakistan, Turkey, Saudi Arabia | Syed Muzammil Official",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6GHMOhxVTHY/hqdefault.jpg",
+					"publishedAt": "2026-08-08T19:20:36.000Z"
+				},
+				{
+					"videoId": "oXl9xdjrj78",
+					"title": "Pakistan’s Collapsed Systems | News Provinces Upcoming? | Syed Muzammil Official",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/oXl9xdjrj78/hqdefault.jpg",
+					"publishedAt": "2026-08-05T15:30:27.000Z"
+				}
+			],
+			"shortVideoIds": []
+		},
+		{
+			"id": "UCmGSJVG3mCRXVOP4yZrU1Dw",
+			"name": "Johnny Harris",
+			"channelUrl": "https://www.youtube.com/channel/UCmGSJVG3mCRXVOP4yZrU1Dw",
+			"description": "Visual geopolitics and history explainers on the forces shaping the world.",
+			"category": "News",
+			"logoUrl": "catalog/logos/UCmGSJVG3mCRXVOP4yZrU1Dw.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "axRhjqd-rus",
+					"title": "The REAL reason China built so much",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/axRhjqd-rus/hqdefault.jpg",
+					"publishedAt": "2026-10-15T12:00:21.000Z"
+				},
+				{
+					"videoId": "sOz7gG74OIw",
+					"title": "What I've been working on all year",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/sOz7gG74OIw/hqdefault.jpg",
+					"publishedAt": "2026-10-08T15:00:14.000Z"
+				},
+				{
+					"videoId": "WFzFT2wW9sI",
+					"title": "The world's most extreme places, explained",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/WFzFT2wW9sI/hqdefault.jpg",
+					"publishedAt": "2026-09-24T12:03:14.000Z"
+				},
+				{
+					"videoId": "O7LvhSQ5Te4",
+					"title": "I don't get democracy",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/O7LvhSQ5Te4/hqdefault.jpg",
+					"publishedAt": "2026-09-10T13:00:26.000Z"
+				},
+				{
+					"videoId": "XXpqejgnaB0",
+					"title": "How Money Actually Works",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/XXpqejgnaB0/hqdefault.jpg",
+					"publishedAt": "2026-08-13T12:04:52.000Z"
+				},
+				{
+					"videoId": "T0oqR_IimvA",
+					"title": "The American war machine, explained",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/T0oqR_IimvA/hqdefault.jpg",
+					"publishedAt": "2026-07-30T12:01:15.000Z"
+				},
+				{
+					"videoId": "-DDbYSg0Alw",
+					"title": "The REAL reason the US can’t beat Iran",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/-DDbYSg0Alw/hqdefault.jpg",
+					"publishedAt": "2026-07-16T12:00:39.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"TAV5Prbponw",
+				"hikYW6s4cns",
+				"eXxICVM2JSk",
+				"CePgzgUzFmM",
+				"fkoyGkCfwi4",
+				"_NBFWnRqF1c",
+				"eDRSPt6PzoY",
+				"sxJZm-H8Oig"
+			]
+		},
+		{
+			"id": "UCqJ-Xo29CKyLTjn6z2XwYAw",
+			"name": "Game Maker's Toolkit",
+			"channelUrl": "https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw",
+			"description": "Video game design analysis, from level design to player psychology.",
+			"category": "Gaming",
+			"logoUrl": "catalog/logos/UCqJ-Xo29CKyLTjn6z2XwYAw.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "awegilW3DTc",
+					"title": "My Favourite Games From GMTK Game Jam 2026",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/awegilW3DTc/hqdefault.jpg",
+					"publishedAt": "2026-08-07T20:00:06.000Z"
+				},
+				{
+					"videoId": "JFG0GMCMLgs",
+					"title": "Word Play is now available on iOS!",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/JFG0GMCMLgs/hqdefault.jpg",
+					"publishedAt": "2026-07-14T07:54:05.000Z"
+				},
+				{
+					"videoId": "usF4cpcxbZc",
+					"title": "100 Steam Games that started life during GMTK Game Jam",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/usF4cpcxbZc/hqdefault.jpg",
+					"publishedAt": "2026-07-06T13:28:21.000Z"
+				},
+				{
+					"videoId": "n1cd1FhVAWY",
+					"title": "How I Coded the Perks in my Roguelike",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/n1cd1FhVAWY/hqdefault.jpg",
+					"publishedAt": "2026-06-25T17:00:26.000Z"
+				},
+				{
+					"videoId": "NlAFWaa9UQo",
+					"title": "The Secrets Behind THAT Cyberpunk 2077 Montage",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/NlAFWaa9UQo/hqdefault.jpg",
+					"publishedAt": "2026-05-15T13:45:07.000Z"
+				},
+				{
+					"videoId": "cIbCxbrBCys",
+					"title": "How Rockstar fit an entire city into PlayStation 2 memory",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/cIbCxbrBCys/hqdefault.jpg",
+					"publishedAt": "2026-05-11T10:58:46.000Z"
+				},
+				{
+					"videoId": "MILJzR0x3IY",
+					"title": "Has Zelda Changed Forever?",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/MILJzR0x3IY/hqdefault.jpg",
+					"publishedAt": "2026-03-30T18:40:31.000Z"
+				},
+				{
+					"videoId": "l7xXW0EbK4g",
+					"title": "The World Design of Hollow Knight: Silksong",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/l7xXW0EbK4g/hqdefault.jpg",
+					"publishedAt": "2025-12-15T15:58:44.000Z"
+				},
+				{
+					"videoId": "8tHJgtbj6rs",
+					"title": "What's the Point of Prototyping?",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/8tHJgtbj6rs/hqdefault.jpg",
+					"publishedAt": "2025-11-05T16:27:33.000Z"
+				},
+				{
+					"videoId": "JZ9GRFD-mSc",
+					"title": "How Games Do Destruction",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/JZ9GRFD-mSc/hqdefault.jpg",
+					"publishedAt": "2025-10-02T16:00:52.000Z"
+				},
+				{
+					"videoId": "Ip5pYl-MuYs",
+					"title": "What's The Point Of Hard Games, Anyway?",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/Ip5pYl-MuYs/hqdefault.jpg",
+					"publishedAt": "2025-09-16T15:00:39.000Z"
+				},
+				{
+					"videoId": "kG3LWpuiLqg",
+					"title": "My Favourite Games from GMTK Game Jam 2025",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/kG3LWpuiLqg/hqdefault.jpg",
+					"publishedAt": "2025-08-18T14:58:10.000Z"
+				},
+				{
+					"videoId": "lgG_vfbDPeo",
+					"title": "I've waited my whole life for this",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/lgG_vfbDPeo/hqdefault.jpg",
+					"publishedAt": "2025-08-15T13:05:31.000Z"
+				},
+				{
+					"videoId": "uuXrwA9nzM8",
+					"title": "How I Made Word Play",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/uuXrwA9nzM8/hqdefault.jpg",
+					"publishedAt": "2025-07-14T16:00:13.000Z"
+				},
+				{
+					"videoId": "chWr87u3Gdc",
+					"title": "Word Play Trailer - Out Now!",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/chWr87u3Gdc/hqdefault.jpg",
+					"publishedAt": "2025-06-26T16:49:53.000Z"
+				}
+			],
+			"shortVideoIds": []
+		},
+		{
+			"id": "UCtUId5WFnN82GdDy7DgaQ7w",
+			"name": "Better Ideas",
+			"channelUrl": "https://www.youtube.com/channel/UCtUId5WFnN82GdDy7DgaQ7w",
+			"description": "Practical self-improvement essays on focus, habits, and building a better life.",
+			"category": "Learning",
+			"logoUrl": "catalog/logos/UCtUId5WFnN82GdDy7DgaQ7w.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "3FqB_AkTwEw",
+					"title": "Ranking every self-improvement trend (from best to worst)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/3FqB_AkTwEw/hqdefault.jpg",
+					"publishedAt": "2026-10-06T18:55:25.000Z"
+				},
+				{
+					"videoId": "cnkTn5y238c",
+					"title": "It's boring, but this is how you focus on anything for 10+ hours",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/cnkTn5y238c/hqdefault.jpg",
+					"publishedAt": "2026-09-22T17:31:01.000Z"
+				},
+				{
+					"videoId": "tCFcNmVfYzs",
+					"title": "How to fix your f***ed brain",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/tCFcNmVfYzs/hqdefault.jpg",
+					"publishedAt": "2026-07-17T03:50:36.000Z"
+				},
+				{
+					"videoId": "n3MbJHVjKCA",
+					"title": "The fastest way to destroy your mind",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/n3MbJHVjKCA/hqdefault.jpg",
+					"publishedAt": "2026-07-09T16:00:33.000Z"
+				},
+				{
+					"videoId": "w04nPpz3KmU",
+					"title": "You were never supposed to think this much",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/w04nPpz3KmU/hqdefault.jpg",
+					"publishedAt": "2026-05-25T12:00:16.000Z"
+				},
+				{
+					"videoId": "MOjVgwF-_vA",
+					"title": "Every stage of self improvement explained",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/MOjVgwF-_vA/hqdefault.jpg",
+					"publishedAt": "2026-04-14T18:19:26.000Z"
+				},
+				{
+					"videoId": "NRZhWSesqVk",
+					"title": "6 things that quickly cured my procrastination",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/NRZhWSesqVk/hqdefault.jpg",
+					"publishedAt": "2026-02-25T13:00:44.000Z"
+				},
+				{
+					"videoId": "u8Tbx335jTM",
+					"title": "How to make more money (even if you're dumb)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/u8Tbx335jTM/hqdefault.jpg",
+					"publishedAt": "2026-02-18T23:38:41.000Z"
+				},
+				{
+					"videoId": "xkn5J9xVkJg",
+					"title": "This is how to unf*** your life in one year",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/xkn5J9xVkJg/hqdefault.jpg",
+					"publishedAt": "2026-01-15T14:01:55.000Z"
+				},
+				{
+					"videoId": "RYKybDrj-Eg",
+					"title": "Your life's greatest chapter begins now",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/RYKybDrj-Eg/hqdefault.jpg",
+					"publishedAt": "2025-12-26T14:00:46.000Z"
+				},
+				{
+					"videoId": "iSNJUgc2PNQ",
+					"title": "The laziness cure you don't want to hear",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/iSNJUgc2PNQ/hqdefault.jpg",
+					"publishedAt": "2025-09-01T04:16:39.000Z"
+				},
+				{
+					"videoId": "3aSVj7oDg8U",
+					"title": "How to unf*** your motivation",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/3aSVj7oDg8U/hqdefault.jpg",
+					"publishedAt": "2025-07-20T13:00:06.000Z"
+				},
+				{
+					"videoId": "YSClW6OPX6c",
+					"title": "The 5 types of people who can destroy your life",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/YSClW6OPX6c/hqdefault.jpg",
+					"publishedAt": "2025-06-25T13:00:58.000Z"
+				},
+				{
+					"videoId": "6qmaOIhqG5Y",
+					"title": "7 ideas that will make you unstoppable",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6qmaOIhqG5Y/hqdefault.jpg",
+					"publishedAt": "2025-03-27T14:00:08.000Z"
+				}
+			],
+			"shortVideoIds": []
+		},
+		{
+			"id": "UCJ24N4O0bP7LGLBDvye7oCA",
+			"name": "Matt D'Avella",
+			"channelUrl": "https://www.youtube.com/channel/UCJ24N4O0bP7LGLBDvye7oCA",
+			"description": "Minimalism, habits, and thoughtful experiments in living with less.",
+			"category": "Learning",
+			"logoUrl": "catalog/logos/UCJ24N4O0bP7LGLBDvye7oCA.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "0y9CyrU2o3M",
+					"title": "A professional stylist rebuilt my minimalist wardrobe",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/0y9CyrU2o3M/hqdefault.jpg",
+					"publishedAt": "2026-09-27T23:28:40.000Z"
+				},
+				{
+					"videoId": "__fM_PQDj2Y",
+					"title": "This is everything that's wrong with consumerism",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/__fM_PQDj2Y/hqdefault.jpg",
+					"publishedAt": "2026-09-01T01:42:30.000Z"
+				},
+				{
+					"videoId": "gvgZfrIBT4s",
+					"title": "Where did all the minimalists go?",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/gvgZfrIBT4s/hqdefault.jpg",
+					"publishedAt": "2026-07-07T12:15:15.000Z"
+				},
+				{
+					"videoId": "e3tXybpViHY",
+					"title": "I ran 1 mile every day for 30 days",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/e3tXybpViHY/hqdefault.jpg",
+					"publishedAt": "2026-06-09T12:45:09.000Z"
+				},
+				{
+					"videoId": "-1Fhry-Mqks",
+					"title": "I tried to optimize my life. It made it worse.",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/-1Fhry-Mqks/hqdefault.jpg",
+					"publishedAt": "2026-04-30T00:32:36.000Z"
+				},
+				{
+					"videoId": "--c3jT8R_VA",
+					"title": "I tried zone 2 training for 30 days (what I learned)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/--c3jT8R_VA/hqdefault.jpg",
+					"publishedAt": "2026-03-30T22:39:05.000Z"
+				},
+				{
+					"videoId": "Cmw1EhNga2k",
+					"title": "The biggest self-help lie",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/Cmw1EhNga2k/hqdefault.jpg",
+					"publishedAt": "2026-02-27T02:01:18.000Z"
+				},
+				{
+					"videoId": "hhOCMACyLhk",
+					"title": "I meal prepped 46 boring lunches to be healthier",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/hhOCMACyLhk/hqdefault.jpg",
+					"publishedAt": "2026-01-30T22:31:19.000Z"
+				},
+				{
+					"videoId": "jcn1SlQyoTs",
+					"title": "The most life-changing advice I ever got",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/jcn1SlQyoTs/hqdefault.jpg",
+					"publishedAt": "2026-01-13T01:35:53.000Z"
+				},
+				{
+					"videoId": "Jawt_HcJWeA",
+					"title": "The water bottle trend has gone too far",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/Jawt_HcJWeA/hqdefault.jpg",
+					"publishedAt": "2025-12-11T02:26:43.000Z"
+				},
+				{
+					"videoId": "9rH5eJCjhtg",
+					"title": "The problem with self-help gurus",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/9rH5eJCjhtg/hqdefault.jpg",
+					"publishedAt": "2025-10-28T21:20:12.000Z"
+				},
+				{
+					"videoId": "xFBg-sqpv64",
+					"title": "How social media fuels useless products",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/xFBg-sqpv64/hqdefault.jpg",
+					"publishedAt": "2025-09-30T21:29:35.000Z"
+				},
+				{
+					"videoId": "GKWrSLCqgG4",
+					"title": "Hustle culture lied to you (here’s a better way)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/GKWrSLCqgG4/hqdefault.jpg",
+					"publishedAt": "2025-09-02T21:50:05.000Z"
+				},
+				{
+					"videoId": "zN-rElTzR_4",
+					"title": "Why everyone is quitting social media",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/zN-rElTzR_4/hqdefault.jpg",
+					"publishedAt": "2025-08-21T22:20:49.000Z"
+				},
+				{
+					"videoId": "tjNP9y-QJzU",
+					"title": "How the 1% stole minimalism (then threw it away)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/tjNP9y-QJzU/hqdefault.jpg",
+					"publishedAt": "2025-07-31T20:00:41.000Z"
+				}
+			],
+			"shortVideoIds": []
+		},
+		{
+			"id": "UCbxb2fqe9oNgglAoYqsYOtQ",
+			"name": "Easy German",
+			"channelUrl": "https://www.youtube.com/channel/UCbxb2fqe9oNgglAoYqsYOtQ",
+			"description": "German language lessons and street interviews for learners at every level.",
+			"category": "Learning",
+			"logoUrl": "catalog/logos/UCbxb2fqe9oNgglAoYqsYOtQ.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "-WbwNgcUT2o",
+					"title": "Learn German with Our Live Podcast",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/-WbwNgcUT2o/hqdefault.jpg",
+					"publishedAt": "2026-10-27T18:00:37.000Z"
+				},
+				{
+					"videoId": "-4o4S6M6QcE",
+					"title": "How Foreigners Become Skilled Workers in Germany",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/-4o4S6M6QcE/hqdefault.jpg",
+					"publishedAt": "2026-10-25T18:00:25.000Z"
+				},
+				{
+					"videoId": "b-k2yDRx6yw",
+					"title": "Learn German with Me in Klagenfurt",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/b-k2yDRx6yw/hqdefault.jpg",
+					"publishedAt": "2026-10-21T17:00:01.000Z"
+				},
+				{
+					"videoId": "6gr5wvJpxCU",
+					"title": "How Do Germans Deal with Saying Goodbye?",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6gr5wvJpxCU/hqdefault.jpg",
+					"publishedAt": "2026-10-18T17:00:30.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"sd9420Fy1Qs",
+				"nR41ZGNuGMg",
+				"LPNpqk2wd6w",
+				"qpEFOyI1YrY",
+				"_d6ZVtLtDsc",
+				"mOJZxhHa8to",
+				"E8B84uNsxUo",
+				"ljyvHrsmc4o",
+				"vMKl23O6z9k",
+				"rSmbb182z-U",
+				"6WV-0PPJNdI"
+			]
+		},
+		{
+			"id": "UClHVl2N3jPEbkNJVx-ItQIQ",
+			"name": "HealthyGamerGG",
+			"channelUrl": "https://www.youtube.com/channel/UClHVl2N3jPEbkNJVx-ItQIQ",
+			"description": "Mental health conversations on relationships, motivation, and modern life.",
+			"category": "Learning",
+			"logoUrl": "catalog/logos/UClHVl2N3jPEbkNJVx-ItQIQ.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "4jv6ux_Zrzg",
+					"title": "The Most Narcissistic Bosses In Media",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/4jv6ux_Zrzg/hqdefault.jpg",
+					"publishedAt": "2026-10-28T16:00:33.000Z"
+				},
+				{
+					"videoId": "DRDu3E-bJj0",
+					"title": "Why Your Hard Work Leads To Zero Credit",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/DRDu3E-bJj0/hqdefault.jpg",
+					"publishedAt": "2026-10-24T15:00:03.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"I6-yl0_93oE",
+				"jzHwQS7LVVg",
+				"CVmLUnBArQo",
+				"aj325fqO63E",
+				"98JgIHsm9TU",
+				"X6ismMU599w",
+				"8E1RJJzb8R0",
+				"5cURpCY0ilc",
+				"1GmeQhQpFQQ",
+				"nuwMtxxnH54",
+				"0bBn_sssT-0",
+				"attwJOnaSI0",
+				"ovRcnFA-EXU"
+			]
+		},
+		{
+			"id": "UC8NOlkt22UCIAunNTZprE7g",
+			"name": "Ahsan Finance",
+			"channelUrl": "https://www.youtube.com/channel/UC8NOlkt22UCIAunNTZprE7g",
+			"description": "Practical personal finance for living, saving, and investing in Germany.",
+			"category": "Learning",
+			"logoUrl": "catalog/logos/UC8NOlkt22UCIAunNTZprE7g.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "SKQL94_dOwQ",
+					"title": "Best Free Credit Cards in Germany - TF Bank VS Advanzia",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/SKQL94_dOwQ/hqdefault.jpg",
+					"publishedAt": "2026-10-25T10:30:02.000Z"
+				},
+				{
+					"videoId": "RWgHXetRejk",
+					"title": "These things are changing in Germany in November 2026",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/RWgHXetRejk/hqdefault.jpg",
+					"publishedAt": "2026-10-22T17:00:39.000Z"
+				},
+				{
+					"videoId": "_JL782ojk2Y",
+					"title": "Can You Get Rich in Germany With Small Savings?",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_JL782ojk2Y/hqdefault.jpg",
+					"publishedAt": "2026-10-18T09:30:01.000Z"
+				},
+				{
+					"videoId": "Ewby4-2lASA",
+					"title": "Financial Milestones in Germany Worth Actually Celebrating",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/Ewby4-2lASA/hqdefault.jpg",
+					"publishedAt": "2026-10-11T09:30:00.000Z"
+				},
+				{
+					"videoId": "R-mpIZf0Bcc",
+					"title": "If I Had to Move to Germany in 2026, I’d Choose One of These 3 Routes",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/R-mpIZf0Bcc/hqdefault.jpg",
+					"publishedAt": "2026-10-04T09:30:31.000Z"
+				},
+				{
+					"videoId": "eI2a8yHEeAw",
+					"title": "Budgeting in Germany: Why You're Spending More Than You Think",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/eI2a8yHEeAw/hqdefault.jpg",
+					"publishedAt": "2026-09-27T09:30:21.000Z"
+				},
+				{
+					"videoId": "JREqfaBRdCs",
+					"title": "These things are changing in Germany in October 2026",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/JREqfaBRdCs/hqdefault.jpg",
+					"publishedAt": "2026-09-24T17:00:12.000Z"
+				},
+				{
+					"videoId": "9hXdAyKW3TY",
+					"title": "Why Every Student in Germany Should File a Tax Return",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/9hXdAyKW3TY/hqdefault.jpg",
+					"publishedAt": "2026-09-20T09:30:40.000Z"
+				},
+				{
+					"videoId": "Lrk6NUmwtKw",
+					"title": "I Started YouTube 6 Years Ago in Germany: Here's What Actually Happened",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/Lrk6NUmwtKw/hqdefault.jpg",
+					"publishedAt": "2026-09-17T17:00:32.000Z"
+				},
+				{
+					"videoId": "PjaCKPALi30",
+					"title": "Don't buy a home in Germany without watching this! (Investing in Real Estate in Germany)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/PjaCKPALi30/hqdefault.jpg",
+					"publishedAt": "2026-09-13T09:30:05.000Z"
+				},
+				{
+					"videoId": "NRzxTzg7juA",
+					"title": "German Production Falls, New VW factory and more (September Updates)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/NRzxTzg7juA/hqdefault.jpg",
+					"publishedAt": "2026-09-09T17:00:30.000Z"
+				},
+				{
+					"videoId": "Ca8bvay4TuU",
+					"title": "Don't Lose Your Job! The Remote Work Trap in Germany You Must Avoid",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/Ca8bvay4TuU/hqdefault.jpg",
+					"publishedAt": "2026-09-06T09:30:34.000Z"
+				},
+				{
+					"videoId": "x_S58RAhamw",
+					"title": "Is €70k a Good salary in Germany?",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/x_S58RAhamw/hqdefault.jpg",
+					"publishedAt": "2026-08-30T09:30:30.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"8MO5cHdZHs0",
+				"iCk1RwKsoas"
+			]
+		},
+		{
+			"id": "UChOzmkBxTHbZNZdiiYolWoA",
+			"name": "Dekho Suno Jano",
+			"channelUrl": "https://www.youtube.com/channel/UChOzmkBxTHbZNZdiiYolWoA",
+			"description": "Urdu-language history, geopolitics, and long-form conversations with Faisal Warraich.",
+			"category": "Learning",
+			"logoUrl": "catalog/logos/UChOzmkBxTHbZNZdiiYolWoA.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "_zWYU8odU6o",
+					"title": "History of Afghanistan S03E07 | How Did Russia Change Regime in Kabul? | Faisal Warraich",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_zWYU8odU6o/hqdefault.jpg",
+					"publishedAt": "2026-10-21T11:53:53.000Z"
+				},
+				{
+					"videoId": "PbJBUuBgWeo",
+					"title": "Curiosity Podcast 054 | We've No Voice Today, They’re Mocking Us | Ammar Ali Jan and Faisal Warraich",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/PbJBUuBgWeo/hqdefault.jpg",
+					"publishedAt": "2026-10-04T10:43:55.000Z"
+				},
+				{
+					"videoId": "XMm1l5KGvzw",
+					"title": "Curiosity Podcast 053 | How Will the System Change in Pakistan? | Sajid Tarar and Faisal Warraich",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/XMm1l5KGvzw/hqdefault.jpg",
+					"publishedAt": "2026-09-28T16:05:38.000Z"
+				},
+				{
+					"videoId": "FfZl04i6I_o",
+					"title": "History of Afghanistan S03E06 | Communism & Chaos In the 1970s | Faisal Warraich",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/FfZl04i6I_o/hqdefault.jpg",
+					"publishedAt": "2026-09-21T13:52:06.000Z"
+				},
+				{
+					"videoId": "WXjfo2yC6kg",
+					"title": "Curiosity Podcast 052 | Idea of Divine Society | Dr. M. Ashraf Majrooh and Faisal Warraich",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/WXjfo2yC6kg/hqdefault.jpg",
+					"publishedAt": "2026-09-18T07:00:06.000Z"
+				},
+				{
+					"videoId": "hLieIGJzFGo",
+					"title": "History of Afghanistan S03E05 | Pashtunistan & Daoud Khan  | Faisal Warraich",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/hLieIGJzFGo/hqdefault.jpg",
+					"publishedAt": "2026-09-17T07:00:23.000Z"
+				},
+				{
+					"videoId": "tMgcY_pXyb0",
+					"title": "Curiosity Podcast 51 | Who Are Sindhis? | Mumtaz Bukhari and Faisal Warraich",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/tMgcY_pXyb0/hqdefault.jpg",
+					"publishedAt": "2026-09-16T13:11:42.000Z"
+				},
+				{
+					"videoId": "O0hledMprGk",
+					"title": "History of Afghanistan S03E04 | The Defeat of Amanullah’s Reforms  | Faisal Warraich",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/O0hledMprGk/hqdefault.jpg",
+					"publishedAt": "2026-09-05T15:45:31.000Z"
+				},
+				{
+					"videoId": "aMHvOAD1Z-8",
+					"title": "Curiosity Podcast 050 | New Provinces & Ethno-Nationalism | Dr. Taimur Rahman and Faisal Warraich",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/aMHvOAD1Z-8/hqdefault.jpg",
+					"publishedAt": "2026-08-27T18:36:23.000Z"
+				},
+				{
+					"videoId": "ZppIjXwytSQ",
+					"title": "History of Afghanistan S03E03 | Reformist King Amanullah Vs Religious Elite | Faisal Warraich",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/ZppIjXwytSQ/hqdefault.jpg",
+					"publishedAt": "2026-08-25T12:14:41.000Z"
+				},
+				{
+					"videoId": "f92vvokbc_A",
+					"title": "History of Afghanistan S03E02 | Afghanistan Wins Its Freedom, 3rd Anglo Afghan War | Faisal Warraich",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/f92vvokbc_A/hqdefault.jpg",
+					"publishedAt": "2026-08-14T13:10:39.000Z"
+				},
+				{
+					"videoId": "N7TRk_OqN1o",
+					"title": "Curiosity Podcast 049 | Is the US permanently leaving Gulf? | Dr Kamran Bokhari & Faisal Warraich",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/N7TRk_OqN1o/hqdefault.jpg",
+					"publishedAt": "2026-08-11T08:51:10.000Z"
+				},
+				{
+					"videoId": "b3fCzGfgIaI",
+					"title": "Curiosity Podcast 048 | Ranjit Singh & History of Punjab | Aamir Riaz & Faisal Warraich",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/b3fCzGfgIaI/hqdefault.jpg",
+					"publishedAt": "2026-08-09T08:38:08.000Z"
+				},
+				{
+					"videoId": "UuRzEWB3d-0",
+					"title": "Wo Kon Tha #70 | Who was Nadir Shah Afshar of Iran | Complete Documentary film by Faisal Warraich",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/UuRzEWB3d-0/hqdefault.jpg",
+					"publishedAt": "2026-08-02T12:25:35.000Z"
+				},
+				{
+					"videoId": "wtciIA3IId8",
+					"title": "History of Afghanistan S03E01 | Story of Afghan Amir Habibullah Khan 1901-1919 | Faisal Warraich",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/wtciIA3IId8/hqdefault.jpg",
+					"publishedAt": "2026-07-31T16:14:19.000Z"
+				}
+			],
+			"shortVideoIds": []
+		},
+		{
+			"id": "UCoOae5nYA7VqaXzerajD0lg",
+			"name": "Ali Abdaal",
+			"channelUrl": "https://www.youtube.com/channel/UCoOae5nYA7VqaXzerajD0lg",
+			"description": "Evidence-based productivity, habits, and sustainable ways to work better.",
+			"category": "Learning",
+			"logoUrl": "catalog/logos/UCoOae5nYA7VqaXzerajD0lg.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "C0jOKDJtK9s",
+					"title": "I Tried Learning AI Video Editing in One Day",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/C0jOKDJtK9s/hqdefault.jpg",
+					"publishedAt": "2026-10-26T13:00:29.000Z"
+				},
+				{
+					"videoId": "BNRfzI6E1Es",
+					"title": "Brutally Honest Advice About Productivity in 26 Minutes",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/BNRfzI6E1Es/hqdefault.jpg",
+					"publishedAt": "2026-10-16T13:00:13.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"sEqibjGicCc",
+				"lBd7xoq4F18",
+				"RIKgEty3_9c",
+				"lTmsh1vmxow",
+				"TLkcnpqFZs0",
+				"mDlOybu9GKQ",
+				"6TZpWGiG0FY",
+				"u4V4G_hazbo",
+				"1Jwd2eVlVvo",
+				"wrAqamg3CZY",
+				"x9Q1_opRdQI",
+				"WAtzGzuazdg",
+				"PYS-Yul--Gg"
+			]
+		},
+		{
+			"id": "UCvjgXvBlbQiydffZU7m1_aw",
+			"name": "The Coding Train",
+			"channelUrl": "https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw",
+			"description": "Creative coding, simulations, and beginner-friendly programming challenges.",
+			"category": "Software",
+			"logoUrl": "catalog/logos/UCvjgXvBlbQiydffZU7m1_aw.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "t_QuHSwB0HY",
+					"title": "Why Language Models Surprise You",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/t_QuHSwB0HY/hqdefault.jpg",
+					"publishedAt": "2026-08-03T16:28:30.000Z"
+				},
+				{
+					"videoId": "s2jm2Z22ibA",
+					"title": "Coding Challenge 188: Voice Chatbot",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/s2jm2Z22ibA/hqdefault.jpg",
+					"publishedAt": "2026-04-27T16:20:34.000Z"
+				},
+				{
+					"videoId": "d0GgzjCFWq0",
+					"title": "What the font?!?!",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/d0GgzjCFWq0/hqdefault.jpg",
+					"publishedAt": "2026-03-30T14:02:30.000Z"
+				},
+				{
+					"videoId": "KR61bXsPlLU",
+					"title": "What is Transformers.js?",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/KR61bXsPlLU/hqdefault.jpg",
+					"publishedAt": "2025-10-25T16:32:13.000Z"
+				},
+				{
+					"videoId": "g3-PXyF8U70",
+					"title": "Coding Challenge 187: Bayes Theorem",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/g3-PXyF8U70/hqdefault.jpg",
+					"publishedAt": "2025-10-12T12:40:16.000Z"
+				},
+				{
+					"videoId": "KRDJAHArqaw",
+					"title": "Coding Challenge Session: Local Browser Conversational Chatbot (STT, TTS, and more?)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/KRDJAHArqaw/hqdefault.jpg",
+					"publishedAt": "2025-10-06T21:18:44.000Z"
+				},
+				{
+					"videoId": "_bCx__Kczp4",
+					"title": "new p5.js 2 functions: textWeight, textContours, textModel",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_bCx__Kczp4/hqdefault.jpg",
+					"publishedAt": "2025-10-06T17:50:41.000Z"
+				},
+				{
+					"videoId": "qhs-xppFRgE",
+					"title": "What's next?",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/qhs-xppFRgE/hqdefault.jpg",
+					"publishedAt": "2025-10-04T20:28:58.000Z"
+				},
+				{
+					"videoId": "25omXt_OjD4",
+					"title": "How to Load Data with p5.js (2.0)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/25omXt_OjD4/hqdefault.jpg",
+					"publishedAt": "2025-10-03T21:50:11.000Z"
+				},
+				{
+					"videoId": "0Ad5Frf8NBM",
+					"title": "What's new in p5.js 2!",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/0Ad5Frf8NBM/hqdefault.jpg",
+					"publishedAt": "2025-09-30T03:00:20.000Z"
+				},
+				{
+					"videoId": "ZfHVlMqJIxY",
+					"title": "Upcoming Plans, ML Sampling with softmax and temperature",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/ZfHVlMqJIxY/hqdefault.jpg",
+					"publishedAt": "2025-09-29T19:59:27.000Z"
+				},
+				{
+					"videoId": "lFrpa_JSMRE",
+					"title": "Introduction to Transformers.js (LIVE RECORDING SESSION ARCHIVE)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/lFrpa_JSMRE/hqdefault.jpg",
+					"publishedAt": "2025-09-22T21:21:00.000Z"
+				},
+				{
+					"videoId": "CBy3RU_8fwk",
+					"title": "p5.js 2.0: loading data with async and await (LIVE RECORDING SESSION ARCHIVE)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/CBy3RU_8fwk/hqdefault.jpg",
+					"publishedAt": "2025-09-22T17:39:40.000Z"
+				},
+				{
+					"videoId": "TsBDm0P0qaA",
+					"title": "Coding TRAIN WRECK: Bayesian Text Classification",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/TsBDm0P0qaA/hqdefault.jpg",
+					"publishedAt": "2025-09-15T18:35:01.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"kYcwOgCyi2w"
+			]
+		},
+		{
+			"id": "UCCxmzh3f-wwRZ-bEdLb80Og",
+			"name": "The Big Bang Theory",
+			"channelUrl": "https://www.youtube.com/channel/UCCxmzh3f-wwRZ-bEdLb80Og",
+			"description": "Official clips and comedy moments from The Big Bang Theory.",
+			"category": "Comedy",
+			"logoUrl": "catalog/logos/UCCxmzh3f-wwRZ-bEdLb80Og.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "Goj0znAQEEs",
+					"title": "‘The Big Bang Theory’ Lies That Get Harder to Explain by the Minute",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/Goj0znAQEEs/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:00:18.000Z"
+				},
+				{
+					"videoId": "NGtpBlD8Z6o",
+					"title": "1 Hour of the Gang Doing Stuff So You Don’t Have to",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/NGtpBlD8Z6o/hqdefault.jpg",
+					"publishedAt": "2026-10-26T14:00:07.000Z"
+				},
+				{
+					"videoId": "2R_DzS2y5os",
+					"title": "20 Times Penny’s Lack of Book Smarts Didn’t Stop Her",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/2R_DzS2y5os/hqdefault.jpg",
+					"publishedAt": "2026-10-25T14:00:17.000Z"
+				},
+				{
+					"videoId": "WUjftmDMYFA",
+					"title": "‘The Big Bang Theory’ Clips to Watch Before Bed",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/WUjftmDMYFA/hqdefault.jpg",
+					"publishedAt": "2026-10-23T14:00:00.000Z"
+				},
+				{
+					"videoId": "P8lB_Hqo7xs",
+					"title": "Awkward Introductions That Just Keep Getting Worse",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/P8lB_Hqo7xs/hqdefault.jpg",
+					"publishedAt": "2026-10-22T14:00:36.000Z"
+				},
+				{
+					"videoId": "NG_QhHwmC6I",
+					"title": "1 Hour of Season 8 That Made ‘The Big Bang Theory’ Great",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/NG_QhHwmC6I/hqdefault.jpg",
+					"publishedAt": "2026-10-20T14:00:21.000Z"
+				},
+				{
+					"videoId": "G-aOazA2Deo",
+					"title": "Sheldon Moments That Get More Brilliant by the Minute",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/G-aOazA2Deo/hqdefault.jpg",
+					"publishedAt": "2026-10-17T14:00:18.000Z"
+				},
+				{
+					"videoId": "MnRG-kSSNYc",
+					"title": "‘The Big Bang Theory’ Moments That Will Get You Into the Halloween Spirit",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/MnRG-kSSNYc/hqdefault.jpg",
+					"publishedAt": "2026-10-15T14:00:11.000Z"
+				},
+				{
+					"videoId": "ckBmROvk5xQ",
+					"title": "Hilarious Moments from the Final Season of ‘The Big Bang Theory’",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/ckBmROvk5xQ/hqdefault.jpg",
+					"publishedAt": "2026-10-14T14:00:02.000Z"
+				},
+				{
+					"videoId": "EwhAF_Ix2N8",
+					"title": "1 Hour of Season 7 That Proved Luck Had Nothing to Do with It",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/EwhAF_Ix2N8/hqdefault.jpg",
+					"publishedAt": "2026-10-12T14:00:00.000Z"
+				},
+				{
+					"videoId": "qtZmMPXZJBQ",
+					"title": "Sheldon Gets Hit On | The Big Bang Theory",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/qtZmMPXZJBQ/hqdefault.jpg",
+					"publishedAt": "2026-10-11T14:00:14.000Z"
+				},
+				{
+					"videoId": "kr2_hnvETCI",
+					"title": "10 Speeches That Left Us Speechless",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/kr2_hnvETCI/hqdefault.jpg",
+					"publishedAt": "2026-10-09T14:00:35.000Z"
+				},
+				{
+					"videoId": "VuN-bDzjNd8",
+					"title": "40 Minutes of Sheldon and Penny Pushing Each Other’s Buttons",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/VuN-bDzjNd8/hqdefault.jpg",
+					"publishedAt": "2026-10-07T14:00:29.000Z"
+				},
+				{
+					"videoId": "YruZLFgVLzo",
+					"title": "Bonus Episode: Meet Captain Sweatpants | The Big Bang Theory Podcast",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/YruZLFgVLzo/hqdefault.jpg",
+					"publishedAt": "2026-10-05T15:00:07.000Z"
+				}
+			],
+			"shortVideoIds": [
+				"7YSz9_yZfw4"
+			]
+		},
+		{
+			"id": "UC4ijq8Cg-8zQKx8OH12dUSw",
+			"name": "Kara and Nate",
+			"channelUrl": "https://www.youtube.com/channel/UC4ijq8Cg-8zQKx8OH12dUSw",
+			"description": "Travel adventures, long-term travel, and life on the road.",
+			"category": "Adventure",
+			"logoUrl": "catalog/logos/UC4ijq8Cg-8zQKx8OH12dUSw.jpg",
+			"snapshotAt": "2026-10-28T16:33:08.997Z",
+			"videos": [
+				{
+					"videoId": "il2-GI1w7I0",
+					"title": "78 Hour Ferry Disaster on the Caspian Sea (Mongol Rally Ep. 8)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/il2-GI1w7I0/hqdefault.jpg",
+					"publishedAt": "2026-10-17T15:00:16.000Z"
+				},
+				{
+					"videoId": "mTEUdYBcdb0",
+					"title": "Stuck Between Russia & Iran (Mongol Rally Ep. 7)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/mTEUdYBcdb0/hqdefault.jpg",
+					"publishedAt": "2026-10-10T15:00:37.000Z"
+				},
+				{
+					"videoId": "mOzTG34W6gk",
+					"title": "72 Hours in Turkey! (Mongol Rally Ep. 6)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/mOzTG34W6gk/hqdefault.jpg",
+					"publishedAt": "2026-10-03T15:00:18.000Z"
+				},
+				{
+					"videoId": "hmhIZkGXK0c",
+					"title": "We Drove a School Bus to Asia (Mongol Rally Ep. 5)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/hmhIZkGXK0c/hqdefault.jpg",
+					"publishedAt": "2026-09-26T15:00:21.000Z"
+				},
+				{
+					"videoId": "MIcdfxqhObQ",
+					"title": "24 Hours in a Country that \"Technically\" Doesn't Exist (Mongol Rally Ep. 4)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/MIcdfxqhObQ/hqdefault.jpg",
+					"publishedAt": "2026-09-19T15:00:07.000Z"
+				},
+				{
+					"videoId": "5dsRGAJQGU8",
+					"title": "48 Hours in Europe's Least Visited Country (Ep. 3)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/5dsRGAJQGU8/hqdefault.jpg",
+					"publishedAt": "2026-09-12T15:00:09.000Z"
+				},
+				{
+					"videoId": "bf8WxJw1uWk",
+					"title": "Denied Entry at The Moldova Border (Mongol Rally Ep. 2)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/bf8WxJw1uWk/hqdefault.jpg",
+					"publishedAt": "2026-09-05T15:00:09.000Z"
+				},
+				{
+					"videoId": "dKS-CESxL5A",
+					"title": "First 72 Hours of the Mongol Rally! (Ep. 1)",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/dKS-CESxL5A/hqdefault.jpg",
+					"publishedAt": "2026-08-29T15:00:34.000Z"
+				},
+				{
+					"videoId": "86dSixZOtFo",
+					"title": "we are pregnant",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/86dSixZOtFo/hqdefault.jpg",
+					"publishedAt": "2026-08-23T15:00:36.000Z"
+				},
+				{
+					"videoId": "wzsSbq3Z1G4",
+					"title": "We Bought a Bus (to drive around the world)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/wzsSbq3Z1G4/hqdefault.jpg",
+					"publishedAt": "2026-07-31T15:00:22.000Z"
+				},
+				{
+					"videoId": "_sZbsPWwsoM",
+					"title": "7 Days Captaining our own Yacht (with no experience!)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_sZbsPWwsoM/hqdefault.jpg",
+					"publishedAt": "2026-07-11T15:00:17.000Z"
+				},
+				{
+					"videoId": "SgKmIVEytNI",
+					"title": "The Race That Finally Broke Me (dead cow gully backyard ultra)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/SgKmIVEytNI/hqdefault.jpg",
+					"publishedAt": "2026-06-27T15:00:10.000Z"
+				},
+				{
+					"videoId": "BUksQoHlmfM",
+					"title": "We Tried South America's Most Expensive All Inclusive Resort",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/BUksQoHlmfM/hqdefault.jpg",
+					"publishedAt": "2026-06-13T15:00:27.000Z"
+				},
+				{
+					"videoId": "YioSqH5113g",
+					"title": "40 Hours to Run 100 Miles in Patagonia",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/YioSqH5113g/hqdefault.jpg",
+					"publishedAt": "2026-06-06T15:00:04.000Z"
+				},
+				{
+					"videoId": "MkDAeGqjj1c",
+					"title": "We Drove 2,000 Miles Across Patagonia",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/MkDAeGqjj1c/hqdefault.jpg",
+					"publishedAt": "2026-05-16T15:00:35.000Z"
+				}
+			],
+			"shortVideoIds": []
 		}
 	]
 }
