@@ -166,6 +166,18 @@ test('hides and unhides channels with local persistence', async ({ page }) => {
 	await expect(channelRow(page, 'Veritasium')).toHaveCount(1);
 });
 
+test('fullscreen hides player chrome and restores it on exit', async ({ page }) => {
+	await openTv(page);
+	await expect(page.getByTestId('player-topbar')).toBeVisible();
+	await page.getByRole('button', { name: 'Toggle fullscreen' }).click();
+	await expect(page.getByRole('button', { name: 'Exit fullscreen' })).toBeVisible();
+	await expect(page.getByTestId('player-topbar')).toBeHidden();
+	await expect(page.getByTestId('player-controls')).toBeHidden();
+	await page.getByRole('button', { name: 'Exit fullscreen' }).click();
+	await expect(page.getByTestId('player-topbar')).toBeVisible();
+	await expect(page.getByTestId('player-controls')).toBeVisible();
+});
+
 test('starts without profile or video caches', async ({ page }) => {
 	await openTv(page);
 	const state = await page.evaluate(async () => {
