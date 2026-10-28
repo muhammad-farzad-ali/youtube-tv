@@ -1,6 +1,16 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Search, ChevronUp, ChevronDown, SlidersHorizontal, X, Pin, Star } from '@lucide/svelte';
+	import {
+		Search,
+		ChevronUp,
+		ChevronDown,
+		SlidersHorizontal,
+		X,
+		Pin,
+		Star,
+		Eye,
+		EyeOff
+	} from '@lucide/svelte';
 	import ChannelLogo from '#lib/components/ChannelLogo.svelte';
 	import type { CatalogChannel } from '#lib/schemas/catalog.schema';
 	import type { PlaybackStatus } from '#lib/stores/playback.svelte';
@@ -46,17 +56,34 @@
 	const categories = $derived([
 		'All',
 		'Favorites',
+		'Hidden',
 		...new Set(channels.map((channel) => channel.category))
 	]);
 	const numbers = $derived(new Map(channels.map((channel, index) => [channel.id, index + 1])));
 	const favoriteCount = $derived(
-		channels.filter((channel) => preferences.isFavorite(channel.id)).length
+		channels.filter(
+			(channel) => preferences.isFavorite(channel.id) && !preferences.isHidden(channel.id)
+		).length
+	);
+	const hiddenCount = $derived(
+		channels.filter((channel) => preferences.isHidden(channel.id)).length
 	);
 	const filtered = $derived.by(() => {
 		const query = search.trim().toLowerCase();
 		return channels.filter((channel) => {
+			const hidden = preferences.isHidden(channel.id);
+			if (category === 'Hidden') {
+				if (!hidden) return false;
+			} else if (hidden) {
+				return false;
+			}
 			if (category === 'Favorites' && !preferences.isFavorite(channel.id)) return false;
-			if (category !== 'All' && category !== 'Favorites' && channel.category !== category) {
+			if (
+				category !== 'All' &&
+				category !== 'Favorites' &&
+				category !== 'Hidden' &&
+				channel.category !== category
+			) {
 				return false;
 			}
 			if (!query) return true;
@@ -65,8 +92,14 @@
 			);
 		});
 	});
-	const pinned = $derived(filtered.filter((channel) => preferences.isPinned(channel.id)));
-	const unpinned = $derived(filtered.filter((channel) => !preferences.isPinned(channel.id)));
+	const pinned = $derived(
+		category === 'Hidden' ? [] : filtered.filter((channel) => preferences.isPinned(channel.id))
+	);
+	const unpinned = $derived(
+		category === 'Hidden'
+			? filtered
+			: filtered.filter((channel) => !preferences.isPinned(channel.id))
+	);
 
 	function choose(channelId: string) {
 		onselect(channelId);
@@ -81,7 +114,9 @@
 	}
 
 	function emptyMessage() {
-		return category === 'Favorites' ? 'No favorite channels yet.' : 'No channels match.';
+		if (category === 'Favorites') return 'No favorite channels yet.';
+		if (category === 'Hidden') return 'No hidden channels. Use the eye icon to hide one.';
+		return 'No channels match.';
 	}
 </script>
 
@@ -89,6 +124,7 @@
 	{@const active = selectedChannelId === channel.id}
 	{@const isPinned = preferences.isPinned(channel.id)}
 	{@const isFavorite = preferences.isFavorite(channel.id)}
+	{@const isHidden = preferences.isHidden(channel.id)}
 	<div
 		data-testid="channel-row"
 		data-channel-id={channel.id}
@@ -157,6 +193,20 @@
 			>
 				<Star size={12} fill={isFavorite ? 'currentColor' : 'none'} />
 			</button>
+			<button
+				type="button"
+				class="btn-icon !size-6 {isHidden ? 'text-orange' : 'text-comment/70 hover:text-orange'}"
+				aria-label={isHidden ? `Unhide ${channel.name}` : `Hide ${channel.name}`}
+				aria-pressed={isHidden}
+				title={isHidden ? 'Show on the dial' : 'Hide from the dial'}
+				onclick={() => preferences.toggleHidden(channel.id)}
+			>
+				{#if isHidden}
+					<Eye size={12} />
+				{:else}
+					<EyeOff size={12} />
+				{/if}
+			</button>
 		</div>
 	</div>
 {/snippet}
@@ -173,7 +223,7 @@
 <aside
 	inert={!desktop && !mobileOpen}
 	aria-hidden={!desktop && !mobileOpen ? 'true' : undefined}
-	class="fixed top-16 bottom-0 left-0 z-40 flex w-[min(20rem,88vw)] flex-col border-r border-line bg-surface transition-transform duration-200 lg:sticky lg:top-16 lg:bottom-auto lg:z-10 lg:h-[calc(100dvh-4rem)] lg:w-[282px] lg:translate-x-0 {mobileOpen
+	class="fixed top-16 bottom-0 left-0 z-40 flex w-[min(21rem,90vw)] flex-col border-r border-line bg-surface transition-transform duration-200 lg:sticky lg:top-16 lg:bottom-auto lg:z-10 lg:h-[calc(100dvh-4rem)] lg:w-[300px] lg:translate-x-0 {mobileOpen
 		? 'translate-x-0 shadow-2xl'
 		: '-translate-x-full'}"
 >
@@ -188,6 +238,12 @@
 			<Star size={10} fill={favoriteCount > 0 ? 'currentColor' : 'none'} />
 			{favoriteCount}
 		</span>
+		{#if hiddenCount > 0}
+			<span class="chip border-orange/30 text-orange" title="{hiddenCount} hidden channels">
+				<EyeOff size={10} />
+				{hiddenCount}
+			</span>
+		{/if}
 		<button
 			type="button"
 			class="btn-icon lg:hidden"
@@ -220,6 +276,8 @@
 				{#each categories as item (item)}
 					{#if item === 'Favorites'}
 						<option value={item}>Favorites ({favoriteCount})</option>
+					{:else if item === 'Hidden'}
+						<option value={item}>Hidden ({hiddenCount})</option>
 					{:else}
 						<option value={item}>{item}</option>
 					{/if}
@@ -232,6 +290,9 @@
 		{#if filtered.length === 0}
 			<p class="px-4 py-8 text-center text-xs text-comment">{emptyMessage()}</p>
 		{:else}
+			{#if category === 'Hidden'}
+				<p class="eyebrow px-2 pt-2 pb-1 text-orange">Hidden channels</p>
+			{/if}
 			{#if pinned.length > 0}
 				<p class="eyebrow px-2 pt-2 pb-1 text-cyan">Pinned</p>
 				{#each pinned as channel (channel.id)}

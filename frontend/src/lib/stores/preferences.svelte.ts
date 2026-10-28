@@ -5,6 +5,7 @@ const STORAGE_KEY = 'cable-tv:preferences:v1';
 type SavedPreferences = {
 	pinned: string[];
 	favorites: string[];
+	hidden: string[];
 };
 
 function sanitizeIds(value: unknown): string[] {
@@ -15,6 +16,7 @@ function sanitizeIds(value: unknown): string[] {
 class PreferencesStore {
 	pinnedIds = $state<string[]>([]);
 	favoriteIds = $state<string[]>([]);
+	hiddenIds = $state<string[]>([]);
 	loaded = $state(false);
 
 	load(): void {
@@ -27,6 +29,7 @@ class PreferencesStore {
 			const parsed = JSON.parse(raw) as Partial<SavedPreferences>;
 			this.pinnedIds = sanitizeIds(parsed.pinned);
 			this.favoriteIds = sanitizeIds(parsed.favorites);
+			this.hiddenIds = sanitizeIds(parsed.hidden);
 		} catch {
 			// A corrupt or blocked preference store should not stop the dial.
 		}
@@ -38,6 +41,10 @@ class PreferencesStore {
 
 	isFavorite(channelId: string): boolean {
 		return this.favoriteIds.includes(channelId);
+	}
+
+	isHidden(channelId: string): boolean {
+		return this.hiddenIds.includes(channelId);
 	}
 
 	togglePin(channelId: string): void {
@@ -54,12 +61,20 @@ class PreferencesStore {
 		this.save();
 	}
 
+	toggleHidden(channelId: string): void {
+		this.hiddenIds = this.isHidden(channelId)
+			? this.hiddenIds.filter((id) => id !== channelId)
+			: [...this.hiddenIds, channelId];
+		this.save();
+	}
+
 	private save(): void {
 		if (!browser) return;
 		try {
 			const saved: SavedPreferences = {
 				pinned: this.pinnedIds,
-				favorites: this.favoriteIds
+				favorites: this.favoriteIds,
+				hidden: this.hiddenIds
 			};
 			localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
 		} catch {

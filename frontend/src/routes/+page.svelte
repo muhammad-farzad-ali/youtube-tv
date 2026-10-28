@@ -7,16 +7,20 @@
 	import ProgramGuide from '#lib/components/tv/ProgramGuide.svelte';
 	import { catalog } from '#lib/stores/catalog.svelte';
 	import { playback } from '#lib/stores/playback.svelte';
+	import { preferences } from '#lib/stores/preferences.svelte';
 	import { formatRelative } from '#lib/utils/format';
 
 	let mobileOpen = $state(false);
 	let activeChannelId = $state<string | null>(catalog.channels[0]?.id ?? null);
 	let numberBuffer = $state('');
 	let numberTimer: ReturnType<typeof setTimeout> | null = null;
+	let numberClearTimer: ReturnType<typeof setTimeout> | null = null;
+	let numberCommitted = $state(false);
 	let numberInvalid = $state(false);
 	let guideEl: HTMLElement | null = $state(null);
 
 	const channels = $derived(catalog.channels);
+	const dialChannels = $derived(channels.filter((channel) => !preferences.isHidden(channel.id)));
 	const activeChannel = $derived.by(() =>
 		activeChannelId
 			? (catalog.channelsById.get(activeChannelId) ?? channels[0] ?? null)
@@ -31,6 +35,7 @@
 		if (query && catalog.channelsById.has(query)) activeChannelId = query;
 		return () => {
 			if (numberTimer) clearTimeout(numberTimer);
+			if (numberClearTimer) clearTimeout(numberClearTimer);
 		};
 	});
 
@@ -59,19 +64,24 @@
 	}
 
 	function stepChannel(delta: number) {
-		if (channels.length === 0) return;
-		const currentIndex = Math.max(
-			0,
-			channels.findIndex((channel) => channel.id === activeChannelId)
-		);
-		const next = (currentIndex + delta + channels.length) % channels.length;
-		const channel = channels[next];
+		if (dialChannels.length === 0) return;
+		const currentIndex = activeChannelId
+			? dialChannels.findIndex((channel) => channel.id === activeChannelId)
+			: -1;
+		const next =
+			currentIndex === -1
+				? delta > 0
+					? 0
+					: dialChannels.length - 1
+				: (currentIndex + delta + dialChannels.length) % dialChannels.length;
+		const channel = dialChannels[next];
 		if (channel) selectChannel(channel.id);
 	}
 
 	function channelByNumber(value: string) {
 		const index = Number.parseInt(value, 10) - 1;
-		return channels[index]?.id;
+		const channel = channels[index];
+		return channel && !preferences.isHidden(channel.id) ? channel.id : undefined;
 	}
 
 	function flushNumberBuffer() {
@@ -79,9 +89,13 @@
 		const channelId = channelByNumber(numberBuffer);
 		numberInvalid = !channelId;
 		if (channelId) selectChannel(channelId);
-		setTimeout(() => {
+		numberCommitted = true;
+		if (numberClearTimer) clearTimeout(numberClearTimer);
+		numberClearTimer = setTimeout(() => {
 			numberBuffer = '';
 			numberInvalid = false;
+			numberCommitted = false;
+			numberClearTimer = null;
 		}, 900);
 	}
 
@@ -106,12 +120,17 @@
 
 		if (/^[0-9]$/.test(event.key)) {
 			event.preventDefault();
-			numberBuffer = `${numberBuffer}${event.key}`.slice(-4);
+			numberBuffer = numberCommitted ? event.key : `${numberBuffer}${event.key}`.slice(-4);
+			numberCommitted = false;
 			numberInvalid = false;
+			if (numberClearTimer) {
+				clearTimeout(numberClearTimer);
+				numberClearTimer = null;
+			}
 			resetNumberTimer();
 			return;
 		}
-		if (event.key === 'Enter' && numberBuffer) {
+		if (event.key === 'Enter' && numberBuffer && !numberCommitted) {
 			event.preventDefault();
 			if (numberTimer) clearTimeout(numberTimer);
 			flushNumberBuffer();
@@ -120,6 +139,7 @@
 		if (event.key === 'Escape') {
 			mobileOpen = false;
 			numberBuffer = '';
+			numberCommitted = false;
 			return;
 		}
 		if (event.key === '/') {
