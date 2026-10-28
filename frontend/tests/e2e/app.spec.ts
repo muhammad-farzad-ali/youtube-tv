@@ -130,6 +130,42 @@ test('pins and favorites channels with local persistence', async ({ page }) => {
 	).toBeVisible();
 });
 
+test('hides and unhides channels with local persistence', async ({ page }) => {
+	await openTv(page);
+	const categoryFilter = page.getByRole('combobox', { name: 'Filter by category' });
+	const veritasium = channelRow(page, 'Veritasium');
+
+	await veritasium.getByRole('button', { name: 'Hide Veritasium' }).click();
+	await expect(channelRow(page, 'Veritasium')).toHaveCount(0);
+	await expect(categoryFilter).toContainText('Hidden (1)');
+
+	await page.keyboard.type('06');
+	await page.keyboard.press('Enter');
+	await expect(page).toHaveTitle(/Techquickie/);
+	await page.keyboard.press('ArrowDown');
+	await expect(page).toHaveTitle(/Kurzgesagt/);
+	await page.keyboard.type('01');
+	await page.keyboard.press('Enter');
+	await expect(page).toHaveTitle(/Google for Developers/);
+
+	await categoryFilter.selectOption('Hidden');
+	await expect(channelRow(page, 'Veritasium')).toHaveCount(1);
+	await expect(
+		channelRow(page, 'Veritasium').getByRole('button', { name: 'Unhide Veritasium' })
+	).toBeVisible();
+
+	await page.reload();
+	await expect(page).toHaveTitle(/Google for Developers/);
+	await categoryFilter.selectOption('Hidden');
+	await expect(channelRow(page, 'Veritasium')).toHaveCount(1);
+
+	await channelRow(page, 'Veritasium').getByRole('button', { name: 'Unhide Veritasium' }).click();
+	await expect(channelRow(page, 'Veritasium')).toHaveCount(0);
+
+	await categoryFilter.selectOption('All');
+	await expect(channelRow(page, 'Veritasium')).toHaveCount(1);
+});
+
 test('starts without profile or video caches', async ({ page }) => {
 	await openTv(page);
 	const state = await page.evaluate(async () => {
