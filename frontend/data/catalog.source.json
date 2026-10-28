@@ -1,0 +1,317 @@
+{
+	"schemaVersion": 1,
+	"name": "Cable TV",
+	"updatedAt": "2026-10-28T00:00:00.000Z",
+	"starterChannelIds": [
+		"UC_x5XG1OV2P6uZZ5FSM9Ttw",
+		"UCXuqSBlHAE6Xw-yeJA0Tunw",
+		"UCHnyfMqiRRG1u-2MsSQLbXA",
+		"UCsXVk37bltHxD1rDPwtNM8Q",
+		"UCLA_DiR1FfKNvjuUpBHmylQ",
+		"UCNye-wNBqNL5ZzHSJj3l8Bg",
+		"UC16niRr50-MSBwiO3YDb3RA",
+		"UCknLrEdhRCp1aegoMqRaCZg",
+		"UCKy1dAqELo0zrOtPkf0eTMw",
+		"UC9PBzalIcEQCsiIkq36PyUA",
+		"UCX6b17PVsYBQ0ip5gyeme-Q",
+		"UCYO_jab_esuFRV4b17AJtAw"
+	],
+	"packs": [
+		{
+			"id": "starter",
+			"name": "Starter Mix",
+			"description": "Twelve channels across technology, science, news, gaming, and learning. A ready-made basic cable package.",
+			"channelIds": [
+				"UC_x5XG1OV2P6uZZ5FSM9Ttw",
+				"UCXuqSBlHAE6Xw-yeJA0Tunw",
+				"UCHnyfMqiRRG1u-2MsSQLbXA",
+				"UCsXVk37bltHxD1rDPwtNM8Q",
+				"UCLA_DiR1FfKNvjuUpBHmylQ",
+				"UCNye-wNBqNL5ZzHSJj3l8Bg",
+				"UC16niRr50-MSBwiO3YDb3RA",
+				"UCknLrEdhRCp1aegoMqRaCZg",
+				"UCKy1dAqELo0zrOtPkf0eTMw",
+				"UC9PBzalIcEQCsiIkq36PyUA",
+				"UCX6b17PVsYBQ0ip5gyeme-Q",
+				"UCYO_jab_esuFRV4b17AJtAw"
+			]
+		},
+		{
+			"id": "technology",
+			"name": "Technology TV",
+			"description": "Programming, developer education, hardware, and computing culture.",
+			"channelIds": [
+				"UC_x5XG1OV2P6uZZ5FSM9Ttw",
+				"UCXuqSBlHAE6Xw-yeJA0Tunw",
+				"UCddiUEpeqJcYeBxX1IVBKvQ",
+				"UCBJycsmduvYEL83R_U4JriQ",
+				"UC9-y-6csu5WGm29I7JiwpnA",
+				"UC0vBXGSyV14uvJ4hECDOl0Q"
+			]
+		},
+		{
+			"id": "science",
+			"name": "Science & Discovery",
+			"description": "Physics, space, nature, and big questions explained with clarity.",
+			"channelIds": [
+				"UCHnyfMqiRRG1u-2MsSQLbXA",
+				"UCsXVk37bltHxD1rDPwtNM8Q",
+				"UCLA_DiR1FfKNvjuUpBHmylQ",
+				"UC7_gcs09iThXybpVgjHZ_7g",
+				"UCUHW94eEFW7hkUMVaZz4eDg",
+				"UCsooa4yRKGN_zEE8iknghZA"
+			]
+		},
+		{
+			"id": "news",
+			"name": "News TV",
+			"description": "International reporting and current affairs from established newsrooms.",
+			"channelIds": [
+				"UCNye-wNBqNL5ZzHSJj3l8Bg",
+				"UC16niRr50-MSBwiO3YDb3RA",
+				"UCknLrEdhRCp1aegoMqRaCZg",
+				"UCoMdktPbSTixAyNGwb-UYkQ",
+				"UChqUTb7kYRX8-EiaN3XFrSQ",
+				"UCrp_UI8XtuYfpiqluWLD7Lw"
+			]
+		},
+		{
+			"id": "gaming",
+			"name": "Gaming TV",
+			"description": "Reviews, analysis, trailers, and the craft behind the games.",
+			"channelIds": [
+				"UCKy1dAqELo0zrOtPkf0eTMw",
+				"UCbu2SsF-Or3Rsn3NxqODImw",
+				"UC9PBzalIcEQCsiIkq36PyUA",
+				"UC-2Y8dQb0S6DtpxNgAKoJKA",
+				"UCjBp_7RuDBUYbd1LegWEJ8g",
+				"UCGIY_O-8vW4rfX98KlMkvRg"
+			]
+		},
+		{
+			"id": "learning",
+			"name": "Learning TV",
+			"description": "Lectures, mathematics, computer science, and lifelong learning.",
+			"channelIds": [
+				"UCX6b17PVsYBQ0ip5gyeme-Q",
+				"UC4a-Gbdw7vOaccHmFo40b9g",
+				"UC8butISFwT-Wl7EV0hUK0BQ",
+				"UCYO_jab_esuFRV4b17AJtAw",
+				"UCAuUUnT6oDeKwE6v1NGQxug",
+				"UCoxcjq-8xIDTYp3uz647V5A"
+			]
+		}
+	],
+	"channels": [
+		{
+			"id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+			"name": "Google for Developers",
+			"channelUrl": "https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw",
+			"category": "Technology",
+			"description": "Developer tools, platforms, and engineering talks from Google."
+		},
+		{
+			"id": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+			"name": "Linus Tech Tips",
+			"channelUrl": "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw",
+			"category": "Technology",
+			"description": "Hardware reviews, builds, and technology news with a lot of energy."
+		},
+		{
+			"id": "UCddiUEpeqJcYeBxX1IVBKvQ",
+			"name": "The Verge",
+			"channelUrl": "https://www.youtube.com/channel/UCddiUEpeqJcYeBxX1IVBKvQ",
+			"category": "Technology",
+			"description": "Consumer technology, product reviews, and the future of gadgets."
+		},
+		{
+			"id": "UCBJycsmduvYEL83R_U4JriQ",
+			"name": "Marques Brownlee",
+			"channelUrl": "https://www.youtube.com/channel/UCBJycsmduvYEL83R_U4JriQ",
+			"category": "Technology",
+			"description": "Sharp, considered reviews of phones, cameras, cars, and new tech."
+		},
+		{
+			"id": "UC9-y-6csu5WGm29I7JiwpnA",
+			"name": "Computerphile",
+			"channelUrl": "https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA",
+			"category": "Technology",
+			"description": "Computer science concepts, security, and the people behind computing."
+		},
+		{
+			"id": "UC0vBXGSyV14uvJ4hECDOl0Q",
+			"name": "Techquickie",
+			"channelUrl": "https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q",
+			"category": "Technology",
+			"description": "Short, practical explainers about the technology you use every day."
+		},
+		{
+			"id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+			"name": "Veritasium",
+			"channelUrl": "https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA",
+			"category": "Science",
+			"description": "Science and engineering stories built around surprising questions."
+		},
+		{
+			"id": "UCsXVk37bltHxD1rDPwtNM8Q",
+			"name": "Kurzgesagt",
+			"channelUrl": "https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q",
+			"category": "Science",
+			"description": "Animated explainers about space, biology, society, and the future."
+		},
+		{
+			"id": "UCLA_DiR1FfKNvjuUpBHmylQ",
+			"name": "NASA",
+			"channelUrl": "https://www.youtube.com/channel/UCLA_DiR1FfKNvjuUpBHmylQ",
+			"category": "Science",
+			"description": "Official mission footage, launches, and updates from NASA."
+		},
+		{
+			"id": "UC7_gcs09iThXybpVgjHZ_7g",
+			"name": "PBS Space Time",
+			"channelUrl": "https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g",
+			"category": "Science",
+			"description": "Deep dives into astrophysics, cosmology, and the laws of nature."
+		},
+		{
+			"id": "UCUHW94eEFW7hkUMVaZz4eDg",
+			"name": "minutephysics",
+			"channelUrl": "https://www.youtube.com/channel/UCUHW94eEFW7hkUMVaZz4eDg",
+			"category": "Science",
+			"description": "Quick, visual physics lessons from Henry Reich."
+		},
+		{
+			"id": "UCsooa4yRKGN_zEE8iknghZA",
+			"name": "TED-Ed",
+			"channelUrl": "https://www.youtube.com/channel/UCsooa4yRKGN_zEE8iknghZA",
+			"category": "Science",
+			"description": "Short animated lessons across science, history, and culture."
+		},
+		{
+			"id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+			"name": "Al Jazeera English",
+			"channelUrl": "https://www.youtube.com/channel/UCNye-wNBqNL5ZzHSJj3l8Bg",
+			"category": "News",
+			"description": "International news, reporting, and analysis from Al Jazeera."
+		},
+		{
+			"id": "UC16niRr50-MSBwiO3YDb3RA",
+			"name": "BBC News",
+			"channelUrl": "https://www.youtube.com/channel/UC16niRr50-MSBwiO3YDb3RA",
+			"category": "News",
+			"description": "Breaking news, explainers, and reports from the BBC newsroom."
+		},
+		{
+			"id": "UCknLrEdhRCp1aegoMqRaCZg",
+			"name": "DW News",
+			"channelUrl": "https://www.youtube.com/channel/UCknLrEdhRCp1aegoMqRaCZg",
+			"category": "News",
+			"description": "Global news and current affairs from Deutsche Welle."
+		},
+		{
+			"id": "UCoMdktPbSTixAyNGwb-UYkQ",
+			"name": "Sky News",
+			"channelUrl": "https://www.youtube.com/channel/UCoMdktPbSTixAyNGwb-UYkQ",
+			"category": "News",
+			"description": "Rolling news, interviews, and live coverage from Sky News."
+		},
+		{
+			"id": "UChqUTb7kYRX8-EiaN3XFrSQ",
+			"name": "Reuters",
+			"channelUrl": "https://www.youtube.com/channel/UChqUTb7kYRX8-EiaN3XFrSQ",
+			"category": "News",
+			"description": "Wire news and video reports from Reuters around the world."
+		},
+		{
+			"id": "UCrp_UI8XtuYfpiqluWLD7Lw",
+			"name": "CNBC Television",
+			"channelUrl": "https://www.youtube.com/channel/UCrp_UI8XtuYfpiqluWLD7Lw",
+			"category": "News",
+			"description": "Markets, business, and economic coverage from CNBC."
+		},
+		{
+			"id": "UCKy1dAqELo0zrOtPkf0eTMw",
+			"name": "IGN",
+			"channelUrl": "https://www.youtube.com/channel/UCKy1dAqELo0zrOtPkf0eTMw",
+			"category": "Gaming",
+			"description": "Game news, reviews, trailers, and everything happening in gaming."
+		},
+		{
+			"id": "UCbu2SsF-Or3Rsn3NxqODImw",
+			"name": "GameSpot",
+			"channelUrl": "https://www.youtube.com/channel/UCbu2SsF-Or3Rsn3NxqODImw",
+			"category": "Gaming",
+			"description": "Reviews, previews, and deep coverage of games and the industry."
+		},
+		{
+			"id": "UC9PBzalIcEQCsiIkq36PyUA",
+			"name": "Digital Foundry",
+			"channelUrl": "https://www.youtube.com/channel/UC9PBzalIcEQCsiIkq36PyUA",
+			"category": "Gaming",
+			"description": "Technical analysis of games, consoles, and graphics performance."
+		},
+		{
+			"id": "UC-2Y8dQb0S6DtpxNgAKoJKA",
+			"name": "PlayStation",
+			"channelUrl": "https://www.youtube.com/channel/UC-2Y8dQb0S6DtpxNgAKoJKA",
+			"category": "Gaming",
+			"description": "Official PlayStation trailers, announcements, and gameplay."
+		},
+		{
+			"id": "UCjBp_7RuDBUYbd1LegWEJ8g",
+			"name": "Xbox",
+			"channelUrl": "https://www.youtube.com/channel/UCjBp_7RuDBUYbd1LegWEJ8g",
+			"category": "Gaming",
+			"description": "Official Xbox news, game trailers, and feature updates."
+		},
+		{
+			"id": "UCGIY_O-8vW4rfX98KlMkvRg",
+			"name": "Nintendo of America",
+			"channelUrl": "https://www.youtube.com/channel/UCGIY_O-8vW4rfX98KlMkvRg",
+			"category": "Gaming",
+			"description": "Nintendo trailers, Direct presentations, and game news."
+		},
+		{
+			"id": "UCX6b17PVsYBQ0ip5gyeme-Q",
+			"name": "CrashCourse",
+			"channelUrl": "https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q",
+			"category": "Learning",
+			"description": "Fast-paced courses across science, history, literature, and more."
+		},
+		{
+			"id": "UC4a-Gbdw7vOaccHmFo40b9g",
+			"name": "Khan Academy",
+			"channelUrl": "https://www.youtube.com/channel/UC4a-Gbdw7vOaccHmFo40b9g",
+			"category": "Learning",
+			"description": "Free lessons in math, science, economics, and the humanities."
+		},
+		{
+			"id": "UC8butISFwT-Wl7EV0hUK0BQ",
+			"name": "freeCodeCamp.org",
+			"channelUrl": "https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ",
+			"category": "Learning",
+			"description": "Full-length programming courses and coding tutorials."
+		},
+		{
+			"id": "UCYO_jab_esuFRV4b17AJtAw",
+			"name": "3Blue1Brown",
+			"channelUrl": "https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw",
+			"category": "Learning",
+			"description": "Mathematics explained visually, from calculus to neural networks."
+		},
+		{
+			"id": "UCAuUUnT6oDeKwE6v1NGQxug",
+			"name": "TED",
+			"channelUrl": "https://www.youtube.com/channel/UCAuUUnT6oDeKwE6v1NGQxug",
+			"category": "Learning",
+			"description": "Talks and ideas from scientists, artists, and thinkers."
+		},
+		{
+			"id": "UCoxcjq-8xIDTYp3uz647V5A",
+			"name": "Numberphile",
+			"channelUrl": "https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A",
+			"category": "Learning",
+			"description": "Numbers, puzzles, and mathematical curiosities with experts."
+		}
+	]
+}
