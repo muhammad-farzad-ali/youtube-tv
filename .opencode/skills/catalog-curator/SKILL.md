@@ -1,29 +1,29 @@
 ---
 name: Catalog Curator
-description: Curate the managed Cable TV channel catalog — research YouTube channels, add or remove them, update packs and the starter lineup, refresh long-form-only snapshots, filter Shorts, validate the generated feed, and prepare a deploy. Use for channel selection, feed curation, catalog source edits, or catalog sync failures.
+description: Curate the fixed Cable TV Lite channel dial — research YouTube channels, add or remove them, reorder the dial, refresh long-form-only snapshots, filter Shorts, validate the generated catalog, and prepare a deploy. Use for channel selection, catalog source edits, dial ordering, or catalog sync failures.
 ---
 
 # Catalog Curator
 
-Cable TV is a managed service: the repository owner controls which channels exist, while visitors only choose, favorite, and reorder channels from that catalog. There is deliberately no in-app channel creation or editing.
+Cable TV Lite is a managed broadcast: the repository owner controls which channels exist and their order. Visitors tune channels but cannot edit, import, favorite, or reorder the lineup.
 
 ## Use this skill when
 
-- adding, removing, or replacing channels in the managed catalog
-- creating, rebalancing, or auditing packs and the starter lineup
+- adding, removing, or replacing channels on the fixed dial
+- reordering channels or rebalancing categories
 - refreshing snapshots and channel avatars
 - investigating invalid channel IDs, empty feeds, or sync failures
-- reviewing stale channels, duplicate brands, category balance, or weak descriptions
+- reviewing stale channels, duplicate brands, or weak descriptions
 - preparing a catalog change for commit and deployment
 
-Do not use this skill for bugs in a visitor's local lineup/profile unless the catalog is the cause.
+Do not use this skill for playback bugs unless the catalog is the cause.
 
 ## Read first
 
 1. `frontend/README.md` — managed catalog section and catalog format
 2. `frontend/data/catalog.source.json` — the only catalog file a human or agent edits
 3. `frontend/scripts/sync-catalog.mjs`, `validate-catalog.mjs`, and `lib/youtube.mjs`
-4. `references/editorial-policy.md` — channel and pack quality standards
+4. `references/editorial-policy.md` — channel and dial quality standards
 
 Run commands from `frontend/`. Paths below are relative to the repository root unless stated otherwise.
 
@@ -37,7 +37,7 @@ Run commands from `frontend/`. Paths below are relative to the repository root u
 - Do not bypass a failed `catalog:sync` or `catalog:check` by weakening validation.
 - Do not increase sync concurrency or hammer YouTube. The script intentionally limits concurrency.
 - YouTube Shorts are excluded by policy. Never bypass the oEmbed check or hand-add a Short to `videos`.
-- Keep the app static. No backend, proxy, or server database is added to the repo.
+- Keep the app static and stateless. Do not add a backend, proxy, feed refresh, browser store, or server database.
 
 ## Workflow
 
@@ -45,14 +45,14 @@ Run commands from `frontend/`. Paths below are relative to the repository root u
 
 Identify whether the owner wants:
 
-- a new channel added (and to which packs)
-- a channel removed everywhere
-- a pack rebalanced
-- the starter lineup changed
+- a channel added at a specific dial position
+- a channel removed
+- the dial reordered
+- a category rebalanced
 - a snapshot refresh only
 - an audit or recommendation
 
-For removals, bulk changes, or anything that changes the starter lineup, confirm the intended result before editing. For a snapshot-only refresh, skip source edits.
+For removals, bulk changes, or reordering, confirm the intended result before editing. For a snapshot-only refresh, skip source edits.
 
 ### 2. Inspect the current state
 
@@ -61,7 +61,7 @@ cd frontend
 npm run catalog:audit
 ```
 
-Use `-- --json` when you need structured data. Check category counts, stale channels, channels outside packs, possible duplicate names, and snapshot age.
+Use `-- --json` when you need structured data. Check category counts, stale channels, low long-form counts, possible duplicate names, and snapshot age.
 
 ### 3. Research a candidate
 
@@ -81,11 +81,11 @@ Check for duplicates against all existing IDs and obvious duplicate brands befor
 Edit `frontend/data/catalog.source.json`:
 
 - add a channel object with `id`, `name`, canonical `channelUrl`, `category`, and a short neutral `description`
-- add the channel to the relevant pack(s)
-- add it to `starterChannelIds` only if the owner explicitly wants it in the default lineup
-- preserve the existing style, ordering, and indentation
-- when removing a channel, remove it from `channels`, every pack, and the starter lineup
+- place it where it should appear on the dial
+- preserve the existing style, ordering of fields, and indentation
+- when removing a channel, remove it from `channels` and remove its orphaned logo file if unused
 - changing a channel ID means removing the old entry and adding the new one
+- reordering the `channels` array changes the dial order and channel numbers
 
 Use the established category names `Technology`, `Science`, `News`, `Gaming`, `Learning`, `Software`, `Comedy`, and `Adventure` unless the owner approves a new category.
 
@@ -113,9 +113,7 @@ Run `npm run format` if formatting checks fail, then `npm run format:check`.
 A healthy catalog currently has:
 
 - 48 channels as of the current baseline (the audit is the source of truth)
-- 9 packs: `starter`, `technology`, `science`, `news`, `gaming`, `learning`, `developer`, `comedy`, `adventure`
-- 12 starter channels across the five flagship categories; additional category packs are opt-in
-- every non-starter channel belongs to at least one pack
+- one ordered `channels` array; its order is the dial
 - up to 15 recent long-form videos per channel (at least one), unique video IDs
 - `shortVideoIds` for excluded Shorts, with no overlap against `videos`
 - a logo file for each channel that has `logoUrl`
@@ -131,19 +129,19 @@ git status --short frontend/static/catalog/
 `catalog:sync` refreshes `snapshotAt` and video metadata for every channel, so a large generated diff is expected. Focus on:
 
 - the intended channel additions/removals
-- pack membership and starter lineup
+- dial order and channel numbers
 - display names, categories, and descriptions
 - new logo files and no accidental logo deletions
 - no unexpected channels in the generated catalog
 
-If the generated diff contains a channel or pack change you did not intend, stop and inspect the source before committing.
+If the generated diff contains a channel change you did not intend, stop and inspect the source before committing.
 
 ### 8. Report and ship
 
 Summarize:
 
 - channels added/removed
-- packs and starter changes
+- dial-order changes
 - snapshot date and video counts
 - validation results
 - anything the owner should manually review (embedding, editorial fit, stale channel)
@@ -152,7 +150,7 @@ Commit only after validation. Suggested commit subjects:
 
 ```text
 catalog: add Veritasium to science
-catalog: rebalance starter lineup
+catalog: reorder the dial
 catalog: refresh channel snapshots
 catalog: remove inactive channel
 ```
@@ -167,7 +165,6 @@ Shorts are never included in the catalog or the playback queue.
 - Vertical oEmbed dimensions mean Short; horizontal means long-form.
 - Unverifiable videos are excluded under strict mode.
 - `shortVideoIds` is both the exclusion cache and the source of truth for known Shorts.
-- Live refresh uses the same oEmbed endpoint through the configured proxy. The proxy must allow `youtube.com/oembed` as well as feed URLs; otherwise new live videos are skipped.
 - Do not add an in-app "show Shorts" toggle without an owner decision and a catalog regeneration.
 
 ## Routine curation audit
@@ -184,10 +181,9 @@ Review:
 
 - channels with no upload in 120+ days
 - snapshots older than 60 days
-- channels missing from every pack
+- channels with fewer than 3 long-form videos
 - duplicate names or overlapping brands
-- category balance
-- starter lineup freshness
+- category balance and dial order
 
 Do not remove a stale channel automatically. Recommend action and wait for approval.
 
@@ -196,7 +192,7 @@ Do not remove a stale channel automatically. Recommend action and wait for appro
 | Symptom | Action |
 | --- | --- |
 | `Invalid channel ID` | Resolve the canonical URL or ID; do not guess |
-| `No usable videos found` | Verify the channel is active; drop it or ask the owner |
+| `No long-form videos` | Verify the channel is active; drop it or ask the owner |
 | Feed HTTP 404 | The ID is wrong or the feed is unavailable; stop |
 | Name mismatch warning | Confirm the source display name is the intended brand; keep or correct it explicitly |
 | Logo unavailable | Sync falls back to a monogram; do not fabricate a logo |
@@ -206,4 +202,4 @@ Do not remove a stale channel automatically. Recommend action and wait for appro
 
 ## Supporting files
 
-- `references/editorial-policy.md` — selection standards, pack composition, and review checklist
+- `references/editorial-policy.md` — selection standards, dial ordering, and review checklist

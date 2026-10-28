@@ -1,19 +1,19 @@
-# Cable TV
+# Cable TV Lite
 
-A static, Tokyo Night styled cable television for YouTube channels. The site owner curates a managed channel catalog; each visitor picks the channels that appear on their own dial, favorites them, and reorders the lineup. Playback runs newest-to-oldest through cached video snapshots, with an optional live RSS refresh.
+A static, Tokyo Night styled cable television for a fixed catalog of YouTube channels. The site owner controls the channel list and dial order; visitors tune channels and watch each one play newest-to-oldest. YouTube Shorts are filtered out.
 
-No application backend, database service, user accounts, or API keys.
+No accounts, backend, database service, proxy, or API keys.
 
 ## Stack
 
 - **SvelteKit 3 + Svelte 5** with `@sveltejs/adapter-static`
-- Fully prerendered routes (`/`, `/lineup/`, `/import-export/`, `/settings/`)
+- One prerendered route: `/`
 - **Tailwind CSS v4** with a Tokyo Night design token layer
-- **Dexie / IndexedDB** for cached video metadata and feed results
-- **localStorage** for the user's lineup, favorites, and preferences
-- **Zod** for catalog and profile validation
+- **Zod** for catalog validation
 - **YouTube IFrame Player API** for playback
 - **Vitest** and **Playwright** for tests
+
+The visitor experience is deliberately stateless. There is no IndexedDB, localStorage profile, lineup editor, settings page, backup flow, feed refresh, or proxy. The active channel is kept in the URL as `?ch=…`.
 
 ## Quick start
 
@@ -32,34 +32,35 @@ npm run preview
 
 ## The managed catalog
 
-Channels are **not** editable in the app. The repository owner manages them through two files:
+Channels are not editable in the app. The repository owner manages them through:
 
 | File                       | Purpose                                                                        |
 | -------------------------- | ------------------------------------------------------------------------------ |
-| `data/catalog.source.json` | Hand-edited source of truth: channels, categories, packs, starter lineup       |
+| `data/catalog.source.json` | Hand-edited source of truth: channel metadata and dial order                   |
 | `static/catalog.json`      | Generated runtime catalog with verified videos, snapshot dates, and logo paths |
 | `static/catalog/logos/`    | Downloaded channel avatars used by the generated catalog                       |
 
-Current packs: **Starter Mix**, **Technology TV**, **Science & Discovery**, **News TV**, **Gaming TV**, **Learning TV**, **Developer TV**, **Comedy TV**, and **Adventure TV**.
+The **order of `channels` in the source file is the channel order on the dial**. The current fixed dial contains 48 channels.
 
-### Add or change a channel
+### Add, remove, or reorder channels
 
-1. Resolve and inspect the candidate first:
+1. Resolve and inspect a candidate first:
 
 ```bash
 npm run catalog:inspect -- "https://www.youtube.com/@Veritasium"
 ```
 
 2. Edit `data/catalog.source.json`.
-3. Add the channel to one or more packs and, if appropriate, `starterChannelIds`.
-4. Run:
+3. Run:
 
 ```bash
 npm run catalog:sync
 npm run catalog:check
 ```
 
-`catalog:sync` fetches the channel's YouTube RSS feed, verifies recent uploads, classifies and excludes YouTube Shorts, downloads the avatar, and writes `static/catalog.json`. It fails if a channel ID is invalid or no long-form videos remain. Each channel stores `shortVideoIds` as a classification cache; the first sync does one public oEmbed check per video, and later syncs only check new IDs.
+`catalog:sync` fetches each channel's YouTube RSS feed, verifies recent uploads, classifies and excludes YouTube Shorts, downloads the avatar, and rewrites `static/catalog.json`. It fails if a channel ID is invalid or no long-form videos remain. Each channel stores `shortVideoIds` as a classification cache; the first sync does one public oEmbed check per video, and later syncs only check new IDs.
+
+To remove a channel, delete it from `channels`, run the sync, and remove its orphaned logo file if it is no longer referenced.
 
 For a read-only health review:
 
@@ -68,40 +69,20 @@ npm run catalog:audit
 npm run catalog:audit -- --json
 ```
 
-The audit reports stale channels, old snapshots, channels outside packs, and possible duplicate names.
+The audit reports stale channels, old snapshots, channels with few long-form videos, possible duplicate names, and hidden Short counts.
 
 ### AI-assisted curation
 
-The repository includes an OpenCode skill at `.opencode/skills/catalog-curator/`. Ask OpenCode to use `@catalog-curator` when adding channels, rebalancing packs, refreshing snapshots, or auditing the catalog. The skill enforces canonical ID resolution, the managed-service boundary, validation, and the editorial policy in its `references/editorial-policy.md`.
-
-`catalog:check` validates the source and generated files, including:
-
-- 24-character `UC…` channel IDs
-- unique channel IDs
-- pack and starter references
-- `https` channel URLs
-- unique 11-character video IDs
-- snapshot dates and video metadata
-- logo files on disk
-
-Commit both the source and generated catalog files. The deployed site is fully static.
+The repository includes an OpenCode skill at `.opencode/skills/catalog-curator/`. Ask OpenCode to use `@catalog-curator` when adding channels, reordering the dial, refreshing snapshots, or auditing the catalog. The skill enforces canonical ID resolution, the managed-service boundary, validation, and the editorial policy in its `references/editorial-policy.md`.
 
 ### Catalog format
 
 ```json
 {
-	"schemaVersion": 1,
+	"schemaVersion": 2,
 	"type": "cable-tv-catalog",
+	"name": "Cable TV",
 	"updatedAt": "2026-10-28T12:00:00.000Z",
-	"starterChannelIds": ["UC_x5XG1OV2P6uZZ5FSM9Ttw"],
-	"packs": [
-		{
-			"id": "technology",
-			"name": "Technology TV",
-			"description": "Developer education and computing.",
-			"channelIds": ["UC_x5XG1OV2P6uZZ5FSM9Ttw"]
-		}
-	],
 	"channels": [
 		{
 			"id": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
@@ -125,84 +106,36 @@ Commit both the source and generated catalog files. The deployed site is fully s
 }
 ```
 
-## Why live refresh needs a proxy
+`catalog:check` validates the source and generated files, including:
 
-YouTube's RSS endpoints do not send `Access-Control-Allow-Origin`, so browser `fetch()` is blocked. The app therefore:
+- 24-character `UC…` channel IDs
+- unique channel IDs
+- matching source/generated channel order
+- `https` channel URLs
+- unique 11-character video IDs
+- snapshot dates and video metadata
+- no overlap between `videos` and `shortVideoIds`
+- logo files on disk
 
-1. Ships **bundled snapshots** of the latest ~15 uploads per channel, with Shorts excluded, so it works immediately.
-2. Offers an **optional user-configured feed proxy** for live refresh.
-3. Shows snapshot and live status separately, and never presents cached data as live.
-4. Uses strict Shorts filtering for live videos too. New videos are only added when the proxy can classify them as long-form; unverified videos are skipped.
+Commit both the source and generated catalog files. The deployed site is fully static.
 
-Configure a proxy in **Settings → Feeds & refresh**. The URL template must contain `{url}`, where the encoded YouTube feed or oEmbed URL is substituted. The proxy must allow both:
+## How the app works
 
-- `https://www.youtube.com/feeds/videos.xml?…`
-- `https://www.youtube.com/oembed?…`
+- `catalog:sync` produces the only playback data. The app fetches `catalog.json` at startup.
+- The first channel in the catalog is the default. `?ch=<channelId>` selects a channel and survives reloads.
+- Playback reads `channel.videos` directly and sorts newest first.
+- Playback behavior is fixed: autoplay next, start muted, in-memory volume, skip failed videos, no loop.
+- Channel search and category filtering are local UI state only.
+- Refreshing the browser is the only way to pick up new videos after an admin deploy.
 
-```text
-https://your-worker.example/?url={url}
-```
+## Shorts policy
 
-Example Cloudflare Worker (optional, external to the static app):
+Shorts are excluded from the catalog.
 
-```js
-export default {
-	async fetch(request) {
-		const url = new URL(request.url);
-		const target = url.searchParams.get('url');
-		const allowed =
-			/^https:\/\/www\.youtube\.com\/feeds\/videos\.xml\?/.test(target ?? '') ||
-			/^https:\/\/www\.youtube\.com\/oembed\?/.test(target ?? '');
-		if (!allowed) {
-			return new Response('Invalid YouTube URL', { status: 400 });
-		}
-		const response = await fetch(target);
-		const headers = {
-			'access-control-allow-origin': '*',
-			'cache-control': 'public, max-age=900'
-		};
-		const contentType = response.headers.get('content-type');
-		if (contentType) headers['content-type'] = contentType;
-		return new Response(response.body, { status: response.status, headers });
-	}
-};
-```
-
-The proxy sees the requested channel feed and oEmbed URLs. Do not put secrets or API keys in the static app. If you put a token in the proxy URL, it is stored in localStorage and included in profile exports.
-
-## User data and backups
-
-The portable file is a **profile**:
-
-```json
-{
-	"schemaVersion": 1,
-	"type": "cable-tv-profile",
-	"name": "My Cable TV",
-	"exportedAt": "2026-10-28T12:00:00.000Z",
-	"lineup": [{ "channelId": "UC_x5XG1OV2P6uZZ5FSM9Ttw", "favorite": false }],
-	"settings": {
-		"autoplayNext": true,
-		"skipUnavailable": true,
-		"loopQueue": false
-	}
-}
-```
-
-Exports are generated locally. Imports are validated against the current catalog; unknown channels can be skipped; invalid files never partially apply. Catalog files are rejected because only the site owner can change the channel list.
-
-Browser storage can be cleared. Keep a profile backup if the lineup matters.
-
-## Routes
-
-| Route             | Purpose                                                       |
-| ----------------- | ------------------------------------------------------------- |
-| `/`               | TV mode and program guide                                     |
-| `/lineup/`        | Managed catalog, packs, lineup selection, favorites, ordering |
-| `/import-export/` | Profile backup and restore                                    |
-| `/settings/`      | Playback, feeds, appearance, numbering, storage               |
-
-All routes are prerendered. There is no SPA fallback and no server runtime.
+- `catalog:sync` classifies each feed video through YouTube's public oEmbed endpoint using the `/shorts/<id>` URL.
+- Vertical oEmbed dimensions mean Short; horizontal means long-form.
+- Unverifiable videos are excluded under strict mode.
+- `shortVideoIds` is both the exclusion cache and the source of truth for known Shorts.
 
 ## Tests
 
@@ -230,36 +163,40 @@ BASE_PATH=/my-repo npm run build
 - **Netlify / Cloudflare Pages:** build command `npm run build`, publish directory `frontend/build`, root directory `frontend`. Leave `BASE_PATH` empty for a root domain.
 - **Any static host:** upload the contents of `frontend/build`.
 
-Deep links work because every route exists as a real `index.html`.
-
 ## Known limitations
 
 - YouTube RSS exposes only recent uploads (usually ~15), not full channel history. Shorts are filtered out of that window.
 - Some Shorts-heavy channels have only 1–2 long-form videos in the latest snapshot. The audit flags these for owner review.
-- Strict live filtering requires the proxy to allow YouTube oEmbed; otherwise new live videos are skipped.
-- Direct browser RSS access is blocked by CORS; bundled snapshots are the reliable source.
+- New videos require the owner to run `catalog:sync` and deploy the updated catalog.
 - Some videos are private, age-restricted, region-restricted, or have embedding disabled.
 - Autoplay policies may require a click; the player starts muted and shows an unmute control.
-- Album/thumbnail data comes from YouTube's public feeds; channel avatars are bundled at sync time.
-- Browser storage is local and can be lost.
-- Shorts are intentionally excluded from catalog snapshots and live refresh; there is no in-app toggle to include them.
+- Channel avatars are bundled at sync time.
 - There is no offline service worker; the static app and catalog must load from the host.
-- Automatic refresh only runs while the tab is open and visible, never in the background.
-
-## Theme
-
-[Tokyo Night](https://tokyonight.org/) by Enkia. The app uses the Night palette (`#1a1b26`) with blue, cyan, yellow, red, and magenta accents.
 
 ## Project layout
 
 ```text
 frontend/
 ├── data/catalog.source.json
+├── scripts/
+│   ├── sync-catalog.mjs
+│   ├── validate-catalog.mjs
+│   ├── audit-catalog.mjs
+│   ├── inspect-channel.mjs
+│   └── lib/youtube.mjs
+├── src/
+│   ├── lib/
+│   │   ├── components/
+│   │   ├── features/playback/
+│   │   ├── schemas/catalog.schema.ts
+│   │   ├── services/youtubePlayer.ts
+│   │   ├── stores/
+│   │   └── utils/
+│   └── routes/
 ├── static/catalog.json
-├── static/catalog/logos/
-├── scripts/sync-catalog.mjs
-├── scripts/validate-catalog.mjs
-├── src/lib/{components,features,schemas,services,storage,stores,utils}
-├── src/routes/{+page.svelte,lineup,import-export,settings}
-└── tests/{unit tests,e2e}
+└── static/catalog/logos/
 ```
+
+## Theme
+
+[Tokyo Night](https://tokyonight.org/) by Enkia. The app uses the Night palette (`#1a1b26`) with blue, cyan, yellow, red, and magenta accents.
