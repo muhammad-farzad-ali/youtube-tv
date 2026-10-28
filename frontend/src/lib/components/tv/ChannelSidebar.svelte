@@ -128,13 +128,13 @@
 	<div
 		data-testid="channel-row"
 		data-channel-id={channel.id}
-		class="group mb-0.5 flex items-center rounded-md border border-transparent transition-colors {active
+		class="group mb-0.5 rounded-md border border-transparent transition-colors {active
 			? 'tuned-glow border-line bg-raised text-fg'
 			: 'text-dim hover:border-line/60 hover:bg-raised/60 hover:text-fg'}"
 	>
 		<button
 			type="button"
-			class="flex min-w-0 flex-1 items-center gap-2 px-2 py-2 text-left"
+			class="flex w-full min-w-0 items-center gap-2 px-2 pt-2 pb-1 text-left"
 			aria-current={active ? 'true' : undefined}
 			onclick={() => choose(channel.id)}
 		>
@@ -170,7 +170,7 @@
 				</span>
 			</span>
 		</button>
-		<div class="flex shrink-0 items-center gap-0.5 pr-1.5">
+		<div class="flex items-center gap-0.5 pb-1.5 pl-20 pr-2">
 			<button
 				type="button"
 				class="btn-icon !size-6 {isPinned ? 'text-cyan' : 'text-comment/70 hover:text-cyan'}"
