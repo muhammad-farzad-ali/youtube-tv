@@ -214,6 +214,11 @@ body {
 	background: var(--tn-ink);
 }
 
+.player-shell:fullscreen .player-topbar,
+.player-shell:fullscreen .player-controls {
+	display: none;
+}
+
 .player-shell:fullscreen .player-frame {
 	flex: 1;
 	aspect-ratio: auto;

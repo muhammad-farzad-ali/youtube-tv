@@ -80,7 +80,8 @@
 	bind:this={shell}
 >
 	<div
-		class="flex items-center justify-between gap-3 border-b border-line bg-surface/90 px-3 py-2 sm:px-4"
+		data-testid="player-topbar"
+		class="player-topbar flex items-center justify-between gap-3 border-b border-line bg-surface/90 px-3 py-2 sm:px-4"
 	>
 		<div class="flex min-w-0 items-center gap-2">
 			<span
@@ -198,9 +199,23 @@
 				</p>
 			</div>
 		{/if}
+
+		{#if fullscreen}
+			<button
+				type="button"
+				class="btn-icon absolute top-3 right-3 z-30 !size-9 border border-line/80 bg-ink/80 text-fg shadow-lg backdrop-blur"
+				aria-label="Exit fullscreen"
+				onclick={toggleFullscreen}
+			>
+				<Minimize size={17} />
+			</button>
+		{/if}
 	</div>
 
-	<div class="border-t border-line bg-surface/80 px-3 py-2.5 sm:px-4">
+	<div
+		data-testid="player-controls"
+		class="player-controls border-t border-line bg-surface/80 px-3 py-2.5 sm:px-4"
+	>
 		<div class="flex items-center gap-2.5">
 			<button
 				type="button"
