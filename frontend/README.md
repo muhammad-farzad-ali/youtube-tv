@@ -59,7 +59,7 @@ npm run catalog:sync
 npm run catalog:check
 ```
 
-`catalog:sync` fetches the channel's YouTube RSS feed, verifies that it has usable recent uploads, downloads its avatar, and writes `static/catalog.json`. It fails if a channel ID is invalid or a feed is empty.
+`catalog:sync` fetches the channel's YouTube RSS feed, verifies recent uploads, classifies and excludes YouTube Shorts, downloads the avatar, and writes `static/catalog.json`. It fails if a channel ID is invalid or no long-form videos remain. Each channel stores `shortVideoIds` as a classification cache; the first sync does one public oEmbed check per video, and later syncs only check new IDs.
 
 For a read-only health review:
 
@@ -118,7 +118,8 @@ Commit both the source and generated catalog files. The deployed site is fully s
 					"thumbnailUrl": "https://i.ytimg.com/vi/LOP8ul3KqQI/hqdefault.jpg",
 					"publishedAt": "2026-10-27T12:00:00.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		}
 	]
 }
@@ -128,11 +129,15 @@ Commit both the source and generated catalog files. The deployed site is fully s
 
 YouTube's RSS endpoints do not send `Access-Control-Allow-Origin`, so browser `fetch()` is blocked. The app therefore:
 
-1. Ships **bundled snapshots** of the latest ~15 uploads per channel, so it works immediately.
+1. Ships **bundled snapshots** of the latest ~15 uploads per channel, with Shorts excluded, so it works immediately.
 2. Offers an **optional user-configured feed proxy** for live refresh.
 3. Shows snapshot and live status separately, and never presents cached data as live.
+4. Uses strict Shorts filtering for live videos too. New videos are only added when the proxy can classify them as long-form; unverified videos are skipped.
 
-Configure a proxy in **Settings → Feeds & refresh**. The URL template must contain `{url}`, where the encoded YouTube feed URL is substituted.
+Configure a proxy in **Settings → Feeds & refresh**. The URL template must contain `{url}`, where the encoded YouTube feed or oEmbed URL is substituted. The proxy must allow both:
+
+- `https://www.youtube.com/feeds/videos.xml?…`
+- `https://www.youtube.com/oembed?…`
 
 ```text
 https://your-worker.example/?url={url}
@@ -145,23 +150,25 @@ export default {
 	async fetch(request) {
 		const url = new URL(request.url);
 		const target = url.searchParams.get('url');
-		if (!target?.startsWith('https://www.youtube.com/feeds/videos.xml')) {
-			return new Response('Invalid feed URL', { status: 400 });
+		const allowed =
+			/^https:\/\/www\.youtube\.com\/feeds\/videos\.xml\?/.test(target ?? '') ||
+			/^https:\/\/www\.youtube\.com\/oembed\?/.test(target ?? '');
+		if (!allowed) {
+			return new Response('Invalid YouTube URL', { status: 400 });
 		}
 		const response = await fetch(target);
-		return new Response(response.body, {
-			status: response.status,
-			headers: {
-				'content-type': 'application/xml; charset=utf-8',
-				'access-control-allow-origin': '*',
-				'cache-control': 'public, max-age=900'
-			}
-		});
+		const headers = {
+			'access-control-allow-origin': '*',
+			'cache-control': 'public, max-age=900'
+		};
+		const contentType = response.headers.get('content-type');
+		if (contentType) headers['content-type'] = contentType;
+		return new Response(response.body, { status: response.status, headers });
 	}
 };
 ```
 
-The proxy sees the requested channel feed URLs. Do not put secrets or API keys in the static app. If you put a token in the proxy URL, it is stored in localStorage and included in profile exports.
+The proxy sees the requested channel feed and oEmbed URLs. Do not put secrets or API keys in the static app. If you put a token in the proxy URL, it is stored in localStorage and included in profile exports.
 
 ## User data and backups
 
@@ -227,12 +234,15 @@ Deep links work because every route exists as a real `index.html`.
 
 ## Known limitations
 
-- YouTube RSS exposes only recent uploads (usually ~15), not full channel history.
+- YouTube RSS exposes only recent uploads (usually ~15), not full channel history. Shorts are filtered out of that window.
+- Some Shorts-heavy channels have only 1–2 long-form videos in the latest snapshot. The audit flags these for owner review.
+- Strict live filtering requires the proxy to allow YouTube oEmbed; otherwise new live videos are skipped.
 - Direct browser RSS access is blocked by CORS; bundled snapshots are the reliable source.
 - Some videos are private, age-restricted, region-restricted, or have embedding disabled.
 - Autoplay policies may require a click; the player starts muted and shows an unmute control.
 - Album/thumbnail data comes from YouTube's public feeds; channel avatars are bundled at sync time.
 - Browser storage is local and can be lost.
+- Shorts are intentionally excluded from catalog snapshots and live refresh; there is no in-app toggle to include them.
 - There is no offline service worker; the static app and catalog must load from the host.
 - Automatic refresh only runs while the tab is open and visible, never in the background.
 

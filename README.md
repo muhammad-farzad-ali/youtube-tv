@@ -1,6 +1,6 @@
 # Cable TV
 
-A static, Tokyo Night styled cable television for a curated catalog of YouTube channels. Visitors choose channels from the managed lineup, arrange their own dial, and watch each channel play newest-to-oldest.
+A static, Tokyo Night styled cable television for a curated catalog of YouTube channels. Visitors choose channels from the managed lineup, arrange their own dial, and watch each channel play newest-to-oldest. YouTube Shorts are filtered out.
 
 **Live:** <https://gitcommit.de/youtube-tv/>
 

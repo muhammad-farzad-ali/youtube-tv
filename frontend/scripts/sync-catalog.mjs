@@ -12,7 +12,12 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { fetchWithTimeout, isValidChannelId, parseYouTubeFeed } from './lib/youtube.mjs';
+import {
+	classifyVideoOrientation,
+	fetchWithTimeout,
+	isValidChannelId,
+	parseYouTubeFeed
+} from './lib/youtube.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sourcePath = path.join(root, 'data/catalog.source.json');
@@ -21,6 +26,7 @@ const logoDir = path.join(root, 'static/catalog/logos');
 
 const FEED_LIMIT = 15;
 const CONCURRENCY = 3;
+const CLASSIFY_CONCURRENCY = 2;
 
 function fail(message) {
 	console.error(`\n✖ ${message}`);
@@ -75,7 +81,41 @@ async function fetchLogo(channel) {
 	}
 }
 
-async function buildChannel(channel, snapshotAt) {
+async function classifyFeedVideos(videos, cache) {
+	const results = await pool(videos, CLASSIFY_CONCURRENCY, async (video) => {
+		if (cache?.short.has(video.videoId)) return { video, kind: 'short' };
+		if (cache?.long.has(video.videoId)) return { video, kind: 'long' };
+		const kind = await classifyVideoOrientation(video.videoId);
+		if (kind === 'unknown') {
+			console.warn(`  ! could not classify ${video.videoId} (${video.title.slice(0, 60)})`);
+		}
+		return { video, kind };
+	});
+
+	const longVideos = [];
+	const shortVideoIds = [];
+	let unverified = 0;
+	for (const result of results) {
+		if (result.kind === 'long') longVideos.push(result.video);
+		else if (result.kind === 'short') shortVideoIds.push(result.video.videoId);
+		else unverified++;
+	}
+	return { longVideos, shortVideoIds, unverified };
+}
+
+function buildCaches(oldCatalog) {
+	const caches = new Map();
+	for (const channel of oldCatalog?.channels ?? []) {
+		if (!Array.isArray(channel.shortVideoIds)) continue;
+		caches.set(channel.id, {
+			long: new Set((channel.videos ?? []).map((video) => video.videoId)),
+			short: new Set(channel.shortVideoIds)
+		});
+	}
+	return caches;
+}
+
+async function buildChannel(channel, snapshotAt, cache) {
 	if (!isValidChannelId(channel.id)) {
 		throw new Error(`Invalid channel ID: ${channel.id}`);
 	}
@@ -85,6 +125,12 @@ async function buildChannel(channel, snapshotAt) {
 	if (!response.ok) throw new Error(`feed returned ${response.status}`);
 	const xml = await response.text();
 	const { feedTitle, videos } = parseYouTubeFeed(xml, FEED_LIMIT);
+	const { longVideos, shortVideoIds, unverified } = await classifyFeedVideos(videos, cache);
+	if (longVideos.length === 0) {
+		throw new Error(
+			`No long-form videos in the latest feed (${shortVideoIds.length} Shorts hidden, ${unverified} unverified).`
+		);
+	}
 
 	const normalizedFeedTitle = feedTitle.replace(/\s+/g, ' ').trim();
 	if (
@@ -105,10 +151,13 @@ async function buildChannel(channel, snapshotAt) {
 		category: channel.category,
 		...(logoUrl ? { logoUrl } : {}),
 		snapshotAt,
-		videos
+		videos: longVideos,
+		shortVideoIds
 	};
 
-	console.log(`  ✓ ${channel.name} — ${videos.length} videos${logoUrl ? ' + logo' : ''}`);
+	console.log(
+		`  ✓ ${channel.name} — ${longVideos.length} long, ${shortVideoIds.length} Shorts hidden${unverified ? `, ${unverified} unverified` : ''}${logoUrl ? ' + logo' : ''}`
+	);
 	return result;
 }
 
@@ -133,12 +182,20 @@ async function main() {
 		}
 	}
 
+	let oldCatalog = null;
+	try {
+		oldCatalog = JSON.parse(await readFile(outputPath, 'utf8'));
+	} catch {
+		oldCatalog = null;
+	}
+	const caches = buildCaches(oldCatalog);
+
 	const snapshotAt = new Date().toISOString();
 	console.log(`Syncing ${channels.length} channels at ${snapshotAt}\n`);
 
 	const built = await pool(channels, CONCURRENCY, async (channel) => {
 		try {
-			return await buildChannel(channel, snapshotAt);
+			return await buildChannel(channel, snapshotAt, caches.get(channel.id));
 		} catch (error) {
 			fail(`Failed to sync ${channel.name} (${channel.id}): ${error.message}`);
 		}

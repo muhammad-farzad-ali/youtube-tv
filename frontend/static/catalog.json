@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"type": "cable-tv-catalog",
 	"name": "Cable TV",
-	"updatedAt": "2026-10-28T14:45:41.737Z",
+	"updatedAt": "2026-10-28T15:13:10.574Z",
 	"starterChannelIds": [
 		"UC_x5XG1OV2P6uZZ5FSM9Ttw",
 		"UCXuqSBlHAE6Xw-yeJA0Tunw",
@@ -134,7 +134,7 @@
 			"description": "Travel documentaries, hiking, and outdoor journeys.",
 			"channelIds": [
 				"UCf1XIplYiqNv9baGsFHwPPQ",
-				"UCUuDUW0Y6IQZYDvH1QQBsgA",
+				"UCXulruMI7BHj3kGyosNa0jA",
 				"UCDTINI9skkeZNY2ZXnBqIkQ",
 				"UCvK4bOhULCpmLabd2pDMtnA",
 				"UC0Ize0RLIbGdH5x4wI45G-A",
@@ -150,7 +150,7 @@
 			"description": "Developer tools, platforms, and engineering talks from Google.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC_x5XG1OV2P6uZZ5FSM9Ttw.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "LOP8ul3KqQI",
@@ -159,34 +159,10 @@
 					"publishedAt": "2026-10-27T16:18:01.000Z"
 				},
 				{
-					"videoId": "CsF5oqVV5YE",
-					"title": "🔊 Voice design and voice replication with Gemini 3.8 Flash TTS",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/CsF5oqVV5YE/hqdefault.jpg",
-					"publishedAt": "2026-10-21T23:00:08.000Z"
-				},
-				{
 					"videoId": "SOF3_evPje8",
 					"title": "Design and replicate voices with Gemini 3.8 Flash TTS",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/SOF3_evPje8/hqdefault.jpg",
 					"publishedAt": "2026-10-21T19:00:23.000Z"
-				},
-				{
-					"videoId": "LJ2v4-FvPcA",
-					"title": "🧰 Builders building with Gemini Audio",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/LJ2v4-FvPcA/hqdefault.jpg",
-					"publishedAt": "2026-10-16T21:00:00.000Z"
-				},
-				{
-					"videoId": "-nmcYcO-EE8",
-					"title": "🎵 Turning motion into music with Gemini",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/-nmcYcO-EE8/hqdefault.jpg",
-					"publishedAt": "2026-10-16T16:00:00.000Z"
-				},
-				{
-					"videoId": "qJplHFjyv2A",
-					"title": "📖 Explore custom voice narration with Gemini 3.8 Flash TTS",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/qJplHFjyv2A/hqdefault.jpg",
-					"publishedAt": "2026-10-15T23:00:26.000Z"
 				},
 				{
 					"videoId": "i3X7Fv0Z3Uc",
@@ -213,18 +189,6 @@
 					"publishedAt": "2026-10-13T19:00:11.000Z"
 				},
 				{
-					"videoId": "IBVmenOroPs",
-					"title": "Order in any language with Gemini 3.5 Live Translate",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/IBVmenOroPs/hqdefault.jpg",
-					"publishedAt": "2026-10-09T23:00:24.000Z"
-				},
-				{
-					"videoId": "fMgcm9aXZyY",
-					"title": "🤖 Operating real hardware with Gemini AI",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/fMgcm9aXZyY/hqdefault.jpg",
-					"publishedAt": "2026-10-09T19:00:36.000Z"
-				},
-				{
 					"videoId": "7sKHiuE7J-Y",
 					"title": "Building low-latency remote robotics with Gemini",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/7sKHiuE7J-Y/hqdefault.jpg",
@@ -235,13 +199,16 @@
 					"title": "Building with Gemma 4",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/fL9OBJO3Gu8/hqdefault.jpg",
 					"publishedAt": "2026-10-08T23:00:09.000Z"
-				},
-				{
-					"videoId": "XnIXupxiRo4",
-					"title": "📷 Searching for images from text with EmbeddingGemma 2",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/XnIXupxiRo4/hqdefault.jpg",
-					"publishedAt": "2026-10-08T16:00:00.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"CsF5oqVV5YE",
+				"LJ2v4-FvPcA",
+				"-nmcYcO-EE8",
+				"qJplHFjyv2A",
+				"IBVmenOroPs",
+				"fMgcm9aXZyY",
+				"XnIXupxiRo4"
 			]
 		},
 		{
@@ -251,7 +218,7 @@
 			"description": "Hardware reviews, builds, and technology news with a lot of energy.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCXuqSBlHAE6Xw-yeJA0Tunw.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "DZSYaQmxBLM",
@@ -270,12 +237,6 @@
 					"title": "dbrand Forced me to Review the iPhone 18 Pro",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/DN953UW8iJ8/hqdefault.jpg",
 					"publishedAt": "2026-10-24T17:00:08.000Z"
-				},
-				{
-					"videoId": "FtjH_HHTpeg",
-					"title": "Guessing Costco Tech Prices",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/FtjH_HHTpeg/hqdefault.jpg",
-					"publishedAt": "2026-10-23T18:04:12.000Z"
 				},
 				{
 					"videoId": "FH5SoaRx2TA",
@@ -302,12 +263,6 @@
 					"publishedAt": "2026-10-16T12:00:21.000Z"
 				},
 				{
-					"videoId": "qqhIp0OaZWI",
-					"title": "NVIDIA RTX Spark 7 Good and Bad Things",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/qqhIp0OaZWI/hqdefault.jpg",
-					"publishedAt": "2026-10-15T15:24:22.000Z"
-				},
-				{
 					"videoId": "sjuisARFWn8",
 					"title": "My First 15 Minutes with RTX Spark",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/sjuisARFWn8/hqdefault.jpg",
@@ -326,12 +281,6 @@
 					"publishedAt": "2026-10-14T06:07:30.000Z"
 				},
 				{
-					"videoId": "UWAWDu0anSs",
-					"title": "Zip Tie Tuning vs Linus Tech Tips",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/UWAWDu0anSs/hqdefault.jpg",
-					"publishedAt": "2026-10-12T17:25:25.000Z"
-				},
-				{
 					"videoId": "_2i-dhRl9wo",
 					"title": "This is an Official Sony Product",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/_2i-dhRl9wo/hqdefault.jpg",
@@ -343,6 +292,11 @@
 					"thumbnailUrl": "https://i3.ytimg.com/vi/fr0WIIZxvx0/hqdefault.jpg",
 					"publishedAt": "2026-10-10T17:00:12.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"FtjH_HHTpeg",
+				"qqhIp0OaZWI",
+				"UWAWDu0anSs"
 			]
 		},
 		{
@@ -352,38 +306,8 @@
 			"description": "Consumer technology, product reviews, and the future of gadgets.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCddiUEpeqJcYeBxX1IVBKvQ.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "ffs_wdJAZD4",
-					"title": "Amazon's latest smart speakers",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/ffs_wdJAZD4/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:00:33.000Z"
-				},
-				{
-					"videoId": "PaNsIfwkz2o",
-					"title": "Amazon's new Echo Show 16",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/PaNsIfwkz2o/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:00:19.000Z"
-				},
-				{
-					"videoId": "hvNur6Xh5d0",
-					"title": "Amazon's new $200 alarm clock",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/hvNur6Xh5d0/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:00:01.000Z"
-				},
-				{
-					"videoId": "GIUty8-h_N0",
-					"title": "Are humans special? #Vergecast",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/GIUty8-h_N0/hqdefault.jpg",
-					"publishedAt": "2026-10-27T21:45:03.000Z"
-				},
-				{
-					"videoId": "Hc-APyZ_YGU",
-					"title": "Apple refreshes the iMac with M6 chips #Vergecast",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/Hc-APyZ_YGU/hqdefault.jpg",
-					"publishedAt": "2026-10-27T19:48:15.000Z"
-				},
 				{
 					"videoId": "ZbmAv0O_Cmg",
 					"title": "Inside the early days of the AI revolution | The Vergecast",
@@ -391,59 +315,26 @@
 					"publishedAt": "2026-10-27T18:03:06.000Z"
 				},
 				{
-					"videoId": "0n1Zar2kXX8",
-					"title": "iPhone Duo’s crackgate #Vergecast",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/0n1Zar2kXX8/hqdefault.jpg",
-					"publishedAt": "2026-10-26T22:02:35.000Z"
-				},
-				{
-					"videoId": "thpzNNFQWO8",
-					"title": "Where does your data live, and who owns it? Presented by @Atlassian",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/thpzNNFQWO8/hqdefault.jpg",
-					"publishedAt": "2026-10-26T20:25:42.000Z"
-				},
-				{
 					"videoId": "OS-XE_gIhhQ",
 					"title": "Files are over. All you need are URLs | The Vergecast",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/OS-XE_gIhhQ/hqdefault.jpg",
 					"publishedAt": "2026-10-26T19:47:36.000Z"
-				},
-				{
-					"videoId": "CRSK9nJ4n8g",
-					"title": "Instagram at least tried - so many “optimized” Duo apps are clearly vibecoded",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/CRSK9nJ4n8g/hqdefault.jpg",
-					"publishedAt": "2026-10-25T20:01:29.000Z"
-				},
-				{
-					"videoId": "jeML9beR6Hg",
-					"title": "iPhone Duo should've been an iPad #Vergecast",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/jeML9beR6Hg/hqdefault.jpg",
-					"publishedAt": "2026-10-25T16:00:38.000Z"
-				},
-				{
-					"videoId": "qZsfkq86B0s",
-					"title": "What the iPhone Duo come mean for vertical video",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/qZsfkq86B0s/hqdefault.jpg",
-					"publishedAt": "2026-10-25T14:00:38.000Z"
-				},
-				{
-					"videoId": "8S6Zsb4C5K0",
-					"title": "Will Apple's foldable phone change social video?",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/8S6Zsb4C5K0/hqdefault.jpg",
-					"publishedAt": "2026-10-25T13:00:10.000Z"
-				},
-				{
-					"videoId": "6Bv5yLjCJ-A",
-					"title": "The iPhone Duo wants to be an iPad #Vergecast",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/6Bv5yLjCJ-A/hqdefault.jpg",
-					"publishedAt": "2026-10-24T16:00:11.000Z"
-				},
-				{
-					"videoId": "YW5ie0a2OQY",
-					"title": "Vertical video has a foldable problem",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/YW5ie0a2OQY/hqdefault.jpg",
-					"publishedAt": "2026-10-24T14:00:34.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"ffs_wdJAZD4",
+				"PaNsIfwkz2o",
+				"hvNur6Xh5d0",
+				"GIUty8-h_N0",
+				"Hc-APyZ_YGU",
+				"0n1Zar2kXX8",
+				"thpzNNFQWO8",
+				"CRSK9nJ4n8g",
+				"jeML9beR6Hg",
+				"qZsfkq86B0s",
+				"8S6Zsb4C5K0",
+				"6Bv5yLjCJ-A",
+				"YW5ie0a2OQY"
 			]
 		},
 		{
@@ -453,20 +344,8 @@
 			"description": "Sharp, considered reviews of phones, cameras, cars, and new tech.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UCBJycsmduvYEL83R_U4JriQ.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "ai1gIWacf0I",
-					"title": "This can SEE Sound!",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/ai1gIWacf0I/hqdefault.jpg",
-					"publishedAt": "2026-10-27T20:14:55.000Z"
-				},
-				{
-					"videoId": "_4ELeWAgMwo",
-					"title": "ASMR iPhone Duo Unboxing",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/_4ELeWAgMwo/hqdefault.jpg",
-					"publishedAt": "2026-10-21T14:00:33.000Z"
-				},
 				{
 					"videoId": "ESABTN4VtrA",
 					"title": "iPhone Duo Review: First Generation Fun!",
@@ -538,13 +417,12 @@
 					"title": "iPhone 18 Pro/Duo Impressions: Mogged",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/Od6M0AXpcxQ/hqdefault.jpg",
 					"publishedAt": "2026-09-10T07:29:55.000Z"
-				},
-				{
-					"videoId": "R6yNUnRXZ64",
-					"title": "iPhone Duo is here",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/R6yNUnRXZ64/hqdefault.jpg",
-					"publishedAt": "2026-09-10T07:02:22.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"ai1gIWacf0I",
+				"_4ELeWAgMwo",
+				"R6yNUnRXZ64"
 			]
 		},
 		{
@@ -554,7 +432,7 @@
 			"description": "Computer science concepts, security, and the people behind computing.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC9-y-6csu5WGm29I7JiwpnA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "h6j_ixGnpiY",
@@ -646,7 +524,8 @@
 					"thumbnailUrl": "https://i3.ytimg.com/vi/2Q6OvYjOJi0/hqdefault.jpg",
 					"publishedAt": "2026-07-16T14:32:23.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UC0vBXGSyV14uvJ4hECDOl0Q",
@@ -655,7 +534,7 @@
 			"description": "Short, practical explainers about the technology you use every day.",
 			"category": "Technology",
 			"logoUrl": "catalog/logos/UC0vBXGSyV14uvJ4hECDOl0Q.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "72pyU1ZRun0",
@@ -747,7 +626,8 @@
 					"thumbnailUrl": "https://i2.ytimg.com/vi/AVd3ds5U2xc/hqdefault.jpg",
 					"publishedAt": "2026-08-07T18:00:31.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UCHnyfMqiRRG1u-2MsSQLbXA",
@@ -756,31 +636,13 @@
 			"description": "Science and engineering stories built around surprising questions.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCHnyfMqiRRG1u-2MsSQLbXA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "Kap7mRzr13w",
-					"title": "Why doesn't your heart get tired like other muscles do?",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/Kap7mRzr13w/hqdefault.jpg",
-					"publishedAt": "2026-10-27T14:00:11.000Z"
-				},
 				{
 					"videoId": "eyZEqSPeMwg",
 					"title": "No device could prove Einstein wrong... until now",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/eyZEqSPeMwg/hqdefault.jpg",
 					"publishedAt": "2026-10-23T18:46:44.000Z"
-				},
-				{
-					"videoId": "wxLc-gFORPQ",
-					"title": "Is there something faster than light?",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/wxLc-gFORPQ/hqdefault.jpg",
-					"publishedAt": "2026-10-22T13:00:17.000Z"
-				},
-				{
-					"videoId": "6U6Z6pb6ewI",
-					"title": "When you lose weight where does it go?",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/6U6Z6pb6ewI/hqdefault.jpg",
-					"publishedAt": "2026-10-15T13:00:26.000Z"
 				},
 				{
 					"videoId": "NiCgcUTL9_Q",
@@ -789,65 +651,30 @@
 					"publishedAt": "2026-10-12T17:11:45.000Z"
 				},
 				{
-					"videoId": "j9p3Sn8ROL4",
-					"title": "What is edge dislocation?",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/j9p3Sn8ROL4/hqdefault.jpg",
-					"publishedAt": "2026-10-09T13:00:03.000Z"
-				},
-				{
-					"videoId": "IHkp5Kq72ro",
-					"title": "How Dangerous Are Non-Stick Pans?",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/IHkp5Kq72ro/hqdefault.jpg",
-					"publishedAt": "2026-10-01T18:26:42.000Z"
-				},
-				{
 					"videoId": "ONAuUyml0yI",
 					"title": "We're trying something new...",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/ONAuUyml0yI/hqdefault.jpg",
 					"publishedAt": "2026-09-30T19:19:10.000Z"
 				},
 				{
-					"videoId": "VKlulHwMxgU",
-					"title": "What happens to these balloons when you open the valve?",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/VKlulHwMxgU/hqdefault.jpg",
-					"publishedAt": "2026-09-24T13:00:24.000Z"
-				},
-				{
 					"videoId": "JsBZOcqZerk",
 					"title": "The Insane Real Engineering of the Nazi Enigma Machine",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/JsBZOcqZerk/hqdefault.jpg",
 					"publishedAt": "2026-09-21T17:49:57.000Z"
-				},
-				{
-					"videoId": "hPoJWjJ9Ao8",
-					"title": "Heating A Ball Just By Squeezing It",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/hPoJWjJ9Ao8/hqdefault.jpg",
-					"publishedAt": "2026-09-18T13:00:00.000Z"
-				},
-				{
-					"videoId": "O3a99HNskNk",
-					"title": "The Scariest Chart In Engineering",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/O3a99HNskNk/hqdefault.jpg",
-					"publishedAt": "2026-09-10T13:00:12.000Z"
-				},
-				{
-					"videoId": "oR94cicO7xM",
-					"title": "The Most Dangerous Escalator In Europe",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/oR94cicO7xM/hqdefault.jpg",
-					"publishedAt": "2026-09-06T13:00:26.000Z"
-				},
-				{
-					"videoId": "F5_G0AHfYhI",
-					"title": "A Physics Professor Bet Me $10,000 I'm Wrong...",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/F5_G0AHfYhI/hqdefault.jpg",
-					"publishedAt": "2026-09-02T13:00:04.000Z"
-				},
-				{
-					"videoId": "b3KpFdb1pW8",
-					"title": "We Took $10,000 From @mkbhd's Locked iPhone",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/b3KpFdb1pW8/hqdefault.jpg",
-					"publishedAt": "2026-08-26T15:00:02.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"Kap7mRzr13w",
+				"wxLc-gFORPQ",
+				"6U6Z6pb6ewI",
+				"j9p3Sn8ROL4",
+				"IHkp5Kq72ro",
+				"VKlulHwMxgU",
+				"hPoJWjJ9Ao8",
+				"O3a99HNskNk",
+				"oR94cicO7xM",
+				"F5_G0AHfYhI",
+				"b3KpFdb1pW8"
 			]
 		},
 		{
@@ -857,19 +684,13 @@
 			"description": "Animated explainers about space, biology, society, and the future.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCsXVk37bltHxD1rDPwtNM8Q.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "5_Fayfx2NUM",
 					"title": "How I Survived Late-Stage Cancer (A Fun Story)",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/5_Fayfx2NUM/hqdefault.jpg",
 					"publishedAt": "2026-10-27T15:00:01.000Z"
-				},
-				{
-					"videoId": "35No369rmq0",
-					"title": "What If We Cool Down the Sun?",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/35No369rmq0/hqdefault.jpg",
-					"publishedAt": "2026-10-24T14:00:15.000Z"
 				},
 				{
 					"videoId": "PXbVn-f_wuM",
@@ -890,24 +711,6 @@
 					"publishedAt": "2026-10-05T14:58:58.000Z"
 				},
 				{
-					"videoId": "b1EMX3wyqCY",
-					"title": "Your Brain on Magic Mushrooms",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/b1EMX3wyqCY/hqdefault.jpg",
-					"publishedAt": "2026-09-28T14:00:34.000Z"
-				},
-				{
-					"videoId": "oNTaHYXQ4MM",
-					"title": "Humans Can Regrow an Organ",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/oNTaHYXQ4MM/hqdefault.jpg",
-					"publishedAt": "2026-09-26T14:00:11.000Z"
-				},
-				{
-					"videoId": "RQprZZJIb6Y",
-					"title": "Your Skeleton Is Electric",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/RQprZZJIb6Y/hqdefault.jpg",
-					"publishedAt": "2026-09-24T17:30:19.000Z"
-				},
-				{
 					"videoId": "QW_jlUn4gA8",
 					"title": "This Is What a Godlike Civilization Would Look Like",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
@@ -918,37 +721,18 @@
 					"title": "This Woman Cured Her Cancer with an Insane Method",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/0NY2gAftzJE/hqdefault.jpg",
 					"publishedAt": "2026-09-15T14:00:02.000Z"
-				},
-				{
-					"videoId": "NIifnIP_NnQ",
-					"title": "How ADHD Medication Works",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/NIifnIP_NnQ/hqdefault.jpg",
-					"publishedAt": "2026-09-05T14:00:06.000Z"
-				},
-				{
-					"videoId": "hiIIGMeMEuE",
-					"title": "What If You Never Slept?",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/hiIIGMeMEuE/hqdefault.jpg",
-					"publishedAt": "2026-09-03T14:00:25.000Z"
-				},
-				{
-					"videoId": "tZ8i1RxGSYM",
-					"title": "Can Earth Run Out of Water?",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/tZ8i1RxGSYM/hqdefault.jpg",
-					"publishedAt": "2026-08-31T14:00:04.000Z"
-				},
-				{
-					"videoId": "EqkRVbaBxtg",
-					"title": "What If Gravity Was 10% Stronger?",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/EqkRVbaBxtg/hqdefault.jpg",
-					"publishedAt": "2026-08-29T14:00:15.000Z"
-				},
-				{
-					"videoId": "YqAI0oqtt7w",
-					"title": "Dust Is Not What You Think",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/YqAI0oqtt7w/hqdefault.jpg",
-					"publishedAt": "2026-08-27T14:00:06.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"35No369rmq0",
+				"b1EMX3wyqCY",
+				"oNTaHYXQ4MM",
+				"RQprZZJIb6Y",
+				"NIifnIP_NnQ",
+				"hiIIGMeMEuE",
+				"tZ8i1RxGSYM",
+				"EqkRVbaBxtg",
+				"YqAI0oqtt7w"
 			]
 		},
 		{
@@ -958,7 +742,7 @@
 			"description": "Official mission footage, launches, and updates from NASA.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCLA_DiR1FfKNvjuUpBHmylQ.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "pAKqJxuxDgk",
@@ -977,12 +761,6 @@
 					"title": "U.S. Spacewalk Preview News Conference (Oct. 20, 2026)",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/UleiRdWFG7o/hqdefault.jpg",
 					"publishedAt": "2026-10-20T18:30:12.000Z"
-				},
-				{
-					"videoId": "hv867HnY4j4",
-					"title": "U.S. Spacewalk 100",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/hv867HnY4j4/hqdefault.jpg",
-					"publishedAt": "2026-10-20T16:54:06.000Z"
 				},
 				{
 					"videoId": "Zezt6EsG9WE",
@@ -1039,17 +817,14 @@
 					"publishedAt": "2026-10-07T10:40:46.000Z"
 				},
 				{
-					"videoId": "-62C9R_41Sc",
-					"title": "From the Moon to the 50-Yard Line",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/-62C9R_41Sc/hqdefault.jpg",
-					"publishedAt": "2026-10-05T23:21:46.000Z"
-				},
-				{
 					"videoId": "RU6gEobXVHA",
 					"title": "NASA’s SpaceX Crew-12 Farewell and International Space Station Change of Command",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/RU6gEobXVHA/hqdefault.jpg",
 					"publishedAt": "2026-10-04T14:33:39.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"-62C9R_41Sc"
 			]
 		},
 		{
@@ -1059,14 +834,8 @@
 			"description": "Deep dives into astrophysics, cosmology, and the laws of nature.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UC7_gcs09iThXybpVgjHZ_7g.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "M-S04VTdbGU",
-					"title": "We Found Galaxies Too OLD For The Universe!",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/M-S04VTdbGU/hqdefault.jpg",
-					"publishedAt": "2026-10-26T19:15:36.000Z"
-				},
 				{
 					"videoId": "eb8x2tz_pgc",
 					"title": "Ghost Particles Are Exposing Hidden Black Holes. They Just Won a Nobel Prize.",
@@ -1074,52 +843,10 @@
 					"publishedAt": "2026-10-22T20:15:02.000Z"
 				},
 				{
-					"videoId": "sPY3lry_Lg0",
-					"title": "How Many Times Can Space Be Divided?",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/sPY3lry_Lg0/hqdefault.jpg",
-					"publishedAt": "2026-10-21T19:15:12.000Z"
-				},
-				{
-					"videoId": "MB841bF7APo",
-					"title": "There Are 1 Quadrillion Stars Behind This Grain of Sand",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/MB841bF7APo/hqdefault.jpg",
-					"publishedAt": "2026-10-19T19:15:36.000Z"
-				},
-				{
-					"videoId": "0USB9ARf-9c",
-					"title": "Is There Only ONE Electron In the Universe?",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/0USB9ARf-9c/hqdefault.jpg",
-					"publishedAt": "2026-10-15T19:15:32.000Z"
-				},
-				{
 					"videoId": "w6229Ivy_Lo",
 					"title": "Why Does -1/12 Keep Appearing Everywhere In Physics?",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/w6229Ivy_Lo/hqdefault.jpg",
 					"publishedAt": "2026-10-08T20:15:02.000Z"
-				},
-				{
-					"videoId": "qrmRJfG5vM4",
-					"title": "Is a Moving Arrow NOT Actually Moving?",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/qrmRJfG5vM4/hqdefault.jpg",
-					"publishedAt": "2026-10-07T19:15:23.000Z"
-				},
-				{
-					"videoId": "1JuzFJlw9-w",
-					"title": "Are You Made of Light?",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/1JuzFJlw9-w/hqdefault.jpg",
-					"publishedAt": "2026-10-05T19:15:05.000Z"
-				},
-				{
-					"videoId": "azfkjHspwEE",
-					"title": "Are You A Disembodied Brain?",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/azfkjHspwEE/hqdefault.jpg",
-					"publishedAt": "2026-09-30T20:15:09.000Z"
-				},
-				{
-					"videoId": "M5WZ_7XjGP8",
-					"title": "What If You Travel To The Edge of The Universe?",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/M5WZ_7XjGP8/hqdefault.jpg",
-					"publishedAt": "2026-09-28T20:15:23.000Z"
 				},
 				{
 					"videoId": "568-39aOZkw",
@@ -1151,6 +878,16 @@
 					"thumbnailUrl": "https://i2.ytimg.com/vi/I07RBedXRYA/hqdefault.jpg",
 					"publishedAt": "2026-08-04T20:15:26.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"M-S04VTdbGU",
+				"sPY3lry_Lg0",
+				"MB841bF7APo",
+				"0USB9ARf-9c",
+				"qrmRJfG5vM4",
+				"1JuzFJlw9-w",
+				"azfkjHspwEE",
+				"M5WZ_7XjGP8"
 			]
 		},
 		{
@@ -1160,31 +897,13 @@
 			"description": "Quick, visual physics lessons from Henry Reich.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCUHW94eEFW7hkUMVaZz4eDg.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "YBKuWCA5pug",
-					"title": "Why do hot objects glow?",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/YBKuWCA5pug/hqdefault.jpg",
-					"publishedAt": "2026-10-24T16:00:02.000Z"
-				},
-				{
-					"videoId": "31kyER-8dak",
-					"title": "What if you try to sandwich a cube between two portals?",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/31kyER-8dak/hqdefault.jpg",
-					"publishedAt": "2026-10-10T19:00:33.000Z"
-				},
 				{
 					"videoId": "4YvnVJRlQQs",
 					"title": "The Wavy Window Paradox",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/4YvnVJRlQQs/hqdefault.jpg",
 					"publishedAt": "2026-08-19T14:45:49.000Z"
-				},
-				{
-					"videoId": "bU9xvXyWrdk",
-					"title": "How long is a day on the sun?",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/bU9xvXyWrdk/hqdefault.jpg",
-					"publishedAt": "2026-08-11T17:00:01.000Z"
 				},
 				{
 					"videoId": "sYdXa_yp0fc",
@@ -1193,34 +912,16 @@
 					"publishedAt": "2026-07-29T17:15:42.000Z"
 				},
 				{
-					"videoId": "XYfv0T2k4h8",
-					"title": "Why some flames are blue and others are red?",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/XYfv0T2k4h8/hqdefault.jpg",
-					"publishedAt": "2026-07-16T17:00:20.000Z"
-				},
-				{
 					"videoId": "R2G8Xy6hiyg",
 					"title": "This Orbit is the WORST",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/R2G8Xy6hiyg/hqdefault.jpg",
 					"publishedAt": "2026-06-30T18:06:36.000Z"
 				},
 				{
-					"videoId": "TM8JhXsPYTo",
-					"title": "There Is No 4th Dimension",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/TM8JhXsPYTo/hqdefault.jpg",
-					"publishedAt": "2026-06-25T21:00:19.000Z"
-				},
-				{
 					"videoId": "dLtRtdg67PU",
 					"title": "Two Paradoxes of Space Navigation",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/dLtRtdg67PU/hqdefault.jpg",
 					"publishedAt": "2026-06-04T15:47:58.000Z"
-				},
-				{
-					"videoId": "sEQvDbyFNbo",
-					"title": "Why Driving Backwards Is So Hard",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/sEQvDbyFNbo/hqdefault.jpg",
-					"publishedAt": "2026-05-22T22:00:26.000Z"
 				},
 				{
 					"videoId": "PTO0s8YQ49o",
@@ -1235,23 +936,21 @@
 					"publishedAt": "2026-04-15T17:59:07.000Z"
 				},
 				{
-					"videoId": "qKMVnR4U33U",
-					"title": "What is the farthest on earth you can get from ANYTHING",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/qKMVnR4U33U/hqdefault.jpg",
-					"publishedAt": "2026-04-11T18:00:00.000Z"
-				},
-				{
-					"videoId": "i45dfK7wYvA",
-					"title": "Schrödinger’s Cat (from the cat's perspective)",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/i45dfK7wYvA/hqdefault.jpg",
-					"publishedAt": "2026-03-21T17:00:00.000Z"
-				},
-				{
 					"videoId": "ZWSvHBG7X0w",
 					"title": "Do *you* understand ISO?",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/ZWSvHBG7X0w/hqdefault.jpg",
 					"publishedAt": "2026-03-11T19:03:33.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"YBKuWCA5pug",
+				"31kyER-8dak",
+				"bU9xvXyWrdk",
+				"XYfv0T2k4h8",
+				"TM8JhXsPYTo",
+				"sEQvDbyFNbo",
+				"qKMVnR4U33U",
+				"i45dfK7wYvA"
 			]
 		},
 		{
@@ -1261,7 +960,7 @@
 			"description": "Short animated lessons across science, history, and culture.",
 			"category": "Science",
 			"logoUrl": "catalog/logos/UCsooa4yRKGN_zEE8iknghZA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "nXvKDYRvTno",
@@ -1353,7 +1052,8 @@
 					"thumbnailUrl": "https://i4.ytimg.com/vi/_gP3aXvNmv8/hqdefault.jpg",
 					"publishedAt": "2026-09-08T15:00:17.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UCNye-wNBqNL5ZzHSJj3l8Bg",
@@ -1362,98 +1062,30 @@
 			"description": "International news, reporting, and analysis from Al Jazeera.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCNye-wNBqNL5ZzHSJj3l8Bg.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
-					"videoId": "vqS0vldxmJM",
-					"title": "Tens of thousands flee Ethiopia fighting into neighbouring Kenya | AJ #shorts",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/vqS0vldxmJM/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:50:48.000Z"
-				},
-				{
-					"videoId": "Rj0-Dgt-VAw",
-					"title": "Victims of Jordan’s air strikes in Syria | AJ #shorts",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/Rj0-Dgt-VAw/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:32:39.000Z"
-				},
-				{
-					"videoId": "znv5ZP_WV98",
-					"title": "Yemen's Taiz under siege as food, fuel and medicine run low",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/znv5ZP_WV98/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:00:00.000Z"
-				},
-				{
-					"videoId": "gJpEONtBhfw",
-					"title": "Israeli voters: hope and despair as election ballots are counted | AJ #shorts",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/gJpEONtBhfw/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:55:32.000Z"
-				},
-				{
-					"videoId": "d0jbj28a7Wc",
-					"title": "Nigerian artist reframes children with albinism as heroes",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/d0jbj28a7Wc/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:45:50.000Z"
-				},
-				{
-					"videoId": "Vp8vvdPvpaE",
-					"title": "Cyclone leaves trail of destruction in India as thousands evacuated",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/Vp8vvdPvpaE/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:38:24.000Z"
-				},
-				{
-					"videoId": "f3ds93C6_Is",
-					"title": "What is Africa getting from Russia's growing influence?",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/f3ds93C6_Is/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:30:25.000Z"
-				},
-				{
-					"videoId": "76ZN55yJ264",
-					"title": "Deadly high-speed train collision in Spain | AJ #shorts",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/76ZN55yJ264/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:02:14.000Z"
-				},
-				{
-					"videoId": "10Paz2AXcCs",
-					"title": "What to expect in Burnham's first UK budget",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/10Paz2AXcCs/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:00:24.000Z"
-				},
-				{
-					"videoId": "vft0xQ1xkYQ",
-					"title": "Palestinian activist Mahmoud Khalil returns to Columbia after US detention",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/vft0xQ1xkYQ/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:54:50.000Z"
-				},
-				{
-					"videoId": "KlKM3je3uiM",
-					"title": "Why do people struggle to afford basic needs in the world's richest cities? #DohaDebates",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/KlKM3je3uiM/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:13:23.000Z"
-				},
-				{
-					"videoId": "NT0a5K_CkI8",
-					"title": "Hormuz oil spill forces closure of UAE beaches | AJ #shorts",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/NT0a5K_CkI8/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:01:35.000Z"
-				},
-				{
-					"videoId": "keVJvNd1rkI",
-					"title": "Salah-mania grips Turkiye's Trabzon as fans flock to viral photo spot",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/keVJvNd1rkI/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:00:15.000Z"
-				},
-				{
-					"videoId": "1kxbWF1pjpk",
-					"title": "Russia courts Africa with trade, nuclear deals as summit kicks off",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/1kxbWF1pjpk/hqdefault.jpg",
-					"publishedAt": "2026-10-28T09:30:12.000Z"
-				},
-				{
-					"videoId": "9HaSawfShF8",
-					"title": "Israel election shows Palestinian citizens' power, former Knesset member says",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/9HaSawfShF8/hqdefault.jpg",
-					"publishedAt": "2026-10-28T08:37:44.000Z"
+					"videoId": "E7mo6wFpwpc",
+					"title": "At least 64 killed as two high-speed trains collide in central Spain",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/E7mo6wFpwpc/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:00:22.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"dt6w8A2XFQE",
+				"vqS0vldxmJM",
+				"Rj0-Dgt-VAw",
+				"znv5ZP_WV98",
+				"gJpEONtBhfw",
+				"d0jbj28a7Wc",
+				"Vp8vvdPvpaE",
+				"f3ds93C6_Is",
+				"76ZN55yJ264",
+				"10Paz2AXcCs",
+				"vft0xQ1xkYQ",
+				"KlKM3je3uiM",
+				"NT0a5K_CkI8",
+				"keVJvNd1rkI"
 			]
 		},
 		{
@@ -1463,61 +1095,13 @@
 			"description": "Breaking news, explainers, and reports from the BBC newsroom.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UC16niRr50-MSBwiO3YDb3RA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
-					"videoId": "DRy6KnZp49Q",
-					"title": "'70,000 businesses' to pay no business rates in England, says UK chancellor. #BBCNews",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/DRy6KnZp49Q/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:40:24.000Z"
-				},
-				{
-					"videoId": "mvOj4669lhk",
-					"title": "Smaller rise in minimum wages for young UK workers confirmed. #UK #BBCNews",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/mvOj4669lhk/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:27:51.000Z"
-				},
-				{
-					"videoId": "4f8XcldfItI",
-					"title": "Bolsonaro arrives in US after confusion over whereabouts following Brazil election loss. #BBCNews",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/4f8XcldfItI/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:08:23.000Z"
-				},
-				{
-					"videoId": "scBcgdzjTo0",
-					"title": "Millions of households in England to get £100 energy payment this winter. #UKBudget #BBCNews",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/scBcgdzjTo0/hqdefault.jpg",
-					"publishedAt": "2026-10-28T13:57:46.000Z"
-				},
-				{
-					"videoId": "klM90m0tS38",
-					"title": "Why Israel's election result is messy. #Netanyahu #Eisenkot #Israel #BBCNews",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/klM90m0tS38/hqdefault.jpg",
-					"publishedAt": "2026-10-28T13:35:32.000Z"
-				},
-				{
-					"videoId": "n4BpITNxvRE",
-					"title": "Fleetwood Town goalkeeper reflects on momentous win against Arsenal. #BBCNews",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/n4BpITNxvRE/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:47:27.000Z"
-				},
-				{
-					"videoId": "WFyNiMtr0hA",
-					"title": "How Serbian student protesters turned this surgeon into a politician. #BBCNews",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/WFyNiMtr0hA/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:45:31.000Z"
-				},
-				{
-					"videoId": "fNIz9oIaTMs",
-					"title": "Makeshift medical tents treat victims of Spanish train crash as dozens feared dead. #BBCNews",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/fNIz9oIaTMs/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:15:58.000Z"
-				},
-				{
-					"videoId": "AgnnVQbIMJE",
-					"title": "The Budget LIVE: What's in it and how it will impact you | BBC News",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/AgnnVQbIMJE/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:48:15.000Z"
+					"videoId": "QHWfRnygyms",
+					"title": "Rail expert unpacks deadly train crash in Spain | BBC News",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/QHWfRnygyms/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:49:10.000Z"
 				},
 				{
 					"videoId": "H_JvCiFPiTw",
@@ -1530,31 +1114,21 @@
 					"title": "Details emerge of deadly Spain train crash south of Madrid | BBC News",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/V3grv7YVujE/hqdefault.jpg",
 					"publishedAt": "2026-10-28T10:26:54.000Z"
-				},
-				{
-					"videoId": "3_8DR3SPZlo",
-					"title": "Netanyahu and Eisenkot say they'll form Israeli government but neither won majority. #BBCNews",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/3_8DR3SPZlo/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:17:22.000Z"
-				},
-				{
-					"videoId": "YiCPNNhIKX0",
-					"title": "Who is UK Chancellor John Healey? #BBCNews",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/YiCPNNhIKX0/hqdefault.jpg",
-					"publishedAt": "2026-10-28T08:36:41.000Z"
-				},
-				{
-					"videoId": "-Eyhgu46aUo",
-					"title": "Defeated Brazilian presidential candidate Flávio Bolsonaro arrives in US. #BBCNews",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/-Eyhgu46aUo/hqdefault.jpg",
-					"publishedAt": "2026-10-28T03:05:22.000Z"
-				},
-				{
-					"videoId": "jEvZtCWPPGU",
-					"title": "Could a Democrat flip deep-red Texas at the Midterms? | BBC News",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/jEvZtCWPPGU/hqdefault.jpg",
-					"publishedAt": "2026-10-28T01:30:23.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"3oNW08Qf62M",
+				"DRy6KnZp49Q",
+				"mvOj4669lhk",
+				"4f8XcldfItI",
+				"scBcgdzjTo0",
+				"klM90m0tS38",
+				"n4BpITNxvRE",
+				"WFyNiMtr0hA",
+				"fNIz9oIaTMs",
+				"3_8DR3SPZlo",
+				"YiCPNNhIKX0",
+				"-Eyhgu46aUo"
 			]
 		},
 		{
@@ -1564,14 +1138,8 @@
 			"description": "Global news and current affairs from Deutsche Welle.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCknLrEdhRCp1aegoMqRaCZg.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "uye6KN1aZYE",
-					"title": "Serbia's 'leaderless' Students' List explain how it will lead | DW News",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/uye6KN1aZYE/hqdefault.jpg",
-					"publishedAt": "2026-10-28T13:03:06.000Z"
-				},
 				{
 					"videoId": "04BqMycb-rY",
 					"title": "Live: Dozens dead as two trains collide in Spain | DW News",
@@ -1609,18 +1177,6 @@
 					"publishedAt": "2026-10-28T04:48:08.000Z"
 				},
 				{
-					"videoId": "6HuY-3kf-T8",
-					"title": "Merz in the Indo-Pacific: One world, shared risks | DW News",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/6HuY-3kf-T8/hqdefault.jpg",
-					"publishedAt": "2026-10-28T04:30:07.000Z"
-				},
-				{
-					"videoId": "cpyJSZQQZu8",
-					"title": "Riots turn Bilbao streets into a battleground | DW News",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/cpyJSZQQZu8/hqdefault.jpg",
-					"publishedAt": "2026-10-28T01:15:04.000Z"
-				},
-				{
 					"videoId": "x0WYm_QnLBw",
 					"title": "Sudan atrocities cast shadow over UAE diplomat's bid to lead the UN | DW News",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/x0WYm_QnLBw/hqdefault.jpg",
@@ -1633,12 +1189,6 @@
 					"publishedAt": "2026-10-27T21:15:19.000Z"
 				},
 				{
-					"videoId": "nz3zOJaRPX8",
-					"title": "Protesters storm TV channel offices in Belgrade demanding apology | DW News",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/nz3zOJaRPX8/hqdefault.jpg",
-					"publishedAt": "2026-10-27T20:52:23.000Z"
-				},
-				{
 					"videoId": "IPYX01axbD0",
 					"title": "Live: Netanyahu vs Eisenkot: What do the exit polls tell us? | DW News",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/IPYX01axbD0/hqdefault.jpg",
@@ -1649,13 +1199,14 @@
 					"title": "Finland and Norway open direct talks with Putin despite criticism | DW News",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/MlKgTXDamPE/hqdefault.jpg",
 					"publishedAt": "2026-10-27T18:35:52.000Z"
-				},
-				{
-					"videoId": "VajGRxS8v20",
-					"title": "Why Anthropic's plan to go public could be a milestone for humankind | DW News",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/VajGRxS8v20/hqdefault.jpg",
-					"publishedAt": "2026-10-27T17:54:34.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"Xmb5shZSbpA",
+				"uye6KN1aZYE",
+				"6HuY-3kf-T8",
+				"cpyJSZQQZu8",
+				"nz3zOJaRPX8"
 			]
 		},
 		{
@@ -1665,19 +1216,19 @@
 			"description": "Rolling news, interviews, and live coverage from Sky News.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCoMdktPbSTixAyNGwb-UYkQ.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
-					"videoId": "xNFU8dj-VhE",
-					"title": "Who will get the chancellor's £100 energy payment?",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/xNFU8dj-VhE/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:35:58.000Z"
+					"videoId": "uPyRzsATJAw",
+					"title": "Spanish PM speaks at the scene of deadly train crash",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/uPyRzsATJAw/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:55:04.000Z"
 				},
 				{
-					"videoId": "uPyRzsATJAw",
-					"title": "Spanish PM speaks after deadly train crash",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/uPyRzsATJAw/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:20:33.000Z"
+					"videoId": "C3or-YMsgo4",
+					"title": "Beth Rigby, Ed Conway and Deborah Haynes react to 2026 Budget | Sky News analysis",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/C3or-YMsgo4/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:43:13.000Z"
 				},
 				{
 					"videoId": "jEStjlXENRM",
@@ -1704,50 +1255,14 @@
 					"publishedAt": "2026-10-28T12:27:58.000Z"
 				},
 				{
-					"videoId": "3LOEoZUNoaI",
-					"title": "Guardia Civil aerial footage shows derailed train in Spain",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/3LOEoZUNoaI/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:06:52.000Z"
-				},
-				{
-					"videoId": "dGCdxlex2Mw",
-					"title": "Oleshky ceasefire expansion: It's not all good news",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/dGCdxlex2Mw/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:41:13.000Z"
-				},
-				{
-					"videoId": "RF3lG2bw180",
-					"title": "Bolsonaro flies from Argentina after Brazil election defeat: What we know",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/RF3lG2bw180/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:37:47.000Z"
-				},
-				{
 					"videoId": "b46iTsvulwI",
 					"title": "Dozens dead after train crash in Spain",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/b46iTsvulwI/hqdefault.jpg",
 					"publishedAt": "2026-10-28T10:29:18.000Z"
 				},
 				{
-					"videoId": "GIirb3sECoM",
-					"title": "Kwasi Kwarteng live reacts to Liz Truss denying responsibility for mini-budget",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/GIirb3sECoM/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:22:48.000Z"
-				},
-				{
-					"videoId": "0dVX-Vo1cFs",
-					"title": "Is this a business as usual budget? | Politics at Sam and Anne's",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/0dVX-Vo1cFs/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:08:46.000Z"
-				},
-				{
-					"videoId": "PKnWzu5u6iA",
-					"title": "Chancellor to deliver first Budget of Burnham premiership | Mornings with Frost",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/PKnWzu5u6iA/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:08:44.000Z"
-				},
-				{
 					"videoId": "F86h8QDh3aI",
-					"title": "Spain train crash | At least 64 dead after two high-speed trains collide",
+					"title": "Spain train crash | At least 68 dead after two high-speed trains collide",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/F86h8QDh3aI/hqdefault.jpg",
 					"publishedAt": "2026-10-28T09:44:09.000Z"
 				},
@@ -1757,6 +1272,14 @@
 					"thumbnailUrl": "https://i3.ytimg.com/vi/ZSAokkNd4gM/hqdefault.jpg",
 					"publishedAt": "2026-10-28T08:27:16.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"xNFU8dj-VhE",
+				"3LOEoZUNoaI",
+				"dGCdxlex2Mw",
+				"RF3lG2bw180",
+				"GIirb3sECoM",
+				"0dVX-Vo1cFs"
 			]
 		},
 		{
@@ -1766,25 +1289,25 @@
 			"description": "Wire news and video reports from Reuters around the world.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UChqUTb7kYRX8-EiaN3XFrSQ.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
-					"videoId": "Dqjcy76jJbI",
-					"title": "Why is Trump fixating on looks during midterm campaign stops?",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/Dqjcy76jJbI/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:19:12.000Z"
+					"videoId": "oMoanDUv2kg",
+					"title": "An economist behind the Prop 40 California wealth tax | Econ World",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/oMoanDUv2kg/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:44:07.000Z"
 				},
 				{
-					"videoId": "IABJFR6dRU4",
-					"title": "Mbappe apologizes to China for Mao 'dictator' comment",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/IABJFR6dRU4/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:00:12.000Z"
+					"videoId": "s54GvM1SedQ",
+					"title": "Crypto Weekly: Cash floods US midterms, Milei cleared in meme coin scandal",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/s54GvM1SedQ/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:41:32.000Z"
 				},
 				{
-					"videoId": "mlxHleS30H4",
-					"title": "Warning: Strong Language -🎩 Boots Riley and the cast of 'I Love Boosters' discuss politics in film",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/mlxHleS30H4/hqdefault.jpg",
-					"publishedAt": "2026-10-28T13:00:32.000Z"
+					"videoId": "2Prf8GpApSs",
+					"title": "Why you could pay more for your favorite brands in 2027",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/2Prf8GpApSs/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:38:20.000Z"
 				},
 				{
 					"videoId": "VbYqY7JIlq4",
@@ -1811,12 +1334,6 @@
 					"publishedAt": "2026-10-28T12:24:42.000Z"
 				},
 				{
-					"videoId": "HNBpCBujVrc",
-					"title": "Dozens killed in Spain after high-speed trains collide",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/HNBpCBujVrc/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:14:25.000Z"
-				},
-				{
 					"videoId": "fQvr2dZlS9M",
 					"title": "LIVE: UK finance minister John Healey unveils budget",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/fQvr2dZlS9M/hqdefault.jpg",
@@ -1839,25 +1356,13 @@
 					"title": "LIVE: Two high-speed trains collide in Spain",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/wh3oBuUn7jk/hqdefault.jpg",
 					"publishedAt": "2026-10-28T11:10:58.000Z"
-				},
-				{
-					"videoId": "r13jP_mMLbc",
-					"title": "The AI effect: SK Hynix plans $75 billion shareholder bonanza",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/r13jP_mMLbc/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:10:00.000Z"
-				},
-				{
-					"videoId": "DhA3CQvLnuc",
-					"title": "LIVE: Two high-speed trains collide in Spain",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/DhA3CQvLnuc/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:09:43.000Z"
-				},
-				{
-					"videoId": "z1KNff95tu0",
-					"title": "Drone threats set the schedule for Ukraine's passenger trains",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/z1KNff95tu0/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:09:13.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"Dqjcy76jJbI",
+				"IABJFR6dRU4",
+				"mlxHleS30H4",
+				"HNBpCBujVrc"
 			]
 		},
 		{
@@ -1867,31 +1372,13 @@
 			"description": "Markets, business, and economic coverage from CNBC.",
 			"category": "News",
 			"logoUrl": "catalog/logos/UCrp_UI8XtuYfpiqluWLD7Lw.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
-					"videoId": "7qIQ7Ujlt0k",
+					"videoId": "C4bM7zZY3XI",
 					"title": "Market Open: Stocks Higher, Investors Await Fed Rate Decision, Wendy’s in Play • 10/28/26",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/7qIQ7Ujlt0k/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:22:09.000Z"
-				},
-				{
-					"videoId": "HCV0UKsUx5Q",
-					"title": "Samsung offers 'better risk-reward profile' compared to SK Hynix: Susquehanna",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/HCV0UKsUx5Q/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:15:08.000Z"
-				},
-				{
-					"videoId": "a8nOvfCgPjM",
-					"title": "Who are the kingmakers for Israel's election?",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/a8nOvfCgPjM/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:00:11.000Z"
-				},
-				{
-					"videoId": "MRbr6RSOXMI",
-					"title": "Israel heads for coalition uncertainty as election outcome hangs in the balance",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/MRbr6RSOXMI/hqdefault.jpg",
-					"publishedAt": "2026-10-28T13:45:05.000Z"
+					"thumbnailUrl": "https://i4.ytimg.com/vi/C4bM7zZY3XI/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:02:59.000Z"
 				},
 				{
 					"videoId": "Tr7wTRA-nIc",
@@ -1904,12 +1391,6 @@
 					"title": "Anthropic's growth is 'incredibly explosive,' says Disruptive CEO Alex Davis",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/ueXNEo6-uJ0/hqdefault.jpg",
 					"publishedAt": "2026-10-28T13:37:32.000Z"
-				},
-				{
-					"videoId": "CfSXVlFGHDg",
-					"title": "What to watch as Microsoft and Alphabet report earnings",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/CfSXVlFGHDg/hqdefault.jpg",
-					"publishedAt": "2026-10-28T13:28:51.000Z"
 				},
 				{
 					"videoId": "RotRYMn-NP0",
@@ -1940,25 +1421,16 @@
 					"title": "AI Agents Coming To A Restaurant Near You 10/28/26",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/VISHdWP2DeU/hqdefault.jpg",
 					"publishedAt": "2026-10-28T07:00:29.000Z"
-				},
-				{
-					"videoId": "yr3t-N_DjAw",
-					"title": "Why Anthropic’s IPO is risky business",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/yr3t-N_DjAw/hqdefault.jpg",
-					"publishedAt": "2026-10-28T02:08:25.000Z"
-				},
-				{
-					"videoId": "Hz1oTEI4up0",
-					"title": "Treasurys offer asymmetric returns ahead of Fed decision, says UBS's Evan Brown",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/Hz1oTEI4up0/hqdefault.jpg",
-					"publishedAt": "2026-10-28T00:22:46.000Z"
-				},
-				{
-					"videoId": "ezMAnbMlItY",
-					"title": "Boeing's free cash flow ramp will be happening slower than expected, says Jim Cramer",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/ezMAnbMlItY/hqdefault.jpg",
-					"publishedAt": "2026-10-28T00:20:29.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"tQ0PVESAk9o",
+				"Ih5ts3eD5LE",
+				"hxyAihh-KtA",
+				"HCV0UKsUx5Q",
+				"a8nOvfCgPjM",
+				"MRbr6RSOXMI",
+				"CfSXVlFGHDg"
 			]
 		},
 		{
@@ -1968,8 +1440,32 @@
 			"description": "Game news, reviews, trailers, and everything happening in gaming.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCKy1dAqELo0zrOtPkf0eTMw.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
+				{
+					"videoId": "auXdkRYTdrE",
+					"title": "Rayman Legends Retold - Official Astro Bot Outfit Trailer",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/auXdkRYTdrE/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:00:32.000Z"
+				},
+				{
+					"videoId": "p-T0y_onZwk",
+					"title": "Threads of Time - Official Release Window Trailer | Nintendo Indie World Fall 2026",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/p-T0y_onZwk/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:50:18.000Z"
+				},
+				{
+					"videoId": "PTyvKTPs-Ow",
+					"title": "Tenjutsu - Official Gameplay Trailer | Nintendo Indie World Fall 2026",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/PTyvKTPs-Ow/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:42:10.000Z"
+				},
+				{
+					"videoId": "F-rERxGa8xU",
+					"title": "Winds of Viridia - Official Reveal Trailer | Nintendo Indie World Fall 2026",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/F-rERxGa8xU/hqdefault.jpg",
+					"publishedAt": "2026-10-28T14:39:10.000Z"
+				},
 				{
 					"videoId": "IRhTx2skGcw",
 					"title": "No Man's Sky - Official Forsaken Trailer",
@@ -1983,83 +1479,26 @@
 					"publishedAt": "2026-10-28T13:33:13.000Z"
 				},
 				{
-					"videoId": "VaV5PnUZ6hA",
-					"title": "Bill Bailey is your guide in World of Warcraft: Planet Azeroth! Check out Episode 1 #sponsored",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/VaV5PnUZ6hA/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:00:39.000Z"
-				},
-				{
-					"videoId": "x-GjZD75aAU",
-					"title": "Ocarina of Time Remake changes up enemy behavior",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/x-GjZD75aAU/hqdefault.jpg",
-					"publishedAt": "2026-10-28T01:31:38.000Z"
-				},
-				{
-					"videoId": "keoW-Y54ARg",
-					"title": "Eric Bauza is credited with voicing over 900 characters!",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/keoW-Y54ARg/hqdefault.jpg",
-					"publishedAt": "2026-10-28T01:29:40.000Z"
-				},
-				{
 					"videoId": "Tg20HSKna_A",
 					"title": "The Wolf Among Us Remastered Review",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/Tg20HSKna_A/hqdefault.jpg",
 					"publishedAt": "2026-10-28T00:08:58.000Z"
 				},
 				{
-					"videoId": "kNrQsKhHtlk",
-					"title": "Call of Duty: Modern Warfare 4’s biggest multiplayer changes. Presented by @xfinity",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/kNrQsKhHtlk/hqdefault.jpg",
-					"publishedAt": "2026-10-27T23:50:24.000Z"
-				},
-				{
-					"videoId": "O0tLvQC_n8M",
-					"title": "Paul becomes the oppressor in Dune Part 3",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/O0tLvQC_n8M/hqdefault.jpg",
-					"publishedAt": "2026-10-27T23:45:09.000Z"
-				},
-				{
-					"videoId": "Q-o3cI-_0Mo",
-					"title": "One Piece is finally joining Fortnite",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/Q-o3cI-_0Mo/hqdefault.jpg",
-					"publishedAt": "2026-10-27T23:44:34.000Z"
-				},
-				{
-					"videoId": "vbXI7_uAvCA",
-					"title": "Phantom Blade Zero is amazing",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/vbXI7_uAvCA/hqdefault.jpg",
-					"publishedAt": "2026-10-27T23:43:57.000Z"
-				},
-				{
 					"videoId": "LwfLtv9kZP8",
 					"title": "Clayface Puts James Gunn's DCU Back on Track With #1 Box Office Debut - IGN Daily Fix",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/LwfLtv9kZP8/hqdefault.jpg",
 					"publishedAt": "2026-10-27T21:32:55.000Z"
-				},
-				{
-					"videoId": "omnajeewRO8",
-					"title": "Halloween: The Game - Official Tower Farm Terror Update Launch Trailer",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/omnajeewRO8/hqdefault.jpg",
-					"publishedAt": "2026-10-27T21:00:27.000Z"
-				},
-				{
-					"videoId": "JzGKH6JUdUA",
-					"title": "Call of Duty: Modern Warfare 4 - Official Accolades Trailer",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/JzGKH6JUdUA/hqdefault.jpg",
-					"publishedAt": "2026-10-27T20:00:16.000Z"
-				},
-				{
-					"videoId": "_p-mo6N_RJg",
-					"title": "Riftbound x K/DA Couture Collection - Official Trailer (ft. Art by Fortiche)",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/_p-mo6N_RJg/hqdefault.jpg",
-					"publishedAt": "2026-10-27T19:20:54.000Z"
-				},
-				{
-					"videoId": "nQb_mWA4JZU",
-					"title": "Minecraft - Official Nintendo Switch 2 Launch Trailer",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/nQb_mWA4JZU/hqdefault.jpg",
-					"publishedAt": "2026-10-27T19:00:28.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"VaV5PnUZ6hA",
+				"x-GjZD75aAU",
+				"keoW-Y54ARg",
+				"kNrQsKhHtlk",
+				"O0tLvQC_n8M",
+				"Q-o3cI-_0Mo",
+				"vbXI7_uAvCA"
 			]
 		},
 		{
@@ -2069,7 +1508,7 @@
 			"description": "Reviews, previews, and deep coverage of games and the industry.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCbu2SsF-Or3Rsn3NxqODImw.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "_GF2AEoDmL0",
@@ -2102,22 +1541,10 @@
 					"publishedAt": "2026-10-26T00:00:19.000Z"
 				},
 				{
-					"videoId": "RkEStVGro94",
-					"title": "Mass Effect: Universe Story & Gameplay DETAILS",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/RkEStVGro94/hqdefault.jpg",
-					"publishedAt": "2026-10-23T21:13:32.000Z"
-				},
-				{
 					"videoId": "XTMZSC3d7LU",
 					"title": "Phantom Blade Zero - Everything To Know",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/XTMZSC3d7LU/hqdefault.jpg",
 					"publishedAt": "2026-10-23T21:00:38.000Z"
-				},
-				{
-					"videoId": "ZAChSrzJmCw",
-					"title": "Biddy Blas' Voice Actor Reacts To The Character's Success",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/ZAChSrzJmCw/hqdefault.jpg",
-					"publishedAt": "2026-10-23T19:30:07.000Z"
 				},
 				{
 					"videoId": "ILXsBB3UwSQ",
@@ -2144,23 +1571,17 @@
 					"publishedAt": "2026-10-21T19:00:13.000Z"
 				},
 				{
-					"videoId": "_kf_MqoAZm8",
-					"title": "Gaming on iPhone Duo",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/_kf_MqoAZm8/hqdefault.jpg",
-					"publishedAt": "2026-10-21T18:48:15.000Z"
-				},
-				{
-					"videoId": "muP7jLuXSiY",
-					"title": "EA Shuts Down BioWare, Cancels Mass Effect Reboot",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/muP7jLuXSiY/hqdefault.jpg",
-					"publishedAt": "2026-10-21T18:03:31.000Z"
-				},
-				{
 					"videoId": "ErNF1wYKxaI",
 					"title": "Cyberpunk 2077 | Edgerunners 2 Update Features Overview Trailer",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/ErNF1wYKxaI/hqdefault.jpg",
 					"publishedAt": "2026-10-21T16:36:38.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"RkEStVGro94",
+				"ZAChSrzJmCw",
+				"_kf_MqoAZm8",
+				"muP7jLuXSiY"
 			]
 		},
 		{
@@ -2170,7 +1591,7 @@
 			"description": "Technical analysis of games, consoles, and graphics performance.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UC9PBzalIcEQCsiIkq36PyUA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "6QPRMl0Scoc",
@@ -2262,7 +1683,8 @@
 					"thumbnailUrl": "https://i2.ytimg.com/vi/aR11eWdfZYE/hqdefault.jpg",
 					"publishedAt": "2026-10-13T14:52:31.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UC-2Y8dQb0S6DtpxNgAKoJKA",
@@ -2271,8 +1693,14 @@
 			"description": "Official PlayStation trailers, announcements, and gameplay.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UC-2Y8dQb0S6DtpxNgAKoJKA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
+				{
+					"videoId": "vdgqO1BngP8",
+					"title": "Prism Collection | PS5 & PC",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/vdgqO1BngP8/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:00:34.000Z"
+				},
 				{
 					"videoId": "o43CZdhCKvk",
 					"title": "Session: Skate Sim - Barcelona DLC Trailer | PS5 & PS4 Games",
@@ -2356,14 +1784,9 @@
 					"title": "Remothered: Red Nun's Legacy - Launch Trailer | PS5 Games",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/HLfhqAgIwpA/hqdefault.jpg",
 					"publishedAt": "2026-10-27T14:00:12.000Z"
-				},
-				{
-					"videoId": "y7OuAQ5Pjac",
-					"title": "Farming Simulator 25 - Beans & Alpacas Launch Trailer | PS5 Games",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/y7OuAQ5Pjac/hqdefault.jpg",
-					"publishedAt": "2026-10-27T13:15:01.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UCjBp_7RuDBUYbd1LegWEJ8g",
@@ -2372,8 +1795,20 @@
 			"description": "Official Xbox news, game trailers, and feature updates.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCjBp_7RuDBUYbd1LegWEJ8g.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
+				{
+					"videoId": "sIBJarLwlX8",
+					"title": "Dumpster Gang - Console Announce Trailer",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/sIBJarLwlX8/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:00:38.000Z"
+				},
+				{
+					"videoId": "_b5u1Cl9PJg",
+					"title": "Witchbrook - Release Date Trailer",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/_b5u1Cl9PJg/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:00:08.000Z"
+				},
 				{
 					"videoId": "kdOv3OEAhZg",
 					"title": "Titan Quest II | Pre-Order Trailer",
@@ -2451,20 +1886,9 @@
 					"title": "PEAK | XBOX Release Trailer",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/ryd_iONL_GA/hqdefault.jpg",
 					"publishedAt": "2026-10-22T15:00:38.000Z"
-				},
-				{
-					"videoId": "Hs9YvOmcJbs",
-					"title": "FINAL FANTASY RESONANCE - Launch Trailer",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/Hs9YvOmcJbs/hqdefault.jpg",
-					"publishedAt": "2026-10-22T15:00:23.000Z"
-				},
-				{
-					"videoId": "3HII6hZo-L0",
-					"title": "Halls of Torment - The Lost Archives DLC Release Trailer",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/3HII6hZo-L0/hqdefault.jpg",
-					"publishedAt": "2026-10-22T13:00:26.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UCGIY_O-8vW4rfX98KlMkvRg",
@@ -2473,7 +1897,7 @@
 			"description": "Nintendo trailers, Direct presentations, and game news.",
 			"category": "Gaming",
 			"logoUrl": "catalog/logos/UCGIY_O-8vW4rfX98KlMkvRg.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "O6SwwzG_ag0",
@@ -2565,7 +1989,8 @@
 					"thumbnailUrl": "https://i2.ytimg.com/vi/9OPoiRcze0w/hqdefault.jpg",
 					"publishedAt": "2026-10-26T18:43:57.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UCX6b17PVsYBQ0ip5gyeme-Q",
@@ -2574,7 +1999,7 @@
 			"description": "Fast-paced courses across science, history, literature, and more.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCX6b17PVsYBQ0ip5gyeme-Q.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "2b-H-rxQ8m8",
@@ -2659,13 +2084,10 @@
 					"title": "How old is the Earth?: Crash Course Geology #17",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/mIIJd66Ycr8/hqdefault.jpg",
 					"publishedAt": "2026-09-03T16:00:31.000Z"
-				},
-				{
-					"videoId": "RYGRmYs40PU",
-					"title": "Let's Go on a Field Trip!",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/RYGRmYs40PU/hqdefault.jpg",
-					"publishedAt": "2026-09-01T16:30:21.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"RYGRmYs40PU"
 			]
 		},
 		{
@@ -2675,7 +2097,7 @@
 			"description": "Free lessons in math, science, economics, and the humanities.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UC4a-Gbdw7vOaccHmFo40b9g.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "cPxnWRp4oPo",
@@ -2694,12 +2116,6 @@
 					"title": "Electric potential of charge distributions | AP Physics | Khan Academy",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/3pPsVNNEm08/hqdefault.jpg",
 					"publishedAt": "2026-10-10T11:51:22.000Z"
-				},
-				{
-					"videoId": "c5JAYrb-DXo",
-					"title": "Free MCAT Test Prep at Khan Academy",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/c5JAYrb-DXo/hqdefault.jpg",
-					"publishedAt": "2026-10-08T19:31:15.000Z"
 				},
 				{
 					"videoId": "PrykTpvJDOM",
@@ -2767,6 +2183,9 @@
 					"thumbnailUrl": "https://i4.ytimg.com/vi/WChgaEBYDAQ/hqdefault.jpg",
 					"publishedAt": "2026-10-05T22:06:56.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"c5JAYrb-DXo"
 			]
 		},
 		{
@@ -2776,7 +2195,7 @@
 			"description": "Full-length programming courses and coding tutorials.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UC8butISFwT-Wl7EV0hUK0BQ.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "aZglGvBPQGs",
@@ -2868,7 +2287,8 @@
 					"thumbnailUrl": "https://i4.ytimg.com/vi/C_1QKZAcJjk/hqdefault.jpg",
 					"publishedAt": "2026-09-21T12:12:42.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -2877,31 +2297,13 @@
 			"description": "Mathematics explained visually, from calculus to neural networks.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCYO_jab_esuFRV4b17AJtAw.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "V_uq3v6xK-4",
-					"title": "The Sphere Intersection Puzzle",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/V_uq3v6xK-4/hqdefault.jpg",
-					"publishedAt": "2026-10-25T14:30:46.000Z"
-				},
 				{
 					"videoId": "LKrwhjOI8Nc",
 					"title": "There's never been a better time to go into math",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/LKrwhjOI8Nc/hqdefault.jpg",
 					"publishedAt": "2026-10-16T16:15:20.000Z"
-				},
-				{
-					"videoId": "ausLKMojXaY",
-					"title": "The Phone Number puzzle",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/ausLKMojXaY/hqdefault.jpg",
-					"publishedAt": "2026-09-25T13:35:02.000Z"
-				},
-				{
-					"videoId": "bRQEWPA832A",
-					"title": "The last IMO problem AI could not solve",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/bRQEWPA832A/hqdefault.jpg",
-					"publishedAt": "2026-09-18T17:14:08.000Z"
 				},
 				{
 					"videoId": "Nbwv5wHQoj0",
@@ -2910,65 +2312,30 @@
 					"publishedAt": "2026-09-18T17:12:53.000Z"
 				},
 				{
-					"videoId": "rYyJm1tD3d0",
-					"title": "The jumping pegs puzzle",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/rYyJm1tD3d0/hqdefault.jpg",
-					"publishedAt": "2026-08-18T14:54:17.000Z"
-				},
-				{
-					"videoId": "6XPlmCDNLNc",
-					"title": "The 64 sugar cubes puzzle",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/6XPlmCDNLNc/hqdefault.jpg",
-					"publishedAt": "2026-07-24T15:05:39.000Z"
-				},
-				{
 					"videoId": "GlYgs6v2YfU",
 					"title": "But what is cross-entropy? | Compression is Intelligence Part 2",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/GlYgs6v2YfU/hqdefault.jpg",
 					"publishedAt": "2026-07-16T11:56:04.000Z"
 				},
 				{
-					"videoId": "wGffBCfrAsE",
-					"title": "100 random chords, how many intersections?",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/wGffBCfrAsE/hqdefault.jpg",
-					"publishedAt": "2026-06-16T18:04:05.000Z"
-				},
-				{
-					"videoId": "-7etvZSBxlk",
-					"title": "Measuring the entropy of English",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/-7etvZSBxlk/hqdefault.jpg",
-					"publishedAt": "2026-06-12T13:22:02.000Z"
-				},
-				{
-					"videoId": "7L_eTem1SQ4",
-					"title": "What's the perfect encoding? How do you know?",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/7L_eTem1SQ4/hqdefault.jpg",
-					"publishedAt": "2026-06-10T13:26:34.000Z"
-				},
-				{
 					"videoId": "l6DKRf-fAAM",
 					"title": "Reinventing Entropy | Compression is Intelligence Part 1",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/l6DKRf-fAAM/hqdefault.jpg",
 					"publishedAt": "2026-06-07T11:49:51.000Z"
-				},
-				{
-					"videoId": "ZHXt0-_gSj4",
-					"title": "Tie random ends: How many loops?",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/ZHXt0-_gSj4/hqdefault.jpg",
-					"publishedAt": "2026-05-21T21:49:47.000Z"
-				},
-				{
-					"videoId": "QLu_ZsRc_G0",
-					"title": "Covering 10 points, a surprisingly tricky puzzle.",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/QLu_ZsRc_G0/hqdefault.jpg",
-					"publishedAt": "2026-04-16T16:08:21.000Z"
-				},
-				{
-					"videoId": "Y7ImxZ_YhJk",
-					"title": "Escher's most mind-bending piece",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/Y7ImxZ_YhJk/hqdefault.jpg",
-					"publishedAt": "2026-03-27T20:56:02.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"V_uq3v6xK-4",
+				"ausLKMojXaY",
+				"bRQEWPA832A",
+				"rYyJm1tD3d0",
+				"6XPlmCDNLNc",
+				"wGffBCfrAsE",
+				"-7etvZSBxlk",
+				"7L_eTem1SQ4",
+				"ZHXt0-_gSj4",
+				"QLu_ZsRc_G0",
+				"Y7ImxZ_YhJk"
 			]
 		},
 		{
@@ -2978,14 +2345,8 @@
 			"description": "Talks and ideas from scientists, artists, and thinkers.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCAuUUnT6oDeKwE6v1NGQxug.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "Sj2OZXQHugQ",
-					"title": "This dad tried to get AI to help raise his kids, and it didn’t turn out the way he hoped #TEDTalks",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/Sj2OZXQHugQ/hqdefault.jpg",
-					"publishedAt": "2026-10-27T18:00:13.000Z"
-				},
 				{
 					"videoId": "tu6tF-lVDJI",
 					"title": "Why You Should Share a Recipe with a Stranger | Anuj Gupta | TED",
@@ -3005,28 +2366,10 @@
 					"publishedAt": "2026-10-25T15:00:34.000Z"
 				},
 				{
-					"videoId": "mluCIExD2S0",
-					"title": "Running a marathon? Here’s what your brain has to look forward to. #TEDTalks",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/mluCIExD2S0/hqdefault.jpg",
-					"publishedAt": "2026-10-24T20:00:34.000Z"
-				},
-				{
-					"videoId": "ahEpfudazJc",
-					"title": "The real danger isn't the technology itself, but rather the communities it leaves behind #TEDTalks",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/ahEpfudazJc/hqdefault.jpg",
-					"publishedAt": "2026-10-23T19:00:01.000Z"
-				},
-				{
 					"videoId": "cTHwSER_l-8",
 					"title": "How to Stop Homelessness Before It Starts | Jen Loving | TED",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/cTHwSER_l-8/hqdefault.jpg",
 					"publishedAt": "2026-10-23T15:00:35.000Z"
-				},
-				{
-					"videoId": "tENA0Z30QUU",
-					"title": "Algorithms may be narrowing your taste #TEDTalks",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/tENA0Z30QUU/hqdefault.jpg",
-					"publishedAt": "2026-10-22T20:30:36.000Z"
 				},
 				{
 					"videoId": "j11fPNKe5mY",
@@ -3039,12 +2382,6 @@
 					"title": "What Makes a Good Game? | Eric Zimmerman | TED",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/vfbNzpd6cIw/hqdefault.jpg",
 					"publishedAt": "2026-10-20T15:00:04.000Z"
-				},
-				{
-					"videoId": "gDQB1rGT4pg",
-					"title": "When there's a whale, there's a way",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/gDQB1rGT4pg/hqdefault.jpg",
-					"publishedAt": "2026-10-19T17:00:08.000Z"
 				},
 				{
 					"videoId": "UNTZMlgf2To",
@@ -3070,6 +2407,13 @@
 					"thumbnailUrl": "https://i3.ytimg.com/vi/ny26teC-4bU/hqdefault.jpg",
 					"publishedAt": "2026-10-16T15:00:35.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"Sj2OZXQHugQ",
+				"mluCIExD2S0",
+				"ahEpfudazJc",
+				"tENA0Z30QUU",
+				"gDQB1rGT4pg"
 			]
 		},
 		{
@@ -3079,14 +2423,8 @@
 			"description": "Numbers, puzzles, and mathematical curiosities with experts.",
 			"category": "Learning",
 			"logoUrl": "catalog/logos/UCoxcjq-8xIDTYp3uz647V5A.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "33_jJ4kIxfc",
-					"title": "Blind Ranking Numbers (Terence Tao)",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/33_jJ4kIxfc/hqdefault.jpg",
-					"publishedAt": "2026-10-27T09:00:23.000Z"
-				},
 				{
 					"videoId": "EgnAN0ZUl08",
 					"title": "Squaring the Triangle - Numberphile",
@@ -3112,18 +2450,6 @@
 					"publishedAt": "2026-10-14T14:58:55.000Z"
 				},
 				{
-					"videoId": "g9Exz_tR-nU",
-					"title": "Blind Ranking Numbers (Matt Parker)",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/g9Exz_tR-nU/hqdefault.jpg",
-					"publishedAt": "2026-10-06T17:08:47.000Z"
-				},
-				{
-					"videoId": "VydHKLBXdVQ",
-					"title": "All the Noble Polyhedra #maths #math #animation",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/VydHKLBXdVQ/hqdefault.jpg",
-					"publishedAt": "2026-10-03T10:24:53.000Z"
-				},
-				{
 					"videoId": "95335U-cUh8",
 					"title": "Big News in Polyhedra - Numberphile",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/95335U-cUh8/hqdefault.jpg",
@@ -3140,12 +2466,6 @@
 					"title": "What now for Mathematics (with 3Blue1Brown) - Numberphile",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/9HlIuxnuTKQ/hqdefault.jpg",
 					"publishedAt": "2026-09-28T15:42:59.000Z"
-				},
-				{
-					"videoId": "UmuMgA_RxnU",
-					"title": "Blind Ranking Numbers (James Grime)",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/UmuMgA_RxnU/hqdefault.jpg",
-					"publishedAt": "2026-09-22T12:34:02.000Z"
 				},
 				{
 					"videoId": "3geDF-DAwpg",
@@ -3171,6 +2491,12 @@
 					"thumbnailUrl": "https://i2.ytimg.com/vi/-mXaU3N9e8Y/hqdefault.jpg",
 					"publishedAt": "2026-08-22T14:09:57.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"33_jJ4kIxfc",
+				"g9Exz_tR-nU",
+				"VydHKLBXdVQ",
+				"UmuMgA_RxnU"
 			]
 		},
 		{
@@ -3180,7 +2506,7 @@
 			"description": "High-speed tutorials and news on web development, programming languages, and software trends.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCsBjURrPoezykLs9EqgamOA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "nEaJMdM1djM",
@@ -3272,7 +2598,8 @@
 					"thumbnailUrl": "https://i2.ytimg.com/vi/ylO0DQeVEBQ/hqdefault.jpg",
 					"publishedAt": "2026-09-23T17:17:22.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UC8ENHE5xdFSwx71u3fDH5Xw",
@@ -3281,7 +2608,7 @@
 			"description": "Developer commentary, engineering culture, and programming tooling.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UC8ENHE5xdFSwx71u3fDH5Xw.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "tYQyh1tjSFc",
@@ -3308,36 +2635,6 @@
 					"publishedAt": "2026-06-04T12:00:40.000Z"
 				},
 				{
-					"videoId": "GKpwO-DGKiI",
-					"title": "I Hate Google",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/GKpwO-DGKiI/hqdefault.jpg",
-					"publishedAt": "2025-09-02T18:42:55.000Z"
-				},
-				{
-					"videoId": "q5jcjAQXiIU",
-					"title": "WHY STARBUCKS, WHY?!?!",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/q5jcjAQXiIU/hqdefault.jpg",
-					"publishedAt": "2025-08-22T15:04:21.000Z"
-				},
-				{
-					"videoId": "tLLQoF2JjAg",
-					"title": "Prime picks one language (Challenge Level: Impossible)",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/tLLQoF2JjAg/hqdefault.jpg",
-					"publishedAt": "2025-08-21T20:01:15.000Z"
-				},
-				{
-					"videoId": "_iGHYwPU2WE",
-					"title": "A Billion Dollar Idea Gone Wrong",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/_iGHYwPU2WE/hqdefault.jpg",
-					"publishedAt": "2025-08-14T20:14:07.000Z"
-				},
-				{
-					"videoId": "4zJHs_L-GOc",
-					"title": "He did WHAT to the DB?",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/4zJHs_L-GOc/hqdefault.jpg",
-					"publishedAt": "2025-08-07T18:45:01.000Z"
-				},
-				{
 					"videoId": "taoAAcS5PSw",
 					"title": "Musician turned Programmer turned Musician",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/taoAAcS5PSw/hqdefault.jpg",
@@ -3360,19 +2657,16 @@
 					"title": "I Went To DEFCON!",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/GwcFxTuMYmU/hqdefault.jpg",
 					"publishedAt": "2024-08-28T19:37:57.000Z"
-				},
-				{
-					"videoId": "dhuX9t2j5Hc",
-					"title": "This Keyboard",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/dhuX9t2j5Hc/hqdefault.jpg",
-					"publishedAt": "2024-07-07T18:01:39.000Z"
-				},
-				{
-					"videoId": "v2a6Nv7RSd0",
-					"title": "Find And Replace",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/v2a6Nv7RSd0/hqdefault.jpg",
-					"publishedAt": "2024-06-27T15:00:49.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"GKpwO-DGKiI",
+				"q5jcjAQXiIU",
+				"tLLQoF2JjAg",
+				"_iGHYwPU2WE",
+				"4zJHs_L-GOc",
+				"dhuX9t2j5Hc",
+				"v2a6Nv7RSd0"
 			]
 		},
 		{
@@ -3382,7 +2676,7 @@
 			"description": "Practical web development tutorials focused on JavaScript, React, and modern front-end patterns.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCFbNIlppjAuEX4znoulh0Cw.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "FbXPaIcpvww",
@@ -3427,28 +2721,10 @@
 					"publishedAt": "2026-07-14T16:00:36.000Z"
 				},
 				{
-					"videoId": "Kh8M_iiIhUY",
-					"title": "How To Use The Pi Agent Harness In 1 Minute",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/Kh8M_iiIhUY/hqdefault.jpg",
-					"publishedAt": "2026-07-09T16:00:20.000Z"
-				},
-				{
-					"videoId": "5HHiRBiNsyc",
-					"title": "How To Run AI In A Secure Sandbox",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/5HHiRBiNsyc/hqdefault.jpg",
-					"publishedAt": "2026-07-02T16:00:37.000Z"
-				},
-				{
 					"videoId": "7Z7ID5BbZU4",
 					"title": "Containers Don't Make Your AI Agent Safe",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/7Z7ID5BbZU4/hqdefault.jpg",
 					"publishedAt": "2026-06-30T16:00:22.000Z"
-				},
-				{
-					"videoId": "t4TwkwodMCU",
-					"title": "What Are AI Skills In 1 Minute",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/t4TwkwodMCU/hqdefault.jpg",
-					"publishedAt": "2026-06-25T16:00:26.000Z"
 				},
 				{
 					"videoId": "DogTO1jjFtI",
@@ -3457,23 +2733,18 @@
 					"publishedAt": "2026-06-23T16:00:10.000Z"
 				},
 				{
-					"videoId": "OkoK6IjndWU",
-					"title": "Hashing vs Encryption Explained In 1 Minute",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/OkoK6IjndWU/hqdefault.jpg",
-					"publishedAt": "2026-06-18T16:00:02.000Z"
-				},
-				{
 					"videoId": "cxQLKsktiBA",
 					"title": "How To Use AI Skills Like A Senior Developer",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/cxQLKsktiBA/hqdefault.jpg",
 					"publishedAt": "2026-06-16T16:00:34.000Z"
-				},
-				{
-					"videoId": "Qou3TeYdEw4",
-					"title": "Easily Fix AI Slop With This Amazing Tool",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/Qou3TeYdEw4/hqdefault.jpg",
-					"publishedAt": "2026-06-11T16:00:02.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"Kh8M_iiIhUY",
+				"5HHiRBiNsyc",
+				"t4TwkwodMCU",
+				"OkoK6IjndWU",
+				"Qou3TeYdEw4"
 			]
 		},
 		{
@@ -3483,7 +2754,7 @@
 			"description": "Web development commentary, TypeScript, and the business of building software.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCbRP3c757lWg9M-U7TyEkXA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "FHGfSjDGUIw",
@@ -3496,12 +2767,6 @@
 					"title": "These 3 skills changed my life",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/5Bmp9cz1JN8/hqdefault.jpg",
 					"publishedAt": "2026-10-26T07:16:35.000Z"
-				},
-				{
-					"videoId": "nXpoU99pTho",
-					"title": "Even The NSA Got Involved",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/nXpoU99pTho/hqdefault.jpg",
-					"publishedAt": "2026-10-23T21:00:31.000Z"
 				},
 				{
 					"videoId": "USeyDcWyVCc",
@@ -3540,12 +2805,6 @@
 					"publishedAt": "2026-10-13T11:01:13.000Z"
 				},
 				{
-					"videoId": "XkmZ1nOtuDc",
-					"title": "P.S. Don't Upgrade For Ultrafast (Yet)",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/XkmZ1nOtuDc/hqdefault.jpg",
-					"publishedAt": "2026-10-12T18:00:14.000Z"
-				},
-				{
 					"videoId": "vRS2leJLAI0",
 					"title": "I thought AI was gonna get cheaper?",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/vRS2leJLAI0/hqdefault.jpg",
@@ -3568,13 +2827,12 @@
 					"title": "Does the $200 Codex plan suck now?",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/nYA0yASgaZI/hqdefault.jpg",
 					"publishedAt": "2026-10-07T20:40:02.000Z"
-				},
-				{
-					"videoId": "KqLXX0Wv6NU",
-					"title": "Ultrafast's ACTUAL Cost for Work",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/KqLXX0Wv6NU/hqdefault.jpg",
-					"publishedAt": "2026-10-07T18:00:29.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"nXpoU99pTho",
+				"XkmZ1nOtuDc",
+				"KqLXX0Wv6NU"
 			]
 		},
 		{
@@ -3584,7 +2842,7 @@
 			"description": "System design, distributed systems, and software engineering interview concepts explained visually.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UCZgt6AzoyjslHTC9dz0UoTw.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "Dddv7P_k60o",
@@ -3623,12 +2881,6 @@
 					"publishedAt": "2026-07-22T15:15:25.000Z"
 				},
 				{
-					"videoId": "b1SPKtN05y8",
-					"title": "What is Prompt Injection?",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/b1SPKtN05y8/hqdefault.jpg",
-					"publishedAt": "2026-06-24T15:30:32.000Z"
-				},
-				{
 					"videoId": "U8lGbSaCCYI",
 					"title": "How to Run LLMs Locally (Great For Learning and Privacy)",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/U8lGbSaCCYI/hqdefault.jpg",
@@ -3639,12 +2891,6 @@
 					"title": "CPU vs GPU vs TPU",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/MUWAbpg1xLo/hqdefault.jpg",
 					"publishedAt": "2026-06-01T15:30:22.000Z"
-				},
-				{
-					"videoId": "VMF4InsZm9I",
-					"title": "MCP in Claude Code",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/VMF4InsZm9I/hqdefault.jpg",
-					"publishedAt": "2026-05-07T17:00:48.000Z"
 				},
 				{
 					"videoId": "taSmwcqdkQk",
@@ -3676,6 +2922,10 @@
 					"thumbnailUrl": "https://i3.ytimg.com/vi/6u25GckPhLU/hqdefault.jpg",
 					"publishedAt": "2025-11-06T16:30:05.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"b1SPKtN05y8",
+				"VMF4InsZm9I"
 			]
 		},
 		{
@@ -3685,14 +2935,8 @@
 			"description": "Full-stack web development tutorials, project builds, and framework walkthroughs.",
 			"category": "Software",
 			"logoUrl": "catalog/logos/UC29ju8bIPH5as8OGnQzwJyA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "-_-X8wI1ywo",
-					"title": "HTTP in 2 Minutes #coding #http #webdevelopment #backend #frontend #softwaredevelopment",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/-_-X8wI1ywo/hqdefault.jpg",
-					"publishedAt": "2026-10-24T16:22:38.000Z"
-				},
 				{
 					"videoId": "RE2c_eH0Sq4",
 					"title": "A Bad Week for the Web: What’s Confirmed and What to Do",
@@ -3766,17 +3010,15 @@
 					"publishedAt": "2026-06-22T14:00:05.000Z"
 				},
 				{
-					"videoId": "mkTAnxlyU60",
-					"title": "Fable BANNED by US government!",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/mkTAnxlyU60/hqdefault.jpg",
-					"publishedAt": "2026-06-13T18:56:17.000Z"
-				},
-				{
 					"videoId": "RrNZOL79Upw",
 					"title": "They Killed an AI Model Overnight (Fable 5 & Mythos 5)",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/RrNZOL79Upw/hqdefault.jpg",
 					"publishedAt": "2026-06-13T18:45:20.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"-_-X8wI1ywo",
+				"mkTAnxlyU60"
 			]
 		},
 		{
@@ -3786,49 +3028,19 @@
 			"description": "Geo TV's comedy show with sketches, celebrity guests, and audience laughs.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC6HQ4d3xq9EgSeJgMhc-4AQ.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
-					"videoId": "gdyTopf2HkU",
-					"title": "Audience mein aaye shaks ne mazahiya shayari sunadi! - #hasnamanahai #tabishhashmi #shorts",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/gdyTopf2HkU/hqdefault.jpg",
-					"publishedAt": "2026-10-28T13:00:06.000Z"
-				},
-				{
-					"videoId": "UVB7rGvHUTg",
-					"title": "Tabish plays 2.5 seconds ka maamla with Faraz Sarwar - #hasnamanahai #shorts",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/UVB7rGvHUTg/hqdefault.jpg",
-					"publishedAt": "2026-10-28T12:30:31.000Z"
+					"videoId": "hcY_cLsZPcQ",
+					"title": "🎭🤔 Konsa Character Arjumand Ki Real Life Ke Qareeb Hai? ✨Hasna Mana Hai 😂🤩",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/hcY_cLsZPcQ/hqdefault.jpg",
+					"publishedAt": "2026-10-28T15:00:13.000Z"
 				},
 				{
 					"videoId": "lBD_cLcsA1g",
 					"title": "🤔💔 Moashray Mein Adam-e-Bardasht Ki Wajuhat Kya Hain? 😡 Hasna Mana Hai 😂",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/lBD_cLcsA1g/hqdefault.jpg",
 					"publishedAt": "2026-10-28T12:00:26.000Z"
-				},
-				{
-					"videoId": "zI74o8dAjAM",
-					"title": "Why do most of Actors prefer Theatre? - #hasnamanahai #tabishhashmi #shorts",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/zI74o8dAjAM/hqdefault.jpg",
-					"publishedAt": "2026-10-28T11:00:02.000Z"
-				},
-				{
-					"videoId": "F33iV5IE0wc",
-					"title": "Tabish requests Mintoo to sing a song! - #hasnamanahai #shorts",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/F33iV5IE0wc/hqdefault.jpg",
-					"publishedAt": "2026-10-28T10:30:17.000Z"
-				},
-				{
-					"videoId": "6IGXWvMwZ7E",
-					"title": "\"Takabbur nahi karna chahiye kabhi bhi\" - #hasnamanahai #tabishhashmi #shorts",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/6IGXWvMwZ7E/hqdefault.jpg",
-					"publishedAt": "2026-10-28T09:00:32.000Z"
-				},
-				{
-					"videoId": "SPQQZHvcR1Y",
-					"title": "Legendary actor Arjumand Rahim became the Guest of Hasna Mana Hai - #hasnamanahai #shorts",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/SPQQZHvcR1Y/hqdefault.jpg",
-					"publishedAt": "2026-10-27T16:30:38.000Z"
 				},
 				{
 					"videoId": "WqV5OvvHZZs",
@@ -3843,41 +3055,23 @@
 					"publishedAt": "2026-10-27T14:30:20.000Z"
 				},
 				{
-					"videoId": "FMGVKKchObU",
-					"title": "Hasna Mana hai Mein Aay Singar ne Samaa Baandh Diya!",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/FMGVKKchObU/hqdefault.jpg",
-					"publishedAt": "2026-10-27T14:30:12.000Z"
-				},
-				{
-					"videoId": "LdAxMQ5CJdU",
-					"title": "Why Did Qaiser Piya Stop Singing? 🎶",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/LdAxMQ5CJdU/hqdefault.jpg",
-					"publishedAt": "2026-10-27T12:30:28.000Z"
-				},
-				{
 					"videoId": "v1QP_ItVkus",
 					"title": "Qaisar Piya Kon Man Mein 🕵️‍♂️ Insaan Ka Pesha Pehchan Paye? 🎭 Hasna Mana Hai 😂",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/v1QP_ItVkus/hqdefault.jpg",
 					"publishedAt": "2026-10-27T12:30:20.000Z"
-				},
-				{
-					"videoId": "LMqB3MkRw3g",
-					"title": "“Don't Judge” Mein Tabish Ne Qaisar Piya Ko Phansa Diya! 🎯 Hasna Mana Hai 🤣",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/LMqB3MkRw3g/hqdefault.jpg",
-					"publishedAt": "2026-10-27T10:30:31.000Z"
-				},
-				{
-					"videoId": "4QL7SsKK2IY",
-					"title": "Why Did Qaiser Piya Hit an Audience Member During a Stage Play?",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/4QL7SsKK2IY/hqdefault.jpg",
-					"publishedAt": "2026-10-27T10:30:08.000Z"
-				},
-				{
-					"videoId": "ONpbz3eTceg",
-					"title": "Why Did Qaisar Piya Hit the Audience During a Stage Play? 🥊 Laughter Prohibited 😂",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/ONpbz3eTceg/hqdefault.jpg",
-					"publishedAt": "2026-10-27T08:30:38.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"4FB5txEzLr0",
+				"xg2PWrXlP3w",
+				"gdyTopf2HkU",
+				"UVB7rGvHUTg",
+				"zI74o8dAjAM",
+				"F33iV5IE0wc",
+				"6IGXWvMwZ7E",
+				"SPQQZHvcR1Y",
+				"FMGVKKchObU",
+				"LdAxMQ5CJdU"
 			]
 		},
 		{
@@ -3887,7 +3081,7 @@
 			"description": "Roasts, comedy vlogs, and internet culture commentary.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC_c-RTowPbIlzMkIa_O7s6Q.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "7qogNKRz9Nw",
@@ -3979,7 +3173,8 @@
 					"thumbnailUrl": "https://i1.ytimg.com/vi/tvsOaGQ0b2U/hqdefault.jpg",
 					"publishedAt": "2026-08-29T17:14:29.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UCvlVuntLjdURVD3b3Hx7kxw",
@@ -3988,7 +3183,7 @@
 			"description": "Clean stand-up comedy sets from a rotating lineup of comics.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCvlVuntLjdURVD3b3Hx7kxw.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "9GXFX9XkES0",
@@ -3997,34 +3192,16 @@
 					"publishedAt": "2026-10-28T14:12:51.000Z"
 				},
 				{
-					"videoId": "ol8X-2gF3jM",
-					"title": "Times were different when we were kids | Dan McGowan Stand-Up Comedy",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/ol8X-2gF3jM/hqdefault.jpg",
-					"publishedAt": "2026-10-27T22:00:12.000Z"
-				},
-				{
 					"videoId": "CpP0yPHbe5A",
 					"title": "26 Years of Stand-Up Comedy and Still Nobody Knows Me | Bengt Washburn Triple Feature",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/CpP0yPHbe5A/hqdefault.jpg",
 					"publishedAt": "2026-10-27T15:00:03.000Z"
 				},
 				{
-					"videoId": "asDXOjHCGIY",
-					"title": "Dating a girl who's into horoscopes is hard | Kirk Smith Stand-Up Comedy",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/asDXOjHCGIY/hqdefault.jpg",
-					"publishedAt": "2026-10-26T22:00:03.000Z"
-				},
-				{
 					"videoId": "ITwLLa7vrCg",
 					"title": "Why You Should NEVER Mess With Your Wife | Brett Hollis FULL SPECIAL",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/ITwLLa7vrCg/hqdefault.jpg",
 					"publishedAt": "2026-10-26T16:26:21.000Z"
-				},
-				{
-					"videoId": "GW6flujEhlc",
-					"title": "Marriage makes every simple question complicated | Dan McGowan Stand-Up Comedy",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/GW6flujEhlc/hqdefault.jpg",
-					"publishedAt": "2026-10-25T22:00:17.000Z"
 				},
 				{
 					"videoId": "ObxNWdTPsV4",
@@ -4039,22 +3216,10 @@
 					"publishedAt": "2026-10-25T15:00:01.000Z"
 				},
 				{
-					"videoId": "cpPtxlMHHNI",
-					"title": "There's only one thing I want for my kids, and you'll never guess it | Jordan Makin Stand-Up Comedy",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/cpPtxlMHHNI/hqdefault.jpg",
-					"publishedAt": "2026-10-24T21:00:20.000Z"
-				},
-				{
 					"videoId": "rX08Xe2_EI0",
 					"title": "The Best Halloween Jokes You'll Hear This Season",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/rX08Xe2_EI0/hqdefault.jpg",
 					"publishedAt": "2026-10-24T14:00:13.000Z"
-				},
-				{
-					"videoId": "YEWXHZRIeOA",
-					"title": "When you get older, your body does not work the same anymore | Jaye Devan Stand-Up Comedy",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/YEWXHZRIeOA/hqdefault.jpg",
-					"publishedAt": "2026-10-23T21:00:30.000Z"
 				},
 				{
 					"videoId": "Y8lX7veeasM",
@@ -4069,17 +3234,19 @@
 					"publishedAt": "2026-10-23T14:00:05.000Z"
 				},
 				{
-					"videoId": "aorezgkuIs8",
-					"title": "This is when I knew I was old | Dan McGowan Stand-Up Comedy",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/aorezgkuIs8/hqdefault.jpg",
-					"publishedAt": "2026-10-22T21:00:23.000Z"
-				},
-				{
 					"videoId": "jRpvsoyGCVI",
 					"title": "That's When You Know You're Finally Old | Michele Balan FULL SPECIAL",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/jRpvsoyGCVI/hqdefault.jpg",
 					"publishedAt": "2026-10-22T14:00:02.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"ol8X-2gF3jM",
+				"asDXOjHCGIY",
+				"GW6flujEhlc",
+				"cpPtxlMHHNI",
+				"YEWXHZRIeOA",
+				"aorezgkuIs8"
 			]
 		},
 		{
@@ -4089,55 +3256,13 @@
 			"description": "Secret-location stand-up sets from emerging and established comedians.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UC7MgijK9WL_EqCo1juUERwg.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "DV-dS63R9AY",
-					"title": "\"Rosa Parks\" 🎤: Alex English | Full Video on our Channel!",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/DV-dS63R9AY/hqdefault.jpg",
-					"publishedAt": "2026-10-27T21:00:37.000Z"
-				},
-				{
-					"videoId": "hdlGsDRAUls",
-					"title": "“STD Test” 🎤: Bret Raybould | Full Video on our Channel!",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/hdlGsDRAUls/hqdefault.jpg",
-					"publishedAt": "2026-10-26T21:00:20.000Z"
-				},
 				{
 					"videoId": "OCaY4tobtxk",
 					"title": "Humiliated at the STD Clinic | Bret Raybould | Stand Up Comedy",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/OCaY4tobtxk/hqdefault.jpg",
 					"publishedAt": "2026-10-26T19:00:11.000Z"
-				},
-				{
-					"videoId": "IBUCtQucum0",
-					"title": "\"Smuggling Mayo into Mexico\" 🎤: Aidan McCluskey | @aidsman109  | Full Video on our Channel!",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/IBUCtQucum0/hqdefault.jpg",
-					"publishedAt": "2026-10-25T21:00:39.000Z"
-				},
-				{
-					"videoId": "COaSlWDDUHI",
-					"title": "“Straight vs. Gay Face” 🎤: Asha Ward | Full Video on our Channel!",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/COaSlWDDUHI/hqdefault.jpg",
-					"publishedAt": "2026-10-24T21:00:10.000Z"
-				},
-				{
-					"videoId": "RcdXImGdxwg",
-					"title": "\"Crazy Dominican Slang\" 🎤: Carolina Montesquieu | Full Video on our Channel!",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/RcdXImGdxwg/hqdefault.jpg",
-					"publishedAt": "2026-10-23T21:00:21.000Z"
-				},
-				{
-					"videoId": "SU4UIZgmluU",
-					"title": "“Hormones vs. Steroids” 🎤: @RobertKellyComedy  | Full Video on our Channel!",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/SU4UIZgmluU/hqdefault.jpg",
-					"publishedAt": "2026-10-22T21:00:29.000Z"
-				},
-				{
-					"videoId": "jll6XSOCVI0",
-					"title": "“White People Things” 🎤: Asha Ward | Full Video on our Channel!",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/jll6XSOCVI0/hqdefault.jpg",
-					"publishedAt": "2026-10-21T21:00:26.000Z"
 				},
 				{
 					"videoId": "kmz0-G2kw6A",
@@ -4146,34 +3271,10 @@
 					"publishedAt": "2026-10-21T19:00:22.000Z"
 				},
 				{
-					"videoId": "kbAa4ZmqIE8",
-					"title": "\"New Therapist\" 🎤: Dan Docimo | @dandocimo8934 | Full Video on our Channel!",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/kbAa4ZmqIE8/hqdefault.jpg",
-					"publishedAt": "2026-10-20T21:00:31.000Z"
-				},
-				{
-					"videoId": "HjQo5S21bJA",
-					"title": "“Used to be Heavy” 🎤: @RobertKellyComedy  | Full Video on our Channel!",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/HjQo5S21bJA/hqdefault.jpg",
-					"publishedAt": "2026-10-19T21:00:16.000Z"
-				},
-				{
 					"videoId": "EHc9vHcmdAc",
 					"title": "Alpha Males Will Believe Anything | Robert Kelly | Stand Up Comedy",
 					"thumbnailUrl": "https://i2.ytimg.com/vi/EHc9vHcmdAc/hqdefault.jpg",
 					"publishedAt": "2026-10-19T19:00:30.000Z"
-				},
-				{
-					"videoId": "YH_5xV9CQvQ",
-					"title": "\"Raw Dogging Marriage\" 🎤: Shivani Davé | @ShivaniDaveComedy | Full Video on our Channel!",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/YH_5xV9CQvQ/hqdefault.jpg",
-					"publishedAt": "2026-10-18T21:00:10.000Z"
-				},
-				{
-					"videoId": "TsJ5El89xLc",
-					"title": "”Cockapoo vs. White Women” 🎤: Anthony Moore | Full Video on our Channel!",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/TsJ5El89xLc/hqdefault.jpg",
-					"publishedAt": "2026-10-17T21:00:15.000Z"
 				},
 				{
 					"videoId": "bTUsicw0598",
@@ -4181,6 +3282,19 @@
 					"thumbnailUrl": "https://i3.ytimg.com/vi/bTUsicw0598/hqdefault.jpg",
 					"publishedAt": "2026-10-17T19:00:38.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"DV-dS63R9AY",
+				"hdlGsDRAUls",
+				"IBUCtQucum0",
+				"COaSlWDDUHI",
+				"RcdXImGdxwg",
+				"SU4UIZgmluU",
+				"jll6XSOCVI0",
+				"kbAa4ZmqIE8",
+				"HjQo5S21bJA",
+				"YH_5xV9CQvQ",
+				"TsJ5El89xLc"
 			]
 		},
 		{
@@ -4190,7 +3304,7 @@
 			"description": "Satirical news and comedy covering politics, media, and current events.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCwWhs_6x42TyRM4Wstoq8HA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "uWqFBoeLCPk",
@@ -4209,24 +3323,6 @@
 					"title": "Conservative Media Rallies Behind The Cheesecake Factory After Obama Serves Up Diss | The Daily Show",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/pzyITrwlaL0/hqdefault.jpg",
 					"publishedAt": "2026-10-28T02:00:28.000Z"
-				},
-				{
-					"videoId": "CAs2S6P90fM",
-					"title": "Trumpers are firmly against \"communist\" handouts, but Trump's $5K checks? That's free money, baby!",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/CAs2S6P90fM/hqdefault.jpg",
-					"publishedAt": "2026-10-27T21:33:42.000Z"
-				},
-				{
-					"videoId": "6MCptn0TKls",
-					"title": "Obama's jab at Trump's White House set off a right-wing s**tstorm, but not the one Jon was expecting",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/6MCptn0TKls/hqdefault.jpg",
-					"publishedAt": "2026-10-27T18:02:20.000Z"
-				},
-				{
-					"videoId": "hjTReEJBmRk",
-					"title": "Jon reexamines Trump's 2024 campaign promise, \"Trump is for you,\" and who the \"YOU\" really is",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/hjTReEJBmRk/hqdefault.jpg",
-					"publishedAt": "2026-10-27T15:39:44.000Z"
 				},
 				{
 					"videoId": "FejC6Knd-yo",
@@ -4251,37 +3347,17 @@
 					"title": "An Inside Look at Jordan Klepper Fingers the Pulse: Red Flags | The Daily Show",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/Sk3aIuMSbG4/hqdefault.jpg",
 					"publishedAt": "2026-10-27T01:00:08.000Z"
-				},
-				{
-					"videoId": "MMA1rqTJvu4",
-					"title": "Jordan Klepper finds out Texans have more in common with James Talarico than they'd like to admit.",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/MMA1rqTJvu4/hqdefault.jpg",
-					"publishedAt": "2026-10-26T23:44:24.000Z"
-				},
-				{
-					"videoId": "geoq11GfEE0",
-					"title": "Islamophobia couldn't stop El-Sayed in the primary race, so now MAGA's going with MORE ISLAMOPHOBIA",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/geoq11GfEE0/hqdefault.jpg",
-					"publishedAt": "2026-10-26T18:02:20.000Z"
-				},
-				{
-					"videoId": "dbS7iwm6KJ8",
-					"title": "David Corn on how Trump's affection for Putin is driving him to side with Russia over Ukraine",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/dbS7iwm6KJ8/hqdefault.jpg",
-					"publishedAt": "2026-10-26T15:02:19.000Z"
-				},
-				{
-					"videoId": "BUfeXk1wCUw",
-					"title": "Taika Waititi on \"Klara and the Sun\" and its unexpected relevance to today's discussions about AI",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/BUfeXk1wCUw/hqdefault.jpg",
-					"publishedAt": "2026-10-25T18:00:03.000Z"
-				},
-				{
-					"videoId": "k9K271kUIYg",
-					"title": "Democrats have a chance at winning in MISSISSIPPI? Where the state bird is a rifle? #DailyShow #Dems",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/k9K271kUIYg/hqdefault.jpg",
-					"publishedAt": "2026-10-25T15:00:34.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"CAs2S6P90fM",
+				"6MCptn0TKls",
+				"hjTReEJBmRk",
+				"MMA1rqTJvu4",
+				"geoq11GfEE0",
+				"dbS7iwm6KJ8",
+				"BUfeXk1wCUw",
+				"k9K271kUIYg"
 			]
 		},
 		{
@@ -4291,7 +3367,7 @@
 			"description": "Talk-show comedy, sketches, and interviews from Conan O'Brien.",
 			"category": "Comedy",
 			"logoUrl": "catalog/logos/UCo3nWXH_6vVJ5-xbF3bKb3Q.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "qHzMtDE1Q8M",
@@ -4300,28 +3376,10 @@
 					"publishedAt": "2026-10-23T14:00:01.000Z"
 				},
 				{
-					"videoId": "Sev8xhjTbkE",
-					"title": "Cold: I'll See You in Health with Dr. Arroyo",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/Sev8xhjTbkE/hqdefault.jpg",
-					"publishedAt": "2026-10-16T20:05:21.000Z"
-				},
-				{
 					"videoId": "rowxjJnscKw",
 					"title": "Izabel Goulart Flirts with Conan | Late Night with Conan O’Brien",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/rowxjJnscKw/hqdefault.jpg",
 					"publishedAt": "2026-10-16T14:00:37.000Z"
-				},
-				{
-					"videoId": "rJsBwD-zcYg",
-					"title": "Jordan Compliments Conan | The Conan and Jordan Show",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/rJsBwD-zcYg/hqdefault.jpg",
-					"publishedAt": "2026-10-12T21:00:14.000Z"
-				},
-				{
-					"videoId": "nqQM7EJqPFs",
-					"title": "The Jennifer Hudson Spirit Tunnel | The Conan and Jordan Show",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/nqQM7EJqPFs/hqdefault.jpg",
-					"publishedAt": "2026-10-09T20:00:35.000Z"
 				},
 				{
 					"videoId": "f-AO5sSsLGI",
@@ -4330,28 +3388,10 @@
 					"publishedAt": "2026-10-09T13:00:17.000Z"
 				},
 				{
-					"videoId": "vEtR41sKMeE",
-					"title": "5 Ways to Beat the Heat!: I'll See You in Health with Dr. Arroyo",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/vEtR41sKMeE/hqdefault.jpg",
-					"publishedAt": "2026-10-08T14:00:33.000Z"
-				},
-				{
-					"videoId": "gCaatxmXIps",
-					"title": "Sleep Apnea: I'll See You in Health with Dr. Arroyo",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/gCaatxmXIps/hqdefault.jpg",
-					"publishedAt": "2026-10-02T14:00:25.000Z"
-				},
-				{
 					"videoId": "7cH2OfAuqgA",
 					"title": "Conan Takes His Staff on a Shopping Spree | Late Night with Conan O’Brien",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/7cH2OfAuqgA/hqdefault.jpg",
 					"publishedAt": "2026-09-30T14:00:10.000Z"
-				},
-				{
-					"videoId": "B8NnIZF0K9k",
-					"title": "Sperm: I'll See You in Health with Dr. Arroyo",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/B8NnIZF0K9k/hqdefault.jpg",
-					"publishedAt": "2026-09-25T14:00:21.000Z"
 				},
 				{
 					"videoId": "7p4E_vP4Hi0",
@@ -4366,23 +3406,21 @@
 					"publishedAt": "2026-09-18T14:00:06.000Z"
 				},
 				{
-					"videoId": "HyziwfQRvlM",
-					"title": "Tongue Depressor: I'll See You in Health with Dr. Arroyo",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/HyziwfQRvlM/hqdefault.jpg",
-					"publishedAt": "2026-09-16T14:00:20.000Z"
-				},
-				{
 					"videoId": "SRQljkQmKes",
 					"title": "Conan Attempts to Beat His Ring Spin Record with an MIT Physicist | Late Night with Conan O’Brien",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/SRQljkQmKes/hqdefault.jpg",
 					"publishedAt": "2026-09-11T14:00:01.000Z"
-				},
-				{
-					"videoId": "f91Lbc5kCO4",
-					"title": "Athlete's Foot: I'll See You in Health with Dr. Arroyo",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/f91Lbc5kCO4/hqdefault.jpg",
-					"publishedAt": "2026-09-09T14:00:08.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"Sev8xhjTbkE",
+				"rJsBwD-zcYg",
+				"nqQM7EJqPFs",
+				"vEtR41sKMeE",
+				"gCaatxmXIps",
+				"B8NnIZF0K9k",
+				"HyziwfQRvlM",
+				"f91Lbc5kCO4"
 			]
 		},
 		{
@@ -4392,7 +3430,7 @@
 			"description": "Travel and adventure documentaries from Pakistan and beyond.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCf1XIplYiqNv9baGsFHwPPQ.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "tNLuqTc5REU",
@@ -4484,108 +3522,110 @@
 					"thumbnailUrl": "https://i2.ytimg.com/vi/a1hpoWWo16w/hqdefault.jpg",
 					"publishedAt": "2026-09-06T15:51:38.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
-			"id": "UCUuDUW0Y6IQZYDvH1QQBsgA",
-			"name": "Irfan Junejo",
-			"channelUrl": "https://www.youtube.com/channel/UCUuDUW0Y6IQZYDvH1QQBsgA",
-			"description": "Travel vlogs, outdoor adventures, and life on the road.",
+			"id": "UCXulruMI7BHj3kGyosNa0jA",
+			"name": "Indigo Traveller",
+			"channelUrl": "https://www.youtube.com/channel/UCXulruMI7BHj3kGyosNa0jA",
+			"description": "Travel documentaries focused on difficult destinations and local stories.",
 			"category": "Adventure",
-			"logoUrl": "catalog/logos/UCUuDUW0Y6IQZYDvH1QQBsgA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"logoUrl": "catalog/logos/UCXulruMI7BHj3kGyosNa0jA.jpg",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
-					"videoId": "pluUoHBHf8Q",
-					"title": "2 TYPES OF EDITING 🤌",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/pluUoHBHf8Q/hqdefault.jpg",
-					"publishedAt": "2026-08-24T16:16:14.000Z"
+					"videoId": "BPHjquSgzMQ",
+					"title": "72 Hours Covering the Sudan War (I have no words)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/BPHjquSgzMQ/hqdefault.jpg",
+					"publishedAt": "2026-10-25T13:58:43.000Z"
 				},
 				{
-					"videoId": "yYZnrlRXj0g",
-					"title": "New York Coffee vs Claude in Karachi",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/yYZnrlRXj0g/hqdefault.jpg",
-					"publishedAt": "2026-07-31T17:13:40.000Z"
+					"videoId": "LiIraJl0bBU",
+					"title": "Walking into Peru's Roughest Neighborhood",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/LiIraJl0bBU/hqdefault.jpg",
+					"publishedAt": "2026-06-30T18:19:12.000Z"
 				},
 				{
-					"videoId": "PBGgHwftwHQ",
-					"title": "How to Aura Farm - Complete Guide",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/PBGgHwftwHQ/hqdefault.jpg",
-					"publishedAt": "2026-06-06T16:14:09.000Z"
+					"videoId": "xNXA8CRnZXY",
+					"title": "Dust & Bones: Entering Peru’s Endless Desert Slums",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/xNXA8CRnZXY/hqdefault.jpg",
+					"publishedAt": "2026-06-23T17:03:13.000Z"
 				},
 				{
-					"videoId": "V4sQgeEzsEc",
-					"title": "120 Hours in China 🇨🇳",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/V4sQgeEzsEc/hqdefault.jpg",
-					"publishedAt": "2026-05-23T14:30:06.000Z"
+					"videoId": "pGn5n352tM0",
+					"title": "Walking into Bolivia’s Roughest Neighborhood",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/pGn5n352tM0/hqdefault.jpg",
+					"publishedAt": "2026-06-07T15:31:25.000Z"
 				},
 				{
-					"videoId": "eiE3vUNLOAM",
-					"title": "Stories of North Nazimabad feat. @GulAhmedOfficial #ramazanspecial",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/eiE3vUNLOAM/hqdefault.jpg",
-					"publishedAt": "2026-03-19T14:40:59.000Z"
+					"videoId": "6edcnZfU-Nk",
+					"title": "The World's Highest Capital City is Surreal",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/6edcnZfU-Nk/hqdefault.jpg",
+					"publishedAt": "2026-05-31T18:03:29.000Z"
 				},
 				{
-					"videoId": "tzGY-E8KNMw",
-					"title": "Stories of Federal B Area feat. @G@GulAhmedOfficial #ramazanspecial",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/tzGY-E8KNMw/hqdefault.jpg",
-					"publishedAt": "2026-03-15T12:42:49.000Z"
+					"videoId": "x2fMvRF6H-8",
+					"title": "India’s Infamous Neighborhood: Pure Chaos 24/7",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/x2fMvRF6H-8/hqdefault.jpg",
+					"publishedAt": "2026-03-31T14:42:27.000Z"
 				},
 				{
-					"videoId": "0aX6Enb0aj8",
-					"title": "Stories of Ranchore Line feat. @G@GulAhmedOfficial#ramazanspecial #food",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/0aX6Enb0aj8/hqdefault.jpg",
-					"publishedAt": "2026-03-12T15:11:28.000Z"
+					"videoId": "EyMkPUQ6b18",
+					"title": "The World's Most Densely Populated City (36 Million People)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/EyMkPUQ6b18/hqdefault.jpg",
+					"publishedAt": "2026-03-24T15:57:36.000Z"
 				},
 				{
-					"videoId": "ilM8H7o19i4",
-					"title": "Stories of Lalu Khait feat @GulAhmedOfficial #ramazanspecial",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/ilM8H7o19i4/hqdefault.jpg",
-					"publishedAt": "2026-03-09T11:57:08.000Z"
+					"videoId": "1dSpkyTAamM",
+					"title": "Walking into the World's Biggest Slum (2 Million People)",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/1dSpkyTAamM/hqdefault.jpg",
+					"publishedAt": "2026-01-31T13:00:53.000Z"
 				},
 				{
-					"videoId": "PtqDc89pxzM",
-					"title": "Galaxy S26 Ultra Launch Event with @S@SamsungPakistan",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/PtqDc89pxzM/hqdefault.jpg",
-					"publishedAt": "2026-03-07T17:21:16.000Z"
+					"videoId": "HQSdlvG7ErI",
+					"title": "The Myanmar Border is Intense",
+					"thumbnailUrl": "https://i1.ytimg.com/vi/HQSdlvG7ErI/hqdefault.jpg",
+					"publishedAt": "2025-12-24T16:30:55.000Z"
 				},
 				{
-					"videoId": "A1_S2TiK88A",
-					"title": "Stories of Landhi feat. @GulAhmedOfficial #ramazanspecial #food",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/A1_S2TiK88A/hqdefault.jpg",
-					"publishedAt": "2026-03-06T13:26:46.000Z"
+					"videoId": "SFIelk6CNSY",
+					"title": "Kenya's Capital: The City of a Thousand Realities",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/SFIelk6CNSY/hqdefault.jpg",
+					"publishedAt": "2025-11-06T20:04:35.000Z"
 				},
 				{
-					"videoId": "MDx8DaTwUHs",
-					"title": "Stories of Soldier Bazar Karachi feat. @GulAhmedOfficial #ramazanspecial #food",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/MDx8DaTwUHs/hqdefault.jpg",
-					"publishedAt": "2026-03-03T15:11:50.000Z"
+					"videoId": "rhbnFk1AdeY",
+					"title": "Walking into Africa's Biggest Slum (1 Million People)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/rhbnFk1AdeY/hqdefault.jpg",
+					"publishedAt": "2025-10-28T18:22:21.000Z"
 				},
 				{
-					"videoId": "IeXd0qZbI0Y",
-					"title": "Stories of Garden Karachi feat. @GulAhmedOfficial  #ramazanspecial #food",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/IeXd0qZbI0Y/hqdefault.jpg",
-					"publishedAt": "2026-02-28T12:08:31.000Z"
+					"videoId": "YJgi65Q-vNI",
+					"title": "Lost in Cuba's Sketchy Backstreets",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/YJgi65Q-vNI/hqdefault.jpg",
+					"publishedAt": "2025-09-30T17:37:45.000Z"
 				},
 				{
-					"videoId": "OMrCFe60M_I",
-					"title": "Galaxy S26 Ultra - Photo Assist @SamsungPakistan",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/OMrCFe60M_I/hqdefault.jpg",
-					"publishedAt": "2026-02-25T21:06:39.000Z"
+					"videoId": "e5oHXqd0tL0",
+					"title": "Rural Cuba is Desperate",
+					"thumbnailUrl": "https://i2.ytimg.com/vi/e5oHXqd0tL0/hqdefault.jpg",
+					"publishedAt": "2025-09-17T17:55:02.000Z"
 				},
 				{
-					"videoId": "_SXbtmi05mg",
-					"title": "Galaxy S26 Ultra - Nightography @SamsungPakistan",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/_SXbtmi05mg/hqdefault.jpg",
-					"publishedAt": "2026-02-25T18:33:42.000Z"
+					"videoId": "RUz9PtsqWx4",
+					"title": "These People Earn $1 Per Day (Cuba)",
+					"thumbnailUrl": "https://i3.ytimg.com/vi/RUz9PtsqWx4/hqdefault.jpg",
+					"publishedAt": "2025-09-08T13:28:46.000Z"
 				},
 				{
-					"videoId": "KeQKkGP8H44",
-					"title": "Stories of Korangi feat @GulAhmedOfficial#ramazanspecial #food",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/KeQKkGP8H44/hqdefault.jpg",
-					"publishedAt": "2026-02-25T12:39:49.000Z"
+					"videoId": "wNDYBhUemlY",
+					"title": "DAY 1: Arriving in Cuba in 2025 (Failed State)",
+					"thumbnailUrl": "https://i4.ytimg.com/vi/wNDYBhUemlY/hqdefault.jpg",
+					"publishedAt": "2025-09-01T14:28:43.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UCDTINI9skkeZNY2ZXnBqIkQ",
@@ -4594,25 +3634,13 @@
 			"description": "Solo travel, remote places, and adventure storytelling.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCDTINI9skkeZNY2ZXnBqIkQ.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "Rw2KYD6WuqI",
-					"title": "Proud to be a barefoot human with @vivobarefootTV ❤️ Use code 25EVAZUBECK for 25% off at checkout!",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/Rw2KYD6WuqI/hqdefault.jpg",
-					"publishedAt": "2026-10-26T16:29:00.000Z"
-				},
 				{
 					"videoId": "kYyxSvOcr4k",
 					"title": "Everyday life living in my tent alone (with horses & dogs)",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/kYyxSvOcr4k/hqdefault.jpg",
 					"publishedAt": "2026-10-21T16:41:04.000Z"
-				},
-				{
-					"videoId": "HJ98D9wLmNY",
-					"title": "My book, THE WILDER WAY, is now available in GERMAN! Buy it anywhere you buy your books!",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/HJ98D9wLmNY/hqdefault.jpg",
-					"publishedAt": "2026-10-06T09:00:02.000Z"
 				},
 				{
 					"videoId": "vofF8V-40dU",
@@ -4645,22 +3673,10 @@
 					"publishedAt": "2026-07-21T17:03:47.000Z"
 				},
 				{
-					"videoId": "dZQ6rf7rAEo",
-					"title": "Running the R2R2R in the Grand Canyon in my Vivobarefoot minimalist shoes #vivobarefoot #ad",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/dZQ6rf7rAEo/hqdefault.jpg",
-					"publishedAt": "2026-07-04T09:59:58.000Z"
-				},
-				{
 					"videoId": "TXiq7a5uuyI",
 					"title": "I Ran Across the Grand Canyon... TWICE in One Day (R2R2R)",
 					"thumbnailUrl": "https://i1.ytimg.com/vi/TXiq7a5uuyI/hqdefault.jpg",
 					"publishedAt": "2026-06-26T15:00:04.000Z"
-				},
-				{
-					"videoId": "oSIrm4sPKms",
-					"title": "DJI Avata 360 = freedom of a 360 cam + powerful follow tech😍  #ad #DJIAvata360 #DJIpanoramicdrones",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/oSIrm4sPKms/hqdefault.jpg",
-					"publishedAt": "2026-06-23T16:25:08.000Z"
 				},
 				{
 					"videoId": "ZpHhWzsl8Hs",
@@ -4686,6 +3702,12 @@
 					"thumbnailUrl": "https://i4.ytimg.com/vi/cDGxYbTpDEI/hqdefault.jpg",
 					"publishedAt": "2026-05-17T13:55:31.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"Rw2KYD6WuqI",
+				"HJ98D9wLmNY",
+				"dZQ6rf7rAEo",
+				"oSIrm4sPKms"
 			]
 		},
 		{
@@ -4695,7 +3717,7 @@
 			"description": "Adventure challenges and travel stories built around seeking discomfort.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCvK4bOhULCpmLabd2pDMtnA.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
 				{
 					"videoId": "TMQ31DQjjWg",
@@ -4787,7 +3809,8 @@
 					"thumbnailUrl": "https://i4.ytimg.com/vi/C_2cE21MM7s/hqdefault.jpg",
 					"publishedAt": "2026-02-15T17:00:27.000Z"
 				}
-			]
+			],
+			"shortVideoIds": []
 		},
 		{
 			"id": "UC0Ize0RLIbGdH5x4wI45G-A",
@@ -4796,20 +3819,8 @@
 			"description": "Travel documentaries from every country and culture around the world.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UC0Ize0RLIbGdH5x4wI45G-A.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "sl-D2uHAhAc",
-					"title": "The Truth About Paris’ Tiniest Apartments",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/sl-D2uHAhAc/hqdefault.jpg",
-					"publishedAt": "2026-10-28T14:00:33.000Z"
-				},
-				{
-					"videoId": "pu0N9VhH8VQ",
-					"title": "Inside The Most Dangerous Hood In Mexico City",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/pu0N9VhH8VQ/hqdefault.jpg",
-					"publishedAt": "2026-10-23T14:00:10.000Z"
-				},
 				{
 					"videoId": "XYYrKZEUDag",
 					"title": "People Pay $700 a Month to Live Like This in Paris",
@@ -4817,28 +3828,10 @@
 					"publishedAt": "2026-10-17T10:51:37.000Z"
 				},
 				{
-					"videoId": "qC6NKtvUemA",
-					"title": "3 Shocking Things About The World’s Narrowest Island",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/qC6NKtvUemA/hqdefault.jpg",
-					"publishedAt": "2026-10-16T14:00:21.000Z"
-				},
-				{
 					"videoId": "zm1rBWtRUvo",
 					"title": "He's Been Living Alone In Isolation For 17 Years",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/zm1rBWtRUvo/hqdefault.jpg",
 					"publishedAt": "2026-10-03T14:34:56.000Z"
-				},
-				{
-					"videoId": "QYYK95uBWIs",
-					"title": "Inside America’s Most Expensive Grocery Store",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/QYYK95uBWIs/hqdefault.jpg",
-					"publishedAt": "2026-09-23T14:00:28.000Z"
-				},
-				{
-					"videoId": "jeuTcG6Wu2E",
-					"title": "I Tried 3 Most Extreme Treatments In The World",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/jeuTcG6Wu2E/hqdefault.jpg",
-					"publishedAt": "2026-09-21T14:00:34.000Z"
 				},
 				{
 					"videoId": "FmykXVUsPdw",
@@ -4853,41 +3846,23 @@
 					"publishedAt": "2026-09-13T16:03:07.000Z"
 				},
 				{
-					"videoId": "LetVDgbDB-E",
-					"title": "He Speaks 5 Languages But Can't Afford Food",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/LetVDgbDB-E/hqdefault.jpg",
-					"publishedAt": "2026-09-11T14:00:04.000Z"
-				},
-				{
-					"videoId": "ufpZt8HrFhQ",
-					"title": "I Investigated America's 3 Strictest Religious Groups",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/ufpZt8HrFhQ/hqdefault.jpg",
-					"publishedAt": "2026-09-09T14:00:13.000Z"
-				},
-				{
-					"videoId": "NmkhsAIql0M",
-					"title": "I Have A Huge Announcement!",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/NmkhsAIql0M/hqdefault.jpg",
-					"publishedAt": "2026-09-02T16:21:07.000Z"
-				},
-				{
 					"videoId": "V0ZRVUdIf7s",
 					"title": "This American Town Is 36 Miles From Russia",
 					"thumbnailUrl": "https://i3.ytimg.com/vi/V0ZRVUdIf7s/hqdefault.jpg",
 					"publishedAt": "2026-08-29T15:17:18.000Z"
-				},
-				{
-					"videoId": "xD2i5nVW23k",
-					"title": "World’s Largest Family Home (800 People Live Here!)",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/xD2i5nVW23k/hqdefault.jpg",
-					"publishedAt": "2026-08-28T14:00:24.000Z"
-				},
-				{
-					"videoId": "rl5_3kIxZYM",
-					"title": "People's Names In This Village Are Songs",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/rl5_3kIxZYM/hqdefault.jpg",
-					"publishedAt": "2026-08-24T14:00:06.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"sl-D2uHAhAc",
+				"pu0N9VhH8VQ",
+				"qC6NKtvUemA",
+				"QYYK95uBWIs",
+				"jeuTcG6Wu2E",
+				"LetVDgbDB-E",
+				"ufpZt8HrFhQ",
+				"NmkhsAIql0M",
+				"xD2i5nVW23k",
+				"rl5_3kIxZYM"
 			]
 		},
 		{
@@ -4897,26 +3872,8 @@
 			"description": "Cinematic hiking, backpacking, and wilderness journeys.",
 			"category": "Adventure",
 			"logoUrl": "catalog/logos/UCpnuadQ_w3r6f4Q_NRlqd-w.jpg",
-			"snapshotAt": "2026-10-28T14:45:41.737Z",
+			"snapshotAt": "2026-10-28T15:13:10.574Z",
 			"videos": [
-				{
-					"videoId": "TvbfXKSM1O0",
-					"title": "The story of Ghost, part 3",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/TvbfXKSM1O0/hqdefault.jpg",
-					"publishedAt": "2026-10-28T13:10:05.000Z"
-				},
-				{
-					"videoId": "Wr_uOfRAAjk",
-					"title": "Put this on the TV tonight",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/Wr_uOfRAAjk/hqdefault.jpg",
-					"publishedAt": "2026-10-27T20:00:35.000Z"
-				},
-				{
-					"videoId": "jgZzUU_zDS4",
-					"title": "12 of my hikes as a pixel game",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/jgZzUU_zDS4/hqdefault.jpg",
-					"publishedAt": "2026-10-27T15:00:18.000Z"
-				},
 				{
 					"videoId": "2upU96IeRlw",
 					"title": "7 Hours of Ambient Hiking Footage",
@@ -4924,71 +3881,26 @@
 					"publishedAt": "2026-10-27T14:49:45.000Z"
 				},
 				{
-					"videoId": "WUjIntB3VFk",
-					"title": "85 miles alone across the Lofoten Islands",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/WUjIntB3VFk/hqdefault.jpg",
-					"publishedAt": "2026-10-25T21:10:12.000Z"
-				},
-				{
-					"videoId": "KY5mzaSDsn8",
-					"title": "Lost my phone 10 minutes into Iceland",
-					"thumbnailUrl": "https://i4.ytimg.com/vi/KY5mzaSDsn8/hqdefault.jpg",
-					"publishedAt": "2026-10-22T13:14:27.000Z"
-				},
-				{
-					"videoId": "Nqb8VYP_uIg",
-					"title": "4 days on foot to Machu Picchu: the Salkantay Trek #shorts",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/Nqb8VYP_uIg/hqdefault.jpg",
-					"publishedAt": "2026-10-20T20:59:49.000Z"
-				},
-				{
-					"videoId": "XIQ4Rl25XmE",
-					"title": "Ordering dinner in Spanish with Babbel",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/XIQ4Rl25XmE/hqdefault.jpg",
-					"publishedAt": "2026-10-20T18:31:40.000Z"
-				},
-				{
-					"videoId": "RoIFVjaOD8Q",
-					"title": "Hiking alone to the Mardi Himal viewpoint in Nepal #shorts",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/RoIFVjaOD8Q/hqdefault.jpg",
-					"publishedAt": "2026-10-18T21:02:33.000Z"
-				},
-				{
-					"videoId": "xerajp4u4os",
-					"title": "Get up to 25% off Antigravity A1 (save up to $430) for a limited time! #shorts",
-					"thumbnailUrl": "https://i1.ytimg.com/vi/xerajp4u4os/hqdefault.jpg",
-					"publishedAt": "2026-10-18T02:15:01.000Z"
-				},
-				{
-					"videoId": "6CAUfQg1UFk",
-					"title": "Get up to 25% off Antigravity A1 (save up to $430) for a limited time! #shorts",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/6CAUfQg1UFk/hqdefault.jpg",
-					"publishedAt": "2026-10-18T02:14:57.000Z"
-				},
-				{
-					"videoId": "6ZLfvrNjOko",
-					"title": "7 days hut to hut in the Dolomites: the Alta Via 1 #shorts",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/6ZLfvrNjOko/hqdefault.jpg",
-					"publishedAt": "2026-10-17T21:02:30.000Z"
-				},
-				{
-					"videoId": "6iqFCSb91zU",
-					"title": "Chamonix to Zermatt on foot: 9 days on the Haute Route #shorts",
-					"thumbnailUrl": "https://i3.ytimg.com/vi/6iqFCSb91zU/hqdefault.jpg",
-					"publishedAt": "2026-10-16T20:54:49.000Z"
-				},
-				{
-					"videoId": "MFk4kK0laiE",
-					"title": "Kyrgyzstan is like the Swiss Alps with barely any people #shorts",
-					"thumbnailUrl": "https://i2.ytimg.com/vi/MFk4kK0laiE/hqdefault.jpg",
-					"publishedAt": "2026-10-15T21:04:30.000Z"
-				},
-				{
 					"videoId": "OU1sVdQt2Xc",
 					"title": "A Week on Türkiye's Black Sea Coast with a 360 Drone",
 					"thumbnailUrl": "https://i4.ytimg.com/vi/OU1sVdQt2Xc/hqdefault.jpg",
 					"publishedAt": "2026-10-15T01:05:10.000Z"
 				}
+			],
+			"shortVideoIds": [
+				"TvbfXKSM1O0",
+				"Wr_uOfRAAjk",
+				"jgZzUU_zDS4",
+				"WUjIntB3VFk",
+				"KY5mzaSDsn8",
+				"Nqb8VYP_uIg",
+				"XIQ4Rl25XmE",
+				"RoIFVjaOD8Q",
+				"xerajp4u4os",
+				"6CAUfQg1UFk",
+				"6ZLfvrNjOko",
+				"6iqFCSb91zU",
+				"MFk4kK0laiE"
 			]
 		}
 	]

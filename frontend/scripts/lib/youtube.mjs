@@ -28,6 +28,46 @@ export function canonicalChannelUrl(channelId) {
 	return `https://www.youtube.com/channel/${channelId}`;
 }
 
+export function oembedUrl(videoId) {
+	const target = `https://www.youtube.com/shorts/${videoId}`;
+	return `https://www.youtube.com/oembed?url=${encodeURIComponent(target)}&format=json`;
+}
+
+/**
+ * Classify a video as a Short or a regular upload using YouTube's public
+ * oEmbed endpoint. Shorts report vertical dimensions; regular videos report
+ * horizontal dimensions. Returns "unknown" when the video cannot be verified.
+ */
+export async function classifyVideoOrientation(videoId, attempts = 2) {
+	if (!isValidVideoId(videoId)) return 'unknown';
+
+	for (let attempt = 0; attempt < attempts; attempt++) {
+		try {
+			const response = await fetchWithTimeout(
+				oembedUrl(videoId),
+				{
+					headers: { accept: 'application/json' }
+				},
+				12_000
+			);
+			if (!response.ok) {
+				if (response.status >= 500 && attempt + 1 < attempts) continue;
+				return 'unknown';
+			}
+			const data = await response.json();
+			const width = Number(data?.width);
+			const height = Number(data?.height);
+			if (Number.isFinite(width) && Number.isFinite(height) && width > 0 && height > 0) {
+				return height > width ? 'short' : 'long';
+			}
+			return 'unknown';
+		} catch {
+			if (attempt + 1 < attempts) continue;
+		}
+	}
+	return 'unknown';
+}
+
 export async function fetchWithTimeout(url, options = {}, timeout = 20000) {
 	const controller = new AbortController();
 	const timer = setTimeout(() => controller.abort(), timeout);

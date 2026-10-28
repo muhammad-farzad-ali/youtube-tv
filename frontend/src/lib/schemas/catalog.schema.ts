@@ -33,7 +33,8 @@ export const catalogChannelSchema = z.object({
 	category: categorySchema,
 	logoUrl: z.string().min(1).optional(),
 	snapshotAt: z.string().datetime({ offset: true }),
-	videos: z.array(videoSchema).max(60)
+	videos: z.array(videoSchema).max(60),
+	shortVideoIds: z.array(videoIdSchema).max(60).default([])
 });
 
 export const catalogPackSchema = z.object({
@@ -64,6 +65,26 @@ export const catalogSchema = z
 				});
 			}
 			channelIds.add(channel.id);
+
+			const longIds = new Set(channel.videos.map((video) => video.videoId));
+			const shortIds = new Set<string>();
+			for (const [shortIndex, videoId] of channel.shortVideoIds.entries()) {
+				if (shortIds.has(videoId)) {
+					ctx.addIssue({
+						code: 'custom',
+						path: ['channels', index, 'shortVideoIds', shortIndex],
+						message: `Duplicate Short video ID: ${videoId}`
+					});
+				}
+				shortIds.add(videoId);
+				if (longIds.has(videoId)) {
+					ctx.addIssue({
+						code: 'custom',
+						path: ['channels', index, 'shortVideoIds', shortIndex],
+						message: `Video appears as both long-form and Short: ${videoId}`
+					});
+				}
+			}
 		}
 
 		const packIds = new Set<string>();

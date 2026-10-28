@@ -45,6 +45,19 @@ class CableTvDatabase extends Dexie {
 			sync: 'channelId',
 			meta: 'key'
 		});
+
+		// v2: Shorts are filtered from the catalog and live refresh. Drop the old
+		// cache once so previously stored Shorts cannot reappear for existing users.
+		this.version(2)
+			.stores({
+				videos: 'videoId, channelId, publishedAt, [channelId+publishedAt]',
+				sync: 'channelId',
+				meta: 'key'
+			})
+			.upgrade(async (transaction) => {
+				await transaction.table('videos').clear();
+				await transaction.table('sync').clear();
+			});
 	}
 }
 

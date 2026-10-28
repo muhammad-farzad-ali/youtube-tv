@@ -79,6 +79,27 @@ function checkChannel(channel, index, seenIds, seenVideoIds) {
 			error(`${vWhere}.thumbnailUrl must be https`);
 		}
 	}
+
+	if (!Array.isArray(channel.shortVideoIds)) {
+		error(`${channel.name}: shortVideoIds must be an array. Run npm run catalog:sync.`);
+		return;
+	}
+	const shortIds = new Set();
+	for (const [shortIndex, videoId] of channel.shortVideoIds.entries()) {
+		const sWhere = `${where}.shortVideoIds[${shortIndex}]`;
+		if (!validVideoId(videoId)) error(`${sWhere} is not a valid video ID`);
+		if (shortIds.has(videoId)) error(`${channel.name}: duplicate Short video ${videoId}`);
+		shortIds.add(videoId);
+		if (localVideos.has(videoId)) {
+			error(`${channel.name}: ${videoId} appears as both long-form and Short`);
+		}
+	}
+
+	if (channel.videos.length < 3) {
+		warn(
+			`${channel.name}: only ${channel.videos.length} long-form video(s) in the latest snapshot`
+		);
+	}
 }
 
 async function main() {

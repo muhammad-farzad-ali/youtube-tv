@@ -41,6 +41,11 @@ describe('managed catalog', () => {
 			expect(channel.videos.length).toBeLessThanOrEqual(30);
 			const ids = new Set(channel.videos.map((video) => video.videoId));
 			expect(ids.size).toBe(channel.videos.length);
+			expect(Array.isArray(channel.shortVideoIds)).toBe(true);
+			for (const shortId of channel.shortVideoIds) {
+				expect(shortId).toMatch(/^[A-Za-z0-9_-]{11}$/);
+				expect(ids.has(shortId)).toBe(false);
+			}
 			for (const video of channel.videos) {
 				expect(video.videoId).toMatch(/^[A-Za-z0-9_-]{11}$/);
 				expect(Date.parse(video.publishedAt)).not.toBeNaN();

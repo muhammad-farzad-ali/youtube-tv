@@ -18,6 +18,7 @@ Prefer channels that are:
 - **Active.** At least one upload in the last 120 days, and ideally several recent entries in the RSS feed. A deliberately archival channel can be an exception with owner approval.
 - **Useful on a cable dial.** The channel has a coherent identity and recurring programming, not a one-off topic or abandoned experiment.
 - **Embeddable.** RSS does not prove embedding permission. Spot-check a recent video in the player when this is uncertain.
+- **Long-form.** Shorts are excluded by policy. A channel may still have many Shorts; judge it by its long-form output and flag it if fewer than 3 long-form videos are available.
 - **Distinct.** No duplicate channel IDs, duplicate brands, or two entries for the same publisher.
 - **Safe to describe.** The display name and description are factual and do not make unsupported claims.
 - **Appropriate for the intended audience.** Note language, mature themes, regional restrictions, or news bias where relevant; the owner makes the final call.
@@ -84,7 +85,9 @@ A channel ID change is a remove-and-add operation. Never mutate an ID in place; 
 
 ## Snapshot and freshness
 
-- Generated snapshots are a cache of the latest RSS entries, not a full archive.
+- Generated snapshots are a cache of the latest long-form RSS entries, not a full archive.
+- Shorts are excluded with a public oEmbed orientation check. Known Shorts are cached in `shortVideoIds`; unverifiable videos are dropped under strict mode.
+- Channels with fewer than 3 long-form videos in the latest snapshot are review candidates, not automatic removals.
 - RSS usually exposes around 15 recent uploads. Do not claim the catalog is complete.
 - Refresh snapshots before shipping a catalog change.
 - A snapshot older than 60 days is a review prompt, not an automatic failure.
@@ -99,10 +102,12 @@ Before committing:
 - [ ] no duplicate ID or obvious duplicate brand
 - [ ] category is correct for regular programming
 - [ ] description follows the house style
+- [ ] no Shorts in `videos`; `shortVideoIds` does not overlap long-form IDs
 - [ ] pack membership is intentional and balanced
 - [ ] starter lineup still has 2–3 channels per category
 - [ ] removed channels removed from every pack and the starter
-- [ ] `catalog:sync` completed without failures
+- [ ] `catalog:sync` completed without failures and applied the Shorts filter
+- [ ] low long-form counts are flagged for the owner
 - [ ] `catalog:check`, unit tests, type checks, and build pass
 - [ ] generated diff contains only intended changes
 - [ ] embeddability and editorial fit flagged for the owner when uncertain

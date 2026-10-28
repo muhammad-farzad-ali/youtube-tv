@@ -25,6 +25,7 @@
 	import { downloadProfile } from '#lib/features/profile/download';
 	import { refreshChannels, summarizeRefresh } from '#lib/services/feedService';
 	import { testFeedProxy, validateProxyUrl } from '#lib/services/rssClient';
+	import { classifyVideoViaProxy } from '#lib/services/shorts';
 	import {
 		clearSyncStatus,
 		clearVideos,
@@ -77,9 +78,17 @@
 		proxyTest = null;
 		try {
 			const result = await testFeedProxy(proxyDraft);
+			const sampleVideoId =
+				result.firstVideoId ?? catalog.channels.flatMap((channel) => channel.videos)[0]?.videoId;
+			const classification = sampleVideoId
+				? await classifyVideoViaProxy(sampleVideoId, proxyDraft)
+				: 'unknown';
+			const shortsReady = classification === 'long' || classification === 'short';
 			proxyTest = {
-				ok: true,
-				message: `Connected to ${result.channelTitle} — ${result.videoCount} videos returned.`
+				ok: shortsReady,
+				message: shortsReady
+					? `Connected to ${result.channelTitle} — ${result.videoCount} videos returned. Shorts classification ready.`
+					: `Feed connected to ${result.channelTitle}, but YouTube oEmbed is blocked. Strict Shorts filtering will skip new live videos until the proxy allows youtube.com/oembed.`
 			};
 		} catch (cause) {
 			proxyTest = {
@@ -215,7 +224,7 @@
 						Feeds &amp; refresh
 					</h2>
 					<p class="text-xs text-comment">
-						The catalog snapshot always works. Live refresh needs a proxy.
+						The catalog snapshot always works. Live refresh needs a proxy with oEmbed support.
 					</p>
 				</div>
 			</header>
@@ -224,8 +233,9 @@
 					class="rounded-lg border border-orange/30 bg-orange/10 p-3 text-xs leading-relaxed text-orange"
 				>
 					YouTube does not send CORS headers on its RSS feeds, so browsers block direct requests.
-					The bundled snapshots are the reliable default. If you want live refresh, point the app at
-					your own CORS-enabled feed proxy.
+					Shorts are excluded from snapshots and live refresh. The bundled snapshots are the
+					reliable default; live refresh requires a CORS-enabled proxy that allows both YouTube feed
+					and oEmbed URLs.
 				</div>
 
 				<label class="block">
@@ -238,8 +248,8 @@
 						spellcheck="false"
 					/>
 					<span class="mt-1 block text-xs text-comment">
-						Use <code class="text-cyan">{'{url}'}</code> where the encoded YouTube feed URL should go.
-						The proxy sees requested channel feed URLs. No key is stored by this app.
+						Use <code class="text-cyan">{'{url}'}</code> where the encoded YouTube feed or oEmbed URL
+						should go. The proxy sees requested YouTube URLs. No key is stored by this app.
 					</span>
 					{#if proxyError}
 						<span class="mt-1 block text-xs text-red">{proxyError}</span>
@@ -443,6 +453,10 @@
 					YouTube RSS only exposes recent uploads, usually around 15 per channel. Some videos cannot
 					be embedded due to privacy, age, region, or owner settings. Browser storage can be cleared
 					at any time, so keep a profile backup.
+				</p>
+				<p>
+					Shorts are excluded from the catalog and live refresh. YouTube only exposes recent
+					uploads, so some channels may have fewer long-form videos available.
 				</p>
 				<p>
 					Theme: <span class="text-fg">Tokyo Night</span> by Enkia ·

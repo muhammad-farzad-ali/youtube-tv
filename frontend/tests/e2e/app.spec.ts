@@ -178,15 +178,35 @@ const PROXY_FEED = `<?xml version="1.0" encoding="UTF-8"?>
   <yt:channelId>_x5XG1OV2P6uZZ5FSM9Ttw</yt:channelId>
   <title>Google for Developers</title>
   <entry>
-    <yt:videoId>ProxyTest01</yt:videoId>
-    <title>Proxy refresh test video</title>
+    <yt:videoId>ProxyShort1</yt:videoId>
+    <title>Proxy Short should be hidden</title>
+    <published>2026-10-28T11:00:00+00:00</published>
+    <media:group><media:thumbnail url="https://i.ytimg.com/vi/ProxyShort1/hqdefault.jpg" /></media:group>
+  </entry>
+  <entry>
+    <yt:videoId>ProxyLong01</yt:videoId>
+    <title>Proxy long-form video</title>
     <published>2026-10-28T10:00:00+00:00</published>
-    <media:group><media:thumbnail url="https://i.ytimg.com/vi/ProxyTest01/hqdefault.jpg" /></media:group>
+    <media:group><media:thumbnail url="https://i.ytimg.com/vi/ProxyLong01/hqdefault.jpg" /></media:group>
   </entry>
 </feed>`;
 
 test('proxy feed refresh updates the live status', async ({ page }) => {
 	await page.route('https://proxy.test/**', async (route) => {
+		const target = new URL(route.request().url()).searchParams.get('url') ?? '';
+		if (target.includes('/oembed?')) {
+			const isShort = target.includes('ProxyShort1');
+			await route.fulfill({
+				status: 200,
+				contentType: 'application/json',
+				headers: { 'access-control-allow-origin': '*' },
+				body: JSON.stringify({
+					width: isShort ? 113 : 200,
+					height: isShort ? 200 : 113
+				})
+			});
+			return;
+		}
 		await route.fulfill({
 			status: 200,
 			contentType: 'application/xml',
@@ -208,4 +228,54 @@ test('proxy feed refresh updates the live status', async ({ page }) => {
 	await page.getByRole('button', { name: 'Refresh', exact: true }).click();
 	await expect(page.getByText(/Refreshed 1 channel/)).toBeVisible();
 	await expect(page.getByText('Fresh', { exact: true })).toBeVisible();
+	await expect(page.getByText('1 new — restart')).toBeVisible();
+	await expect(page.getByText('Proxy Short should be hidden')).toHaveCount(0);
+});
+
+test('drops legacy cached videos when the no-Shorts database migration runs', async ({ page }) => {
+	await page.addInitScript(async () => {
+		await new Promise<void>((resolve, reject) => {
+			const request = indexedDB.open('cable-tv', 1);
+			request.onupgradeneeded = () => {
+				const db = request.result;
+				db.createObjectStore('videos', { keyPath: 'videoId' });
+				db.createObjectStore('sync', { keyPath: 'channelId' });
+				db.createObjectStore('meta', { keyPath: 'key' });
+			};
+			request.onerror = () => reject(request.error);
+			request.onsuccess = () => {
+				const db = request.result;
+				const tx = db.transaction('videos', 'readwrite');
+				tx.objectStore('videos').put({
+					videoId: 'OldShort01',
+					channelId: 'UC_x5XG1OV2P6uZZ5FSM9Ttw',
+					title: 'Legacy cached Short',
+					publishedAt: '2026-01-01T00:00:00.000Z',
+					availabilityStatus: 'unknown',
+					source: 'snapshot',
+					addedAt: '2026-01-01T00:00:00.000Z'
+				});
+				tx.oncomplete = () => {
+					db.close();
+					resolve();
+				};
+				tx.onerror = () => reject(tx.error);
+			};
+		});
+	});
+
+	await openTv(page);
+	const legacyStillCached = await page.evaluate(async () => {
+		return await new Promise<boolean>((resolve) => {
+			const request = indexedDB.open('cable-tv');
+			request.onsuccess = () => {
+				const db = request.result;
+				const get = db.transaction('videos', 'readonly').objectStore('videos').get('OldShort01');
+				get.onsuccess = () => resolve(Boolean(get.result));
+				get.onerror = () => resolve(true);
+			};
+			request.onerror = () => resolve(true);
+		});
+	});
+	expect(legacyStillCached).toBe(false);
 });

@@ -96,11 +96,12 @@ export function parseYouTubeFeed(
 	};
 }
 
-function applyProxy(proxyUrl: string, feedUrl: string): string {
+export function applyProxyTemplate(proxyUrl: string, targetUrl: string): string {
 	const template = proxyUrl.trim();
-	if (template.includes('{url}')) return template.replaceAll('{url}', encodeURIComponent(feedUrl));
-	if (template.includes('{rawurl}')) return template.replaceAll('{rawurl}', feedUrl);
-	if (template.endsWith('=')) return `${template}${encodeURIComponent(feedUrl)}`;
+	if (template.includes('{url}'))
+		return template.replaceAll('{url}', encodeURIComponent(targetUrl));
+	if (template.includes('{rawurl}')) return template.replaceAll('{rawurl}', targetUrl);
+	if (template.endsWith('=')) return `${template}${encodeURIComponent(targetUrl)}`;
 	throw new FeedError(
 		'proxy',
 		'The proxy URL must contain a {url} placeholder, for example https://proxy.example/?url={url}'
@@ -140,7 +141,7 @@ export async function fetchChannelFeed(
 	const feedUrl = buildFeedUrl(channelId);
 
 	if (proxyUrl.trim()) {
-		const proxied = applyProxy(proxyUrl, feedUrl);
+		const proxied = applyProxyTemplate(proxyUrl, feedUrl);
 		try {
 			const xml = await fetchText(proxied);
 			const parsed = parseYouTubeFeed(xml, channelId);
@@ -172,12 +173,16 @@ export async function fetchChannelFeed(
 
 export async function testFeedProxy(
 	proxyUrl: string
-): Promise<{ channelTitle: string; videoCount: number }> {
+): Promise<{ channelTitle: string; videoCount: number; firstVideoId: string | undefined }> {
 	const channelId = 'UC_x5XG1OV2P6uZZ5FSM9Ttw';
 	const feedUrl = buildFeedUrl(channelId);
-	const xml = await fetchText(applyProxy(proxyUrl, feedUrl), 15_000);
+	const xml = await fetchText(applyProxyTemplate(proxyUrl, feedUrl), 15_000);
 	const parsed = parseYouTubeFeed(xml, channelId);
-	return { channelTitle: parsed.channelTitle, videoCount: parsed.videos.length };
+	return {
+		channelTitle: parsed.channelTitle,
+		videoCount: parsed.videos.length,
+		firstVideoId: parsed.videos[0]?.videoId
+	};
 }
 
 export function validateProxyUrl(value: string): string | null {

@@ -64,6 +64,7 @@ try {
 			name: channel.name,
 			category: channel.category,
 			videoCount: channel.videos?.length ?? 0,
+			shortCount: channel.shortVideoIds?.length ?? 0,
 			latestPublishedAt: latest,
 			latestDays,
 			stale: latestDays !== null && latestDays > staleDays,
@@ -86,6 +87,7 @@ try {
 		packCount: packs.length,
 		categoryCounts,
 		stale: rows.filter((row) => row.stale),
+		lowLongForm: rows.filter((row) => row.videoCount < 3),
 		snapshotOlderThan60Days: rows.filter(
 			(row) => row.snapshotDays !== null && row.snapshotDays > 60
 		),
@@ -101,7 +103,7 @@ try {
 		console.log(JSON.stringify(report, null, 2));
 	} else {
 		console.log(
-			`\nCatalog: ${report.channelCount} channels · ${report.packCount} packs · ${report.starterCount} starter`
+			`\nCatalog: ${report.channelCount} channels · ${report.packCount} packs · ${report.starterCount} starter · ${rows.reduce((total, row) => total + row.shortCount, 0)} Shorts hidden`
 		);
 		console.log(`Updated: ${report.catalogUpdatedAt}\n`);
 		console.log('Channels:');
@@ -110,12 +112,17 @@ try {
 				.filter(Boolean)
 				.join(' · ');
 			console.log(
-				`  ${row.stale ? '⚠' : '✓'} ${row.inStarter ? '★ ' : ''}${row.name} [${row.category}] — ${row.videoCount} videos · latest ${row.latestDays}d ago · ${row.packs.join(', ') || 'no pack'}${flags ? ` · ${flags}` : ''}`
+				`  ${row.stale ? '⚠' : '✓'} ${row.inStarter ? '★ ' : ''}${row.name} [${row.category}] — ${row.videoCount} long, ${row.shortCount} Shorts hidden · latest ${row.latestDays}d ago · ${row.packs.join(', ') || 'no pack'}${flags ? ` · ${flags}` : ''}`
 			);
 		}
 
 		if (report.stale.length) {
 			console.log(`\n⚠ ${report.stale.length} channel(s) have no upload in ${staleDays}+ days.`);
+		}
+		if (report.lowLongForm.length) {
+			console.log(
+				`⚠ ${report.lowLongForm.length} channel(s) have fewer than 3 long-form videos in the latest snapshot.`
+			);
 		}
 		if (report.snapshotOlderThan60Days.length) {
 			console.log(`⚠ ${report.snapshotOlderThan60Days.length} snapshot(s) are older than 60 days.`);

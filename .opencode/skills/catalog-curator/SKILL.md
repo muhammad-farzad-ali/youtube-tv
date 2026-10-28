@@ -1,6 +1,6 @@
 ---
 name: Catalog Curator
-description: Curate the managed Cable TV channel catalog — research YouTube channels, add or remove them, update packs and the starter lineup, refresh snapshots, validate the generated feed, and prepare a deploy. Use for channel selection, feed curation, catalog source edits, or catalog sync failures.
+description: Curate the managed Cable TV channel catalog — research YouTube channels, add or remove them, update packs and the starter lineup, refresh long-form-only snapshots, filter Shorts, validate the generated feed, and prepare a deploy. Use for channel selection, feed curation, catalog source edits, or catalog sync failures.
 ---
 
 # Catalog Curator
@@ -36,6 +36,7 @@ Run commands from `frontend/`. Paths below are relative to the repository root u
 - Do not remove or replace existing channels without explicit owner approval.
 - Do not bypass a failed `catalog:sync` or `catalog:check` by weakening validation.
 - Do not increase sync concurrency or hammer YouTube. The script intentionally limits concurrency.
+- YouTube Shorts are excluded by policy. Never bypass the oEmbed check or hand-add a Short to `videos`.
 - Keep the app static. No backend, proxy, or server database is added to the repo.
 
 ## Workflow
@@ -94,7 +95,7 @@ Use the established category names `Technology`, `Science`, `News`, `Gaming`, `L
 npm run catalog:sync
 ```
 
-This fetches every channel feed, verifies recent uploads, downloads avatars, and rewrites `static/catalog.json`.
+This fetches every channel feed, verifies recent uploads, classifies and excludes Shorts through public oEmbed, downloads avatars, and rewrites `static/catalog.json`. The first run after a filter change checks every video; later runs reuse `shortVideoIds` and only check new IDs.
 
 If any channel fails, stop. Fix the source or remove the invalid candidate; never patch the generated file.
 
@@ -115,7 +116,8 @@ A healthy catalog currently has:
 - 9 packs: `starter`, `technology`, `science`, `news`, `gaming`, `learning`, `developer`, `comedy`, `adventure`
 - 12 starter channels across the five flagship categories; additional category packs are opt-in
 - every non-starter channel belongs to at least one pack
-- up to 15 recent videos per channel (at least one), unique video IDs
+- up to 15 recent long-form videos per channel (at least one), unique video IDs
+- `shortVideoIds` for excluded Shorts, with no overlap against `videos`
 - a logo file for each channel that has `logoUrl`
 
 ### 7. Review the diff
@@ -157,6 +159,17 @@ catalog: remove inactive channel
 
 Push to `main` when the owner asks; GitHub Actions runs catalog validation, checks, unit tests, E2E tests, and deploys the static site.
 
+## Shorts policy
+
+Shorts are never included in the catalog or the playback queue.
+
+- `catalog:sync` classifies each feed video through YouTube's public oEmbed endpoint using the `/shorts/<id>` URL.
+- Vertical oEmbed dimensions mean Short; horizontal means long-form.
+- Unverifiable videos are excluded under strict mode.
+- `shortVideoIds` is both the exclusion cache and the source of truth for known Shorts.
+- Live refresh uses the same oEmbed endpoint through the configured proxy. The proxy must allow `youtube.com/oembed` as well as feed URLs; otherwise new live videos are skipped.
+- Do not add an in-app "show Shorts" toggle without an owner decision and a catalog regeneration.
+
 ## Routine curation audit
 
 Run this periodically or when the owner asks for a review:
@@ -187,6 +200,7 @@ Do not remove a stale channel automatically. Recommend action and wait for appro
 | Feed HTTP 404 | The ID is wrong or the feed is unavailable; stop |
 | Name mismatch warning | Confirm the source display name is the intended brand; keep or correct it explicitly |
 | Logo unavailable | Sync falls back to a monogram; do not fabricate a logo |
+| oEmbed cannot classify a video | Strict policy excludes it; investigate or rerun later |
 | Rate limiting / timeouts | Rerun later; do not raise concurrency |
 | `catalog:check` failure | Fix the source; never edit generated output to silence it |
 

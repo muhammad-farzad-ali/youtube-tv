@@ -23,6 +23,12 @@ class CatalogStore {
 		)
 	);
 	starterChannelIds = $derived(this.data?.starterChannelIds ?? []);
+	longVideoIds = $derived(
+		new Set(this.channels.flatMap((channel) => channel.videos.map((video) => video.videoId)))
+	);
+	shortVideoIds = $derived(
+		new Set(this.channels.flatMap((channel) => channel.shortVideoIds ?? []))
+	);
 
 	private pending: Promise<void> | null = null;
 
