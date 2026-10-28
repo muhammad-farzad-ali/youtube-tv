@@ -5,11 +5,13 @@
 	import { Radio, RefreshCw, CircleAlert } from '@lucide/svelte';
 	import AppHeader from '#lib/components/AppHeader.svelte';
 	import { app } from '#lib/stores/app.svelte';
+	import { preferences } from '#lib/stores/preferences.svelte';
 	import type { LayoutProps } from './$types';
 
 	let { children }: LayoutProps = $props();
 
 	onMount(() => {
+		preferences.load();
 		void app.initialize();
 	});
 </script>

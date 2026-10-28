@@ -95,6 +95,13 @@
 		if (target && (target.matches('input, textarea, select') || target.isContentEditable)) {
 			return;
 		}
+		if (
+			target &&
+			target.matches('button, a, [role="button"]') &&
+			(event.key === ' ' || event.key === 'Enter')
+		) {
+			return;
+		}
 		if (event.metaKey || event.ctrlKey || event.altKey) return;
 
 		if (/^[0-9]$/.test(event.key)) {

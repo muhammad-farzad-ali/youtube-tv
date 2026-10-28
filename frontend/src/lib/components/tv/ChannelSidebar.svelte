@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { Search, ChevronUp, ChevronDown, SlidersHorizontal, X } from '@lucide/svelte';
+	import { Search, ChevronUp, ChevronDown, SlidersHorizontal, X, Pin, Star } from '@lucide/svelte';
 	import ChannelLogo from '#lib/components/ChannelLogo.svelte';
 	import type { CatalogChannel } from '#lib/schemas/catalog.schema';
 	import type { PlaybackStatus } from '#lib/stores/playback.svelte';
+	import { preferences } from '#lib/stores/preferences.svelte';
 
 	interface Props {
 		channels: CatalogChannel[];
@@ -42,18 +43,30 @@
 		return () => media.removeEventListener('change', update);
 	});
 
-	const categories = $derived(['All', ...new Set(channels.map((channel) => channel.category))]);
+	const categories = $derived([
+		'All',
+		'Favorites',
+		...new Set(channels.map((channel) => channel.category))
+	]);
 	const numbers = $derived(new Map(channels.map((channel, index) => [channel.id, index + 1])));
+	const favoriteCount = $derived(
+		channels.filter((channel) => preferences.isFavorite(channel.id)).length
+	);
 	const filtered = $derived.by(() => {
 		const query = search.trim().toLowerCase();
 		return channels.filter((channel) => {
-			if (category !== 'All' && channel.category !== category) return false;
+			if (category === 'Favorites' && !preferences.isFavorite(channel.id)) return false;
+			if (category !== 'All' && category !== 'Favorites' && channel.category !== category) {
+				return false;
+			}
 			if (!query) return true;
 			return (
 				channel.name.toLowerCase().includes(query) || channel.category.toLowerCase().includes(query)
 			);
 		});
 	});
+	const pinned = $derived(filtered.filter((channel) => preferences.isPinned(channel.id)));
+	const unpinned = $derived(filtered.filter((channel) => !preferences.isPinned(channel.id)));
 
 	function choose(channelId: string) {
 		onselect(channelId);
@@ -66,7 +79,87 @@
 			(playingStatus === 'playing' || playingStatus === 'loading' || playingStatus === 'paused')
 		);
 	}
+
+	function emptyMessage() {
+		return category === 'Favorites' ? 'No favorite channels yet.' : 'No channels match.';
+	}
 </script>
+
+{#snippet channelRow(channel: CatalogChannel)}
+	{@const active = selectedChannelId === channel.id}
+	{@const isPinned = preferences.isPinned(channel.id)}
+	{@const isFavorite = preferences.isFavorite(channel.id)}
+	<div
+		data-testid="channel-row"
+		data-channel-id={channel.id}
+		class="group mb-0.5 flex items-center rounded-md border border-transparent transition-colors {active
+			? 'tuned-glow border-line bg-raised text-fg'
+			: 'text-dim hover:border-line/60 hover:bg-raised/60 hover:text-fg'}"
+	>
+		<button
+			type="button"
+			class="flex min-w-0 flex-1 items-center gap-2 px-2 py-2 text-left"
+			aria-current={active ? 'true' : undefined}
+			onclick={() => choose(channel.id)}
+		>
+			<span class="w-7 shrink-0 text-right font-mono text-[10px] text-yellow tabular">
+				{String(numbers.get(channel.id) ?? 0).padStart(2, '0')}
+			</span>
+			<ChannelLogo {channel} size="sm" />
+			<span class="min-w-0 flex-1">
+				<span class="block truncate text-xs font-medium">{channel.name}</span>
+				<span class="mt-0.5 flex items-center gap-1.5">
+					<span class="truncate font-mono text-[9px] tracking-wide text-comment uppercase">
+						{channel.category}
+					</span>
+					{#if isPlaying(channel.id)}
+						<span
+							class="flex items-center gap-1 font-mono text-[8px] tracking-[0.16em] uppercase {playingStatus ===
+							'paused'
+								? 'text-yellow'
+								: 'text-red'}"
+						>
+							<span
+								class="size-1 rounded-full {playingStatus === 'paused'
+									? 'bg-yellow'
+									: 'bg-red'} {playingStatus === 'playing' ? 'animate-pulse-dot' : ''}"
+							></span>
+							{playingStatus === 'loading'
+								? 'Tuning'
+								: playingStatus === 'paused'
+									? 'Paused'
+									: 'Playing'}
+						</span>
+					{/if}
+				</span>
+			</span>
+		</button>
+		<div class="flex shrink-0 items-center gap-0.5 pr-1.5">
+			<button
+				type="button"
+				class="btn-icon !size-6 {isPinned ? 'text-cyan' : 'text-comment/70 hover:text-cyan'}"
+				aria-label={isPinned ? `Unpin ${channel.name}` : `Pin ${channel.name}`}
+				aria-pressed={isPinned}
+				title={isPinned ? 'Unpin from the top' : 'Pin to the top'}
+				onclick={() => preferences.togglePin(channel.id)}
+			>
+				<Pin size={12} fill={isPinned ? 'currentColor' : 'none'} />
+			</button>
+			<button
+				type="button"
+				class="btn-icon !size-6 {isFavorite ? 'text-yellow' : 'text-comment/70 hover:text-yellow'}"
+				aria-label={isFavorite
+					? `Remove ${channel.name} from favorites`
+					: `Add ${channel.name} to favorites`}
+				aria-pressed={isFavorite}
+				title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+				onclick={() => preferences.toggleFavorite(channel.id)}
+			>
+				<Star size={12} fill={isFavorite ? 'currentColor' : 'none'} />
+			</button>
+		</div>
+	</div>
+{/snippet}
 
 {#if mobileOpen}
 	<button
@@ -91,6 +184,10 @@
 				{channels.length} on the dial
 			</p>
 		</div>
+		<span class="chip border-yellow/30 text-yellow" title="{favoriteCount} favorite channels">
+			<Star size={10} fill={favoriteCount > 0 ? 'currentColor' : 'none'} />
+			{favoriteCount}
+		</span>
 		<button
 			type="button"
 			class="btn-icon lg:hidden"
@@ -121,7 +218,11 @@
 				aria-label="Filter by category"
 			>
 				{#each categories as item (item)}
-					<option value={item}>{item}</option>
+					{#if item === 'Favorites'}
+						<option value={item}>Favorites ({favoriteCount})</option>
+					{:else}
+						<option value={item}>{item}</option>
+					{/if}
 				{/each}
 			</select>
 		</div>
@@ -129,50 +230,19 @@
 
 	<nav class="scroll-thin min-h-0 flex-1 overflow-y-auto p-1.5" aria-label="Channel lineup">
 		{#if filtered.length === 0}
-			<p class="px-4 py-8 text-center text-xs text-comment">No channels match.</p>
+			<p class="px-4 py-8 text-center text-xs text-comment">{emptyMessage()}</p>
 		{:else}
-			{#each filtered as channel (channel.id)}
-				{@const active = selectedChannelId === channel.id}
-				<button
-					type="button"
-					class="relative mb-0.5 flex w-full items-center gap-2.5 rounded-md border border-transparent px-2 py-2 text-left transition-colors {active
-						? 'tuned-glow border-line bg-raised text-fg'
-						: 'text-dim hover:border-line/60 hover:bg-raised/60 hover:text-fg'}"
-					aria-current={active ? 'true' : undefined}
-					onclick={() => choose(channel.id)}
-				>
-					<span class="w-7 shrink-0 text-right font-mono text-[10px] text-yellow tabular">
-						{String(numbers.get(channel.id) ?? 0).padStart(2, '0')}
-					</span>
-					<ChannelLogo {channel} size="sm" />
-					<span class="min-w-0 flex-1">
-						<span class="block truncate text-xs font-medium">{channel.name}</span>
-						<span class="mt-0.5 flex items-center gap-1.5">
-							<span class="truncate font-mono text-[9px] tracking-wide text-comment uppercase">
-								{channel.category}
-							</span>
-							{#if isPlaying(channel.id)}
-								<span
-									class="flex items-center gap-1 font-mono text-[8px] tracking-[0.16em] uppercase {playingStatus ===
-									'paused'
-										? 'text-yellow'
-										: 'text-red'}"
-								>
-									<span
-										class="size-1 rounded-full {playingStatus === 'paused'
-											? 'bg-yellow'
-											: 'bg-red'} {playingStatus === 'playing' ? 'animate-pulse-dot' : ''}"
-									></span>
-									{playingStatus === 'loading'
-										? 'Tuning'
-										: playingStatus === 'paused'
-											? 'Paused'
-											: 'Playing'}
-								</span>
-							{/if}
-						</span>
-					</span>
-				</button>
+			{#if pinned.length > 0}
+				<p class="eyebrow px-2 pt-2 pb-1 text-cyan">Pinned</p>
+				{#each pinned as channel (channel.id)}
+					{@render channelRow(channel)}
+				{/each}
+				{#if unpinned.length > 0}
+					<p class="eyebrow px-2 pt-3 pb-1">All channels</p>
+				{/if}
+			{/if}
+			{#each unpinned as channel (channel.id)}
+				{@render channelRow(channel)}
 			{/each}
 		{/if}
 	</nav>
